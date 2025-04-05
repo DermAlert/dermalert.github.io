@@ -1,9 +1,14 @@
-site_name: DermAlert
+site_name: DERMALERT
 repo_url: https://github.com/DermAlert/dermalert.github.io
 repo_name: DermAlert
 
 nav:
   - Home: index.md
+  - Documentação Técnica:
+      - Frontend: documentacao-tecnica/frontend.md
+      - Backend: documentacao-tecnica/backend.md
+  - Código de Conduta: codigo-de-conduta.md
+  - Guia de Contribuição: guia-de-contribuicao.md
 
 theme:
   name: material
