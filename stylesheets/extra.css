@@ -1,11 +1,15 @@
 .md-header {
-    background-color: #243447 !important; 
+    background-color: #1A4568 !important; 
   }
   
-  .md-header__title,
   .md-header__button.md-logo img {
-    color: #F5F5F5 !important;
+    color: #1A4568 !important;
   }
+
+  .md-header__title {
+  display: none !important;
+  }
+  
 
   .md-header__title {
     font-size: 1.4rem !important;
@@ -13,7 +17,7 @@
 }
   
   .md-tabs {
-    background-color: #243447 !important; 
+    background-color: #1A4568 !important; 
   }
   
   .md-tabs__link {
@@ -42,8 +46,31 @@
   }
   
   .md-header__button.md-logo img {
-    height: 45px;
-    width: auto;
-    border-radius: 4px;
+    height: 75px;
+    margin-bottom: 0;
   }
-  
+
+/* Força layout flex no header */
+.md-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.md-header__button.md-logo {
+  margin-right: auto;
+}
+
+.header-right-group {
+  display: flex;
+  align-items:end;
+  margin-left: auto;
+}
+
+.md-search {
+  margin: 0;
+}
+
+.md-header__option {
+  margin: 0 !important;
+}
