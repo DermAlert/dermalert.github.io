@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dermalert</title>
+    <script type="module" crossorigin src="./assets/index-BMjkV8U-.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-D5Lwlgl_.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="bg-white text-gray-800">
+        <!-- Navbar -->
+        <header class="bg-[#1A4568]">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+              <!-- Agrupamento da Logo e Navegação (desktop) -->
+              <div class="flex items-center space-x-6">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                  <img src="./logo.png" alt="Logo Dermalert" class="w-28 mt-2" />
+                </div>
+                <!-- Navegação (desktop) -->
+                <nav class="hidden md:flex space-x-6">
+                  <a href="#" class="text-white hover:text-blue-300 text-lg">Home</a>
+                  <a href="../../documentacao-tecnica/frontend/" class="text-white hover:text-blue-300 text-lg">Documentação</a>
+                  <a href="#" class="text-white hover:text-blue-300 text-lg">Material Educativo</a>
+                  <a href="#" class="text-white hover:text-blue-300 text-lg">Curso</a>
+                </nav>
+              </div>
+        
+              <!-- Botão (desktop) -->
+              <div class="hidden md:flex justify-end">
+                <a href="#"
+                   class="bg-blue-200 text-blue-800 text-sm px-4 py-1.5 rounded-md hover:bg-blue-300 transition">
+                  Participe da Pesquisa
+                </a>
+              </div>
+        
+              <!-- Botão menu hamburguer (mobile) -->
+              <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+                       viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+        
+            <!-- Menu mobile -->
+            <div id="mobile-menu" class="md:hidden hidden flex flex-col items-center text-center px-4 py-4 bg-[#1A4568] rounded-b-md space-y-3">
+              <a href="#" class="block text-white hover:text-blue-300 text-base">Home</a>
+              <a href="../../documentacao-tecnica/frontend/" class="block text-white hover:text-blue-300 text-base">Documentação</a>
+              <a href="#" class="block text-white hover:text-blue-300 text-base">Material Educativo</a>
+              <a href="#" class="block text-white hover:text-blue-300 text-base">Curso</a>
+              <a href="#"
+                 class="block bg-blue-200 text-blue-800 text-sm px-4 py-1.5 rounded-md hover:bg-blue-300 transition">
+                 Participe da Pesquisa
+              </a>
+            </div>
+          </div>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-b from-[#E5F0FF] to-white pt-24 pb-28">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+            
+          <!-- Texto -->
+          <div class="flex flex-col justify-center items-center text-center">
+            <h1 class="text-[36px] sm:text-[42px] md:text-[52px] lg:text-[64px] font-semibold leading-tight">
+              <span class="text-blue-600">Triagem Segura e</span>
+              <span class="text-blue-500">Inteligente</span> <span class="text-gray-800">para</span>
+              <span class="text-gray-800">Diagnósticos Precoces</span>
+            </h1>
+            <p class="mt-6 text-gray-600 text-base sm:text-lg max-w-md">
+              Registre pacientes, capture imagens e priorize atendimentos com
+              uma solução integrada e segura.
+            </p>
+            <div class="mt-8">
+              <button class="bg-gradient-to-r from-[#1A45E8] to-[#3489CE] text-white px-6 py-3 rounded-md text-sm font-medium shadow-md hover:opacity-90 transition">
+                Participe da Pesquisa
+              </button>
+            </div>
+          </div>
+        
+        
+            <!-- Imagem -->
+            <div class="flex justify-center md:justify-end">
+              <img src="./mockup.png" alt="Mockup do app" class="w-[500px] sm:w-[560px] md:w-[620px] lg:w-[680px] h-auto" />
+            </div>
+          </div>
+        </section>
+        
+         <!-- Seção: Benefícios -->
+          <section class="bg-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-12">
+                Por que escolher nosso software?
+              </h2>
+        
+              <!-- Cards -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <!-- Card 1 -->
+                <div class="bg-white shadow-md rounded-lg p-6 text-left flex flex-col gap-3">
+                  <div class="flex items-center gap-3">
+                    <img src="./camera.png" alt="Ícone 1" class="w-6 h-6">
+                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Registro Fotográfico Inteligente</h3>
+                  </div>
+                  <p class="text-sm md:text-base text-gray-700">
+                    <span class="text-blue-600 font-medium">Capture e armazenamento seguro de imagens das lesões</span>, permitindo acompanhamento visual detalhado ao longo do tempo.
+                  </p>
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="bg-white shadow-md rounded-lg p-6 text-left flex flex-col gap-3">
+                  <div class="flex items-center gap-3">
+                    <img src="./form.png" alt="Ícone 2" class="w-6 h-6">
+                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Atendimento Simplificado</h3>
+                  </div>
+                  <p class="text-sm md:text-base text-gray-700">
+                    Cadastro de pacientes, anamnese guiada e assinatura digital de termo de consentimento, tudo em um só lugar.
+                  </p>
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="bg-white shadow-md rounded-lg p-6 text-left flex flex-col gap-3">
+                  <div class="flex items-center gap-3">
+                    <img src="./lock.png" alt="Ícone 3" class="w-6 h-6">
+                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Segurança e Conformidade</h3>
+                  </div>
+                  <p class="text-sm md:text-base text-gray-700">
+                    Proteção total dos dados de saúde com criptografia avançada, controle de acessos e auditoria contínua, seguindo as diretrizes da LGPD.
+                  </p>
+                </div>
+              </div>
+        
+              <!-- Botão -->
+              <button class="border border-blue-800 text-blue-800 px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-800 hover:text-white transition">
+                Saber mais
+              </button>
+            </div>
+          </section>
+        
+        <!-- Seção: Atenção Primária -->
+        <section class="bg-[#FBFBFB] py-20">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+            
+            <!-- Imagem -->
+            <div class="flex justify-center md:justify-start w-full md:w-1/2">
+              <img src="./atencao-primaria.png" alt="Imagem Atenção Primária" class="rounded-lg w-full max-w-md object-cover shadow-md">
+            </div>
+        
+            <!-- Conteúdo -->
+            <div class="w-full md:w-1/2 flex flex-col items-center md:items-start">
+              <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-blue-600 mb-2">
+                Atenção Primária:
+              </h2>
+              <h3 class="text-lg md:text-xl font-medium text-gray-800 mb-4">
+                O Primeiro Passo na Prevenção do Câncer de Pele
+              </h3>
+              <p class="text-gray-700 text-sm md:text-base leading-relaxed max-w-md">
+                A detecção precoce do câncer de pele aumenta as chances de tratamento e reduz complicações.
+                A triagem permite identificar lesões suspeitas rapidamente, agilizando o encaminhamento e
+                melhorando os resultados. Com tecnologia, como o Derma Cam, esse processo se torna mais
+                acessível e eficiente.
+              </p>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Sessão: "Como Funciona?" -->
+        <section class="py-12 bg-white">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Grid de 2 colunas (sem items-center para não centralizar verticalmente) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+              
+              <!-- Coluna Esquerda: Título/Subtítulo centralizados na horizontal -->
+              <div class="flex justify-center">
+                <!-- Contêiner que define a largura máxima e centraliza o texto -->
+                <div class="text-center max-w-md">
+                  <h2 class="text-2xl sm:text-3xl font-bold text-[#101828]">
+                    Como funciona?
+                  </h2>
+                  <p class="mt-2 text-base sm:text-lg text-[#667085]">
+                    Lorem Ipsum Dolor sit amet lorem ipsum dolor sit
+                  </p>
+                </div>
+              </div>
+              
+              <!-- Coluna Direita: Imagem (3 passos) -->
+              <div class="flex justify-center md:justify-end">
+                <img
+                  src="./Frame 53.png"
+                  alt="Descrição da imagem"
+                  class="w-full max-w-md h-auto"
+                />
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        
+        <!-- Seção: Sobre o Projeto -->
+        <section class="bg-[#5F84A1] py-20">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+            <!-- Conteúdo principal com texto e imagem -->
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 mb-12">
+              
+              <!-- Texto -->
+              <div class="flex flex-col justify-center h-full">
+                <h2 class="text-white text-xl md:text-2xl lg:text-3xl font-semibold mb-4">
+                  Sobre o Projeto
+                </h2>
+                <p class="text-white text-sm md:text-base leading-relaxed">
+                  O Derma Cam é um projeto voltado para a triagem de pacientes com suspeita de câncer de pele, 
+                  facilitando a identificação precoce e o encaminhamento adequado. Desenvolvido pelo Lab Livre 
+                  em parceria com a UnB e a FAP-DF, o projeto busca aprimorar o atendimento primário por meio 
+                  da tecnologia, tornando o diagnóstico mais acessível e eficiente.
+                </p>
+              </div>
+        
+              <!-- Imagem -->
+              <div class="flex justify-center md:justify-end">
+                <img src="./Group 20.png" alt="Logos dos parceiros" class="w-full max-w-md h-auto" />
+              </div>
+            </div>
+        
+            <!-- Botão -->
+            <div class="flex justify-center">
+              <a href="#" class="bg-white text-[#5F84A1] text-sm font-medium px-6 py-2 rounded-md border border-white hover:bg-opacity-90 transition">
+                Entrar em contato
+              </a>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Seção: Perguntas Frequentes -->
+        <section class="bg-white py-20">
+          <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-[#1A4568] text-center mb-10">
+              Perguntas Frequentes
+            </h2>
+        
+            <div class="space-y-4">
+              <!-- Item -->
+              <details class="group bg-white rounded-md shadow-sm border border-gray-200 px-6 py-4">
+                <summary class="flex justify-between items-center cursor-pointer text-[#1A4568] text-[20px] font-normal list-none">
+                  Como o software auxilia na triagem dermatológica?
+        
+                  <!-- Botão de seta -->
+                  <div class="w-6 h-6 bg-[#0A79D3] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </summary>
+                <p class="mt-2 text-[14px] text-[#6F6F6F]">
+                  O software permite coletar dados do paciente, realizar anamnese guiada e registrar fotos das lesões, facilitando a priorização de casos e agilizando o atendimento médico.
+                </p>
+              </details>
+        
+              <!-- Repetir para os demais -->
+              <details class="group bg-white rounded-md shadow-sm border border-gray-200 px-6 py-4">
+                <summary class="flex justify-between items-center cursor-pointer text-[#1A4568] text-[20px] font-normal list-none">
+                  Preciso de conexão com a internet para usar o app?
+                  <div class="w-6 h-6 bg-[#0A79D3] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </summary>
+                <p class="mt-2 text-[14px] text-[#6F6F6F]">
+                  O aplicativo precisa de conexão com a internet para sincronizar os dados com segurança.
+                </p>
+              </details>
+        
+              <details class="group bg-white rounded-md shadow-sm border border-gray-200 px-6 py-4">
+                <summary class="flex justify-between items-center cursor-pointer text-[#1A4568] text-[20px] font-normal list-none">
+                  Quem pode acessar os dados coletados?
+                  <div class="w-6 h-6 bg-[#0A79D3] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </summary>
+                <p class="mt-2 text-[14px] text-[#6F6F6F]">
+                  Somente profissionais autorizados e vinculados à instituição de saúde têm acesso aos dados.
+                </p>
+              </details>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Rodapé -->
+        <footer class="bg-[#0A3970] py-12">
+          <div class="max-w-7xl mx-auto px-4 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            
+            <!-- Logo esquerda -->
+            <div class="flex justify-start md:justify-start">
+              <img src="./logo.png" alt="Logo Dermalert" class="w-40" />
+            </div>
+        
+            <!-- Logos unificadas à direita -->
+            <div class="flex justify-end md:justify-end">
+              <img src="./Group 21.png" alt="Logos UnB e LabLivre" class="w-32 md:w-36 h-auto" />
+            </div>
+        
+          </div>
+        </footer>
+        
+      </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <!-- Nav Desktop/Mobile -->
+    <script>
+      const toggleBtn = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+    
+      toggleBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        mobileMenu.classList.toggle("hidden");
+      });
+    
+      document.addEventListener("click", (e) => {
+        const isClickInsideMenu = mobileMenu.contains(e.target);
+        const isClickToggleBtn = toggleBtn.contains(e.target);
+        if (!isClickInsideMenu && !isClickToggleBtn) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    </script>
+    <script>
+      function toggleFaq(id) {
+        const answer = document.getElementById(`answer-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+        const isOpen = !answer.classList.contains('hidden');
+    
+        // Fecha todos
+        for (let i = 1; i <= 3; i++) {
+          document.getElementById(`answer-${i}`).classList.add('hidden');
+          document.getElementById(`icon-${i}`).classList.remove('rotate-180');
+        }
+    
+        // Abre apenas o clicado, se não estava aberto
+        if (!isOpen) {
+          answer.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      }
+    </script>
+
+    <!-- Stylesheet - Vite + Tailwind -->
+  </body>
+</html>
