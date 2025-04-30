@@ -5,62 +5,54 @@
     <link rel="icon" type="image/svg+xml" href="./logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dermalert</title>
-    <script type="module" crossorigin src="./assets/index-BVyfRjso.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-FrCvHmc8.css">
+    <script type="module" crossorigin src="./assets/main-BlRNVsix.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-wdwBEN5R.css">
   </head>
   <body>
     <div id="app">
       <div class="bg-white text-gray-800">
-        <!-- Navbar -->
-        <header class="bg-[#1A4568]">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-              <!-- Agrupamento da Logo e Navegação (desktop) -->
-              <div class="flex items-center space-x-6">
-                <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                  <img src="./logo.png" alt="Logo Dermalert" class="w-28 mt-2" />
-                </div>
-                <!-- Navegação (desktop) -->
-                <nav class="hidden md:flex space-x-6">
-                  <a href="#" class="text-white hover:text-blue-300 text-lg">Home</a>
-                  <a href="../../documentacao-tecnica/frontend/" class="text-white hover:text-blue-300 text-lg">Documentação</a>
-                  <a href="#" class="text-white hover:text-blue-300 text-lg">Material Educativo</a>
-                  <a href="#" class="text-white hover:text-blue-300 text-lg">Curso</a>
-                </nav>
-              </div>
-        
-              <!-- Botão (desktop) -->
-              <div class="hidden md:flex justify-end">
-                <a href="#"
-                   class="bg-blue-200 text-blue-800 text-sm px-4 py-1.5 rounded-md hover:bg-blue-300 transition">
-                  Participe da Pesquisa
-                </a>
-              </div>
-        
-              <!-- Botão menu hamburguer (mobile) -->
-              <div class="md:hidden">
-                <button id="menu-toggle" class="text-white focus:outline-none">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-                       viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M4 6h16M4 12h16M4 18h16" />
-                  </svg>
-                </button>
-              </div>
+        <!-- Navbar com menu hambúrguer responsivo -->
+        <header id="navbar" class="fixed top-0 left-0 w-full bg-[#094559] shadow-sm shadow-gray-400 z-50">
+          <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+            <!-- Logo -->
+            <div class="flex items-center gap-2">
+              <img src="./logo.png" alt="Logo MEPA" class="h-8 w-auto" />
             </div>
-        
-            <!-- Menu mobile -->
-            <div id="mobile-menu" class="md:hidden hidden flex flex-col items-center text-center px-4 py-4 bg-[#1A4568] rounded-b-md space-y-3">
-              <a href="#" class="block text-white hover:text-blue-300 text-base">Home</a>
-              <a href="../../documentacao-tecnica/frontend/" class="block text-white hover:text-blue-300 text-base">Documentação</a>
-              <a href="#" class="block text-white hover:text-blue-300 text-base">Material Educativo</a>
-              <a href="#" class="block text-white hover:text-blue-300 text-base">Curso</a>
-              <a href="#"
-                 class="block bg-blue-200 text-blue-800 text-sm px-4 py-1.5 rounded-md hover:bg-blue-300 transition">
-                 Participe da Pesquisa
-              </a>
+
+            <!-- Botão do menu hambúrguer (visível apenas no mobile) -->
+            <button id="menu-toggle" class="md:hidden text-[#013F7A] focus:outline-none z-50">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+
+            <!-- Navegação -->
+            <nav id="mobile-menu"
+            class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6 text-sm font-medium 
+                  absolute md:static top-[64px] left-0 w-full md:w-auto bg-white md:bg-transparent 
+                  shadow-md md:shadow-none origin-top transition-all duration-300 ease-in-out scale-y-0 md:scale-y-100">
+              <div class="flex flex-col items-center md:flex-row md:items-center md:space-x-6 w-full">
+                <a href="../../como-funciona/como-contribuir/" class="block px-6 py-2 text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32] text-center">Como Funciona</a>
+                <a href="../../ajuda-e-suporte/problemas-comuns/" class="block px-6 py-2 text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32] text-center">Ajuda e Suporte</a>
+                <a href="../../curso-de-extensao/sobre-o-curso/" class="block px-6 py-2 text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32] text-center">Curso de Extensão</a>
+                <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block px-6 py-2 text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32] text-center">Documentação</a>
+              </div>
+            </nav>
+
+            <!-- Botões -->
+            <div class="hidden lg:inline flex flex-col md:flex-row md:space-x-3 px-6 pb-4 md:p-0 items-center">
+              <a href="#" class="px-4 py-2 rounded-[50px] text-sm text-white bg-[#B7561F] hover:bg-[#D06A32] transition text-center border border-[#B7561F]">
+                Participar da Pesquisa
+              </a>              
             </div>
+
+          </div>
+
+          <div id="mobile-menu" class="hidden md:hidden p-4 text-center transition-all duration-300">
+            <a href="#" class="block py-2 text-[#F6F6F6] hover:underline">Como Funciona</a>
+            <a href="#" class="block py-2 text-[#F6F6F6] hover:underline">Ajuda e Suporte</a>
+            <a href="#" class="block py-2 text-[#F6F6F6] hover:underline">Curso de Extensão</a>
+            <a href="../../documentacao-tecnica/frontend/" class="block py-2 text-[#F6F6F6] hover:underline">Documentação</a>
           </div>
         </header>
         
