@@ -6,345 +6,374 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dermalert</title>
   </head>
-  <body>
-    <div id="app">
-      <div class="bg-white text-gray-800">
-        <!-- Navbar com menu hambúrguer responsivo -->
-        <header id="navbar" class="fixed top-0 left-0 w-full bg-[#094559] shadow-sm shadow-gray-400 z-50">
-          <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
-            <!-- Logo -->
-            <div class="flex items-center gap-2">
-              <img src="/logo.png" alt="Logo MEPA" class="h-8 w-auto" />
-            </div>
-
-            <!-- Botão do menu hambúrguer (visível apenas no mobile) -->
-            <button id="menu-toggle" class="md:hidden text-[#013F7A] focus:outline-none z-50">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-
-            <!-- Navegação -->
-            <nav id="mobile-menu"
-            class="hidden md:flex flex-col md:flex-row md:items-center md:space-x-6 text-sm font-medium 
-                  absolute md:static top-[64px] left-0 w-full md:w-auto bg-white md:bg-transparent 
-                  shadow-md md:shadow-none origin-top transition-all duration-300 ease-in-out scale-y-0 md:scale-y-100">
-              <div class="flex flex-col items-center md:flex-row md:items-center md:space-x-6 w-full">
-                <a href="../../como-funciona/como-contribuir/" class="block px-6 py-2 text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32] text-center">Como Funciona</a>
-                <a href="../../ajuda-e-suporte/problemas-comuns/" class="block px-6 py-2 text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32] text-center">Ajuda e Suporte</a>
-                <a href="../../curso-de-extensao/sobre-o-curso/" class="block px-6 py-2 text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32] text-center">Curso de Extensão</a>
-                <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block px-6 py-2 text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32] text-center">Documentação</a>
-              </div>
-            </nav>
-
-            <!-- Botões -->
-            <div class="hidden lg:inline flex flex-col md:flex-row md:space-x-3 px-6 pb-4 md:p-0 items-center">
-              <a href="#" class="px-4 py-2 rounded-[50px] text-sm text-white bg-[#B7561F] hover:bg-[#D06A32] transition text-center border border-[#B7561F]">
-                Participar da Pesquisa
-              </a>              
-            </div>
-
-          </div>
-
-          <div id="mobile-menu" class="hidden md:hidden p-4 text-center transition-all duration-300">
-            <a href="#" class="block py-2 text-[#F6F6F6] hover:underline">Como Funciona</a>
-            <a href="#" class="block py-2 text-[#F6F6F6] hover:underline">Ajuda e Suporte</a>
-            <a href="#" class="block py-2 text-[#F6F6F6] hover:underline">Curso de Extensão</a>
-            <a href="../../documentacao-tecnica/frontend/" class="block py-2 text-[#F6F6F6] hover:underline">Documentação</a>
-          </div>
-        </header>
+  <body class="font-[Lexend] antialiased bg-white text-gray-800">
+    <!-- Header fixo no topo com menu hamburguer responsivo -->
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-[#20596C] shadow-sm shadow-gray-400 z-50">
+      <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
         
-        <!-- Hero Section -->
-        <section class="bg-gradient-to-b from-[#E5F0FF] to-white pt-24 pb-28">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 items-center gap-16">
-            
-          <!-- Texto -->
-          <div class="flex flex-col justify-center items-center text-center">
-            <h1 class="text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-semibold leading-tight">
-              <span class="text-blue-600">Triagem Segura e</span>
-              <span class="text-blue-500">Inteligente</span> <span class="text-gray-800">para</span>
-              <span class="text-gray-800">Diagnósticos Precoces</span>
-            </h1>
-            <p class="mt-6 text-gray-600 text-base sm:text-lg max-w-md">
-              Registre pacientes, capture imagens e priorize atendimentos com
-              uma solução integrada e segura.
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <img src="/logo.png" alt="Logo MEPA" class="h-8 w-auto" />
+        </div>
+
+        <!-- Botão do menu hambúrguer (visível no mobile) -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none z-50">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <!-- Menu principal (visível em telas médias e maiores) -->
+        <nav class="hidden md:flex flex-row items-center space-x-6 text-sm font-medium">
+          <a href="../../como-funciona/como-contribuir/" class="text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32]">
+            Como Funciona
+          </a>
+          <a href="../../ajuda-e-suporte/problemas-comuns/" class="text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32]">
+            Ajuda e Suporte
+          </a>
+          <a href="../../curso-de-extensao/sobre-o-curso/" class="text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32]">
+            Curso de Extensão
+          </a>
+          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32]">
+            Documentação
+          </a>
+        </nav>
+
+        <!-- Botão de ação (visível apenas em telas grandes) -->
+        <div class="hidden lg:inline-block">
+          <a href="#" class="px-4 py-2 rounded-full text-sm text-white bg-[#D06A32] hover:bg-[#B7561F] transition border border-[#D06A32]">
+            Participar da Pesquisa
+          </a>
+        </div>
+      </div>
+
+      <!-- Menu Mobile (aparece ao clicar no botão) -->
+      <div id="mobile-menu"
+          class="hidden md:hidden scale-y-0 origin-top transition-transform duration-300 bg-[#094559] text-center">
+        <a href="../../como-funciona/como-contribuir/" class="block py-2 text-[#F6F6F6] hover:underline">Como Funciona</a>
+        <a href="../../ajuda-e-suporte/problemas-comuns/" class="block py-2 text-[#F6F6F6] hover:underline">Ajuda e Suporte</a>
+        <a href="../../curso-de-extensao/sobre-o-curso/" class="block py-2 text-[#F6F6F6] hover:underline">Curso de Extensão</a>
+        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 text-[#F6F6F6] hover:underline">Documentação</a>
+      </div>
+    </header>
+
+    <section id="hero" class="bg-white py-12 md:py-20">
+      <div class="max-w-6xl mx-auto px-4 text-center flex flex-col items-center">
+        <!-- Logo centralizado -->
+        <img src="/logo-dermalert.png" alt="DERMALERT" class="h-8 mt-8 mb-8">
+
+        <h1 class="text-3xl md:text-5xl font-bold text-[#094559] leading-snug mb-8">
+          Triagem Segura e Inteligente para <br class="hidden md:block" />
+          Diagnósticos Precoces
+        </h1>        
+    
+        <!-- Imagem com texto embutido (tamanho reduzido) -->
+        <img src="/hero-image.png"
+        alt="Imagem de celulares com texto embutido"
+        class="rounded-2xl shadow-md w-full max-w-[660px] mx-auto mb-6">
+
+        <!-- Bloco de texto compacto -->
+        <div class="bg-white shadow-[0_4px_4px_rgba(0,0,0,0.15)] rounded-2xl px-6 py-4 md:px-8 md:py-5 max-w-md mx-auto">
+          <p class="text-[#1A4568] text-base leading-snug text-center">
+            Registre pacientes, capture imagens e<br>
+            priorize atendimentos com uma <span class="font-semibold text-[#094559]">solução integrada e segura</span>
+          </p>
+        </div>
+
+        <!-- Botão fora do bloco -->
+        <div class="mt-4 text-center">
+          <a href="#"
+            class="inline-block bg-[#D06A32] text-white text-sm font-medium px-4 py-1.5 rounded-full hover:bg-[#B7561F] transition border border-[#D06A32]">
+            Participar da Pesquisa
+          </a>
+        </div>
+        
+        <!-- Bloco "Desenvolvido por" com imagem única -->
+        <div class="mt-14 text-center">
+          <p class="text-[#094559] text-sm md:text-base font-medium mb-4">Desenvolvido por:</p>
+          <img src="/dev-by.png" alt="Logos UnB, FAPDF e Lab Livre" class="mx-auto h-12 md:h-14">
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- Seção: Por que escolher nosso software -->
+    <section id="nosso-software" class="bg-[#F7F7F7] py-16 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto">
+        <!-- Título -->
+        <h2 class="text-[#094559] text-[34px] md:text-[40px] font-bold text-center leading-tight mb-12">
+          Por que escolher nosso software?
+        </h2>
+
+        <!-- Grid de 2 colunas: esquerda (imagem), direita (dois cards) -->
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+
+          <!-- Card com imagem e destaque -->
+          <div class="bg-white rounded-2xl shadow-sm p-4 md:p-6">
+            <img src="/registro-fotografico.png" alt="Registro Fotográfico" class="rounded-xl mb-4" />
+            <div class="flex items-center gap-2 mb-2">
+              <img src="/etapa-1.png" alt="Etapa 2" class="w-8 h-8">
+            </div>
+            <h3 class="text-[#B7561F] text-[32px] md:text-[34px]	 font-bold mb-2">Registro Fotográfico Inteligente</h3>
+            <p class="text-[#441306] text-base">
+              Captura e armazenamento seguro de imagens das lesões, permitindo acompanhamento visual detalhado ao longo do tempo.
             </p>
-            <div class="mt-8">
-              <button class="bg-gradient-to-r from-[#1A45E8] to-[#3489CE] text-white px-6 py-3 rounded-md text-sm font-medium shadow-md hover:opacity-90 transition">
-                Participe da Pesquisa
-              </button>
-            </div>
           </div>
-        
-        
-            <!-- Imagem -->
-            <div class="flex justify-center md:justify-end">
-              <img src="/mockup.png" alt="Mockup do app" class="w-[500px] sm:w-[560px] md:w-[620px] lg:w-[680px] h-auto" />
-            </div>
-          </div>
-        </section>
-        
-         <!-- Seção: Benefícios -->
-          <section class="bg-white py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-              <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-12">
-                Por que escolher nosso software?
-              </h2>
-        
-              <!-- Cards -->
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                <!-- Card 1 -->
-                <div class="bg-white shadow-md rounded-lg p-6 text-left flex flex-col gap-3">
-                  <div class="flex items-center gap-3">
-                    <img src="/camera.png" alt="Ícone 1" class="w-6 h-6">
-                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Registro Fotográfico Inteligente</h3>
-                  </div>
-                  <p class="text-sm md:text-base text-gray-700">
-                    <span class="text-blue-600 font-medium">Capture e armazenamento seguro de imagens das lesões</span>, permitindo acompanhamento visual detalhado ao longo do tempo.
-                  </p>
-                </div>
-        
-                <!-- Card 2 -->
-                <div class="bg-white shadow-md rounded-lg p-6 text-left flex flex-col gap-3">
-                  <div class="flex items-center gap-3">
-                    <img src="/form.png" alt="Ícone 2" class="w-6 h-6">
-                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Atendimento Simplificado</h3>
-                  </div>
-                  <p class="text-sm md:text-base text-gray-700">
-                    Cadastro de pacientes, anamnese guiada e assinatura digital de termo de consentimento, tudo em um só lugar.
-                  </p>
-                </div>
-        
-                <!-- Card 3 -->
-                <div class="bg-white shadow-md rounded-lg p-6 text-left flex flex-col gap-3">
-                  <div class="flex items-center gap-3">
-                    <img src="/lock.png" alt="Ícone 3" class="w-6 h-6">
-                    <h3 class="font-semibold text-base md:text-lg text-gray-900">Segurança e Conformidade</h3>
-                  </div>
-                  <p class="text-sm md:text-base text-gray-700">
-                    Proteção total dos dados de saúde com criptografia avançada, controle de acessos e auditoria contínua, seguindo as diretrizes da LGPD.
-                  </p>
-                </div>
+
+          <!-- Coluna direita com dois cards -->
+          <div class="flex flex-col gap-6">
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6">
+              <div class="flex items-center gap-2 mb-2">
+                <img src="/etapa-2.png" alt="Etapa 2" class="w-8 h-8">
               </div>
-        
-              <!-- Botão -->
-              <button class="border border-blue-800 text-blue-800 px-6 py-2 rounded-md text-sm font-medium hover:bg-blue-800 hover:text-white transition">
-                Saber mais
-              </button>
-            </div>
-          </section>
-        
-        <!-- Seção: Atenção Primária -->
-        <section class="bg-[#FBFBFB] py-20">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
-            
-            <!-- Imagem -->
-            <div class="flex justify-center md:justify-start w-full md:w-1/2">
-              <img src="/atencao-primaria.png" alt="Imagem Atenção Primária" class="rounded-lg w-full max-w-md object-cover shadow-md">
-            </div>
-        
-            <!-- Conteúdo -->
-            <div class="w-full md:w-1/2 flex flex-col items-center md:items-start">
-              <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold text-blue-600 mb-2">
-                Atenção Primária:
-              </h2>
-              <h3 class="text-lg md:text-xl font-medium text-gray-800 mb-4">
-                O Primeiro Passo na Prevenção do Câncer de Pele
-              </h3>
-              <p class="text-gray-700 text-sm md:text-base leading-relaxed max-w-md">
-                A detecção precoce do câncer de pele aumenta as chances de tratamento e reduz complicações.
-                A triagem permite identificar lesões suspeitas rapidamente, agilizando o encaminhamento e
-                melhorando os resultados. Com tecnologia, como o Derma Cam, esse processo se torna mais
-                acessível e eficiente.
+              <h3 class="text-[#013F7A] text-[32px] md:text-[34px]	 font-bold mb-2">Atendimento Simplificado</h3>
+              <p class="text-[#031E21] text-base">
+                Cadastro de pacientes, anamnese guiada e assinatura digital do termo de consentimento, tudo em um só lugar
               </p>
             </div>
-          </div>
-        </section>
-        
-        <!-- Sessão: "Como Funciona?" -->
-        <section class="py-12 bg-white">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <!-- Grid de 2 colunas (sem items-center para não centralizar verticalmente) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-              
-              <!-- Coluna Esquerda: Título/Subtítulo centralizados na horizontal -->
-              <div class="flex justify-center">
-                <!-- Contêiner que define a largura máxima e centraliza o texto -->
-                <div class="text-center max-w-md">
-                  <h2 class="text-2xl sm:text-3xl font-bold text-[#101828]">
-                    Como funciona?
-                  </h2>
-                  <p class="mt-2 text-base sm:text-lg text-[#667085]">
-                    Lorem Ipsum Dolor sit amet lorem ipsum dolor sit
-                  </p>
-                </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-2xl shadow-sm p-6">
+              <div class="flex items-center gap-2 mb-2">
+                <img src="/etapa-3.png" alt="Etapa 2" class="w-8 h-8">
               </div>
-              
-              <!-- Coluna Direita: Imagem (3 passos) -->
-              <div class="flex justify-center md:justify-end">
-                <img
-                  src="/Frame 53.png"
-                  alt="Descrição da imagem"
-                  class="w-full max-w-md h-auto"
-                />
-              </div>
-              
+              <h3 class="text-[#013F7A] text-[32px] md:text-[34px]	 font-bold mb-2">Segurança e Conformidade</h3>
+              <p class="text-[#031E21] text-base">
+                Proteção total dos dados de saúde com criptografia avançada, controle de acessos e auditoria contínua, seguindo as diretrizes da LGPD.
+              </p>
             </div>
-          </div>
-        </section>
-        
-        <!-- Seção: Sobre o Projeto -->
-        <section class="bg-[#5F84A1] py-20">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-            <!-- Conteúdo principal com texto e imagem -->
-            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 mb-12">
-              
-              <!-- Texto -->
-              <div class="flex flex-col justify-center h-full">
-                <h2 class="text-white text-xl md:text-2xl lg:text-3xl font-semibold mb-4">
-                  Sobre o Projeto
-                </h2>
-                <p class="text-white text-sm md:text-base leading-relaxed">
-                  O Derma Cam é um projeto voltado para a triagem de pacientes com suspeita de câncer de pele, 
-                  facilitando a identificação precoce e o encaminhamento adequado. Desenvolvido pelo Lab Livre 
-                  em parceria com a UnB e a FAP-DF, o projeto busca aprimorar o atendimento primário por meio 
-                  da tecnologia, tornando o diagnóstico mais acessível e eficiente.
-                </p>
-              </div>
-        
-              <!-- Imagem -->
-              <div class="flex justify-center md:justify-end">
-                <img src="/Group 20.png" alt="Logos dos parceiros" class="w-full max-w-md h-auto" />
-              </div>
-            </div>
-        
-            <!-- Botão -->
-            <div class="flex justify-center">
-              <a href="#" class="bg-white text-[#5F84A1] text-sm font-medium px-6 py-2 rounded-md border border-white hover:bg-opacity-90 transition">
-                Entrar em contato
+
+            <!-- Botão centralizado -->
+            <div class="text-center mt-2">
+              <a href="#"
+                class="inline-block border border-[#B7561F] text-[#B7561F] text-base px-7 py-2.5 rounded-full hover:bg-[#B7561F] hover:text-white transition">
+                Saiba Mais
               </a>
             </div>
+
           </div>
-        </section>
-        
-        <!-- Seção: Perguntas Frequentes -->
-        <section class="bg-white py-20">
-          <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-semibold text-[#1A4568] text-center mb-10">
-              Perguntas Frequentes
-            </h2>
-        
-            <div class="space-y-4">
-              <!-- Item -->
-              <details class="group bg-white rounded-md shadow-sm border border-gray-200 px-6 py-4">
-                <summary class="flex justify-between items-center cursor-pointer text-[#1A4568] text-[20px] font-normal list-none">
-                  Como o software auxilia na triagem dermatológica?
-        
-                  <!-- Botão de seta -->
-                  <div class="w-6 h-6 bg-[#0A79D3] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </summary>
-                <p class="mt-2 text-[14px] text-[#6F6F6F]">
-                  O software permite coletar dados do paciente, realizar anamnese guiada e registrar fotos das lesões, facilitando a priorização de casos e agilizando o atendimento médico.
-                </p>
-              </details>
-        
-              <!-- Repetir para os demais -->
-              <details class="group bg-white rounded-md shadow-sm border border-gray-200 px-6 py-4">
-                <summary class="flex justify-between items-center cursor-pointer text-[#1A4568] text-[20px] font-normal list-none">
-                  Preciso de conexão com a internet para usar o app?
-                  <div class="w-6 h-6 bg-[#0A79D3] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </summary>
-                <p class="mt-2 text-[14px] text-[#6F6F6F]">
-                  O aplicativo precisa de conexão com a internet para sincronizar os dados com segurança.
-                </p>
-              </details>
-        
-              <details class="group bg-white rounded-md shadow-sm border border-gray-200 px-6 py-4">
-                <summary class="flex justify-between items-center cursor-pointer text-[#1A4568] text-[20px] font-normal list-none">
-                  Quem pode acessar os dados coletados?
-                  <div class="w-6 h-6 bg-[#0A79D3] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
-                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </div>
-                </summary>
-                <p class="mt-2 text-[14px] text-[#6F6F6F]">
-                  Somente profissionais autorizados e vinculados à instituição de saúde têm acesso aos dados.
-                </p>
-              </details>
-            </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- Seção: Sobre o Projeto -->
+    <section class="bg-white py-16 px-6 md:px-12">
+      <div class="max-w-5xl mx-auto text-center">
+
+        <!-- Título -->
+        <h2 class="text-[#094559] text-2xl md:text-4xl font-bold mb-2">
+          Sobre o Projeto
+        </h2>
+        <p class="text-[#094559] text-lg md:text-xl font-medium mb-10">
+          O Primeiro Passo na Prevenção <br class="md:hidden" />
+          do Câncer de Pele
+        </p>
+
+        <!-- Imagem -->
+        <div class="rounded-2xl overflow-hidden mb-10">
+          <img src="/sobre-projeto.png" alt="Aplicação na pele" class="w-full object-cover">
+        </div>
+
+        <!-- Blocos de texto -->
+        <div class="grid md:grid-cols-2 gap-6">
+          
+          <!-- Texto 1 -->
+          <div class="bg-white rounded-2xl shadow-sm p-6 text-left text-[#031E21] text-base leading-relaxed border border-gray-100">
+            <p>
+              O <strong class="text-[#094559]">DermAlert</strong> é um projeto voltado para a 
+              <strong class="text-[#094559]">triagem de pacientes com suspeita de câncer de pele</strong>, 
+              facilitando a identificação precoce e o encaminhamento adequado.
+            </p>
           </div>
-        </section>
-        
-        <!-- Rodapé -->
-        <footer class="bg-[#0A3970] py-12">
-          <div class="max-w-7xl mx-auto px-4 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            
-            <!-- Logo esquerda -->
-            <div class="flex justify-start md:justify-start">
-              <img src="/logo.png" alt="Logo Dermalert" class="w-40" />
-            </div>
-        
-            <!-- Logos unificadas à direita -->
-            <div class="flex justify-end md:justify-end">
-              <img src="/Group 21.png" alt="Logos UnB e LabLivre" class="w-32 md:w-36 h-auto" />
-            </div>
-        
+
+          <!-- Texto 2 -->
+          <div class="bg-white rounded-2xl shadow-sm p-6 text-left text-[#031E21] text-base leading-relaxed border border-gray-100">
+            <p>
+              Desenvolvido pelo <strong class="text-[#094559]">Lab Livre</strong> em 
+              <strong class="text-[#094559]">parceria com a UnB e a FAP-DF</strong>, 
+              o projeto busca aprimorar o atendimento primário por meio da tecnologia, 
+              tornando o <strong class="text-[#094559]">diagnóstico mais acessível e eficiente</strong>.
+            </p>
           </div>
-        </footer>
-        
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Acesso aos dados de Pesquisa -->
+    <section class="bg-[#FEF1E7] py-16 px-6 md:px-12">
+      <div class="max-w-3xl mx-auto text-center">
+
+        <!-- Título -->
+        <h2 class="text-[#B7561F] text-[32px] md:text-[40px] font-extrabold leading-snug mb-6">
+          Acesso aos dados de Pesquisa
+        </h2>
+
+        <!-- Parágrafo -->
+        <p class="text-[#441306] text-base md:text-lg leading-relaxed mb-8">
+          Explore os dados coletados pelo <strong class="text-[#692200] font-semibold">DermAlert</strong> em atendimentos primários
+          de triagem de lesões de pele.
+          <strong class="font-semibold text-[#692200]">
+            As informações anonimizadas estão disponíveis no CKAN
+          </strong>
+          para consulta e pesquisa acadêmica.
+        </p>
+
+        <!-- Botão -->
+        <a href="#"
+          class="inline-block bg-[#D06A32] text-white text-sm md:text-base font-medium px-6 py-2 rounded-full hover:bg-[#B7561F] transition">
+          Visualizar dados
+        </a>
+
+      </div>
+    </section>
+    
+    <!-- Seção: Perguntas Frequentes -->
+    <section class="bg-white py-20">
+      <div class="max-w-4xl mx-auto px-4">
+        <!-- Título -->
+        <h2 class="text-[32px] md:text-[40px] font-bold text-[#094559] text-center mb-10">
+          Perguntas Frequentes
+        </h2>
+
+        <!-- Bloco de perguntas -->
+        <div class="space-y-4">
+          <!-- Item 1 -->
+          <details class="group bg-white rounded-xl shadow-md px-6 py-4">
+            <summary class="flex justify-between items-center cursor-pointer text-[#094559] text-base md:text-lg font-semibold list-none">
+              Como o software auxilia na triagem dermatológica?
+              <div class="w-6 h-6 border border-[#094559] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
+                <svg class="w-4 h-4 text-[#094559]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <p class="mt-2 text-sm text-[#6F6F6F]">
+              O software permite coletar dados do paciente, realizar anamnese guiada e registrar fotos das lesões, facilitando a priorização de casos e agilizando o atendimento médico.
+            </p>
+          </details>
+
+          <!-- Item 2 -->
+          <details class="group bg-white rounded-xl shadow-md px-6 py-4">
+            <summary class="flex justify-between items-center cursor-pointer text-[#094559] text-base md:text-lg font-semibold list-none">
+              Preciso de conexão com a internet para usar o app?
+              <div class="w-6 h-6 border border-[#094559] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
+                <svg class="w-4 h-4 text-[#094559]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <p class="mt-2 text-sm text-[#6F6F6F]">
+              O aplicativo precisa de conexão com a internet para sincronizar os dados com segurança.
+            </p>
+          </details>
+
+          <!-- Item 3 -->
+          <details class="group bg-white rounded-xl shadow-md px-6 py-4">
+            <summary class="flex justify-between items-center cursor-pointer text-[#094559] text-base md:text-lg font-semibold list-none">
+              Quem pode acessar os dados coletados?
+              <div class="w-6 h-6 border border-[#094559] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
+                <svg class="w-4 h-4 text-[#094559]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </summary>
+            <p class="mt-2 text-sm text-[#6F6F6F]">
+              Somente profissionais autorizados e vinculados à instituição de saúde têm acesso aos dados.
+            </p>
+          </details>
+        </div>
+
+        <!-- Botão -->
+        <div class="text-center mt-10">
+          <a href="#" class="inline-block border border-[#094559] text-[#094559] text-sm font-medium px-6 py-2 rounded-full hover:bg-[#094559] hover:text-white transition">
+            Ver mais
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Rodapé com linha branca no topo -->
+    <!-- Rodapé com linhas brancas -->
+<footer class="bg-[#094559] text-white pt-0">
+  <!-- Linha branca no topo -->
+  <div class="h-[2px] bg-white w-full"></div>
+
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <!-- Logo -->
+    <div class="mb-6">
+      <img src="/logo.png" alt="Logo Dermalert" class="h-8">
+    </div>
+
+    <!-- Linha branca após a logo -->
+    <div class="h-[1px] bg-white w-full my-6"></div>
+
+    <!-- Grade de links -->
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm mb-10">
+      <!-- Coluna 1 -->
+      <div>
+        <h4 class="font-semibold uppercase mb-2">Como Funciona</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Passo a Passo</a></li>
+          <li><a href="#" class="hover:underline">Material Educativo</a></li>
+          <li><a href="#" class="hover:underline">Funcionalidades</a></li>
+        </ul>
+      </div>
+      <!-- Coluna 2 -->
+      <div>
+        <h4 class="font-semibold uppercase mb-2">Ajuda e Suporte</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Obter Acesso</a></li>
+          <li><a href="#" class="hover:underline">Remover Dados</a></li>
+          <li><a href="#" class="hover:underline">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <!-- Coluna 3 -->
+      <div>
+        <h4 class="font-semibold uppercase mb-2">Documentação</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
+          <li><a href="#" class="hover:underline">Quem Somos</a></li>
+          <li><a href="#" class="hover:underline">Apoiadores</a></li>
+        </ul>
+      </div>
+      <!-- Coluna 4 -->
+      <div>
+        <h4 class="font-semibold uppercase mb-2">Curso de Extensão</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Sobre o Curso</a></li>
+          <li><a href="#" class="hover:underline">Como Funciona</a></li>
+          <li><a href="#" class="hover:underline">Inscrição</a></li>
+        </ul>
+      </div>
+      <!-- Coluna 5 -->
+      <div>
+        <h4 class="font-semibold uppercase mb-2">Sobre</h4>
+        <ul class="space-y-1">
+          <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
+          <li><a href="#" class="hover:underline">Contato</a></li>
+        </ul>
       </div>
     </div>
 
-    <!-- Scripts -->
+    <!-- Contato -->
+    <div class="mb-6">
+      <h4 class="font-semibold uppercase text-sm mb-1">Contato</h4>
+      <p class="text-sm">dermalert.ia@gmail.com</p>
+    </div>
 
-    <!-- Nav Desktop/Mobile -->
-    <script>
-      const toggleBtn = document.getElementById("menu-toggle");
-      const mobileMenu = document.getElementById("mobile-menu");
-    
-      toggleBtn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        mobileMenu.classList.toggle("hidden");
-      });
-    
-      document.addEventListener("click", (e) => {
-        const isClickInsideMenu = mobileMenu.contains(e.target);
-        const isClickToggleBtn = toggleBtn.contains(e.target);
-        if (!isClickInsideMenu && !isClickToggleBtn) {
-          mobileMenu.classList.add("hidden");
-        }
-      });
-    </script>
-    <script>
-      function toggleFaq(id) {
-        const answer = document.getElementById(`answer-${id}`);
-        const icon = document.getElementById(`icon-${id}`);
-        const isOpen = !answer.classList.contains('hidden');
-    
-        // Fecha todos
-        for (let i = 1; i <= 3; i++) {
-          document.getElementById(`answer-${i}`).classList.add('hidden');
-          document.getElementById(`icon-${i}`).classList.remove('rotate-180');
-        }
-    
-        // Abre apenas o clicado, se não estava aberto
-        if (!isOpen) {
-          answer.classList.remove('hidden');
-          icon.classList.add('rotate-180');
-        }
-      }
-    </script>
+    <!-- Direitos autorais -->
+    <div class="text-xs text-gray-300">
+      DermAlert © 2025. All rights reserved.
+    </div>
+  </div>
+</footer>
+
 
     <!-- Stylesheet - Vite + Tailwind -->
     <script type="module" src="/src/main.js"></script>

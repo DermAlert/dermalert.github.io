@@ -1,0 +1,49 @@
+/* -------------------------------------------------
+ * Tailwind Directives
+ * ------------------------------------------------- */
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+ 
+ /* -------------------------------------------------
+  * Fontes Personalizadas
+  * ------------------------------------------------- */
+ @font-face {
+   font-family: 'Lexend';
+   src: url('../fonts/Lexend-Regular.ttf') format('truetype');
+   font-weight: 400;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: 'Lexend';
+   src: url('../fonts/Lexend-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+ }
+ 
+ @font-face {
+   font-family: 'Lexend';
+   src: url('../fonts/Lexend-Bold.ttf') format('truetype');
+   font-weight: 700;
+   font-style: normal;
+ }
+ 
+ /* -------------------------------------------------
+  * Estilos Globais
+  * ------------------------------------------------- */
+ body {
+   @apply font-sans;
+ }
+ 
+ /* -------------------------------------------------
+  * Estilos Customizados
+  * ------------------------------------------------- */
+ /* Animação do menu mobile */
+ #mobile-menu.scale-y-0 {
+   transform: scaleY(0);
+ }
+ 
+ #mobile-menu.scale-y-100 {
+   transform: scaleY(1);
+ } 
