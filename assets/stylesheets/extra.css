@@ -100,3 +100,122 @@
 html, body {
   font-family: 'Lexend', sans-serif;
 }
+
+
+
+
+
+
+
+
+/* ============================================================================
+   COMPACT CARD GRID & CARD STYLES
+   - Layout responsivo em grid para cards, com espaçamento uniforme.
+   - Cards limpos, compactos, com truncamento de descrição em 3 linhas.
+   - Fundo, bordas, sombra e transições mantêm um visual leve.
+============================================================================ */
+
+/* --- GRID RESPONSIVO DE CARDS --- */
+.cards-grid {
+  display: grid;
+  gap: 1rem;                               /* espaçamento entre cards */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)                     /* cards adaptáveis, mínimo 220px */
+  );
+  margin-top: 1.5rem;                      /* espaço acima do grid */
+}
+
+/* --- CARD PADRÃO --- */
+.card {
+  background: #20596C !important;          /* fundo igual ao navbar */
+  color: #FFFFFF !important;               /* texto branco para contraste */
+  border-radius: 0.375rem;                 /* cantos levemente arredondados */
+  overflow: hidden;                        /* esconde transbordamentos */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);   /* sombra sutil */
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;         /* animações suaves */
+}
+.card:hover {
+  transform: translateY(-4px);             /* eleva levemente no hover */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);    /* sombra mais intensa */
+}
+
+/* --- IMAGEM DO CARD --- */
+.card-image img {
+  width: 100%;                             /* ocupa toda a largura do card */
+  height: 140px;                           /* altura fixa para uniformidade */
+  object-fit: cover;                       /* recorta e cobre a área */
+}
+
+/* --- ÍCONE SOBREPOSTO (OPCIONAL) --- */
+.card-image-wrapper {
+  position: relative;                      /* para posicionar o ícone */
+}
+.card-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);         /* centraliza e sobrepõe */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;                      /* círculo */
+  background: #FFFFFF;                     /* fundo branco para destaque */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);    /* sombra leve */
+}
+.card-icon img {
+  width: 24px;                             /* ícone proporcional */
+  height: 24px;
+}
+
+/* --- CORPO DO CARD --- */
+.card-body {
+  flex: 1;                                 /* ocupa o espaço restante */
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.75rem 0.75rem;         /* padding reduzido */
+  text-align: center;                      /* centraliza o texto */
+}
+
+/* --- TÍTULO DO CARD --- */
+.card-title {
+  margin-bottom: 0.5rem;                   /* separação do conteúdo abaixo */
+}
+.card-title a {
+  font-size: 0.9rem;                       /* tamanho de fonte ajustado */
+  line-height: 1.2;
+  color: #FFFFFF !important;               /* título em branco */
+  text-decoration: none;                   /* sem sublinhado padrão */
+}
+.card-title a:hover {
+  text-decoration: underline;              /* sublinhado suave no hover */
+  text-decoration-color: rgba(255,255,255,0.7);
+}
+
+/* --- DESCRIÇÃO DO CARD --- */
+.card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;                   /* truncamento em até 3 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;                        /* esconde o texto excedente */
+  font-size: 0.8rem;                       /* fonte pequena e legível */
+  color: rgba(255,255,255,0.85) !important;/* branco semi-transparente */
+  margin: 0 0 0.5rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* --- DATA DO CARD --- */
+.card-date {
+  margin-top: auto;                        /* empurra para o rodapé */
+  font-size: 0.7rem;                       /* fonte bem pequena */
+  color: rgba(255,255,255,0.7) !important; /* branco translúcido */
+  display: flex;
+  align-items: center;
+  justify-content: center;                 /* centra horizontalmente */
+}
