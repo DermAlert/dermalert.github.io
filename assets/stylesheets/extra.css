@@ -1,80 +1,153 @@
+/* ============================================================================
+   HEADER, NAV & FOOTER CUSTOM STYLES
+   - Personalização de cores e layout para header, abas, navegação lateral e rodapé
+   - Sem alteração de valores ou comportamentos originais do tema MkDocs Material
+============================================================================ */
+
+/* --- 1. HEADER BACKGROUND --- */
+/* Define a cor de fundo do cabeçalho */
 .md-header {
-    background-color: #20596C !important; 
-  }
-  
-  .md-header__button.md-logo img {
-    color: #20596C !important;
-  }
-
-  .md-header__title {
-  display: none !important;
-  }
-  
-
-  .md-header__title {
-    font-size: 1.4rem !important;
-    color: #F5F5F5 !important;
+  background-color: #20596C !important;
 }
-  
-  .md-tabs {
-    background-color: #20596C !important; 
-  }
-  
-  .md-tabs__link {
-    color: #F5F5F5 !important;
-  }
 
-  .md-tabs__item {
-    padding: 0 20px;
-    font-weight: 500;
-  }
-  
-  .md-tabs__item--active {
-    border-bottom: 3px solid #9c27b0; 
-  }
-  
-  .md-nav__link {
-    font-weight: 500;
-  }
-  
-  
-  .md-header,
-  .md-tabs,
-  .md-nav__link,
-  .md-tabs__item {
-    transition: all 0.3s ease;
-  }
-  
-  .md-header__button.md-logo img {
-    height: 75px;
-    margin-bottom: 0;
-  }
+/* --- 2. LOGO IMAGE --- */
+/* Ajusta cor, altura e margin-bottom do logo */
+.md-header__button.md-logo img {
+  color: #20596C !important;
+  height: 75px;
+  margin-bottom: 0;
+}
+/* Posiciona o botão de logo à esquerda */
+.md-header__button.md-logo {
+  margin-right: auto;
+}
 
-/* Força layout flex no header */
+/* --- 3. HEADER TITLE --- */
+/* Oculta o título padrão */
+.md-header__title {
+  display: none !important;
+}
+/* Redefine tipografia e cor do título */
+.md-header__title {
+  font-size: 1.4rem !important;
+  color: #F5F5F5 !important;
+}
+
+/* --- 4. TABS --- */
+/* Fundo das abas */
+.md-tabs {
+  background-color: #20596C !important;
+}
+/* Cor dos links das abas */
+.md-tabs__link {
+  color: #F5F5F5 !important;
+}
+/* Espaçamento e peso da fonte dos itens */
+.md-tabs__item {
+  padding: 0 20px;
+  font-weight: 500;
+}
+/* Destaque do item ativo */
+.md-tabs__item--active {
+  border-bottom: 3px solid #9c27b0;
+}
+
+/* --- 5. NAV LINKS --- */
+/* Define peso de fonte das opções de navegação */
+.md-nav__link {
+  font-weight: 500;
+}
+
+/* --- 6. TRANSITIONS --- */
+/* Aplica transições suaves em header, abas e links */
+.md-header,
+.md-tabs,
+.md-nav__link,
+.md-tabs__item {
+  transition: all 0.3s ease;
+}
+
+/* --- 7. HEADER LAYOUT --- */
+/* Força layout flex no container interno do header */
 .md-header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.md-header__button.md-logo {
-  margin-right: auto;
-}
-
+/* Grupo de elementos à direita do header */
 .header-right-group {
   display: flex;
   align-items:end;
   margin-left: auto;
 }
 
+/* --- 8. SEARCH & OPTIONS --- */
+/* Remove margens do campo de busca */
 .md-search {
   margin: 0;
 }
-
+/* Remove margens de opções extras do header */
 .md-header__option {
   margin: 0 !important;
 }
 
+/* --- 9. NAV TITLE (DESKTOP) --- */
+/* Define cor de fundo e texto do título lateral no modo desktop */
+.md-nav__title {
+  background-color: #20596C !important;
+  color: #FFFFFF !important;
+}
+
+/* --- 10. FOOTER --- */
+/* Define cor de fundo e texto do rodapé */
+.md-footer {
+  background-color: #20596C !important;
+  color: #FFFFFF !important;
+}
+/* Ajusta cor dos links do rodapé */
+.md-footer a {
+  color: #FFFFFF !important;
+}
+/* Garante contraste em elementos SVG do rodapé (ex: ícones) */
+.md-footer svg {
+  fill: #FFFFFF !important;
+}
+
+/* ============================================================================
+   MOBILE NAV CUSTOMIZATION
+   - Personaliza o título do menu mobile e o botão "View source"
+   - Aplica fundo #20596C e texto branco
+============================================================================ */
+
+@media screen and (max-width: 76.2344em) {
+  /* Título do menu (hambúrguer) */
+  .md-nav--primary .md-nav__title[for=__drawer] {
+    background-color: #20596C !important;
+    color: #FFFFFF !important;
+  }
+
+  /* Botão "View source" no menu mobile */
+  .md-nav__source {
+    background-color: #20596C !important;
+    color: #FFFFFF !important;
+  }
+
+  /* (Opcional) Links ou ícones internos podem precisar de cor branca também */
+  .md-nav__source a,
+  .md-nav__source svg {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+  }
+}
+
+/* ============================================================================
+   FONT-FACE & GLOBAL FONT
+   - Declara fontes 'Lexend' nos pesos 400 (Regular), 500 (Medium) e 700 (Bold)
+   - Usa formato WOFF2 para melhor performance na web
+   - Aplica 'Lexend' como fonte padrão global em html e body
+============================================================================ */
+
+/* --- 1. @font-face: REGULAR (400) --- */
 @font-face {
   font-family: 'Lexend';
   src: url('../fonts/Lexend-Regular.woff2') format('woff2');
@@ -82,6 +155,7 @@
   font-style: normal;
 }
 
+/* --- 2. @font-face: MEDIUM (500) --- */
 @font-face {
   font-family: 'Lexend';
   src: url('../fonts/Lexend-Medium.woff2') format('woff2');
@@ -89,6 +163,7 @@
   font-style: normal;
 }
 
+/* --- 3. @font-face: BOLD (700) --- */
 @font-face {
   font-family: 'Lexend';
   src: url('../fonts/Lexend-Bold.woff2') format('woff2');
@@ -96,17 +171,25 @@
   font-style: normal;
 }
 
-/* Aplica a Lexend global */
-html, body {
+/* --- 4. APLICAÇÃO GLOBAL --- */
+/* Define 'Lexend' como fonte padrão para todo o documento */
+html,
+body {
   font-family: 'Lexend', sans-serif;
 }
 
+/* ============================================================================
+   MOBILE DRAWER BACKGROUND COLOR
+   - Altera apenas a cor de fundo da sidebar (drawer) em dispositivos móveis
+   - Breakpoint: telas com largura ≤767px
+============================================================================ */
 
-
-
-
-
-
+@media screen and (max-width: 767px) {
+  .md-sidebar.md-sidebar--primary,
+  .md-drawer--primary {
+    background-color: #0A5C67 !important;
+  }
+}
 
 /* ============================================================================
    COMPACT CARD GRID & CARD STYLES
@@ -150,7 +233,7 @@ html, body {
   object-fit: cover;                       /* recorta e cobre a área */
 }
 
-/* --- ÍCONE SOBREPOSTO (OPCIONAL) --- */
+/* --- ÍCONE SOBREPOSTO --- */
 .card-image-wrapper {
   position: relative;                      /* para posicionar o ícone */
 }
