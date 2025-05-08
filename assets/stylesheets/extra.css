@@ -91,13 +91,6 @@
   margin: 0 !important;
 }
 
-/* --- 9. NAV TITLE (DESKTOP) --- */
-/* Define cor de fundo e texto do título lateral no modo desktop */
-.md-nav__title {
-  background-color: #20596C !important;
-  color: #FFFFFF !important;
-}
-
 /* --- 10. FOOTER --- */
 /* Define cor de fundo e texto do rodapé */
 .md-footer {
@@ -137,6 +130,11 @@
   .md-nav__source svg {
     color: #FFFFFF !important;
     fill: #FFFFFF !important;
+  }
+  /* Define cor de fundo e texto do título lateral no modo mobile */
+  .md-nav__title {
+    background-color: #20596C !important;
+    color: #FFFFFF !important;
   }
 }
 
