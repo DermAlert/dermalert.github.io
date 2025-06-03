@@ -83,33 +83,164 @@
 
     </header>
 
-    <section id="hero" class="bg-[#FFFEF5] px-[24px] md:px-[120px] py-[32px] h-auto lg:h-[692px] flex items-center">
-  <div class="max-w-[1440px] mx-auto flex flex-col-reverse lg:flex-row items-center gap-[48px] w-full">
-    
-    <!-- Texto -->
-    <div class="w-full lg:w-1/2">
-      <h1 class="text-[#B7561F] text-[34px] md:text-[44px] font-bold leading-tight mb-6">
-        Etapas simples,<br />
-        seguras e guiadas
-      </h1>
-      <p class="text-[#031E21] text-[16px] md:text-lg leading-relaxed mb-[32px] max-w-[500px]">
-        O DermAlert é uma plataforma digital de triagem dermatológica que orienta o agente de saúde por etapas simples, seguras e guiadas — do cadastro até o encaminhamento médico, facilitando o diagnóstico precoce de lesões suspeitas.
-      </p>
-      <a href="#" class="inline-flex items-center justify-center text-white text-base font-medium bg-[#D06A32] hover:bg-[#b85424] transition h-[56px] min-w-[240px] px-[20px] py-[12px] rounded-[50px] shadow-md">
-        Saber Mais
-      </a>
+    <section class="bg-[#FFEFE5] py-20">
+        <div class="max-w-7xl mx-auto px-6 mt-12 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+            <!-- Texto à esquerda -->
+            <div class="w-full md:w-1/2 text-left md:text-left">
+
+                <div class="mt-[36px]">
+                    <h2 style="font-size: 56px;" class="leading-[56px] font-bold text-[#B7561F] mb-[32px]">
+                    Etapas simples,<br class="hidden md:block" />
+                    seguras e guiadas
+                    </h2>
+
+                    <p style="font-family: 'DM Sans', sans-serif; font-size: 18px;" class="leading-[23px] font-bold text-[#4D4D4D] mb-[32px] max-w-xl">
+                        O DermAlert é uma plataforma digital de triagem dermatológica que orienta o agente de saúde por etapas simples, seguras e guiadas — do cadastro até o encaminhamento médico, facilitando o diagnóstico precoce de lesões suspeitas.
+                    </p>
+
+                    <div class="text-left">
+                    <a href="#"
+                        class="inline-flex items-center justify-center bg-[#D06A32] text-white text-sm font-medium rounded-[50px] 
+                                px-[20px] py-[12px] border border-[#D06A32] hover:bg-[#b35627] transition"
+                        style="width: 240px; height: 56px;">
+                        Saber Mais
+                    </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Imagem à direita -->
+            <div class="w-full md:w-1/2">
+                <img src="comofunciona/img-hero-etapas.png" alt="Interface da plataforma DermAlert" class="w-full h-auto max-w-[500px] mx-auto md:mx-0" />
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="bg-white py-20">
+    <h2 style="font-size: 48px;" class="text-3xl font-bold text-[#2D7E99] mb-12 text-center lg:text-left">
+        Como funciona
+    </h2>
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-start justify-between gap-12">
+        <!-- Cards + descrição -->
+        <div class="w-full lg:w-1/2 space-y-8" id="steps"></div>
+
+        <!-- Imagem da direita -->
+        <div class="w-full lg:w-1/2 flex justify-center space-y-8">
+        <img id="stepImage" src="comofunciona/step1.png" alt="Etapa 1"
+            class="max-w-full h-auto transition-opacity duration-500 opacity-100">
+        </div>
+    </div>
+    </section>
+
+    <section id="curso-extensao" class="bg-[#F7F7F7] py-16 px-4 text-center">
+    <div class="w-full max-w-[700px] mx-auto flex flex-col items-center">
+        <h2 class="text-[#20596C] text-[48px] font-bold mb-6">
+        Curso de Extensão DermAlert
+        </h2>
+        <p class="text-[#20596C] text-[24px] font-medium leading-normal mb-10 whitespace-pre-line">
+        Inscreva-se no curso de extensão do<br>
+        DermAlert e entenda como a tecnologia pode<br>
+        transformar o atendimento dermatológico.
+        </p>
+        <div class="mt-8 text-center">
+        <div class="text-center">
+            <a href="#"
+            class="inline-flex items-center justify-center bg-[#2D7E99] text-white text-sm font-medium rounded-[50px] 
+                    px-[20px] py-[12px] border border-[#2D7E99] hover:bg-[#20596C] hover:border-[#20596C] transition"
+            style="width: 240px; height: 56px;">
+            Acessar documentação
+            </a>
+        </div>
     </div>
 
-    <!-- Imagem da direita -->
-    <div class="w-full lg:w-1/2 flex justify-center">
-      <img src="comofunciona/hero-mockup.png" alt="Mockup da plataforma DermAlert" class="w-[489px] h-auto" />
     </div>
+    </section>
 
+    <!-- Sessão da esteira de imagens com espaçamento ajustado e conteúdo centralizado -->
+    <section class="bg-white py-16">
+      <div class="overflow-hidden">
+        <div class="flex justify-center">
+          <span class="inline-block px-4">
+            <img src="comofunciona/vantagens/vantagem1.png" alt="Vantagem 1" class="h-24" />
+          </span>
+          <span class="inline-block px-4">
+            <img src="comofunciona/vantagens/vantagem2.png" alt="Vantagem 2" class="h-24" />
+          </span>
+          <span class="inline-block px-4">
+            <img src="comofunciona/vantagens/vantagem3.png" alt="Vantagem 3" class="h-24" />
+          </span>
+          <span class="inline-block px-4">
+            <img src="comofunciona/vantagens/vantagem4.png" alt="Vantagem 4" class="h-24" />
+          </span>
+        </div>
+      </div>
+      
+    </section>
+
+   <section class="bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+
+      <!-- LADO ESQUERDO: USANDO GRID PARA CONTROLE DE ESPAÇAMENTO -->
+      <div class="grid gap-y-[56px]">
+        <!-- TÍTULO -->
+        <h2 class="text-[48px] leading-[100%] font-lexend font-bold text-[#20596C] mb-12">
+          Quer conhecer o <span class="whitespace-nowrap">Dermalert na prática?</span>
+        </h2>
+
+        <!-- BLOCO DE BOTÕES COM GAP HORIZONTAL DE 24px -->
+        <div class="flex space-x-4">
+          <!-- Botão 1: fundo #094559, texto branco -->
+          <a href="#" class="inline-flex items-center justify-center text-sm font-medium rounded-[50px] px-[20px] py-[12px] border border-[#094559] bg-[#094559] text-white hover:bg-[#20596C] hover:border-[#20596C] transition" style="width: 240px; height: 56px;">Se torne parceiro</a>
+
+          <!-- Botão 2: fundo branco, texto #094559 -->
+          <a href="#" class="inline-flex items-center justify-center text-sm font-medium rounded-[50px] px-[20px] py-[12px] border-4 border-[#094559] bg-white text-[#094559] shadow-[0_0_0_3px_rgba(9,69,89,0.25)] hover:bg-[#20596C] hover:border-[#20596C] hover:text-white transition" style="width: 240px; height: 56px; border-color: #094559;">
+            Entrar em Contato
+          </a>
+        </div>
+      </div>
+
+      <!-- LADO DIREITO: IMAGEM -->
+      <div class="w-full">
+        <img src="comofunciona/medico.png" alt="Médico segurando celular" class="w-full h-auto rounded-lg object-cover" />
+      </div>
+
+    </div>
   </div>
 </section>
 
 
 
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <!-- Rodapé -->
     <footer class="bg-[#094559] text-white pt-0">
     <!-- Linha branca no topo -->
@@ -207,5 +338,81 @@
     </footer>
 
     <!-- Stylesheet - Vite + Tailwind -->
+
+    <!-- script como funciona -->
+    <script>
+        const steps = [
+            {
+            title: "Login e Identificação",
+            description: "O usuário acessa a plataforma e realiza login, é identificado como um novo ou antigo paciente."
+            },
+            {
+            title: "Cadastros e Consentimento",
+            description: "O agente de saúde realiza os cadastros necessários e colhe os devidos consentimentos."
+            },
+            {
+            title: "Anamnese Guiada",
+            description: "Etapa de anamnese guiada para levantamento dos dados clínicos relevantes."
+            },
+            {
+            title: "Triagem e Classificação",
+            description: "A plataforma realiza a triagem automática e classifica os casos de risco."
+            },
+            {
+            title: "Encaminhamento",
+            description: "Os casos classificados como prioritários são encaminhados ao médico responsável."
+            }
+        ];
+
+        const stepsContainer = document.getElementById("steps");
+
+        function renderSteps(activeIndex = 1) {
+            stepsContainer.innerHTML = "";
+
+            steps.forEach((step, index) => {
+            const i = index + 1;
+            const wrapper = document.createElement("div");
+            wrapper.className = "block w-full"; // <-- ADICIONE ESTA LINHA AQUI
+            const img = document.createElement("img");
+            img.src = activeIndex === i
+                ? `comofunciona/cards/step${i}_select.png`
+                : `comofunciona/cards/step${i}.png`;
+            img.alt = step.title;
+            img.className = "cursor-pointer w-full max-w-full";
+            img.onclick = () => renderSteps(i);
+
+            wrapper.appendChild(img);
+
+            if (activeIndex === i) {
+                const desc = document.createElement("p");
+                desc.className = "mt-2 ml-4 max-w-md";
+                desc.setAttribute("style", "font-family: 'DM Sans', sans-serif; font-size: 18px; line-height: 100%; color: #094559;  margin-left: 12px;");
+                desc.textContent = step.description;
+                wrapper.appendChild(desc);
+            }
+
+            stepsContainer.appendChild(wrapper);
+            });
+
+            const imgRight = document.getElementById("stepImage");
+            imgRight.classList.remove("opacity-100");
+            imgRight.classList.add("opacity-0");
+
+            setTimeout(() => {
+            imgRight.src = `comofunciona/step${activeIndex}.png`;
+            imgRight.alt = `Etapa ${activeIndex}`;
+            }, 200);
+
+            imgRight.onload = () => {
+            setTimeout(() => {
+                imgRight.classList.remove("opacity-0");
+                imgRight.classList.add("opacity-100");
+            }, 100);
+            };
+        }
+
+        renderSteps(1); // Inicializa com a primeira etapa
+    </script>
+
   </body>
 </html>
