@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dermalert</title>
+  </head>
+  <body class="font-[Lexend] antialiased bg-white text-gray-800">
+    <!-- Header fixo no topo com menu hambúrguer responsivo -->
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-[#094559] shadow-sm shadow-gray-400 z-50">
+      
+      <div class="max-w-7xl mx-auto flex items-center justify-between py-[24px] md:py-[32px] px-6">
+        
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <img src="/logo.png" alt="DERMALERT" class="h-[24px] w-auto md:h-[30px] md:w-[114px]" />
+          </a>
+        </div>
+
+        <!-- Botão do menu hambúrguer (visível no mobile) -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none z-50">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <!-- Menu principal (visível em telas médias e maiores) -->
+        <nav class="hidden md:flex flex-row items-center space-x-10 text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
+          <a href="comofunciona.html" class="hover:underline hover:decoration-[#D06A32] transition">
+            Como Funciona
+          </a>
+          <a href="../../ajuda-e-suporte/problemas-comuns/" class="hover:underline hover:decoration-[#D06A32] transition">
+            Ajuda e Suporte
+          </a>
+          <a href="../../curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
+            Curso de Extensão
+          </a>
+          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
+            Documentação
+          </a>
+          <a href="sobre.html" class="hover:underline hover:decoration-[#D06A32] transition">
+            Sobre
+          </a>
+        </nav>
+
+        <!-- Botão de ação (visível apenas em telas grandes) -->
+        <div class="hidden lg:inline-block">
+          <a href="#" 
+            class="px-[20px] py-[12px] rounded-full text-base font-normal tracking-[0.5px] text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]">
+            Participar da Pesquisa
+          </a>
+        </div>
+      
+      </div>
+
+      <!-- Menu Mobile (aparece ao clicar no botão) -->
+      <div id="mobile-menu"
+        class="hidden md:hidden scale-y-0 origin-top transition-transform duration-300 bg-[#094559] text-center text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
+        
+        <a href="comofunciona.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Como Funciona
+        </a>
+        <a href="../../ajuda-e-suporte/problemas-comuns/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Ajuda e Suporte
+        </a>
+        <a href="../../curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Curso de Extensão
+        </a>
+        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Documentação
+        </a>
+        <a href="sobre.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Sobre
+        </a>
+      </div>
+
+    </header>
+
+    <section class="bg-[#FFEFE5] py-12 md:py-20">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 mt-12 flex flex-col md:flex-row items-center gap-12">
+    
+    <!-- Texto (sempre vem primeiro em mobile) -->
+    <div class="w-full md:w-1/2">
+      <div class="mt-9">
+        <h2 class="text-[40px] md:text-[56px] leading-tight md:leading-[56px] font-bold text-[#B7561F] mb-8">
+          Etapas simples,<br class="hidden md:block" />
+          seguras e guiadas
+        </h2>
+        <p class="font-dmsans text-[16px] md:text-[18px] leading-[24px] md:leading-[23px] font-bold text-[#4D4D4D] mb-8 max-w-xl">
+          O DermAlert é uma plataforma digital de triagem dermatológica que orienta o agente de saúde por etapas simples, seguras e guiadas — do cadastro até o encaminhamento médico, facilitando o diagnóstico precoce de lesões suspeitas.
+        </p>
+        <a
+          href="#"
+          class="inline-flex items-center justify-center bg-[#D06A32] text-white text-sm md:text-base font-medium rounded-[50px]
+                 w-[240px] h-[56px] px-5 py-3 border border-[#D06A32] hover:bg-[#b35627] transition
+                 mx-auto md:mx-0"
+        >
+          Saber Mais
+        </a>
+      </div>
+    </div>
+
+    <!-- Imagem (fica abaixo do texto em mobile, ao lado em md+) -->
+    <div class="w-full md:w-1/2">
+      <img
+        src="comofunciona/img-hero-etapas.png"
+        alt="Interface da plataforma DermAlert"
+        class="w-full h-auto max-w-[500px] mx-auto md:mx-0 rounded-[8px]"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+    <section class="bg-white py-20">
+    <h2 style="font-size: 48px;" class="text-3xl font-bold text-[#2D7E99] mb-12 text-center lg:text-center">
+        Como funciona
+    </h2>
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center :items-start justify-between gap-12">
+        <!-- Cards + descrição -->
+        <div class="w-[300px] md:w-[450px] lg:w-1/2 space-y-8" id="steps"></div>
+
+        <!-- Imagem da direita -->
+        <div class="w-full lg:w-1/2 flex justify-center space-y-8">
+        <img id="stepImage" src="comofunciona/step1.png" alt="Etapa 1"
+            class="max-w-full h-[300px] md:h-[600px] transition-opacity duration-500 opacity-100">
+        </div>
+    </div>
+    </section>
+
+    <section id="curso-extensao" class="bg-[#F7F7F7] py-16 px-4 text-center">
+    <div class="w-full mx-auto flex flex-col items-center">
+        <h2 class="max-w-[1000px] text-[#20596C] text-[40px] md:text-[48px] font-bold">
+        Curso de Extensão DermAlert
+        </h2>
+        <p class="max-w-[700px] text-[#20596C] text-[18px] md:text-[24px] font-medium leading-normal mb-6 whitespace-pre-line">
+        Inscreva-se no curso de extensão do
+        DermAlert e entenda como a tecnologia pode
+        transformar o atendimento dermatológico.
+        </p>
+        <div class="text-center">
+        <div class="text-center">
+            <a href="#"
+            class="inline-flex items-center justify-center bg-[#2D7E99] text-white text-sm font-medium rounded-[50px] 
+                    px-[20px] py-[12px] border border-[#2D7E99] hover:bg-[#20596C] hover:border-[#20596C] transition"
+            style="width: 240px; height: 56px;">
+            Acessar documentação
+            </a>
+        </div>
+    </div>
+
+    </div>
+    </section>
+
+     <!-- Sessão de vantagens redesenhada para manter todas as “cards” totalmente visíveis em qualquer tela -->
+    <section class="bg-white py-8 md:py-16">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-wrap justify-center gap-4">
+          
+          <!-- Cada “card” foi colocado dentro de um DIV com largura responsiva para nunca ser cortado -->
+          <div class="w-1/2 sm:w-1/4 lg:w-1/5 px-2">
+            <img
+              src="comofunciona/vantagens/vantagem1.png"
+              alt="Acompanhamento das lesões"
+              class="w-full h-auto"
+            />
+          </div>
+          
+          <div class="w-1/2 sm:w-1/4 lg:w-1/5 px-2">
+            <img
+              src="comofunciona/vantagens/vantagem2.png"
+              alt="Maior precisão na triagem"
+              class="w-full h-auto"
+            />
+          </div>
+          
+          <div class="w-1/2 sm:w-1/4 lg:w-1/5 px-2">
+            <img
+              src="comofunciona/vantagens/vantagem3.png"
+              alt="Segurança dos dados"
+              class="w-full h-auto"
+            />
+          </div>
+          
+          <div class="w-1/2 sm:w-1/4 lg:w-1/5 px-2">
+            <img
+              src="comofunciona/vantagens/vantagem4.png"
+              alt="Navegação Simples"
+              class="w-full h-auto"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+   <section class="bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+
+      <!-- LADO ESQUERDO: TÍTULO E BOTÕES -->
+      <div class="grid gap-y-8">
+        <!-- TÍTULO -->
+        <h2 class="text-2xl sm:text-3xl md:text-[48px] leading-tight font-lexend font-bold text-[#20596C] text-center md:text-left">
+          Quer conhecer o <span class="whitespace-nowrap">DermAlert na prática?</span>
+        </h2>
+
+        <!-- BLOCO DE BOTÕES (empilha no mobile, alinha em linha no sm+) -->
+        <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 items-center md:items-start">
+          <!-- Botão 1: fundo #094559, texto branco -->
+          <a
+            href="#"
+            class="inline-flex items-center justify-center text-sm sm:text-base font-medium rounded-[50px]
+                   w-[240px] sm:w-auto h-14 px-6 py-3 border border-[#094559] bg-[#094559] text-white
+                   hover:bg-[#20596C] hover:border-[#20596C] transition"
+          >
+            Se torne parceiro
+          </a>
+
+          <!-- Botão 2: fundo branco, texto #094559 -->
+          <a
+            href="#"
+            class="inline-flex items-center justify-center text-sm sm:text-base font-medium rounded-[50px]
+                   w-[240px] sm:w-auto h-14 px-6 py-3 border-4 border-[#094559] bg-white text-[#094559] 
+                   shadow-[0_0_0_3px_rgba(9,69,89,0.25)] hover:bg-[#20596C] hover:border-[#20596C] hover:text-white transition"
+          >
+            Entrar em Contato
+          </a>
+        </div>
+      </div>
+
+      <!-- LADO DIREITO: IMAGEM -->
+      <div class="w-full flex justify-center md:justify-end">
+        <img
+          src="comofunciona/medico.png"
+          alt="Médico segurando celular"
+          class="w-full max-w-[400px] sm:max-w-[500px] md:max-w-none h-auto rounded-lg object-cover"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Rodapé -->
+    <footer class="bg-[#094559] text-white pt-0">
+    <!-- Linha branca no topo -->
+    <div class="h-[2px] bg-white w-full"></div>
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Logo -->
+        <div class="mb-6">
+        <img src="/logo.png" alt="Logo Dermalert" class="h-8">
+        </div>
+
+        <!-- Linha branca após a logo -->
+        <div class="h-[1px] bg-white w-full my-6"></div>
+
+        <!-- Grade de links -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm mb-10">
+        <!-- Coluna 1 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Como Funciona</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Passo a Passo</a></li>
+            <li><a href="#" class="hover:underline">Material Educativo</a></li>
+            <li><a href="#" class="hover:underline">Funcionalidades</a></li>
+            </ul>
+        </div>
+        <!-- Coluna 2 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Ajuda e Suporte</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Obter Acesso</a></li>
+            <li><a href="#" class="hover:underline">Remover Dados</a></li>
+            <li><a href="#" class="hover:underline">Perguntas Frequentes</a></li>
+            </ul>
+        </div>
+        <!-- Coluna 3 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Documentação</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
+            <li><a href="#" class="hover:underline">Quem Somos</a></li>
+            <li><a href="#" class="hover:underline">Apoiadores</a></li>
+            </ul>
+        </div>
+        <!-- Coluna 4 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Curso de Extensão</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Sobre o Curso</a></li>
+            <li><a href="#" class="hover:underline">Como Funciona</a></li>
+            <li><a href="#" class="hover:underline">Inscrição</a></li>
+            </ul>
+        </div>
+        <!-- Coluna 5 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Sobre</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
+            <li><a href="#" class="hover:underline">Contato</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="mb-6">
+        <h4 class="font-semibold uppercase text-sm mb-1">Redes Sociais</h4>
+        <div class="flex items-center space-x-4">
+            <!-- GitHub -->
+            <a href="https://github.com/DermAlert" target="_blank" aria-label="GitHub" class="hover:text-gray-200">
+            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.113.82-.26.82-.577v-2.17c-3.34.727-4.04-1.61-4.04-1.61-.546-1.387-1.33-1.756-1.33-1.756-1.09-.745.082-.73.082-.73 1.2.084 1.83 1.234 1.83 1.234 1.07 1.83 2.8 1.3 3.49.993.11-.775.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.12 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.82.12 3.12.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.63-5.47 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .297"/>
+            </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com/DermAlert" target="_blank" aria-label="Instagram" class="hover:text-gray-200">
+            <svg class="w-5 h-5 fill-white" viewBox="0 0 448 512">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 186c-39.4 0-71.1-31.7-71.1-71.1S184.7 184.8 224.1 184.8 295.2 216.5 295.2 255.9 263.5 327 224.1 327zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.2-36.2-93.5s-57.8-34.5-93.5-36.2c-37-2.1-147.9-2.1-184.9 0-35.7 1.7-67.2 9.9-93.5 36.2S9.9 126.9 8.2 162.6c-2.1 37-2.1 147.9 0 184.9 1.7 35.7 9.9 67.2 36.2 93.5s57.8 34.5 93.5 36.2c37 2.1 147.9 2.1 184.9 0 35.7-1.7 67.2-9.9 93.5-36.2s34.5-57.8 36.2-93.5c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.7 102.9-9 132.3z"/>
+            </svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- Contato -->
+        <div class="mb-6">
+        <h4 class="font-semibold uppercase text-sm mb-1">Contato</h4>
+        <p class="text-sm">
+            <a href="mailto:caguiar@unb.br" class="hover:underline">caguiar@unb.br</a>
+        </p>      
+        </div>
+
+        <!-- Direitos autorais -->
+        <div class="text-xs text-gray-300">
+        DermAlert © 2025. All rights reserved.
+        </div>
+    </div>
+    </footer>
+
+    <!-- Stylesheet - Vite + Tailwind -->
+    <script type="module" src="/src/main.js"></script>
+
+    <!-- script como funciona -->
+    <script>
+        const steps = [
+            {
+            title: "Login e Identificação",
+            description: "O usuário acessa a plataforma e realiza login, é identificado como um novo ou antigo paciente."
+            },
+            {
+            title: "Cadastros e Consentimento",
+            description: "O agente de saúde realiza os cadastros necessários e colhe os devidos consentimentos."
+            },
+            {
+            title: "Anamnese Guiada",
+            description: "Etapa de anamnese guiada para levantamento dos dados clínicos relevantes."
+            },
+            {
+            title: "Triagem e Classificação",
+            description: "A plataforma realiza a triagem automática e classifica os casos de risco."
+            },
+            {
+            title: "Encaminhamento",
+            description: "Os casos classificados como prioritários são encaminhados ao médico responsável."
+            }
+        ];
+
+        const stepsContainer = document.getElementById("steps");
+
+        function renderSteps(activeIndex = 1) {
+            stepsContainer.innerHTML = "";
+
+            steps.forEach((step, index) => {
+            const i = index + 1;
+            const wrapper = document.createElement("div");
+            wrapper.className = "block w-full"; // <-- ADICIONE ESTA LINHA AQUI
+            const img = document.createElement("img");
+            img.src = activeIndex === i
+                ? `comofunciona/cards/step${i}_select.png`
+                : `comofunciona/cards/step${i}.png`;
+            img.alt = step.title;
+            img.className = "cursor-pointer w-full max-w-full";
+            img.onclick = () => renderSteps(i);
+
+            wrapper.appendChild(img);
+
+            if (activeIndex === i) {
+                const desc = document.createElement("p");
+                desc.className = "mt-2 ml-4 max-w-md";
+                desc.setAttribute("style", "font-family: 'DM Sans', sans-serif; font-size: 18px; line-height: 100%; color: #094559;  margin-left: 12px;");
+                desc.textContent = step.description;
+                wrapper.appendChild(desc);
+            }
+
+            stepsContainer.appendChild(wrapper);
+            });
+
+            const imgRight = document.getElementById("stepImage");
+            imgRight.classList.remove("opacity-100");
+            imgRight.classList.add("opacity-0");
+
+            setTimeout(() => {
+            imgRight.src = `comofunciona/step${activeIndex}.png`;
+            imgRight.alt = `Etapa ${activeIndex}`;
+            }, 200);
+
+            imgRight.onload = () => {
+            setTimeout(() => {
+                imgRight.classList.remove("opacity-0");
+                imgRight.classList.add("opacity-100");
+            }, 100);
+            };
+        }
+
+        renderSteps(1); // Inicializa com a primeira etapa
+    </script>
+
+  </body>
+</html>

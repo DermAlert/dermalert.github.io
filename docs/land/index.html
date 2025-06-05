@@ -7,235 +7,298 @@
     <title>Dermalert</title>
   </head>
   <body class="font-[Lexend] antialiased bg-white text-gray-800">
-    <!-- Header fixo no topo com menu hamburguer responsivo -->
-    <header id="navbar" class="fixed top-0 left-0 w-full bg-[#20596C] shadow-sm shadow-gray-400 z-50">
-      <div class="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+    <!-- Header fixo no topo com menu hambúrguer responsivo -->
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-[#094559] shadow-sm shadow-gray-400 z-50">
+      
+      <div class="max-w-7xl mx-auto flex items-center justify-between py-[24px] md:py-[32px] px-6">
         
         <!-- Logo -->
         <div class="flex items-center gap-2">
-          <img src="/logo.png" alt="Logo MEPA" class="h-8 w-auto" />
+          <!-- Logo -->
+          <a href="index.html" class="flex items-center gap-2">
+            <img src="/logo.png" alt="DERMALERT" class="h-[24px] w-auto md:h-[30px] md:w-[114px]" />
+          </a>
         </div>
 
         <!-- Botão do menu hambúrguer (visível no mobile) -->
         <button id="menu-toggle" class="md:hidden text-white focus:outline-none z-50">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
+              d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
 
         <!-- Menu principal (visível em telas médias e maiores) -->
-        <nav class="hidden md:flex flex-row items-center space-x-6 text-sm font-medium">
-          <a href="../../como-funciona/como-contribuir/" class="text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32]">
+        <nav class="hidden md:flex flex-row items-center space-x-10 text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
+          <a href="comofunciona.html" class="hover:underline hover:decoration-[#D06A32] transition">
             Como Funciona
           </a>
-          <a href="../../ajuda-e-suporte/problemas-comuns/" class="text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32]">
+          <a href="../../ajuda-e-suporte/problemas-comuns/" class="hover:underline hover:decoration-[#D06A32] transition">
             Ajuda e Suporte
           </a>
-          <a href="../../curso-de-extensao/sobre-o-curso/" class="text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32]">
+          <a href="../../curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
             Curso de Extensão
           </a>
-          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="text-[#F6F6F6] underline decoration-transparent hover:decoration-[#D06A32]">
+          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
             Documentação
+          </a>
+          <a href="sobre.html" class="hover:underline hover:decoration-[#D06A32] transition">
+            Sobre
           </a>
         </nav>
 
         <!-- Botão de ação (visível apenas em telas grandes) -->
         <div class="hidden lg:inline-block">
-          <a href="#" class="px-4 py-2 rounded-full text-sm text-white bg-[#D06A32] hover:bg-[#B7561F] transition border border-[#D06A32]">
+          <a href="#" 
+            class="px-[20px] py-[12px] rounded-full text-base font-normal tracking-[0.5px] text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]">
             Participar da Pesquisa
           </a>
         </div>
+      
       </div>
 
       <!-- Menu Mobile (aparece ao clicar no botão) -->
       <div id="mobile-menu"
-          class="hidden md:hidden scale-y-0 origin-top transition-transform duration-300 bg-[#094559] text-center">
-        <a href="../../como-funciona/como-contribuir/" class="block py-2 text-[#F6F6F6] hover:underline">Como Funciona</a>
-        <a href="../../ajuda-e-suporte/problemas-comuns/" class="block py-2 text-[#F6F6F6] hover:underline">Ajuda e Suporte</a>
-        <a href="../../curso-de-extensao/sobre-o-curso/" class="block py-2 text-[#F6F6F6] hover:underline">Curso de Extensão</a>
-        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 text-[#F6F6F6] hover:underline">Documentação</a>
+        class="hidden md:hidden scale-y-0 origin-top transition-transform duration-300 bg-[#094559] text-center text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
+        
+        <a href="comofunciona.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Como Funciona
+        </a>
+        <a href="../../ajuda-e-suporte/problemas-comuns/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Ajuda e Suporte
+        </a>
+        <a href="../../curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Curso de Extensão
+        </a>
+        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Documentação
+        </a>
+        <a href="sobre.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Sobre
+        </a>
       </div>
+
     </header>
-
-    <section id="hero" class="bg-white py-12 md:py-20">
-      <div class="max-w-6xl mx-auto px-4 text-center flex flex-col items-center">
-        <!-- Logo centralizado -->
-        <img src="/logo-dermalert.png" alt="DERMALERT" class="h-8 mt-8 mb-8">
-
-        <h1 class="text-3xl md:text-5xl font-bold text-[#094559] leading-snug mb-8">
-          Triagem Segura e Inteligente para <br class="hidden md:block" />
-          Diagnósticos Precoces
-        </h1>        
     
-        <!-- Imagem com texto embutido (tamanho reduzido) -->
-        <img src="/hero-image.png"
-        alt="Imagem de celulares com texto embutido"
-        class="rounded-2xl shadow-md w-full max-w-[660px] mx-auto mb-6">
+    <section id="hero" class="bg-white py-8 md:py-20">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col items-center text-center">
 
-        <!-- Bloco de texto compacto -->
-        <div class="bg-white shadow-[0_4px_4px_rgba(0,0,0,0.15)] rounded-2xl px-6 py-4 md:px-8 md:py-5 max-w-md mx-auto">
-          <p class="text-[#1A4568] text-base leading-snug text-center">
-            Registre pacientes, capture imagens e<br>
-            priorize atendimentos com uma <span class="font-semibold text-[#094559]">solução integrada e segura</span>
+        <!-- Logo centralizado (48px de altura, largura automática) -->
+        <img
+          src="/logo-dermalert.png"
+          alt="DERMALERT"
+          class="h-12 w-auto mt-14 md:mt-8 mb-6"
+        />
+
+        <!-- Título principal (textos menores em telas pequenas, maiores em desktop) -->
+        <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-[#094559] leading-tight mb-6">
+          Triagem Segura e Inteligente para<br class="hidden md:block" />
+          Diagnósticos Precoces
+        </h1>
+
+        <!-- Imagem central com largura responsiva -->
+        <img
+          src="/hero-image.png"
+          alt="Imagem de celulares com texto embutido"
+          class="w-full max-w-[700px] sm:max-w-[900px] md:max-w-[1100px] lg:max-w-[1440px] h-auto rounded-[24px] mb-6"
+        />
+
+        <!-- Bloco de texto compacto (padding reduzido em mobile) -->
+        <div
+          class="bg-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] rounded-[27px]
+                px-6 sm:px-8 md:px-12 py-6 sm:py-8 md:py-10
+                max-w-md sm:max-w-lg md:max-w-[605px] mx-auto mb-6"
+        >
+          <p class="text-[#1A4568] text-base sm:text-lg md:text-[27px] leading-[1.4] md:leading-[36px] tracking-[0.5px] font-normal">
+            Registre pacientes, capture imagens e priorize atendimentos com uma
+            <span class="font-bold text-[#094559]">solução integrada e segura</span>
           </p>
         </div>
 
-        <!-- Botão fora do bloco -->
-        <div class="mt-4 text-center">
-          <a href="#"
-            class="inline-block bg-[#D06A32] text-white text-sm font-medium px-4 py-1.5 rounded-full hover:bg-[#B7561F] transition border border-[#D06A32]">
+        <!-- Botão centralizado (tamanho ajustado para dispositivos pequenos) -->
+        <div class="mt-4">
+          <a
+            href="#"
+            class="inline-block px-6 py-3 rounded-full text-sm sm:text-base font-normal tracking-[0.5px]
+                  text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]"
+          >
             Participar da Pesquisa
           </a>
-        </div>
-        
-        <!-- Bloco "Desenvolvido por" com imagem única -->
-        <div class="mt-14 text-center">
-          <p class="text-[#094559] text-sm md:text-base font-medium mb-4">Desenvolvido por:</p>
-          <img src="/dev-by.png" alt="Logos UnB, FAPDF e Lab Livre" class="mx-auto h-12 md:h-14">
         </div>
 
       </div>
     </section>
+
+
     
     <!-- Seção: Por que escolher nosso software -->
-    <section id="nosso-software" class="bg-[#F7F7F7] py-16 px-6 md:px-12">
+    <section id="nosso-software" class="bg-[#F7E5E5] py-8 md:py-16 px-4 md:px-12">
       <div class="max-w-7xl mx-auto">
+
         <!-- Título -->
-        <h2 class="text-[#094559] text-[34px] md:text-[40px] font-bold text-center leading-tight mb-12">
+        <h2 class="text-[#2D7E99] font-bold text-2xl sm:text-3xl md:text-[48px] leading-tight text-center mb-8 md:mb-12">
           Por que escolher nosso software?
         </h2>
 
-        <!-- Grid de 2 colunas: esquerda (imagem), direita (dois cards) -->
-        <div class="grid md:grid-cols-2 gap-8 items-start">
+        <!-- Grid principal: 1 coluna em mobile, 2 em md+ -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
-          <!-- Card com imagem e destaque -->
-          <div class="bg-white rounded-2xl shadow-sm p-4 md:p-6">
-            <img src="/registro-fotografico.png" alt="Registro Fotográfico" class="rounded-xl mb-4" />
-            <div class="flex items-center gap-2 mb-2">
-              <img src="/etapa-1.png" alt="Etapa 2" class="w-8 h-8">
+          <!-- Card 1 -->
+          <div class="bg-[#D06A32] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+            <img
+              src="/registro-fotografico.png"
+              alt="Registro Fotográfico"
+              class="rounded-[24px] mb-4 w-full h-auto max-h-[200px] sm:max-h-[300px] md:max-h-[395px] object-cover"
+            />
+
+            <div class="flex items-center gap-2 mb-4">
+              <img
+                src="/etapa-1.png"
+                alt="Etapa 1"
+                class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
+              />
             </div>
-            <h3 class="text-[#B7561F] text-[32px] md:text-[34px]	 font-bold mb-2">Registro Fotográfico Inteligente</h3>
-            <p class="text-[#441306] text-base">
+
+            <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
+              Registro Fotográfico Inteligente
+            </h3>
+
+            <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
               Captura e armazenamento seguro de imagens das lesões, permitindo acompanhamento visual detalhado ao longo do tempo.
             </p>
           </div>
 
-          <!-- Coluna direita com dois cards -->
-          <div class="flex flex-col gap-6">
+          <!-- Coluna direita: 2 cards empilhados -->
+          <div class="flex flex-col gap-4 sm:gap-6 md:gap-8">
 
             <!-- Card 2 -->
-            <div class="bg-white rounded-2xl shadow-sm p-6">
-              <div class="flex items-center gap-2 mb-2">
-                <img src="/etapa-2.png" alt="Etapa 2" class="w-8 h-8">
+            <div class="bg-[#5B08A3] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+              <div class="flex items-center gap-2 mb-4">
+                <img
+                  src="/etapa-2.png"
+                  alt="Etapa 2"
+                  class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
+                />
               </div>
-              <h3 class="text-[#013F7A] text-[32px] md:text-[34px]	 font-bold mb-2">Atendimento Simplificado</h3>
-              <p class="text-[#031E21] text-base">
-                Cadastro de pacientes, anamnese guiada e assinatura digital do termo de consentimento, tudo em um só lugar
+
+              <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
+                Atendimento Simplificado
+              </h3>
+
+              <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
+                Cadastro de pacientes, anamnese guiada e assinatura digital do termo de consentimento, tudo em um só lugar.
               </p>
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-white rounded-2xl shadow-sm p-6">
-              <div class="flex items-center gap-2 mb-2">
-                <img src="/etapa-3.png" alt="Etapa 2" class="w-8 h-8">
+            <div class="bg-[#2D7E99] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+              <div class="flex items-center gap-2 mb-4">
+                <img
+                  src="/etapa-3.png"
+                  alt="Etapa 3"
+                  class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
+                />
               </div>
-              <h3 class="text-[#013F7A] text-[32px] md:text-[34px]	 font-bold mb-2">Segurança e Conformidade</h3>
-              <p class="text-[#031E21] text-base">
+
+              <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
+                Segurança e Conformidade
+              </h3>
+
+              <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
                 Proteção total dos dados de saúde com criptografia avançada, controle de acessos e auditoria contínua, seguindo as diretrizes da LGPD.
               </p>
             </div>
 
-            <!-- Botão centralizado -->
-            <div class="text-center mt-2">
-              <a href="#"
-                class="inline-block border border-[#B7561F] text-[#B7561F] text-base px-7 py-2.5 rounded-full hover:bg-[#B7561F] hover:text-white transition">
-                Saiba Mais
-              </a>
-            </div>
-
           </div>
+        </div>
+
+        <!-- Botão centralizado -->
+        <div class="mt-8 md:mt-10 text-center">
+          <a
+            href="#"
+            class="inline-block border-2 sm:border-4 border-[#031E21] text-[#031E21] text-sm sm:text-base md:text-base font-medium px-5 sm:px-6 md:px-8 py-2 sm:py-3 md:py-3 rounded-[50px]
+                  hover:bg-[#031E21] hover:text-white transition"
+          >
+            Saiba Mais
+          </a>
         </div>
 
       </div>
     </section>
-    
+
+
     <!-- Seção: Sobre o Projeto -->
-    <section class="bg-white py-16 px-6 md:px-12">
-      <div class="max-w-5xl mx-auto text-center">
+<section class="bg-[#FFEFE5] py-8 md:py-16 px-4 md:px-12">
+  <div class="max-w-4xl mx-auto flex flex-col gap-8">
 
-        <!-- Título -->
-        <h2 class="text-[#094559] text-2xl md:text-4xl font-bold mb-2">
-          Sobre o Projeto
-        </h2>
-        <p class="text-[#094559] text-lg md:text-xl font-medium mb-10">
-          O Primeiro Passo na Prevenção <br class="md:hidden" />
-          do Câncer de Pele
+    <!-- Título -->
+    <div class="text-center">
+      <h2 class="font-bold text-2xl sm:text-3xl md:text-[48px] text-[#B7561F] leading-tight mb-4">
+        Sobre o Projeto
+      </h2>
+      <p class="font-semibold text-[18px] sm:text-[20px] md:text-[24px] text-[#B7561F] leading-tight mb-6">
+        O Primeiro Passo na Prevenção do Câncer de Pele
+      </p>
+    </div>
+    
+    <!-- Imagem -->
+    <div>
+      <img
+        src="/sobre-projeto.png"
+        alt="Aplicação na pele"
+        class="w-full max-w-full md:max-w-[800px] h-auto object-cover rounded-[24px] mx-auto"
+      />
+    </div>
+
+    <!-- Bloco de textos (empilhado em mobile, lado a lado em md+) -->
+    <div class="flex flex-col md:flex-row gap-6 bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] p-4 sm:p-6 md:p-8">
+      <!-- Texto 1 -->
+      <div class="w-full md:w-1/2 text-[#B7561F]">
+        <p class="font-normal text-[20px] sm:text-[24px] leading-[1.4] tracking-[0.5px]">
+          O <strong>DermAlert</strong> é um projeto voltado para a
+          <strong>triagem de pacientes com suspeita de câncer de pele</strong>,
+          facilitando a identificação precoce e o encaminhamento adequado.
         </p>
-
-        <!-- Imagem -->
-        <div class="rounded-2xl overflow-hidden mb-10">
-          <img src="/sobre-projeto.png" alt="Aplicação na pele" class="w-full object-cover">
-        </div>
-
-        <!-- Blocos de texto -->
-        <div class="grid md:grid-cols-2 gap-6">
-          
-          <!-- Texto 1 -->
-          <div class="bg-white rounded-2xl shadow-sm p-6 text-left text-[#031E21] text-base leading-relaxed border border-gray-100">
-            <p>
-              O <strong class="text-[#094559]">DermAlert</strong> é um projeto voltado para a 
-              <strong class="text-[#094559]">triagem de pacientes com suspeita de câncer de pele</strong>, 
-              facilitando a identificação precoce e o encaminhamento adequado.
-            </p>
-          </div>
-
-          <!-- Texto 2 -->
-          <div class="bg-white rounded-2xl shadow-sm p-6 text-left text-[#031E21] text-base leading-relaxed border border-gray-100">
-            <p>
-              Desenvolvido pelo <strong class="text-[#094559]">Lab Livre</strong> em 
-              <strong class="text-[#094559]">parceria com a UnB e a FAP-DF</strong>, 
-              o projeto busca aprimorar o atendimento primário por meio da tecnologia, 
-              tornando o <strong class="text-[#094559]">diagnóstico mais acessível e eficiente</strong>.
-            </p>
-          </div>
-
-        </div>
       </div>
-    </section>
 
-    <!-- Seção: Acesso aos dados de Pesquisa -->
-    <section class="bg-[#FEF1E7] py-16 px-6 md:px-12">
-      <div class="max-w-3xl mx-auto text-center">
-
-        <!-- Título -->
-        <h2 class="text-[#B7561F] text-[32px] md:text-[40px] font-extrabold leading-snug mb-6">
-          Acesso aos dados de Pesquisa
-        </h2>
-
-        <!-- Parágrafo -->
-        <p class="text-[#441306] text-base md:text-lg leading-relaxed mb-8">
-          Explore os dados coletados pelo <strong class="text-[#692200] font-semibold">DermAlert</strong> em atendimentos primários
-          de triagem de lesões de pele.
-          <strong class="font-semibold text-[#692200]">
-            As informações anonimizadas estão disponíveis no CKAN
-          </strong>
-          para consulta e pesquisa acadêmica.
+      <!-- Texto 2 -->
+      <div class="w-full md:w-1/2 text-[#B7561F]">
+        <p class="font-normal text-[16px] sm:text-[18px] md:text-[24px] leading-[1.4] tracking-[0.5px]">
+          Desenvolvido pelo <strong>Lab Livre</strong> em
+          <strong>parceria com a UnB e a FAP-DF</strong>, o projeto busca aprimorar o atendimento primário por meio da tecnologia, tornando o
+          <strong>diagnóstico mais acessível e eficiente</strong>.
         </p>
-
-        <!-- Botão -->
-        <a href="#"
-          class="inline-block bg-[#D06A32] text-white text-sm md:text-base font-medium px-6 py-2 rounded-full hover:bg-[#B7561F] transition">
-          Visualizar dados
-        </a>
-
       </div>
-    </section>
+    </div>
+
+    <!-- Botão -->
+    <div class="text-center">
+      <a
+        href="#"
+        class="inline-flex items-center justify-center bg-[#D06A32] text-white text-[14px] sm:text-base font-medium rounded-[50px]
+               w-[240px] h-[56px] px-5 py-3 border border-[#D06A32] hover:bg-[#b35627] transition mx-auto"
+      >
+        Saiba Mais
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Bloco "Desenvolvido por" com imagem única -->
+    <div class="mt-14 text-center">
+      <p class="text-[#666666] text-[21px] leading-[22px] font-medium tracking-[0.15px] mb-4">
+        Desenvolvido por:
+      </p>
+      <img src="/dev-by.png" alt="Logos UnB, FAPDF e Lab Livre" class="mx-auto h-[56px] md:h-[56px]">
+    </div>
     
     <!-- Seção: Perguntas Frequentes -->
     <section class="bg-white py-20">
       <div class="max-w-4xl mx-auto px-4">
+
         <!-- Título -->
         <h2 class="text-[32px] md:text-[40px] font-bold text-[#094559] text-center mb-10">
           Perguntas Frequentes
@@ -243,15 +306,14 @@
 
         <!-- Bloco de perguntas -->
         <div class="space-y-4">
+          
           <!-- Item 1 -->
           <details class="group bg-white rounded-xl shadow-md px-6 py-4">
-            <summary class="flex justify-between items-center cursor-pointer text-[#094559] text-base md:text-lg font-semibold list-none">
+            <summary class="flex justify-between items-center cursor-pointer text-[#000000] text-base md:text-lg font-semibold list-none">
               Como o software auxilia na triagem dermatológica?
-              <div class="w-6 h-6 border border-[#094559] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
-                <svg class="w-4 h-4 text-[#094559]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
+              <svg class="w-[36px] h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
             </summary>
             <p class="mt-2 text-sm text-[#6F6F6F]">
               O software permite coletar dados do paciente, realizar anamnese guiada e registrar fotos das lesões, facilitando a priorização de casos e agilizando o atendimento médico.
@@ -260,13 +322,11 @@
 
           <!-- Item 2 -->
           <details class="group bg-white rounded-xl shadow-md px-6 py-4">
-            <summary class="flex justify-between items-center cursor-pointer text-[#094559] text-base md:text-lg font-semibold list-none">
+            <summary class="flex justify-between items-center cursor-pointer text-[#000000] text-base md:text-lg font-semibold list-none">
               Preciso de conexão com a internet para usar o app?
-              <div class="w-6 h-6 border border-[#094559] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
-                <svg class="w-4 h-4 text-[#094559]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
+              <svg class="w-[36px] h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
             </summary>
             <p class="mt-2 text-sm text-[#6F6F6F]">
               O aplicativo precisa de conexão com a internet para sincronizar os dados com segurança.
@@ -275,13 +335,11 @@
 
           <!-- Item 3 -->
           <details class="group bg-white rounded-xl shadow-md px-6 py-4">
-            <summary class="flex justify-between items-center cursor-pointer text-[#094559] text-base md:text-lg font-semibold list-none">
+            <summary class="flex justify-between items-center cursor-pointer text-[#000000] text-base md:text-lg font-semibold list-none">
               Quem pode acessar os dados coletados?
-              <div class="w-6 h-6 border border-[#094559] rounded-md flex items-center justify-center transition-transform duration-200 group-open:rotate-180">
-                <svg class="w-4 h-4 text-[#094559]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
-              </div>
+              <svg class="w-[36px] h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
             </summary>
             <p class="mt-2 text-sm text-[#6F6F6F]">
               Somente profissionais autorizados e vinculados à instituição de saúde têm acesso aos dados.
@@ -291,15 +349,20 @@
 
         <!-- Botão -->
         <div class="text-center mt-10">
-          <a href="#" class="inline-block border border-[#094559] text-[#094559] text-sm font-medium px-6 py-2 rounded-full hover:bg-[#094559] hover:text-white transition">
+          <a href="#"
+            class="inline-block border-4 border-[#20596C] text-[#20596C] font-medium 
+                    text-[16px] leading-[24px] tracking-[0.5px]
+                    px-[20px] py-[12px] rounded-[50px] 
+                    hover:bg-[#20596C] hover:text-white transition"
+            style="width: 240px; height: 56px;">
             Ver mais
           </a>
-        </div>
+        </div>  
+
       </div>
     </section>
-    
-    <!-- Rodapé com linha branca no topo -->
-    <!-- Rodapé com linhas brancas -->
+
+<!-- Rodapé -->
 <footer class="bg-[#094559] text-white pt-0">
   <!-- Linha branca no topo -->
   <div class="h-[2px] bg-white w-full"></div>
@@ -361,10 +424,31 @@
       </div>
     </div>
 
+    <!-- Redes Sociais -->
+    <div class="mb-6">
+      <h4 class="font-semibold uppercase text-sm mb-1">Redes Sociais</h4>
+      <div class="flex items-center space-x-4">
+        <!-- GitHub -->
+        <a href="https://github.com/DermAlert" target="_blank" aria-label="GitHub" class="hover:text-gray-200">
+          <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+            <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.113.82-.26.82-.577v-2.17c-3.34.727-4.04-1.61-4.04-1.61-.546-1.387-1.33-1.756-1.33-1.756-1.09-.745.082-.73.082-.73 1.2.084 1.83 1.234 1.83 1.234 1.07 1.83 2.8 1.3 3.49.993.11-.775.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.12 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.82.12 3.12.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.63-5.47 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .297"/>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/DermAlert" target="_blank" aria-label="Instagram" class="hover:text-gray-200">
+          <svg class="w-5 h-5 fill-white" viewBox="0 0 448 512">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 186c-39.4 0-71.1-31.7-71.1-71.1S184.7 184.8 224.1 184.8 295.2 216.5 295.2 255.9 263.5 327 224.1 327zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.2-36.2-93.5s-57.8-34.5-93.5-36.2c-37-2.1-147.9-2.1-184.9 0-35.7 1.7-67.2 9.9-93.5 36.2S9.9 126.9 8.2 162.6c-2.1 37-2.1 147.9 0 184.9 1.7 35.7 9.9 67.2 36.2 93.5s57.8 34.5 93.5 36.2c37 2.1 147.9 2.1 184.9 0 35.7-1.7 67.2-9.9 93.5-36.2s34.5-57.8 36.2-93.5c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.7 102.9-9 132.3z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
     <!-- Contato -->
     <div class="mb-6">
       <h4 class="font-semibold uppercase text-sm mb-1">Contato</h4>
-      <p class="text-sm">dermalert.ia@gmail.com</p>
+      <p class="text-sm">
+        <a href="mailto:caguiar@unb.br" class="hover:underline">caguiar@unb.br</a>
+      </p>      
     </div>
 
     <!-- Direitos autorais -->
@@ -373,6 +457,7 @@
     </div>
   </div>
 </footer>
+
 
 
     <!-- Stylesheet - Vite + Tailwind -->
