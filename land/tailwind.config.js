@@ -2,6 +2,8 @@
 module.exports = {
   content: [
     "./index.html",
+    "./comofunciona.html",
+    "./sobre.html",
     "./src/**/*.{js,ts,jsx,tsx,html}", // garante que todos os arquivos em src sejam incluídos
   ],
   theme: {
