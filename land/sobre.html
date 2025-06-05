@@ -81,151 +81,266 @@
 
     </header>
     
-    <section id="hero" class="bg-white mt-12 md:py-20 px-4 pt-[80px]">
-      <div class="max-w-7xl mx-auto">
-        <!-- Título e Parágrafo -->
-        <div class="text-center mb-12">
-          <h1 class="text-3xl md:text-5xl font-bold text-[#2D7E99] leading-snug mb-8">
-            Sobre o Projeto
-          </h1>
-          <p class="mt-4 text-[24px] leading-[100%] font-medium text-[#666666] font-lexend">
-            Desenvolvido por uma equipe comprometida com inovação em saúde
+    <section id="hero" class="bg-white mt-12 md:py-20 px-4 mb:pt-[80px] pt-[40px]">
+  <div class="max-w-7xl mx-auto">
+    <!-- Título e Parágrafo -->
+    <div class="text-center mb-12">
+      <h1 class="text-5xl font-bold text-[#2D7E99] leading-snug mb-8">
+        Sobre o Projeto
+      </h1>
+      <p class="mt-4 text-[24px] leading-[100%] font-medium text-[#666666] font-lexend">
+        Desenvolvido por uma equipe comprometida com inovação em saúde
+      </p>
+    </div>
+
+    <!-- Grid principal: 1 coluna em mobile, 2 colunas em md+ -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px] items-start">
+      <!-- Imagem à esquerda -->
+      <div class="w-full">
+        <img
+          src="sobre/sobre-hero.png"
+          alt="Imagem do projeto"
+          class="w-full h-auto rounded-[24px] object-cover"
+        />
+      </div>
+
+      <!-- Conteúdo à direita: cards e botão centralizados -->
+      <div class="flex flex-col items-center w-full">
+        <!-- Card 1: Fundo primário -->
+        <div
+          class="bg-[#2D7E99] rounded-[24px] p-[36px] w-full max-w-[518px] h-[200px]"
+        >
+          <p
+            class="font-lexend font-semibold text-[31px] leading-[100%] text-white text-center mt-[15px]"
+          >
+            Juntos desenvolvemos uma<br />
+            plataforma de triagem inteligente, que une:
           </p>
         </div>
 
-        <!-- Grid principal 2 colunas lado a lado -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px] items-start">
+        <!-- Espaçamento fixo de 32px entre Card 1 e Card 2 -->
+        <div class="h-[32px]"></div>
 
-          <!-- Imagem à esquerda -->
-          <div class="w-full">
-            <img src="sobre/sobre-hero.png" style="height: 574px; width: 666px; border-radius: 24px;" alt="Imagem do projeto" class="w-full h-auto rounded-[16px] object-cover" />
-          </div>
-
-          <!-- Conteúdo à direita: imagens e botão centralizados -->
-          <div class="flex flex-col items-center justify-start w-full">
-            <img src="sobre/card1.png" style="height: 192px; width: 518px;" alt="Card 1" class="rounded-[16px] object-cover mb-6" />
-            <img src="sobre/card2.png" style="height: 192px; width: 518px;" alt="Card 2" class="rounded-[16px] object-cover mb-10" />
-
-            <!-- Botão -->
-            <a href="#" style="border-color: #094559; width: 240px;" class="inline-flex items-center justify-center text-sm font-medium rounded-[50px] px-[20px] py-[12px] border-4 border-[#094559] bg-white text-[#094559] hover:bg-[#20596C] hover:border-[#20596C] hover:text-white transition" style="width: 240px; height: 56px;">
-              Saber Mais
-            </a>
-          </div>
+        <!-- Card 2: Fundo branco com sombra -->
+        <div
+          class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] p-[36px]
+                 w-full max-w-[518px]"
+          style="height: 210px;"
+        >
+          <ul class="list-disc list-inside flex flex-col gap-[8px]">
+            <li class="font-dmsans font-normal text-[18px] leading-[100%] text-[#094559]">
+              <span class="font-semibold">Machine Learning e Data Fabric</span>
+              para apoiar o diagnóstico precoce;
+            </li>
+            <li class="font-dmsans font-normal text-[18px] leading-[100%] text-[#094559]">
+              <span class="font-semibold">Educação em saúde</span>
+              para a população e profissionais;
+            </li>
+            <li class="font-dmsans font-normal text-[18px] leading-[100%] text-[#094559]">
+              <span class="font-semibold">Fluxos integrados com a Atenção Primária (UBS)</span>
+              e a rede de referência oncológica.
+            </li>
+          </ul>
         </div>
+
+        <!-- Espaçamento fixo de 32px antes do botão -->
+        <div class="h-[32px]"></div>
+
+        <!-- Botão -->
+        <a
+          href="#"
+          class="inline-flex items-center justify-center text-sm font-medium rounded-[50px] 
+                 border-4 border-[#094559] bg-white text-[#094559] 
+                 hover:bg-[#20596C] hover:border-[#20596C] hover:text-white 
+                 transition mb-10 md:mb-0"
+          style="width: 240px; height: 56px;"
+        >
+          Saber Mais
+        </a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="bg-[#FFEFE5] pt-[80px] pb-[40px] px-[120px]">
-      <div class="max-w-[1440px] mx-auto flex flex-col gap-[32px]">
 
-        <!-- Título -->
-        <div class="text-center">
-          <h2 style="font-size: 64px;" class="font-bold text-[#B7561F] leading-[100%] mb-[24px]">
-            Conheça o time
-          </h2>
-          <p style="font-size: 18px;" class="font-normal text-[#B7561F] leading-[100%] mb-[32px]">
-            As pessoas que deram vida a este projeto.
-          </p>
-        </div>
 
-        <!-- Tabs -->
-        <div style="font-size: 24px; color: var(--Secundria-04, #692200);" class="flex justify-center gap-[32px] font-normal text-[#B7561F] mb-[24px]">
-          <button class="tab-btn pb-[4px] border-b-[4px] border-[#B7561F]" data-tab="coordenacao">Coordenação</button>
-          <button class="tab-btn pb-[4px] border-b-[4px] border-transparent hover:text-[#a1481a]" data-tab="aplicativo">Aplicativo</button>
-          <button class="tab-btn pb-[4px] border-b-[4px] border-transparent hover:text-[#a1481a]" data-tab="datafabric">Data Fabric</button>
-          <button class="tab-btn pb-[4px] border-b-[4px] border-transparent hover:text-[#a1481a]" data-tab="produto">Produto</button>
-          <button class="tab-btn pb-[4px] border-b-[4px] border-transparent hover:text-[#a1481a]" data-tab="colaboradores">Colaboradores</button>
-        </div>
+    <section class="bg-[#FFEFE5] pt-20 pb-10 px-4 md:px-24">
+  <div class="max-w-[1440px] mx-auto flex flex-col gap-8">
+    
+    <!-- Título -->
+    <div class="text-center">
+      <h2 class="font-bold text-[#B7561F] leading-none text-[36px] md:text-[64px] mb-6">
+        Conheça o time
+      </h2>
+      <p class="font-normal text-[#B7561F] leading-none text-[16px] md:text-[18px] mb-8">
+        As pessoas que deram vida a este projeto.
+      </p>
+    </div>
 
-        <!-- Tab: Coordenação -->
-        <div style="gap: 82px; padding: 32px 0px;" class="tab-content flex justify-center flex-wrap" id="coordenacao">
-          <!-- Card 1 -->
-          <a href="#">
-            <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px]">
-              <img src="sobre/carla_rocha.png" alt="Carla Rocha"
-              class="w-full h-[206.58px] object-cover rounded-t-[24px]">
-              <div style="padding-bottom: 16px;" class="text-center text-[#B7561F]">
-                <h3 style="font-size: 18px; margin-top: 8px;" class="font-bold leading-[100%]">Carla Rocha</h3>
-                <p style="font-size: 12px; margin-top: 8px;" class="text-[14px] leading-[100%] text-[#A1481A]">@lorem</p>
-              </div>
-            </div>
-          </a>
+    <!-- Tabs -->
+    <div class="flex justify-center flex-wrap gap-8 text-[20px] md:text-[24px] text-[#B7561F] mb-6">
+      <button class="tab-btn pb-1 border-b-4 border-[#B7561F] hover:text-[#a1481a]" data-tab="coordenacao">
+        Coordenação
+      </button>
+      <button class="tab-btn pb-1 border-b-4 border-transparent hover:text-[#a1481a]" data-tab="aplicativo">
+        Aplicativo
+      </button>
+      <button class="tab-btn pb-1 border-b-4 border-transparent hover:text-[#a1481a]" data-tab="datafabric">
+        Data Fabric
+      </button>
+      <button class="tab-btn pb-1 border-b-4 border-transparent hover:text-[#a1481a]" data-tab="produto">
+        Produto
+      </button>
+      <button class="tab-btn pb-1 border-b-4 border-transparent hover:text-[#a1481a]" data-tab="colaboradores">
+        Colaboradores
+      </button>
+    </div>
 
-          <!-- Card 2 -->
-          <a href="#">
-            <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px]">
-              <img src="sobre/carlos_davila.png" alt="Carlos Davila"
-                  class="w-full h-[206.58px] object-cover rounded-t-[24px]">
-              <div style="padding-bottom: 16px;" class="text-center text-[#B7561F]">
-                <h3 style="font-size: 18px; margin-top: 8px;" class="font-bold leading-[100%]">Carlos Davila</h3>
-                <p style="font-size: 12px; margin-top: 8px;" class="text-[14px] leading-[100%] text-[#A1481A]">@lorem</p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Tab: Aplicativo -->
-        <div style="gap: 82px; padding: 32px 0px;" class="tab-content flex justify-center flex-wrap hidden" id="aplicativo">
-          <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px]">
-            <img src="sobre/carla_rocha.png" alt="Carla Rocha" class="w-full h-[206.58px] object-cover rounded-t-[24px]">
-            <div style="padding-bottom: 16px;" class="text-center text-[#B7561F]">
-              <h3 style="font-size: 18px; margin-top: 8px;" class="font-bold leading-[100%]">Carla Rocha</h3>
-              <p style="font-size: 12px; margin-top: 8px;" class="text-[14px] leading-[100%] text-[#A1481A]">@lorem</p>
-            </div>
+    <!-- Tab: Coordenação -->
+    <div class="tab-content flex justify-center flex-wrap gap-10 py-8" id="coordenacao">
+      <!-- Card 1 -->
+      <a href="#" class="mb-8">
+        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
+          <img
+            src="sobre/carla_rocha.png"
+            alt="Carla Rocha"
+            class="w-full h-[207px] object-cover"
+          />
+          <div class="pb-4 text-center text-[#B7561F]">
+            <h3 class="font-bold text-[18px] leading-none mt-2">
+              Carla Rocha
+            </h3>
+            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
+              @lorem
+            </p>
           </div>
         </div>
+      </a>
 
-        <!-- Tab: Data Fabric -->
-        <div style="gap: 82px; padding: 32px 0px;" class="tab-content flex justify-center flex-wrap hidden" id="datafabric">
-
-          <a href="#">
-            <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px]">
-              <img src="sobre/abdul.png" alt="Abdul"
-                  class="w-full h-[206.58px] object-cover rounded-t-[24px]">
-              <div style="padding-bottom: 16px;" class="text-center text-[#B7561F]">
-                <h3 style="font-size: 18px; margin-top: 8px;" class="font-bold leading-[100%]">Abdul Hannan</h3>
-                <p style="font-size: 12px; margin-top: 8px;" class="text-[14px] leading-[100%] text-[#A1481A]">@abdulhannan</p>
-              </div>
-            </div>
-          </a>
-
-          <a href="#">
-            <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px]">
-                <img src="sobre/heitor.png" alt="Heitor"
-                    class="w-full h-[206.58px] object-cover rounded-t-[24px]">
-                <div style="padding-bottom: 16px;" class="text-center text-[#B7561F]">
-                  <h3 style="font-size: 18px; margin-top: 8px;" class="font-bold leading-[100%]">Heitor</h3>
-                  <p style="font-size: 12px; margin-top: 8px;" class="text-[14px] leading-[100%] text-[#A1481A]">@heitormsb</p>
-                </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Tab: Produto -->
-        <div style="gap: 82px; padding: 32px 0px;" class="tab-content flex justify-center flex-wrap hidden" id="produto">
-          <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px]">
-            <img src="sobre/carla_rocha.png" alt="Carla Rocha" class="w-full h-[206.58px] object-cover rounded-t-[24px]">
-            <div style="padding-bottom: 16px;" class="text-center text-[#B7561F]">
-              <h3 style="font-size: 18px; margin-top: 8px;" class="font-bold leading-[100%]">Carla Rocha</h3>
-              <p style="font-size: 12px; margin-top: 8px;" class="text-[14px] leading-[100%] text-[#A1481A]">@lorem</p>
-            </div>
+      <!-- Card 2 -->
+      <a href="#" class="mb-8">
+        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
+          <img
+            src="sobre/carlos_davila.png"
+            alt="Carlos Davila"
+            class="w-full h-[207px] object-cover"
+          />
+          <div class="pb-4 text-center text-[#B7561F]">
+            <h3 class="font-bold text-[18px] leading-none mt-2">
+              Carlos Davila
+            </h3>
+            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
+              @lorem
+            </p>
           </div>
         </div>
+      </a>
+    </div>
 
-        <!-- Tab: Colaboradores -->
-        <div style="gap: 82px; padding: 32px 0px;" class="tab-content flex justify-center flex-wrap hidden" id="colaboradores">
-          <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px]">
-            <img src="sobre/carla_rocha.png" alt="Carla Rocha"
-                class="w-full h-[206.58px] object-cover rounded-t-[24px]">
-            <div style="padding-bottom: 16px;" class="text-center text-[#B7561F]">
-              <h3 style="font-size: 18px; margin-top: 8px;" class="font-bold leading-[100%]">Carla Rocha</h3>
-              <p style="font-size: 12px; margin-top: 8px;" class="text-[14px] leading-[100%] text-[#A1481A]">@lorem</p>
-            </div>
+    <!-- Tab: Aplicativo -->
+    <div class="tab-content hidden flex justify-center flex-wrap gap-10 py-8" id="aplicativo">
+      <a href="#" class="mb-8">
+        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
+          <img
+            src="sobre/carla_rocha.png"
+            alt="Carla Rocha"
+            class="w-full h-[207px] object-cover"
+          />
+          <div class="pb-4 text-center text-[#B7561F]">
+            <h3 class="font-bold text-[18px] leading-none mt-2">
+              Carla Rocha
+            </h3>
+            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
+              @lorem
+            </p>
           </div>
         </div>
+      </a>
+    </div>
 
-      </div>
-    </section>
+    <!-- Tab: Data Fabric -->
+    <div class="tab-content hidden flex justify-center flex-wrap gap-10 py-8" id="datafabric">
+      <a href="#" class="mb-8">
+        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
+          <img
+            src="sobre/abdul.png"
+            alt="Abdul"
+            class="w-full h-[207px] object-cover"
+          />
+          <div class="pb-4 text-center text-[#B7561F]">
+            <h3 class="font-bold text-[18px] leading-none mt-2">
+              Abdul Hannan
+            </h3>
+            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
+              @abdulhannan
+            </p>
+          </div>
+        </div>
+      </a>
+      <a href="#" class="mb-8">
+        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
+          <img
+            src="sobre/heitor.png"
+            alt="Heitor"
+            class="w-full h-[207px] object-cover"
+          />
+          <div class="pb-4 text-center text-[#B7561F]">
+            <h3 class="font-bold text-[18px] leading-none mt-2">
+              Heitor
+            </h3>
+            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
+              @heitormsb
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Tab: Produto -->
+    <div class="tab-content hidden flex justify-center flex-wrap gap-10 py-8" id="produto">
+      <a href="#" class="mb-8">
+        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
+          <img
+            src="sobre/carla_rocha.png"
+            alt="Carla Rocha"
+            class="w-full h-[207px] object-cover"
+          />
+          <div class="pb-4 text-center text-[#B7561F]">
+            <h3 class="font-bold text-[18px] leading-none mt-2">
+              Carla Rocha
+            </h3>
+            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
+              @lorem
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Tab: Colaboradores -->
+    <div class="tab-content hidden flex justify-center flex-wrap gap-10 py-8" id="colaboradores">
+      <a href="#" class="mb-8">
+        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
+          <img
+            src="sobre/carla_rocha.png"
+            alt="Carla Rocha"
+            class="w-full h-[207px] object-cover"
+          />
+          <div class="pb-4 text-center text-[#B7561F]">
+            <h3 class="font-bold text-[18px] leading-none mt-2">
+              Carla Rocha
+            </h3>
+            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
+              @lorem
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
     
 
 
@@ -239,77 +354,122 @@
       </h2>
     </div>
 
-
     <!-- Coluna da direita: Cards -->
-<div class="w-full md:w-1/2 flex flex-col items-center md:items-end space-y-6">
+    <div class="w-full md:w-1/2 flex flex-col items-center md:items-end space-y-6">
 
-  <!-- Card 1: Lab Livre (centrado como o Card 2) -->
-  <div
-    class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] 
-           w-full max-w-[418px] p-6 flex flex-col items-center"
-  >
-    <!-- Logo: altura fixa 37px, largura 144px, margens para alinhar verticalmente -->
-    <img
-      src="sobre/lablivre.png"
-      alt="Logotipo Lab Livre"
-      class="h-[69px] w-[131px] mt-[44px] mb-[20px] object-contain"
-    />
+      <!-- Card 1: Lab Livre -->
+      <div
+        class="card bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]
+               w-full max-w-[418px] p-6 flex flex-col items-center"
+      >
+        <!-- Logo Lab Livre -->
+        <img
+          src="sobre/lablivre.png"
+          alt="Logotipo Lab Livre"
+          class="h-[69px] w-[131px] mt-[44px] mb-[20px] object-contain"
+        />
+        <p
+          class="font-dmsans font-normal text-[18px] leading-[100%]
+                 text-[#4D4D4D] text-center mb-[44px]"
+        >
+          Inovação, tecnologia e criatividade.
+        </p>
+      </div>
 
-    <div class="flex flex-col items-center">
-      <!-- Descrição (DM Sans 400, 16px, #4D4D4D, centralizado) -->
-      <p class="font-dmsans font-normal text-[18px] leading-[100%] text-[#4D4D4D] text-center mb-[44px]">
-        Inovação, tecnologia e criatividade.
-      </p>
+      <!-- Card 2: UnB -->
+      <div
+        class="card bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]
+               w-full max-w-[418px] p-6 flex flex-col items-center"
+      >
+        <!-- Logo UnB -->
+        <img
+          src="sobre/unb.png"
+          alt="Logotipo UnB"
+          class="h-[36.86px] w-[144px] mt-[32px] mb-[43px] object-contain"
+        />
+        <div class="flex flex-col items-center">
+          <p
+            class="font-lexend font-bold text-[18px] leading-[100%]
+                   text-[#4D4D4D] text-center mb-[17px]"
+          >
+            Universidade de Brasília
+          </p>
+          <p
+            class="font-dmsans font-normal text-[16px] leading-[100%]
+                   text-[#4D4D4D] text-center mb-[24px]"
+          >
+            Pesquisa, desenvolvimento e base científica.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3: FAP DF -->
+      <div
+        class="card bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]
+               w-full max-w-[418px] p-6 flex flex-col items-center"
+      >
+        <!-- Logo FAP DF -->
+        <img
+          src="sobre/fapdf.png"
+          alt="Logotipo FAP DF"
+          class="h-[84.41px] w-[131px] mt-[24px] mb-[17px] object-contain"
+        />
+        <div class="flex flex-col items-center">
+          <p
+            class="font-lexend font-medium text-[20px] leading-[100%]
+                   text-[#4D4D4D] text-center mb-[17px]"
+          >
+            FAP DF
+          </p>
+          <p
+            class="font-dmsans font-normal text-[18px] leading-[100%]
+                   text-[#4D4D4D] text-center mb-[24px]"
+          >
+            Financiamento e apoio à inovação.
+          </p>
+        </div>
+      </div>
+
     </div>
-  </div>
-
-  <!-- Card 2: UnB (mantém igual ao que já estava) -->
-  <div
-    class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] 
-           w-full max-w-[418px] p-6 flex flex-col items-center"
-  >
-    <img
-      src="sobre/unb.png"
-      alt="Logotipo UnB"
-      class="h-[36.86px] w-[144px] mt-[32px] mb-[43px] object-contain"
-    />
-    <div class="flex flex-col items-center">
-      <p class="font-lexend font-bold text-[18px] leading-[100%] text-[#4D4D4D] text-center mb-[17px]">
-        Universidade de Brasília
-      </p>
-      <p class="font-dmsans font-normal text-[16px] leading-[100%] text-[#4D4D4D] text-center mb-[24px]">
-        Pesquisa, desenvolvimento e base científica.
-      </p>
-    </div>
-  </div>
-
-  <!-- Card 3: FAP DF (centrado como o Card 2) -->
-  <div
-    class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] 
-           w-full max-w-[418px] p-6 flex flex-col items-center"
-  >
-    <!-- Logo: altura fixa 37px, largura 144px, margens para alinhar verticalmente -->
-    <img
-      src="sobre/fapdf.png"
-      alt="Logotipo FAP DF"
-      class="h-[84.41] w-[131px] mt-[24px] mb-[17px] object-contain"
-    />
-    <div class="flex flex-col items-center">
-      <!-- Título “FAP DF” (Lexend 500, 18px, #4D4D4D, centralizado) -->
-      <p class="font-lexend font-medium text-[20px] leading-[100%] text-[#4D4D4D] text-center mb-[17px]">
-        FAP DF
-      </p>
-      <!-- Descrição (DM Sans 400, 16px, #4D4D4D, centralizado) -->
-      <p class="font-dmsans font-normal text-[18px] leading-[100%] text-[#4D4D4D] text-center mb-[24px]">
-        Financiamento e apoio à inovação.
-      </p>
-    </div>
-  </div>
-
-</div>
-
   </div>
 </section>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Seleciona todos os elementos com classe "card" (na ordem em que aparecem)
+    const cards = Array.from(document.querySelectorAll('.card'));
+
+    // Estados pré-definidos de opacidades para cada índice selecionado:
+    //   [Lab Livre, UnB, FAP DF]
+    // Se indice selecionado for 0 → [1.0, 0.25, 0.50]
+    // Se indice selecionado for 1 → [0.25, 1.0, 0.50]
+    // Se indice selecionado for 2 → [0.25, 0.50, 1.0]
+    const opacityStates = [
+      [1.0, 0.25, 0.50],
+      [0.25, 1.0, 0.50],
+      [0.25, 0.50, 1.0]
+    ];
+
+    // Função que aplica o estado de opacidade baseado no índice "selectedIndex"
+    function setOpacities(selectedIndex) {
+      cards.forEach((cardEl, idx) => {
+        cardEl.style.opacity = opacityStates[selectedIndex][idx];
+      });
+    }
+
+    // 1) Por padrão, seleciona o primeiro card (Lab Livre) assim que a página carrega:
+    setOpacities(0);
+
+    // 2) Para cada card, adiciona um listener de clique que “ativa” o índice correspondente
+    cards.forEach((cardEl, idx) => {
+      cardEl.addEventListener('click', () => {
+        setOpacities(idx);
+      });
+      // Também adicionamos cursor "pointer" para indicar que é clicável:
+      cardEl.style.cursor = 'pointer';
+    });
+  });
+</script>
+
 
 
     <!-- Rodapé -->
