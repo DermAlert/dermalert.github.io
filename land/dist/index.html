@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="./logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dermalert</title>
-    <script type="module" crossorigin src="./assets/main-CrJcZXY3.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-BOJ7ksG5.css">
+    <script type="module" crossorigin src="./assets/main-CJ0J8m-J.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BbHz-SKI.css">
   </head>
   <body class="font-[Lexend] antialiased bg-white text-gray-800">
     <!-- Header fixo no topo com menu hambúrguer responsivo -->
@@ -83,36 +83,48 @@
 
     </header>
     
-    <section id="hero" class="bg-white py-12 md:py-20">
-      <div class="max-w-6xl mx-auto px-4 text-center flex flex-col items-center">
+    <section id="hero" class="bg-white py-8 md:py-20">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col items-center text-center">
 
-        <!-- Logo centralizado -->
-        <img src="./logo-dermalert.png" alt="DERMALERT" class="h-[48px] w-[216px] mt-12 mb-8">
+        <!-- Logo centralizado (48px de altura, largura automática) -->
+        <img
+          src="./logo-dermalert.png"
+          alt="DERMALERT"
+          class="h-12 w-auto mt-14 md:mt-8 mb-6"
+        />
 
-        <!-- Título principal -->
-        <h1 class="text-3xl md:text-5xl font-bold text-[#094559] leading-snug mb-8">
-          Triagem Segura e Inteligente para <br class="hidden md:block" />
+        <!-- Título principal (textos menores em telas pequenas, maiores em desktop) -->
+        <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-[#094559] leading-tight mb-6">
+          Triagem Segura e Inteligente para<br class="hidden md:block" />
           Diagnósticos Precoces
         </h1>
 
-        <!-- Imagem central com texto embutido -->
-        <img src="./hero-image.png"
-            alt="Imagem de celulares com texto embutido"
-            class="w-full max-w-[1440px] h-auto rounded-[24px] mx-auto mb-8">
+        <!-- Imagem central com largura responsiva -->
+        <img
+          src="./hero-image.png"
+          alt="Imagem de celulares com texto embutido"
+          class="w-full max-w-[700px] sm:max-w-[900px] md:max-w-[1100px] lg:max-w-[1440px] h-auto rounded-[24px] mb-6"
+        />
 
-        <!-- Bloco de texto compacto -->
-        <div class="bg-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] rounded-[27px] px-[36px] py-[36px] max-w-[605px] mx-auto mb-6">
-          <p class="text-[#1A4568] text-[27px] leading-[36px] tracking-[0.56px] font-normal text-center">
-            Registre pacientes, capture imagens e<br>
-            priorize atendimentos com uma <span class="font-bold text-[#094559]">solução integrada e segura</span>
+        <!-- Bloco de texto compacto (padding reduzido em mobile) -->
+        <div
+          class="bg-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] rounded-[27px]
+                px-6 sm:px-8 md:px-12 py-6 sm:py-8 md:py-10
+                max-w-md sm:max-w-lg md:max-w-[605px] mx-auto mb-6"
+        >
+          <p class="text-[#1A4568] text-base sm:text-lg md:text-[27px] leading-[1.4] md:leading-[36px] tracking-[0.5px] font-normal">
+            Registre pacientes, capture imagens e priorize atendimentos com uma
+            <span class="font-bold text-[#094559]">solução integrada e segura</span>
           </p>
         </div>
 
-
-        <!-- Botão fora do bloco -->
-        <div class="mt-4 text-center">
-          <a href="#"
-            class="inline-block px-[20px] py-[12px] rounded-full text-base font-normal tracking-[0.5px] text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]">
+        <!-- Botão centralizado (tamanho ajustado para dispositivos pequenos) -->
+        <div class="mt-4">
+          <a
+            href="#"
+            class="inline-block px-6 py-3 rounded-full text-sm sm:text-base font-normal tracking-[0.5px]
+                  text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]"
+          >
             Participar da Pesquisa
           </a>
         </div>
@@ -120,69 +132,82 @@
       </div>
     </section>
 
+
     
     <!-- Seção: Por que escolher nosso software -->
-    <section id="nosso-software" class="bg-[#F7F7F7] py-16 px-6 md:px-12">
+    <section id="nosso-software" class="bg-[#F7E5E5] py-8 md:py-16 px-4 md:px-12">
       <div class="max-w-7xl mx-auto">
 
         <!-- Título -->
-        <h2 class="text-[#2D7E99] font-bold text-[48px] leading-[100%] text-center mb-12">
+        <h2 class="text-[#2D7E99] font-bold text-2xl sm:text-3xl md:text-[48px] leading-tight text-center mb-8 md:mb-12">
           Por que escolher nosso software?
         </h2>
 
-        <!-- Grid -->
-        <div class="grid md:grid-cols-2 gap-8 items-start">
+        <!-- Grid principal: 1 coluna em mobile, 2 em md+ -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
 
           <!-- Card 1 -->
-          <div class="bg-[#D06A32] rounded-[24px] p-[32px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]"
-              style="width: 579px; height: 833px;">
-            <img src="./registro-fotografico.png" alt="Registro Fotográfico"
-                class="rounded-[24px] mb-4 w-full max-h-[395px] object-cover">
+          <div class="bg-[#D06A32] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+            <img
+              src="./registro-fotografico.png"
+              alt="Registro Fotográfico"
+              class="rounded-[24px] mb-4 w-full h-auto max-h-[200px] sm:max-h-[300px] md:max-h-[395px] object-cover"
+            />
 
-            <div class="flex items-center gap-[8px] mb-[20px]">
-              <img src="./etapa-1.png" alt="Etapa 1" class="w-[53px] h-[59px] rounded-[6.19px]">
+            <div class="flex items-center gap-2 mb-4">
+              <img
+                src="./etapa-1.png"
+                alt="Etapa 1"
+                class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
+              />
             </div>
 
-            <h3 class="text-white font-bold text-[48px] leading-[48px] tracking-[0.5px] mb-[20px]">
+            <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
               Registro Fotográfico Inteligente
             </h3>
 
-            <p class="text-white/80 font-normal text-[24px] leading-[32px] tracking-[0.5px]">
+            <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
               Captura e armazenamento seguro de imagens das lesões, permitindo acompanhamento visual detalhado ao longo do tempo.
             </p>
           </div>
 
-          <!-- Coluna direita com dois cards -->
-          <div class="flex flex-col gap-[43px]">
+          <!-- Coluna direita: 2 cards empilhados -->
+          <div class="flex flex-col gap-4 sm:gap-6 md:gap-8">
 
             <!-- Card 2 -->
-            <div class="bg-[#5B08A3] rounded-[24px] p-[32px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]"
-                style="width: 578.5px; height: 395px;">
-              <div class="flex items-center gap-[8px] mb-[20px]">
-                <img src="./etapa-2.png" alt="Etapa 2" class="w-[53px] h-[59px] rounded-[6.19px]">
+            <div class="bg-[#5B08A3] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+              <div class="flex items-center gap-2 mb-4">
+                <img
+                  src="./etapa-2.png"
+                  alt="Etapa 2"
+                  class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
+                />
               </div>
 
-              <h3 class="text-white font-bold text-[48px] leading-[48px] tracking-[0.5px] mb-[20px]">
+              <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
                 Atendimento Simplificado
               </h3>
 
-              <p class="text-white/80 font-normal text-[24px] leading-[32px] tracking-[0.5px]">
+              <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
                 Cadastro de pacientes, anamnese guiada e assinatura digital do termo de consentimento, tudo em um só lugar.
               </p>
             </div>
 
             <!-- Card 3 -->
-            <div class="bg-[#2D7E99] rounded-[24px] p-[32px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]"
-                style="width: 578.5px; height: 395px;">
-              <div class="flex items-center gap-[8px] mb-[20px]">
-                <img src="./etapa-3.png" alt="Etapa 3" class="w-[53px] h-[59px] rounded-[6.19px]">
+            <div class="bg-[#2D7E99] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+              <div class="flex items-center gap-2 mb-4">
+                <img
+                  src="./etapa-3.png"
+                  alt="Etapa 3"
+                  class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
+                />
               </div>
 
-              <h3 class="text-white font-bold text-[48px] leading-[48px] tracking-[0.5px] mb-[20px]">
+              <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
                 Segurança e Conformidade
               </h3>
 
-              <p class="text-white/80 font-normal text-[24px] leading-[32px] tracking-[0.5px]">
+              <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
                 Proteção total dos dados de saúde com criptografia avançada, controle de acessos e auditoria contínua, seguindo as diretrizes da LGPD.
               </p>
             </div>
@@ -191,72 +216,78 @@
         </div>
 
         <!-- Botão centralizado -->
-        <div class="mt-10 text-center">
-          <a href="#"
-            class="inline-block border-4 border-[#031E21] text-[#031E21] text-base font-medium px-[20px] py-[12px] rounded-[50px] hover:bg-[#031E21] hover:text-white transition"
-            style="width: 240px; height: 56px;">
+        <div class="mt-8 md:mt-10 text-center">
+          <a
+            href="#"
+            class="inline-block border-2 sm:border-4 border-[#031E21] text-[#031E21] text-sm sm:text-base md:text-base font-medium px-5 sm:px-6 md:px-8 py-2 sm:py-3 md:py-3 rounded-[50px]
+                  hover:bg-[#031E21] hover:text-white transition"
+          >
             Saiba Mais
           </a>
         </div>
 
       </div>
     </section>
+
 
     <!-- Seção: Sobre o Projeto -->
-    <section class="bg-[#FFEFE5] pt-[80px] pb-[40px] px-[120px]">
-      <div class="max-w-[1440px] mx-auto flex flex-col gap-[32px]">
+<section class="bg-[#FFEFE5] py-8 md:py-16 px-4 md:px-12">
+  <div class="max-w-4xl mx-auto flex flex-col gap-8">
 
-        <!-- Título -->
-        <div class="text-center">
-          <h2 class="font-bold text-[48px] text-[#B7561F] leading-[100%] mb-[24px]">
-            Sobre o Projeto
-          </h2>
-          <p class="font-semibold text-[24px] text-[#B7561F] leading-[100%] mb-[32px]">
-            O Primeiro Passo na Prevenção do Câncer de Pele
-          </p>
-        </div>
-        
-        <!-- Imagem -->
-        <div>
-          <img src="./sobre-projeto.png" alt="Aplicação na pele"
-              class="w-[1200px] h-[482px] object-cover rounded-[24px] mx-auto">
-        </div>
+    <!-- Título -->
+    <div class="text-center">
+      <h2 class="font-bold text-2xl sm:text-3xl md:text-[48px] text-[#B7561F] leading-tight mb-4">
+        Sobre o Projeto
+      </h2>
+      <p class="font-semibold text-[18px] sm:text-[20px] md:text-[24px] text-[#B7561F] leading-tight mb-6">
+        O Primeiro Passo na Prevenção do Câncer de Pele
+      </p>
+    </div>
+    
+    <!-- Imagem -->
+    <div>
+      <img
+        src="./sobre-projeto.png"
+        alt="Aplicação na pele"
+        class="w-full max-w-full md:max-w-[800px] h-auto object-cover rounded-[24px] mx-auto"
+      />
+    </div>
 
-        <!-- Bloco de textos -->
-        <div class="flex gap-[26.7px] bg-white rounded-[26.7px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] 
-                    p-[35.6px_42px] w-[1200px] mx-auto">
-
-          <!-- Texto 1 -->
-          <div class="w-1/2 text-[#B7561F]">
-            <p class="font-normal text-[36px] leading-[40px] tracking-[0.5px]">
-              O <strong>DermAlert</strong> é um projeto voltado para a 
-              <strong>triagem de pacientes com suspeita de câncer de pele</strong>, 
-              facilitando a identificação precoce e o encaminhamento adequado.
-            </p>
-          </div>
-
-          <!-- Texto 2 -->
-          <div class="w-1/2 text-[#B7561F]">
-            <p class="font-normal text-[24px] leading-[32px] tracking-[0.5px]">
-              Desenvolvido pelo <strong>Lab Livre</strong> em 
-              <strong>parceria com a UnB e a FAP-DF</strong>, o projeto busca aprimorar o atendimento primário por meio da tecnologia, tornando o 
-              <strong>diagnóstico mais acessível e eficiente</strong>.
-            </p>
-          </div>
-        </div>
-
-        <!-- Botão -->
-        <div class="text-center">
-          <a href="#"
-            class="inline-flex items-center justify-center bg-[#D06A32] text-white text-sm font-medium rounded-[50px] 
-                    px-[20px] py-[12px] border border-[#D06A32] hover:bg-[#b35627] transition"
-            style="width: 240px; height: 56px;">
-            Saiba Mais
-          </a>
-        </div>
-
+    <!-- Bloco de textos (empilhado em mobile, lado a lado em md+) -->
+    <div class="flex flex-col md:flex-row gap-6 bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] p-4 sm:p-6 md:p-8">
+      <!-- Texto 1 -->
+      <div class="w-full md:w-1/2 text-[#B7561F]">
+        <p class="font-normal text-[20px] sm:text-[24px] leading-[1.4] tracking-[0.5px]">
+          O <strong>DermAlert</strong> é um projeto voltado para a
+          <strong>triagem de pacientes com suspeita de câncer de pele</strong>,
+          facilitando a identificação precoce e o encaminhamento adequado.
+        </p>
       </div>
-    </section>
+
+      <!-- Texto 2 -->
+      <div class="w-full md:w-1/2 text-[#B7561F]">
+        <p class="font-normal text-[16px] sm:text-[18px] md:text-[24px] leading-[1.4] tracking-[0.5px]">
+          Desenvolvido pelo <strong>Lab Livre</strong> em
+          <strong>parceria com a UnB e a FAP-DF</strong>, o projeto busca aprimorar o atendimento primário por meio da tecnologia, tornando o
+          <strong>diagnóstico mais acessível e eficiente</strong>.
+        </p>
+      </div>
+    </div>
+
+    <!-- Botão -->
+    <div class="text-center">
+      <a
+        href="#"
+        class="inline-flex items-center justify-center bg-[#D06A32] text-white text-[14px] sm:text-base font-medium rounded-[50px]
+               w-[240px] h-[56px] px-5 py-3 border border-[#D06A32] hover:bg-[#b35627] transition mx-auto"
+      >
+        Saiba Mais
+      </a>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Bloco "Desenvolvido por" com imagem única -->
     <div class="mt-14 text-center">
