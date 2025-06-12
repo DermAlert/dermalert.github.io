@@ -1,5 +1,5 @@
 site_name: DermAlert
-repo_url: https://github.com/DermAlert/dermalert.github.io
+repo_url: https://github.com/caio-lelis/dermalert.github.io
 repo_name: DermAlert
 docs_dir: docs
 
@@ -15,10 +15,17 @@ nav:
       - Frontend: ajuda-e-suporte/documentacao-tecnica/frontend.md
       - Backend: ajuda-e-suporte/documentacao-tecnica/backend.md
     - Documentação GCES: 
-      - Equipe: ajuda-e-suporte/documentacao-gces/equipe.md
-      - Atas de Reunião: ajuda-e-suporte/documentacao-gces/atas-reunioes.md
-      - Checklists: ajuda-e-suporte/documentacao-gces/checklist.md
-      - Backlog do projeto: ajuda-e-suporte/documentacao-gces/backlog.md
+      - Release I:
+        - Equipe: ajuda-e-suporte/documentacao-gces/equipe.md
+        - Atas de Reunião: ajuda-e-suporte/documentacao-gces/atas-reunioes.md
+        - Checklists: ajuda-e-suporte/documentacao-gces/checklist.md
+        - Backlog do projeto: ajuda-e-suporte/documentacao-gces/backlog.md
+      - Release II:
+        - Checklist da Entrega: ajuda-e-suporte/documentacao-gces/release2/checklist-2.md
+        - Modelos Testados e Escolhidos: ajuda-e-suporte/documentacao-gces/release2/modelos-testados.md
+        - Modificações no Frontend e Backend: ajuda-e-suporte/documentacao-gces/release2/modificacoes.md
+        - Dependências e Roadmap Atualizados: ajuda-e-suporte/documentacao-gces/release2/dependencias-roadmap.md
+        - Releases: ajuda-e-suporte/documentacao-gces/release2/releases.md
   - Curso de Extensão:
     - curso-de-extensao/sobre-o-curso.md
   - Sobre:
