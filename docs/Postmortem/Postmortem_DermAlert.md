@@ -60,11 +60,11 @@ A ambientação incluiu:
 
 ## 6. 📱 Melhorias e Adições no Frontend
 
-- Integração com novos endpoints
-- Criação de um novo modal de pré-diagnóstico com visual menos alarmante
-- Uso de cores suaves e mensagens explicativas
-- Ajustes de layout e acessibilidade
-
+- Integração com os novos endpoints implementados no backend
+- Criação de um novo modal de pré-diagnóstico com um visual mais informativo e menos alarmante
+- Adoção de uma paleta de cores suaves e uso de mensagens explicativas para melhor experiência do usuário
+- Ajustes no layout e melhorias de acessibilidade para tornar o app mais inclusivo
+git 
 ---
 ## 7. 🔄 Pipeline do Projeto
 
