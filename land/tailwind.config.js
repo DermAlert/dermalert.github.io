@@ -4,12 +4,13 @@ module.exports = {
     "./index.html",
     "./comofunciona.html",
     "./sobre.html",
-    "./src/**/*.{js,ts,jsx,tsx,html}", // garante que todos os arquivos em src sejam incluídos
+    "./src/**/*.{js,ts,jsx,tsx,html}",
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Lexend', 'sans-serif'], // adiciona Lexend como padrão do font-sans
+        sans: ['Lexend', 'sans-serif'], // padrão
+        'dm-sans': ['"DM Sans"', 'sans-serif'], // nova fonte
       },
     },
   },

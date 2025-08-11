@@ -3,10 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dermalert</title>
   </head>
   <body class="font-[Lexend] antialiased bg-white text-gray-800">
+    <!-- CABEÇALHO DA PÁGINA -->
+    <section class="max-w-7xl mx-auto px-6 mt-28 md:mt-32 mb-2 text-center">
+      
+      <h1 class="text-[34px] leading-[42px] md:text-[60px] md:leading-[76px] font-bold tracking-[0.5px] text-[#2D7E99]">
+        Sobre o Projeto
+      </h1>
+      <p class="mt-2 text-base leading-[22px] md:text-[24px] md:leading-[30px] font-medium text-[#666666]">
+        Desenvolvido por uma equipe comprometida com inovação em saúde
+      </p>
+    </section>
+
+
     <!-- Header fixo no topo com menu hambúrguer responsivo -->
     <header id="navbar" class="fixed top-0 left-0 w-full bg-[#094559] shadow-sm shadow-gray-400 z-50">
       
@@ -40,11 +53,11 @@
           <a href="../../curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
             Curso de Extensão
           </a>
-          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
-            Documentação
-          </a>
           <a href="sobre.html" class="hover:underline hover:decoration-[#D06A32] transition">
             Sobre
+          </a>
+          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
+            Documentação
           </a>
         </nav>
 
@@ -71,405 +84,467 @@
         <a href="../../curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Curso de Extensão
         </a>
-        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
-          Documentação
-        </a>
         <a href="sobre.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Sobre
         </a>
-      </div>
-
-    </header>
-    
-    <section id="hero" class="bg-white mt-12 md:py-20 px-4 mb:pt-[80px] pt-[40px]">
-  <div class="max-w-7xl mx-auto">
-    <!-- Título e Parágrafo -->
-    <div class="text-center mb-12">
-      <h1 class="text-5xl font-bold text-[#2D7E99] leading-snug mb-8">
-        Sobre o Projeto
-      </h1>
-      <p class="mt-4 text-[24px] leading-[100%] font-medium text-[#666666] font-lexend">
-        Desenvolvido por uma equipe comprometida com inovação em saúde
-      </p>
-    </div>
-
-    <!-- Grid principal: 1 coluna em mobile, 2 colunas em md+ -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-[16px] items-start">
-      <!-- Imagem à esquerda -->
-      <div class="w-full">
-        <img
-          src="sobre/sobre-hero.png"
-          alt="Imagem do projeto"
-          class="w-full h-auto rounded-[24px] object-cover"
-        />
-      </div>
-
-      <!-- Conteúdo à direita: cards e botão centralizados -->
-      <div class="flex flex-col items-center w-full">
-        <!-- Card 1: Fundo primário -->
-        <div
-          class="bg-[#2D7E99] rounded-[24px] p-[36px] w-full max-w-[518px] h-[135px] md:h-[200px]"
-        >
-          <p
-            class="font-lexend font-semibold text-[19px] md:text-[31px] leading-[100%] text-white text-center mt-0 md:mt-[15px]"
-          >
-            Juntos desenvolvemos uma<br />
-            plataforma de triagem inteligente, que une:
-          </p>
-        </div>
-
-        <!-- Espaçamento fixo de 32px entre Card 1 e Card 2 -->
-        <div class="h-[32px]"></div>
-
-        <!-- Card 2: Fundo branco com sombra -->
-        <div
-          class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] p-[36px]
-                 w-full max-w-[518px]"
-          style="height: 210px;"
-        >
-          <ul class="list-disc list-inside flex flex-col gap-[8px]">
-            <li class="font-dmsans font-normal text-[18px] leading-[100%] text-[#094559]">
-              <span class="font-semibold">Machine Learning e Data Fabric</span>
-              para apoiar o diagnóstico precoce;
-            </li>
-            <li class="font-dmsans font-normal text-[18px] leading-[100%] text-[#094559]">
-              <span class="font-semibold">Educação em saúde</span>
-              para a população e profissionais;
-            </li>
-            <li class="font-dmsans font-normal text-[18px] leading-[100%] text-[#094559]">
-              <span class="font-semibold">Fluxos integrados com a Atenção Primária (UBS)</span>
-              e a rede de referência oncológica.
-            </li>
-          </ul>
-        </div>
-
-        <!-- Espaçamento fixo de 32px antes do botão -->
-        <div class="h-[32px]"></div>
-
-        <!-- Botão -->
-        <a
-          href="#"
-          class="inline-flex items-center justify-center text-sm font-medium rounded-[50px] 
-                 border-4 border-[#094559] bg-white text-[#094559] 
-                 hover:bg-[#20596C] hover:border-[#20596C] hover:text-white 
-                 transition mb-10 md:mb-0"
-          style="width: 240px; height: 56px;"
-        >
-          Saber Mais
+        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Documentação
         </a>
       </div>
-    </div>
-  </div>
-</section>
+    </header>
 
+    <!-- INÍCIO - CORPO DA PÁGINA -->
 
+<div class="flex max-w-7xl mx-auto mt-8 px-6 gap-8 h-[calc(100vh-8rem)]">
 
-    <section class="bg-[#FFEFE5] pt-20 pb-10 px-4 md:px-24">
-  <div class="max-w-[1440px] mx-auto flex flex-col gap-8">
-    
-    <!-- Título -->
-    <div class="text-center">
-      <h2 class="font-bold text-[#B7561F] leading-none text-[36px] md:text-[64px] mb-6">
-        Conheça o time
-      </h2>
-      <p class="font-normal text-[#B7561F] leading-none text-[16px] md:text-[18px] mb-8">
-        As pessoas que deram vida a este projeto.
-      </p>
-    </div>
+  <!-- Menu Lateral -->
+  <aside id="sidebar" class="
+    w-64 space-y-2 overflow-y-auto pr-2
+    fixed md:static top-0 left-0 h-full md:h-auto
+    bg-white md:bg-transparent
+    shadow md:shadow-none
+    transition-transform duration-300
+    -translate-x-full md:translate-x-0
+    pt-[70px] md:pt-0
+    z-40
+  ">
+    <h3 class="text-[#094559] font-semibold">Sobre o Projeto</h3>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="objetivo">Objetivo Geral</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="problema">O Problema</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="publico">Público-alvo</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="metodologia">Metodologia</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="financiamento">Financiamento</button>
 
-    <!-- Tabs -->
-    <div class="flex justify-center flex-wrap gap-8 text-[20px] md:text-[24px] text-[#B7561F] mb-6">
-      <button class="tab-btn pb-1 border-b-4 border-[#B7561F] hover:text-[#a1481a]" data-tab="coordenacao">
-        Coordenação
-      </button>
-      <button class="tab-btn pb-1 border-b-4 border-transparent hover:text-[#a1481a]" data-tab="aplicativo">
-        Aplicativo
-      </button>
-      <button class="tab-btn pb-1 border-b-4 border-transparent hover:text-[#a1481a]" data-tab="datafabric">
-        Data Fabric
-      </button>
-      <button class="tab-btn pb-1 border-b-4 border-transparent hover:text-[#a1481a]" data-tab="produto">
-        Produto
-      </button>
-      <button class="tab-btn pb-1 border-b-4 border-transparent hover:text-[#a1481a]" data-tab="colaboradores">
-        Colaboradores
-      </button>
-    </div>
+    <h3 class="text-[#094559] font-semibold mt-6">Sobre a Equipe</h3>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="coordenacao">Coordenação</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="datafabric">Data Fabric</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="design">Design</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="produto">Produto</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="aplicativo">Aplicativo</button>
+    <button class="tab-btn w-full text-left py-2 px-3 border-l-4 border-transparent hover:border-[#B7561F] transition-colors duration-200" data-tab="colaboradores">Colaboradores</button>
+  </aside>
 
-    <!-- Tab: Coordenação -->
-    <div class="tab-content flex justify-center flex-wrap gap-10 py-8" id="coordenacao">
-      <!-- Card 1 -->
-      <a href="#" class="mb-8">
-        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
-          <img
-            src="sobre/carla_rocha.png"
-            alt="Carla Rocha"
-            class="w-full h-[207px] object-cover"
-          />
-          <div class="pb-4 text-center text-[#B7561F]">
-            <h3 class="font-bold text-[18px] leading-none mt-2">
-              Carla Rocha
-            </h3>
-            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
-              @lorem
-            </p>
-          </div>
-        </div>
-      </a>
+  <!-- Conteúdo Central -->
+  <main class="flex-1 space-y-8 overflow-y-auto pr-4 pt-4 md:pt-0">
 
-      <!-- Card 2 -->
-      <a href="#" class="mb-8">
-        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
-          <img
-            src="sobre/carlos_davila.png"
-            alt="Carlos Davila"
-            class="w-full h-[207px] object-cover"
-          />
-          <div class="pb-4 text-center text-[#B7561F]">
-            <h3 class="font-bold text-[18px] leading-none mt-2">
-              Carlos Davila
-            </h3>
-            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
-              @lorem
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
+    <!-- Botão Menu dentro do fluxo do conteúdo -->
+    <button id="mobile-menu-btn" 
+            class="md:hidden mb-4 px-3 py-2 bg-[#094559] text-white rounded-lg shadow">
+      Menu
+    </button>
 
-    <!-- Tab: Aplicativo -->
-    <div class="tab-content hidden flex justify-center flex-wrap gap-10 py-8" id="aplicativo">
-      <a href="#" class="mb-8">
-        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
-          <img
-            src="sobre/carla_rocha.png"
-            alt="Carla Rocha"
-            class="w-full h-[207px] object-cover"
-          />
-          <div class="pb-4 text-center text-[#B7561F]">
-            <h3 class="font-bold text-[18px] leading-none mt-2">
-              Carla Rocha
-            </h3>
-            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
-              @lorem
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
+    <div id="objetivo" class="tab-content hidden">
+      <h2 class="text-center font-semibold text-[28px] leading-[1] text-[#20596C]">Tecnologia e Cuidado: A Nova Aliança<br>Contra o Câncer de Pele</h2>
 
-    <!-- Tab: Data Fabric -->
-    <div class="tab-content hidden flex justify-center flex-wrap gap-10 py-8" id="datafabric">
-      <a href="#" class="mb-8">
-        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
-          <img
-            src="sobre/abdul.png"
-            alt="Abdul"
-            class="w-full h-[207px] object-cover"
-          />
-          <div class="pb-4 text-center text-[#B7561F]">
-            <h3 class="font-bold text-[18px] leading-none mt-2">
-              Abdul Hannan
-            </h3>
-            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
-              @abdulhannan
-            </p>
-          </div>
-        </div>
-      </a>
-      <a href="#" class="mb-8">
-        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
-          <img
-            src="sobre/heitor.png"
-            alt="Heitor"
-            class="w-full h-[207px] object-cover"
-          />
-          <div class="pb-4 text-center text-[#B7561F]">
-            <h3 class="font-bold text-[18px] leading-none mt-2">
-              Heitor
-            </h3>
-            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
-              @heitormsb
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
+      <div class="mt-8 mb-8 max-w-[804px] mx-auto">
+        <img src="/sobre/Checker2.png" alt="Mock do conteúdo principal" class="w-full h-[360px] md:h-[420px] rounded-2xl object-cover" />
+      </div>
 
-    <!-- Tab: Produto -->
-    <div class="tab-content hidden flex justify-center flex-wrap gap-10 py-8" id="produto">
-      <a href="#" class="mb-8">
-        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
-          <img
-            src="sobre/carla_rocha.png"
-            alt="Carla Rocha"
-            class="w-full h-[207px] object-cover"
-          />
-          <div class="pb-4 text-center text-[#B7561F]">
-            <h3 class="font-bold text-[18px] leading-none mt-2">
-              Carla Rocha
-            </h3>
-            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
-              @lorem
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <!-- Tab: Colaboradores -->
-    <div class="tab-content hidden flex justify-center flex-wrap gap-10 py-8" id="colaboradores">
-      <a href="#" class="mb-8">
-        <div class="bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] w-[210px] overflow-hidden">
-          <img
-            src="sobre/carla_rocha.png"
-            alt="Carla Rocha"
-            class="w-full h-[207px] object-cover"
-          />
-          <div class="pb-4 text-center text-[#B7561F]">
-            <h3 class="font-bold text-[18px] leading-none mt-2">
-              Carla Rocha
-            </h3>
-            <p class="text-[12px] leading-none text-[#A1481A] mt-2">
-              @lorem
-            </p>
-          </div>
-        </div>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-    
-
-
-    <!-- Seção “Quem apoia essa iniciativa” -->
-<section class="bg-gray-50 py-16">
-  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-start">
-    <!-- Coluna da esquerda: Título -->
-    <div class="w-full md:w-1/2 mb-8 flex justify-center">
-      <h2 class="text-[56px] font-bold text-[#2D7E99] text-center">
-        Quem apoia<br>essa iniciativa
-      </h2>
-    </div>
-
-    <!-- Coluna da direita: Cards -->
-    <div class="w-full md:w-1/2 flex flex-col items-center md:items-end space-y-6">
-
-      <!-- Card 1: Lab Livre -->
-      <div
-        class="card bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]
-               w-full max-w-[418px] p-6 flex flex-col items-center"
-      >
-        <!-- Logo Lab Livre -->
-        <img
-          src="sobre/lablivre.png"
-          alt="Logotipo Lab Livre"
-          class="h-[69px] w-[131px] mt-[44px] mb-[20px] object-contain"
-        />
-        <p
-          class="font-dmsans font-normal text-[18px] leading-[100%]
-                 text-[#4D4D4D] text-center mb-[44px]"
-        >
-          Inovação, tecnologia e criatividade.
+      <div class="mt-4 max-w-[804px] mx-auto space-y-3 font-[500]">
+        <p class="text-[18px] leading-[1] text-[#094559] font-dm-sans">
+          Este projeto dedica-se ao combate ao câncer de pele, o tipo com maior incidência no Brasil,
+          atuando em duas frentes cruciais: a prevenção e a detecção precoce. A iniciativa se destaca por
+          sua abordagem inovadora, que combina o uso de tecnologia e ciência de dados com ações educativas
+          direcionadas à população.
+        </p>
+        <p class="text-[18px] leading-[1] text-[#094559] font-dm-sans">
+          Através dessa integração, o projeto visa identificar lesões suspeitas de maneira ágil e eficiente,
+          facilitando o diagnóstico rápido. Simultaneamente, busca capacitar o público com informações claras
+          e acessíveis sobre as melhores formas de prevenção, os passos para o diagnóstico e as opções de
+          tratamento disponíveis, promovendo a saúde e reduzindo o impacto da doença na sociedade.
         </p>
       </div>
 
-      <!-- Card 2: UnB -->
-      <div
-        class="card bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]
-               w-full max-w-[418px] p-6 flex flex-col items-center"
-      >
-        <!-- Logo UnB -->
-        <img
-          src="sobre/unb.png"
-          alt="Logotipo UnB"
-          class="h-[36.86px] w-[144px] mt-[32px] mb-[43px] object-contain"
-        />
-        <div class="flex flex-col items-center">
-          <p
-            class="font-lexend font-bold text-[18px] leading-[100%]
-                   text-[#4D4D4D] text-center mb-[17px]"
-          >
-            Universidade de Brasília
-          </p>
-          <p
-            class="font-dmsans font-normal text-[16px] leading-[100%]
-                   text-[#4D4D4D] text-center mb-[24px]"
-          >
-            Pesquisa, desenvolvimento e base científica.
-          </p>
-        </div>
-      </div>
 
-      <!-- Card 3: FAP DF -->
-      <div
-        class="card bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)]
-               w-full max-w-[418px] p-6 flex flex-col items-center"
-      >
-        <!-- Logo FAP DF -->
-        <img
-          src="sobre/fapdf.png"
-          alt="Logotipo FAP DF"
-          class="h-[84.41px] w-[131px] mt-[24px] mb-[17px] object-contain"
-        />
-        <div class="flex flex-col items-center">
-          <p
-            class="font-lexend font-medium text-[20px] leading-[100%]
-                   text-[#4D4D4D] text-center mb-[17px]"
-          >
-            FAP DF
-          </p>
-          <p
-            class="font-dmsans font-normal text-[18px] leading-[100%]
-                   text-[#4D4D4D] text-center mb-[24px]"
-          >
-            Financiamento e apoio à inovação.
-          </p>
-        </div>
-      </div>
+      <h3 class="mt-8 mb-8 text-center font-medium text-[24px] leading-[1] text-[#20596C]">Educação em Saúde e Triagem Precoce de Câncer:<br>Data Fabric e Machine Learning em Saúde</h3>
 
+      <div class="mb-8 max-w-[804px] mx-auto flex flex-col gap-8">
+        <div class="w-full rounded-[24px] p-9 shadow-[0_2px_4px_rgba(0,0,0,0.15)] bg-[#FFEFE5]"><p class="text-[16px] leading-[1.4] text-[#B7561F]"><span class="font-semibold">Educação em saúde</span> para a população e profissionais</p></div>
+        <div class="w-full rounded-[24px] p-9 shadow-[0_2px_4px_rgba(0,0,0,0.15)] bg-[#F4E8FF]"><p class="text-[16px] leading-[1.4] text-[#7A1FA0]"><span class="font-semibold">Machine Learning e Data Fabric</span> para apoiar o diagnóstico precoce</p></div>
+        <div class="w-full rounded-[24px] p-9 shadow-[0_2px_4px_rgba(0,0,0,0.15)] bg-[#D6F2FA]"><p class="text-[16px] leading-[1.4] text-[#20596C]"><span class="font-semibold">Fluxos integrados com a Atenção Primária (UBS)</span> e a rede de referência oncológica.</p></div>
+      </div>
     </div>
+
+    <div id="problema" class="tab-content hidden max-w-[804px] mx-auto space-y-5 pb-8">
+      <h2 class="text-[28px] leading-[34px] md:text-[32px] md:leading-[38px] font-semibold text-[#20596C] text-center">
+        Desafios na Triagem Precoce do Câncer de Pele no Brasil
+      </h2>
+
+      <p class="text-[18px] leading-[28px] font-normal text-[#094559]">
+        <strong>O câncer de pele é o tumor maligno mais frequente no Brasil, correspondendo a cerca de 30% de todos os casos registrados.</strong> 
+        Embora apresente altos percentuais de cura quando diagnosticado e tratado precocemente, 
+        <strong>a detecção tardia ainda é uma realidade para grande parte da população</strong>, comprometendo os resultados clínicos e aumentando o ônus sobre o sistema de saúde.
+      </p>
+
+      <p class="text-[18px] leading-[28px] font-normal text-[#094559]">
+        Nos programas de saúde pública, há uma lacuna significativa na educação voltada à detecção precoce e na eficiência dos fluxos de triagem. 
+        <strong>O Projeto de Dermalert propõe uma solução integrada, que combina:</strong>
+      </p>
+
+      <div class="bg-[#E6F3F6] border border-[#C7E0E5] rounded-2xl p-6">
+        <ul class="list-disc pl-6 space-y-2 text-[18px] leading-[28px] font-medium text-[#094559]">
+          <li>Aplicação de questionário de rastreio clínico</li>
+          <li>Captura e registro de imagens suspeitas de lesões cutâneas</li>
+          <li>Integração da série histórica de atendimentos (CIDs correlacionados) em uma plataforma analítica</li>
+          <li>Encaminhamento de casos de risco para unidades de Atenção Primária à Saúde</li>
+        </ul>
+      </div>
+
+      <p class="text-[18px] leading-[28px] font-normal text-[#094559]">
+        O diagnóstico precoce, via exames clínicos, laboratoriais, endoscópicos ou radiológicos, é a estratégia mais eficaz para detectar câncer de pele em estágios iniciais (INCA, 2022; WHO, 2017). 
+        Para isso, é fundamental capacitar população e profissionais de saúde no reconhecimento de sinais suspeitos e garantir acesso rápido aos serviços de Atenção Primária.
+      </p>
+
+      <p class="text-[18px] leading-[28px] font-normal text-[#094559]">
+        Embora não haja comprovação de que um método específico de autoexame reduza mortalidade, muitos casos são descobertos pelos próprios pacientes ou familiares, o que reforça a necessidade de ações educativas voltadas ao autoconhecimento da pele 
+        (Australian Cancer Network, 2008). Diante da alta incidência e dos custos associados ao câncer de pele no Brasil, ampliar programas de prevenção, triagem inteligente e integração de dados no SUS é essencial para reduzir diagnósticos tardios e melhorar as taxas de cura.
+      </p>
+    </div>
+
+    <div id="publico" class="tab-content hidden pb-12">
+  <h2 class="text-[28px] leading-[34px] md:text-[32px] md:leading-[38px] font-semibold text-[#094559] text-center mb-8">
+    Beneficiários da Triagem e Diagnóstico
+  </h2>
+
+  <div class="flex flex-col md:flex-row justify-center items-stretch gap-6">
+    <!-- Card 1 -->
+    <article class="w-full md:w-[340px] bg-[#E6F6FA] rounded-2xl shadow-sm overflow-hidden flex flex-col h-auto md:h-[501px] min-h-[400px]">
+      <img src="/sobre/publico1.png" alt="Profissionais de Atenção Primária"
+           class="w-full h-[160px] object-cover">
+      <div class="p-6 text-center flex flex-col flex-grow">
+        <h3 class="font-medium text-[#094559] text-[20px] md:text-[22px] leading-[120%] font-[Lexend]">
+          Profissionais de Atenção Primária
+        </h3>
+        <p class="mt-2 font-normal text-[18px] leading-[120%] text-[#094559]">
+          Médicos, enfermeiros e agentes comunitários de saúde das UBS/ESF envolvidos na triagem e no encaminhamento de pacientes com lesões suspeitas. Capacitados para utilizar o sistema de triagem, aplicar questionários clínicos e registrar imagens para diagnóstico precoce.
+        </p>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="w-full md:w-[340px] bg-[#FDEFEA] rounded-2xl shadow-sm overflow-hidden flex flex-col h-auto md:h-[501px] min-h-[400px]">
+      <img src="/sobre/publico2.png" alt="Pacientes com Lesões de Pele"
+           class="w-full h-[160px] object-cover">
+      <div class="p-6 text-center flex flex-col flex-grow">
+        <h3 class="font-medium text-[#C2481C] text-[20px] md:text-[22px] leading-[120%] font-[Lexend]">
+          Pacientes com Lesões de Pele
+        </h3>
+        <p class="mt-2 font-normal text-[18px] leading-[120%] text-[#A34308]">
+          Indivíduos a partir de 18 anos que procuram atendimento em UBS ou mutirões de saúde para avaliação de lesões cutâneas. Beneficiam-se de rastreio clínico, registro de imagens e encaminhamento rápido, aumentando as chances de detecção e cura precoce.
+        </p>
+      </div>
+    </article>
   </div>
-</section>
+</div>
+
+
+
+
+
+
+
+
+
+    <div id="metodologia" class="tab-content hidden max-w-[804px] mx-auto space-y-5 pb-16">
+      <h2 class="text-[28px] leading-[34px] md:text-[32px] md:leading-[38px] font-semibold text-[#20596C] text-center">
+        Metodologia
+      </h2>
+
+      <p class="text-[18px] leading-[28px] font-normal text-[#094559]">
+        <strong>O câncer de pele é o tumor maligno mais frequente no Brasil, correspondendo a cerca de 30% de todos os casos registrados.</strong> 
+        Embora apresente altos percentuais de cura quando diagnosticado e tratado precocemente, 
+        <strong>a detecção tardia ainda é uma realidade para grande parte da população</strong>, comprometendo os resultados clínicos e aumentando o ônus sobre o sistema de saúde.
+      </p>
+
+      <p class="text-[18px] leading-[28px] font-normal text-[#094559]">
+        Nos programas de saúde pública, há uma lacuna significativa na educação voltada à detecção precoce e na eficiência dos fluxos de triagem. 
+        <strong>O Projeto de Dermalert propõe uma solução integrada, que combina:</strong>
+      </p>
+
+      <p class="text-[18px] leading-[28px] font-normal text-[#094559]">
+        <strong>O câncer de pele é o tumor maligno mais frequente no Brasil, correspondendo a cerca de 30% de todos os casos registrados.</strong> 
+        Embora apresente altos percentuais de cura quando diagnosticado e tratado precocemente, 
+        <strong>a detecção tardia ainda é uma realidade para grande parte da população</strong>, comprometendo os resultados clínicos e aumentando o ônus sobre o sistema de saúde.
+      </p>
+
+      <p class="text-[18px] leading-[28px] font-normal text-[#094559]">
+        Nos programas de saúde pública, há uma lacuna significativa na educação voltada à detecção precoce e na eficiência dos fluxos de triagem. 
+        <strong>O Projeto de Dermalert propõe uma solução integrada, que combina:</strong>
+      </p>
+    </div>
+
+
+    <div id="financiamento" class="tab-content hidden max-w-[462px] mx-auto space-y-6 pb-16">
+      <h2 class="text-[28px] leading-[34px] md:text-[32px] md:leading-[38px] font-semibold text-[#20596C] text-center">
+        Quem apoia essa iniciativa
+      </h2>
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl border border-[#E5E7EB] p-6 space-y-4 shadow-sm">
+        <div class="flex flex-col items-center space-y-3">
+          <div class="flex items-center space-x-3">
+            <img src="/sobre/card1_icon.png" alt="" class="w-[50px] h-[49px]">
+            <h3 class="font-[500] text-[#4D4D4D] text-[24px] leading-[100%] font-[Lexend] text-center">
+              Executora do Projeto
+            </h3>
+          </div>
+          <div class="flex items-center justify-center space-x-6">
+            <img src="/sobre/card1_logo1.png" alt="UnB" class="h-[70px]">
+            <img src="/sobre/card1_logo2.png" alt="Lab Livre" class="h-[70px]">
+          </div>
+        </div>
+        <p class="font-[400] font-[DM_Sans] text-[18px] leading-[100%] text-[#4D4D4D] text-center">
+          A Universidade de Brasília, por meio de seu laboratório Lab Livre, gerencia e operacionaliza
+          todas as atividades de campo, análise de dados e integração tecnológica.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl border border-[#E5E7EB] p-6 space-y-4 shadow-sm">
+        <div class="flex flex-col items-center space-y-3">
+          <div class="flex items-center space-x-3">
+            <img src="/sobre/card2_icon.png" alt="" class="w-[50px] h-[49px]">
+            <h3 class="font-[500] text-[#4D4D4D] text-[24px] leading-[100%] font-[Lexend] text-center">
+              Fonte de recurso
+            </h3>
+          </div>
+          <div class="flex justify-center">
+            <img src="/sobre/card2_logo1.png" alt="FAP-DF" class="h-[70px]">
+          </div>
+        </div>
+        <p class="font-[400] font-[DM_Sans] text-[18px] leading-[100%] text-[#4D4D4D] text-center">
+          O projeto é financiado pelo Edital FAP-DF, que apoia iniciativas de inovação em saúde pública
+          no Distrito Federal.
+        </p>
+      </div>
+    </div>
+
+    <div id="coordenacao" class="tab-content hidden">
+      <h2 class="text-2xl font-semibold text-[#094559] mb-2 text-center">Coordenação</h2>
+      <p class="max-w-3xl mx-auto text-center text-[#031E21]/80">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+        consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+        <!-- Card 1 -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/carla rocha.png" alt="Carla Rocha" class="w-full h-48 object-cover">
+          <div class="bg-[#FFEFE5] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">Carla Rocha</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#B7561F]">@carlarocha</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/carlos davila.png" alt="Carlos de Ávila" class="w-full h-48 object-cover">
+          <div class="bg-[#FFEFE5] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">Carlos de Ávila</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#B7561F]">@lorem</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div id="datafabric" class="tab-content hidden">
+      <h2 class="text-2xl font-semibold text-[#094559] mb-2 text-center">Data Fabric</h2>
+      <p class="max-w-3xl mx-auto text-center text-[#031E21]/80">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+        consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+        <!-- Card 1 -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover">
+          <div class="bg-[#E6F7FC] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#094559]">Abdul Hannan</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#094559]">@abdulhannan</p>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/heitor.png" alt="Heitor" class="w-full h-48 object-cover">
+          <div class="bg-[#E6F7FC] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#094559]">Heitor</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#094559]">@heitormb</p>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/giovanni.png" alt="Giovanni" class="w-full h-48 object-cover">
+          <div class="bg-[#E6F7FC] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#094559]">Giovanni</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#094559]">@giampauli</p>
+          </div>
+        </article>
+      </div>
+    </div>
+    
+    <div id="design" class="tab-content hidden">
+      <h2 class="text-2xl font-semibold text-[#094559] mb-2 text-center">Design</h2>
+      <p class="max-w-3xl mx-auto text-center text-[#031E21]/80">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+        consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+        <!-- Abdul Hannan (foto com camiseta roxa) -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/joao egewarth.png" alt="João Egewarth" class="w-full h-48 object-cover">
+          <div class="bg-[#FFEFE5] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">João Egewarth</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#B7561F]">@lorem</p>
+          </div>
+        </article>
+
+        <!-- Heitor -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/heitor.png" alt="Heitor" class="w-full h-48 object-cover">
+          <div class="bg-[#FFEFE5] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">Heitor</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#B7561F]">@heitormsb</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div id="produto" class="tab-content hidden">
+      <h2 class="text-2xl font-semibold text-[#094559] mb-2 text-center">Produto</h2>
+      <p class="max-w-3xl mx-auto text-center text-[#031E21]/80">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+        consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+      </p>
+
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+        <!-- Abdul Hannan -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover">
+          <div class="bg-[#F3E8FF] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#5B08A3]">Abdul Hannan</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#5B08A3]">@abdulhannan</p>
+          </div>
+        </article>
+
+        <!-- Heitor -->
+        <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+          <img src="/sobre/giovanni.png" alt="Giovanni" class="w-full h-48 object-cover">
+          <div class="bg-[#F3E8FF] px-5 py-4 text-center">
+            <h3 class="text-[18px] leading-none font-bold text-[#5B08A3]">Giovanni</h3>
+            <p class="mt-1 text-[12px] leading-none font-normal text-[#5B08A3]">@giampauli</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+
+    <div id="aplicativo" class="tab-content hidden">
+      <h2 class="text-2xl font-semibold text-[#094559] mb-4">Aplicativo</h2>
+      <p>A definir...</p>
+    </div>
+
+    <div id="colaboradores" class="tab-content hidden">
+  <h2 class="text-2xl font-semibold text-[#094559] mb-2 text-center">Colaboradores</h2>
+  <p class="max-w-3xl mx-auto text-center text-[#031E21]/80">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+    consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+  </p>
+
+  <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+    <!-- Abdul Hannan -->
+    <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+      <img src="/sobre/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover">
+      <div class="bg-[#E6F7FC] px-5 py-4 text-center">
+        <h3 class="text-[18px] leading-none font-bold text-[#20596C]">Abdul Hannan</h3>
+        <p class="mt-1 text-[12px] leading-none font-normal text-[#20596C]">@abdulhannan</p>
+      </div>
+    </article>
+
+    <!-- Heitor -->
+    <article class="rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto">
+      <img src="/sobre/heitor.png" alt="Heitor" class="w-full h-48 object-cover">
+      <div class="bg-[#E6F7FC] px-5 py-4 text-center">
+        <h3 class="text-[18px] leading-none font-bold text-[#20596C]">Heitor</h3>
+        <p class="mt-1 text-[12px] leading-none font-normal text-[#20596C]">@heitormsb</p>
+      </div>
+    </article>
+  </div>
+</div>
+
+
+  </main>
+</div>
+
+
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    // Seleciona todos os elementos com classe "card" (na ordem em que aparecem)
-    const cards = Array.from(document.querySelectorAll('.card'));
+  const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+  const sidebar = document.getElementById("sidebar");
+  const tabButtons = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
 
-    // Estados pré-definidos de opacidades para cada índice selecionado:
-    //   [Lab Livre, UnB, FAP DF]
-    // Se indice selecionado for 0 → [1.0, 0.25, 0.50]
-    // Se indice selecionado for 1 → [0.25, 1.0, 0.50]
-    // Se indice selecionado for 2 → [0.25, 0.50, 1.0]
-    const opacityStates = [
-      [1.0, 0.25, 0.50],
-      [0.25, 1.0, 0.50],
-      [0.25, 0.50, 1.0]
-    ];
+  // Toggle menu mobile
+  mobileMenuBtn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    sidebar.classList.toggle("-translate-x-full");
 
-    // Função que aplica o estado de opacidade baseado no índice "selectedIndex"
-    function setOpacities(selectedIndex) {
-      cards.forEach((cardEl, idx) => {
-        cardEl.style.opacity = opacityStates[selectedIndex][idx];
-      });
+    // Esconde o botão quando menu estiver aberto
+    if (!sidebar.classList.contains("-translate-x-full")) {
+      mobileMenuBtn.classList.add("hidden");
+    } else {
+      mobileMenuBtn.classList.remove("hidden");
     }
+  });
 
-    // 1) Por padrão, seleciona o primeiro card (Lab Livre) assim que a página carrega:
-    setOpacities(0);
+  // Tabs
+  tabButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const tab = button.getAttribute("data-tab");
 
-    // 2) Para cada card, adiciona um listener de clique que “ativa” o índice correspondente
-    cards.forEach((cardEl, idx) => {
-      cardEl.addEventListener('click', () => {
-        setOpacities(idx);
+      // Remove estado ativo de todos
+      tabButtons.forEach(btn => {
+        btn.classList.remove("border-[#B7561F]", "bg-[#F6F6F6]");
+        btn.classList.add("border-transparent");
       });
-      // Também adicionamos cursor "pointer" para indicar que é clicável:
-      cardEl.style.cursor = 'pointer';
+
+      // Adiciona estado ativo ao clicado
+      button.classList.remove("border-transparent");
+      button.classList.add("border-[#B7561F]", "bg-[#F6F6F6]");
+
+      // Mostra conteúdo
+      tabContents.forEach(content => content.classList.add("hidden"));
+      document.getElementById(tab).classList.remove("hidden");
+
+      // Fecha menu no mobile
+      if (window.innerWidth < 768) {
+        sidebar.classList.add("-translate-x-full");
+        mobileMenuBtn.classList.remove("hidden");
+      }
     });
+  });
+
+  // Fecha menu ao clicar fora
+  document.addEventListener("click", (e) => {
+    if (
+      window.innerWidth < 768 &&
+      !sidebar.contains(e.target) &&
+      !mobileMenuBtn.contains(e.target)
+    ) {
+      sidebar.classList.add("-translate-x-full");
+      mobileMenuBtn.classList.remove("hidden");
+    }
+  });
+
+  // Primeira aba ativa
+  window.addEventListener("DOMContentLoaded", () => {
+    const firstTab = document.querySelector(".tab-btn");
+    if (firstTab) firstTab.click();
   });
 </script>
 
+<!-- FIM - CORPO DA PÁGINA -->
 
 
     <!-- Rodapé -->
