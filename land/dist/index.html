@@ -1,466 +1,217 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dermalert</title>
-    <script type="module" crossorigin src="./assets/main-CLsP--u5.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-BLezsHm-.css">
+    <script type="module" crossorigin src="./assets/main-BVHjRc1C.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-BEQhqGar.css">
   </head>
+
   <body class="font-[Lexend] antialiased bg-white text-gray-800">
-    <!-- Header fixo no topo com menu hambúrguer responsivo -->
-    <header id="navbar" class="fixed top-0 left-0 w-full bg-[#094559] shadow-sm shadow-gray-400 z-50">
-      
-      <div class="max-w-7xl mx-auto flex items-center justify-between py-[24px] md:py-[32px] px-6">
-        
-        <!-- Logo -->
-        <div class="flex items-center gap-2">
-          <!-- Logo -->
-          <a href="index.html" class="flex items-center gap-2">
-            <img src="./logo.png" alt="DERMALERT" class="h-[24px] w-auto md:h-[30px] md:w-[114px]" />
-          </a>
-        </div>
-
-        <!-- Botão do menu hambúrguer (visível no mobile) -->
-        <button id="menu-toggle" class="md:hidden text-white focus:outline-none z-50">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+    <header id="navbar" class="fixed inset-x-0 top-0 z-50 bg-[#094559]/95 backdrop-blur-sm transition-all duration-300 will-change-transform">
+      <div class="max-w-7xl mx-auto flex items-center justify-between py-6 md:py-8 px-6 transition-[padding] duration-300">
+        <!-- logo -->
+        <a href="index.html" class="flex items-center gap-2" aria-label="Ir para a página inicial"><img src="home/logo-dermalert-white.svg" alt="DERMALERT" class="h-6 w-auto md:h-[30px] md:w-[114px] scale-105 hover:scale-110 active:scale-110 active:drop-shadow-lg transition-transform duration-300 select-none"></a>
+        <!-- botão mobile -->
+        <button id="menu-toggle" class="relative md:hidden inline-flex h-10 w-10 items-center justify-center rounded-md text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 focus-visible:ring-offset-2 focus-visible:ring-offset-[#094559] transition" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu">
+          <span class="sr-only">Abrir menu</span>
+          <span class="relative block h-4 w-6">
+            <span class="line absolute inset-x-0 top-0 h-0.5 bg-current transition-all duration-300"></span>
+            <span class="line absolute inset-x-0 top-1/2 -translate-y-1/2 h-0.5 bg-current transition-all duration-300"></span>
+            <span class="line absolute inset-x-0 bottom-0 h-0.5 bg-current transition-all duration-300"></span>
+          </span>
         </button>
-
-        <!-- Menu principal (visível em telas médias e maiores) -->
-        <nav class="hidden md:flex flex-row items-center space-x-10 text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
-          <a href="comofunciona.html" class="hover:underline hover:decoration-[#D06A32] transition">
-            Como Funciona
-          </a>
-          <a href="../../ajuda-e-suporte/problemas-comuns/" class="hover:underline hover:decoration-[#D06A32] transition">
-            Ajuda e Suporte
-          </a>
-          <a href="../../curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
-            Curso de Extensão
-          </a>
-          <a href="sobre.html" class="hover:underline hover:decoration-[#D06A32] transition">
-            Sobre
-          </a>
-          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
-            Documentação
-          </a>
+        <!-- menu desktop -->
+        <nav class="hidden md:flex items-center space-x-10 text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
+          <a href="comofunciona.html" class="nav-link">Como Funciona</a>
+          <a href="../../ajuda-e-suporte/problemas-comuns/" class="nav-link">Ajuda e Suporte</a>
+          <a href="../../curso-de-extensao/sobre-o-curso/" class="nav-link">Curso de Extensão</a>
+          <a href="sobre.html" class="nav-link">Sobre</a>
+          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="nav-link">Documentação</a>
         </nav>
-
-        <!-- Botão de ação (visível apenas em telas grandes) -->
-        <div class="hidden lg:inline-block">
-          <a href="#" 
-            class="px-[20px] py-[12px] rounded-full text-base font-normal tracking-[0.5px] text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]">
-            Participar da Pesquisa
-          </a>
-        </div>
-      
+        <!-- cta desktop -->
+        <a href="#" class="hidden lg:inline-block px-6 py-3 rounded-full font-medium text-white bg-gradient-to-b from-[#B7561F] to-[#8A4316] shadow-md hover:scale-105 hover:shadow-lg active:scale-95 transition-transform duration-200">Participar da Pesquisa</a>
       </div>
-
-      <!-- Menu Mobile (aparece ao clicar no botão) -->
-      <div id="mobile-menu"
-        class="hidden md:hidden scale-y-0 origin-top transition-transform duration-300 bg-[#094559] text-center text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
-        
-        <a href="comofunciona.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
-          Como Funciona
-        </a>
-        <a href="../../ajuda-e-suporte/problemas-comuns/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
-          Ajuda e Suporte
-        </a>
-        <a href="../../curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
-          Curso de Extensão
-        </a>
-        <a href="sobre.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
-          Sobre
-        </a>
-        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
-          Documentação
-        </a>
+      <!-- menu mobile -->
+      <div id="mobile-menu" class="md:hidden pointer-events-none opacity-0 -translate-y-2 scale-y-95 origin-top transition-all duration-300 bg-[#094559] text-center text-base font-normal tracking-[0.5px] text-[#F6F6F6] will-change-transform" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
+        <p id="menu-title" class="sr-only">Menu</p>
+        <!-- lista -->
+        <nav class="py-3 px-4 text-left">
+          <ul class="rounded-2xl border border-white/10 divide-y divide-white/10 overflow-hidden backdrop-blur-sm">
+            <li><a href="comofunciona.html" class="menu-link animate-menu-in [animation-delay:60ms]">Como Funciona<svg class="chev" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="../../ajuda-e-suporte/problemas-comuns/" class="menu-link animate-menu-in [animation-delay:120ms]">Ajuda e Suporte<svg class="chev" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="../../curso-de-extensao/sobre-o-curso/" class="menu-link animate-menu-in [animation-delay:180ms]">Curso de Extensão<svg class="chev" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="sobre.html" class="menu-link animate-menu-in [animation-delay:240ms]">Sobre<svg class="chev" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+            <li><a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="menu-link animate-menu-in [animation-delay:300ms]">Documentação<svg class="chev" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>
+          </ul>
+          <!-- cta -->
+          <a href="#" class="mt-3 inline-flex w-full items-center justify-center rounded-[14px] border border-white/15 bg-white/10 hover:bg-white/15 active:bg-white/20 text-white h-12 transition animate-menu-in [animation-delay:360ms]">Participar da Pesquisa</a>
+        </nav>
       </div>
-
     </header>
-    
-    <section id="hero" class="bg-white py-8 md:py-20">
-      <div class="max-w-6xl mx-auto px-4 flex flex-col items-center text-center">
 
-        <!-- Logo centralizado (48px de altura, largura automática) -->
-        <img
-          src="./logo-dermalert.png"
-          alt="DERMALERT"
-          class="h-12 w-auto mt-14 md:mt-8 mb-6"
-        />
-
-        <!-- Título principal (textos menores em telas pequenas, maiores em desktop) -->
-        <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-[#094559] leading-tight mb-6">
-          Triagem Segura e Inteligente para<br class="hidden md:block" />
-          Diagnósticos Precoces
-        </h1>
-
-        <!-- Imagem central com largura responsiva -->
-        <img
-          src="./hero-image.png"
-          alt="Imagem de celulares com texto embutido"
-          class="w-full max-w-[700px] sm:max-w-[900px] md:max-w-[1100px] lg:max-w-[1440px] h-auto rounded-[24px] mb-6"
-        />
-
-        <!-- Bloco de texto compacto (padding reduzido em mobile) -->
-        <div
-          class="bg-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] rounded-[27px]
-                px-6 sm:px-8 md:px-12 py-6 sm:py-8 md:py-10
-                max-w-md sm:max-w-lg md:max-w-[605px] mx-auto mb-6"
-        >
-          <p class="text-[#1A4568] text-base sm:text-lg md:text-[27px] leading-[1.4] md:leading-[36px] tracking-[0.5px] font-normal">
-            Registre pacientes, capture imagens e priorize atendimentos com uma
-            <span class="font-bold text-[#094559]">solução integrada e segura</span>
-          </p>
-        </div>
-
-        <!-- Botão centralizado (tamanho ajustado para dispositivos pequenos) -->
-        <div class="mt-4">
-          <a
-            href="#"
-            class="inline-block px-6 py-3 rounded-full text-sm sm:text-base font-normal tracking-[0.5px]
-                  text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]"
-          >
+    <main>
+      <section id="hero" class="bg-white pt-28 pb-8 md:pt-32 overflow-hidden">
+        <div class="mx-auto max-w-screen-xl px-4 text-center flex flex-col items-center justify-center min-h-[calc(100svh-96px)] md:min-h-[calc(100svh-104px)]">
+          <!-- logo -->
+          <img src="home/logo-dermalert.svg" alt="DERMALERT"
+            class="h-12 w-auto mb-6 animate-hero-fade-in [animation-delay:200ms] hover:scale-105 hover:drop-shadow-lg transition-transform duration-300">
+          <!-- título -->
+          <h1 class="font-bold text-[#094559] mb-6 animate-hero-fade-up [animation-delay:400ms] transition duration-300 hover:scale-105 hover:text-[#073642]" style="font-size:clamp(28px,4vw,56px);line-height:1.15">
+            Triagem Segura e Inteligente para<br class="hidden md:block"> Diagnósticos Precoces
+          </h1>
+          <!-- imagem central -->
+          <img src="home/hero-image.svg" alt="Imagem de celulares"
+            class="w-full h-auto max-w-[1100px] lg:max-w-[1440px] max-h-[52vh] md:max-h-[56vh] object-contain rounded-[24px] mb-6 animate-hero-fade-up [animation-delay:600ms]">
+          <!-- bloco de texto -->
+          <div class="bg-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] rounded-[27px] px-8 md:px-12 py-6 md:py-8 max-w-[605px] mx-auto mb-6 animate-hero-fade-up [animation-delay:800ms] hover:-translate-y-1 hover:shadow-[0_6px_18px_rgba(0,0,0,0.2)] transition duration-300">
+            <p class="text-[#1A4568]" style="font-size:clamp(16px,2.2vw,27px);line-height:clamp(24px,3.2vw,36px)">
+              Registre pacientes, capture imagens e priorize atendimentos com uma <span class="font-bold text-[#094559]">solução integrada e segura</span>
+            </p>
+          </div>
+          <!-- botão -->
+          <a href="#"
+            class="inline-block px-6 py-3 rounded-full text-white bg-[#B7561F] border border-[#B7561F] hover:bg-[#8A4316] transition animate-hero-fade-up [animation-delay:1000ms]">
             Participar da Pesquisa
           </a>
         </div>
+      </section>
 
-      </div>
-    </section>
+     <!-- ---------------------------------------------------------------------------------------------------- -->
 
-
-    
-    <!-- Seção: Por que escolher nosso software -->
-    <section id="nosso-software" class="bg-[#F7E5E5] py-8 md:py-16 px-4 md:px-12">
-      <div class="max-w-7xl mx-auto">
-
-        <!-- Título -->
-        <h2 class="text-[#2D7E99] font-bold text-2xl sm:text-3xl md:text-[48px] leading-tight text-center mb-8 md:mb-12">
-          Por que escolher nosso software?
-        </h2>
-
-        <!-- Grid principal: 1 coluna em mobile, 2 em md+ -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-
-          <!-- Card 1 -->
-          <div class="bg-[#D06A32] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
-            <img
-              src="./registro-fotografico.png"
-              alt="Registro Fotográfico"
-              class="rounded-[24px] mb-4 w-full h-auto max-h-[200px] sm:max-h-[300px] md:max-h-[395px] object-cover"
-            />
-
-            <div class="flex items-center gap-2 mb-4">
-              <img
-                src="./etapa-1.png"
-                alt="Etapa 1"
-                class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
-              />
+      <section id="nosso-software" class="bg-[#F7E5E5] py-8 md:py-16 px-4 md:px-12">
+        <div class="max-w-7xl mx-auto">
+          <!-- Título -->
+          <h2 class="text-[#2D7E99] font-bold text-center mb-8 md:mb-12" style="font-size:clamp(24px,4.2vw,48px)">Por que escolher nosso software?</h2>
+          <!-- Grid principal -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <!-- Card 1 -->
+            <div class="bg-[#D06A32] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+              <img src="./registro-fotografico.png" alt="Registro Fotográfico" class="rounded-[24px] mb-4 w-full h-auto max-h-[395px] object-cover">
+              <img src="./etapa-1.png" alt="Etapa 1" class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px] mb-4">
+              <h3 class="text-white font-bold mb-4" style="font-size:clamp(22px,4vw,48px);line-height:1.1">Registro Fotográfico Inteligente</h3>
+              <p class="text-white/80" style="font-size:clamp(14px,2.6vw,24px);line-height:clamp(22px,3.2vw,32px)">Captura e armazenamento seguro de imagens das lesões, permitindo acompanhamento visual detalhado ao longo do tempo.</p>
             </div>
-
-            <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
-              Registro Fotográfico Inteligente
-            </h3>
-
-            <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
-              Captura e armazenamento seguro de imagens das lesões, permitindo acompanhamento visual detalhado ao longo do tempo.
-            </p>
+            <!-- Coluna direita (2 cards) -->
+            <div class="flex flex-col gap-4 sm:gap-6 md:gap-8">
+              <!-- Card 2 -->
+              <div class="bg-[#5B08A3] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+                <img src="./etapa-2.png" alt="Etapa 2" class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px] mb-4">
+                <h3 class="text-white font-bold mb-4" style="font-size:clamp(22px,4vw,48px);line-height:1.1">Atendimento Simplificado</h3>
+                <p class="text-white/80" style="font-size:clamp(14px,2.6vw,24px);line-height:clamp(22px,3.2vw,32px)">Cadastro de pacientes, anamnese guiada e assinatura digital do termo de consentimento, tudo em um só lugar.</p>
+              </div>
+              <!-- Card 3 -->
+              <div class="bg-[#2D7E99] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+                <img src="./etapa-3.png" alt="Etapa 3" class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px] mb-4">
+                <h3 class="text-white font-bold mb-4" style="font-size:clamp(22px,4vw,48px);line-height:1.1">Segurança e Conformidade</h3>
+                <p class="text-white/80" style="font-size:clamp(14px,2.6vw,24px);line-height:clamp(22px,3.2vw,32px)">Proteção total dos dados de saúde com criptografia avançada, controle de acessos e auditoria contínua, seguindo as diretrizes da LGPD.</p>
+              </div>
+            </div>
           </div>
-
-          <!-- Coluna direita: 2 cards empilhados -->
-          <div class="flex flex-col gap-4 sm:gap-6 md:gap-8">
-
-            <!-- Card 2 -->
-            <div class="bg-[#5B08A3] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
-              <div class="flex items-center gap-2 mb-4">
-                <img
-                  src="./etapa-2.png"
-                  alt="Etapa 2"
-                  class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
-                />
-              </div>
-
-              <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
-                Atendimento Simplificado
-              </h3>
-
-              <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
-                Cadastro de pacientes, anamnese guiada e assinatura digital do termo de consentimento, tudo em um só lugar.
-              </p>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-[#2D7E99] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
-              <div class="flex items-center gap-2 mb-4">
-                <img
-                  src="./etapa-3.png"
-                  alt="Etapa 3"
-                  class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px]"
-                />
-              </div>
-
-              <h3 class="text-white font-bold text-xl sm:text-2xl md:text-[32px] md:text-[48px] leading-snug md:leading-[48px] tracking-wide mb-4">
-                Segurança e Conformidade
-              </h3>
-
-              <p class="text-white/80 font-normal text-sm sm:text-base md:text-[24px] leading-snug md:leading-[32px] tracking-wide">
-                Proteção total dos dados de saúde com criptografia avançada, controle de acessos e auditoria contínua, seguindo as diretrizes da LGPD.
-              </p>
-            </div>
-
+          <!-- Botão -->
+          <div class="mt-8 md:mt-10 text-center">
+            <a href="#" class="inline-block rounded-[50px] border-2 sm:border-4 border-[#031E21] text-[#031E21] px-6 md:px-8 py-3 hover:bg-[#031E21] hover:text-white transition">Saiba Mais</a>
           </div>
         </div>
+      </section>
 
-        <!-- Botão centralizado -->
-        <div class="mt-8 md:mt-10 text-center">
-          <a
-            href="#"
-            class="inline-block border-2 sm:border-4 border-[#031E21] text-[#031E21] text-sm sm:text-base md:text-base font-medium px-5 sm:px-6 md:px-8 py-2 sm:py-3 md:py-3 rounded-[50px]
-                  hover:bg-[#031E21] hover:text-white transition"
-          >
-            Saiba Mais
-          </a>
+      <!-- ---------------------------------------------------------------------------------------------------- -->
+
+      <section class="bg-[#FFEFE5] py-8 md:py-16 px-4 md:px-12">
+        <div class="max-w-4xl mx-auto flex flex-col gap-8">
+          <!-- Título -->
+          <div class="text-center">
+            <h2 class="font-bold text-[#B7561F] mb-4" style="font-size:clamp(24px,4.2vw,48px)">Sobre o Projeto</h2>
+            <p class="font-semibold text-[#B7561F] mb-6" style="font-size:clamp(18px,2.8vw,24px)">O Primeiro Passo na Prevenção do Câncer de Pele</p>
+          </div>
+          <!-- Imagem -->
+          <img src="./sobre-projeto.png" alt="Aplicação na pele" class="w-full max-w-[800px] h-auto object-cover rounded-[24px] mx-auto">
+          <!-- Bloco de textos -->
+          <div class="flex flex-col md:flex-row gap-6 bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] p-6 md:p-8 text-[#B7561F]">
+            <p class="md:w-1/2" style="font-size:clamp(18px,3vw,24px);line-height:1.4">O <strong>DermAlert</strong> é um projeto voltado para a <strong>triagem de pacientes com suspeita de câncer de pele</strong>, facilitando a identificação precoce e o encaminhamento adequado.</p>
+            <p class="md:w-1/2" style="font-size:clamp(16px,2.6vw,24px);line-height:1.4">Desenvolvido pelo <strong>Lab Livre</strong> em <strong>parceria com a UnB e a FAP-DF</strong>, o projeto busca aprimorar o atendimento primário por meio da tecnologia, tornando o <strong>diagnóstico mais acessível e eficiente</strong>.</p>
+          </div>
+          <!-- Botão -->
+          <div class="text-center">
+            <a href="#" class="inline-flex items-center justify-center bg-[#D06A32] text-white rounded-[50px] w-[240px] h-[56px] border border-[#D06A32] hover:bg-[#b35627] transition">Saiba Mais</a>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- ---------------------------------------------------------------------------------------------------- -->
 
+      <section class="mt-14 text-center">
+        <!-- Texto -->
+        <p class="text-[#666] text-[21px] leading-[22px] font-medium tracking-[0.15px] mb-4">Desenvolvido por:</p>
+        <!-- Imagem -->
+        <img src="./dev-by.png" alt="Logos UnB, FAPDF e Lab Livre" class="mx-auto h-[56px]">
+      </section>
 
-    <!-- Seção: Sobre o Projeto -->
-<section class="bg-[#FFEFE5] py-8 md:py-16 px-4 md:px-12">
-  <div class="max-w-4xl mx-auto flex flex-col gap-8">
+      <!-- ---------------------------------------------------------------------------------------------------- -->
 
-    <!-- Título -->
-    <div class="text-center">
-      <h2 class="font-bold text-2xl sm:text-3xl md:text-[48px] text-[#B7561F] leading-tight mb-4">
-        Sobre o Projeto
-      </h2>
-      <p class="font-semibold text-[18px] sm:text-[20px] md:text-[24px] text-[#B7561F] leading-tight mb-6">
-        O Primeiro Passo na Prevenção do Câncer de Pele
-      </p>
-    </div>
-    
-    <!-- Imagem -->
-    <div>
-      <img
-        src="./sobre-projeto.png"
-        alt="Aplicação na pele"
-        class="w-full max-w-full md:max-w-[800px] h-auto object-cover rounded-[24px] mx-auto"
-      />
-    </div>
-
-    <!-- Bloco de textos (empilhado em mobile, lado a lado em md+) -->
-    <div class="flex flex-col md:flex-row gap-6 bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] p-4 sm:p-6 md:p-8">
-      <!-- Texto 1 -->
-      <div class="w-full md:w-1/2 text-[#B7561F]">
-        <p class="font-normal text-[20px] sm:text-[24px] leading-[1.4] tracking-[0.5px]">
-          O <strong>DermAlert</strong> é um projeto voltado para a
-          <strong>triagem de pacientes com suspeita de câncer de pele</strong>,
-          facilitando a identificação precoce e o encaminhamento adequado.
-        </p>
-      </div>
-
-      <!-- Texto 2 -->
-      <div class="w-full md:w-1/2 text-[#B7561F]">
-        <p class="font-normal text-[16px] sm:text-[18px] md:text-[24px] leading-[1.4] tracking-[0.5px]">
-          Desenvolvido pelo <strong>Lab Livre</strong> em
-          <strong>parceria com a UnB e a FAP-DF</strong>, o projeto busca aprimorar o atendimento primário por meio da tecnologia, tornando o
-          <strong>diagnóstico mais acessível e eficiente</strong>.
-        </p>
-      </div>
-    </div>
-
-    <!-- Botão -->
-    <div class="text-center">
-      <a
-        href="#"
-        class="inline-flex items-center justify-center bg-[#D06A32] text-white text-[14px] sm:text-base font-medium rounded-[50px]
-               w-[240px] h-[56px] px-5 py-3 border border-[#D06A32] hover:bg-[#b35627] transition mx-auto"
-      >
-        Saiba Mais
-      </a>
-    </div>
-
-  </div>
-</section>
-
-
-    <!-- Bloco "Desenvolvido por" com imagem única -->
-    <div class="mt-14 text-center">
-      <p class="text-[#666666] text-[21px] leading-[22px] font-medium tracking-[0.15px] mb-4">
-        Desenvolvido por:
-      </p>
-      <img src="./dev-by.png" alt="Logos UnB, FAPDF e Lab Livre" class="mx-auto h-[56px] md:h-[56px]">
-    </div>
-    
-    <!-- Seção: Perguntas Frequentes -->
-    <section class="bg-white py-20">
-      <div class="max-w-4xl mx-auto px-4">
-
-        <!-- Título -->
-        <h2 class="text-[32px] md:text-[40px] font-bold text-[#094559] text-center mb-10">
-          Perguntas Frequentes
-        </h2>
-
-        <!-- Bloco de perguntas -->
-        <div class="space-y-4">
-          
-          <!-- Item 1 -->
-          <details class="group bg-white rounded-xl shadow-md px-6 py-4">
-            <summary class="flex justify-between items-center cursor-pointer text-[#000000] text-base md:text-lg font-semibold list-none">
-              Como o software auxilia na triagem dermatológica?
-              <svg class="w-[36px] h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <p class="mt-2 text-sm text-[#6F6F6F]">
-              O software permite coletar dados do paciente, realizar anamnese guiada e registrar fotos das lesões, facilitando a priorização de casos e agilizando o atendimento médico.
-            </p>
-          </details>
-
-          <!-- Item 2 -->
-          <details class="group bg-white rounded-xl shadow-md px-6 py-4">
-            <summary class="flex justify-between items-center cursor-pointer text-[#000000] text-base md:text-lg font-semibold list-none">
-              Preciso de conexão com a internet para usar o app?
-              <svg class="w-[36px] h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <p class="mt-2 text-sm text-[#6F6F6F]">
-              O aplicativo precisa de conexão com a internet para sincronizar os dados com segurança.
-            </p>
-          </details>
-
-          <!-- Item 3 -->
-          <details class="group bg-white rounded-xl shadow-md px-6 py-4">
-            <summary class="flex justify-between items-center cursor-pointer text-[#000000] text-base md:text-lg font-semibold list-none">
-              Quem pode acessar os dados coletados?
-              <svg class="w-[36px] h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-              </svg>
-            </summary>
-            <p class="mt-2 text-sm text-[#6F6F6F]">
-              Somente profissionais autorizados e vinculados à instituição de saúde têm acesso aos dados.
-            </p>
-          </details>
+      <section class="bg-white py-20">
+        <div class="max-w-4xl mx-auto px-4">
+          <!-- Título -->
+          <h2 class="font-bold text-[#094559] text-center mb-10" style="font-size:clamp(28px,4vw,40px)">Perguntas Frequentes</h2>
+          <!-- Perguntas -->
+          <div class="space-y-4">
+            <!-- Item 1 -->
+            <details class="group bg-white rounded-xl shadow-md px-6 py-4">
+              <summary class="flex justify-between items-center cursor-pointer text-black text-base md:text-lg font-semibold list-none">Como o software auxilia na triagem dermatológica?<svg class="w-9 h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></summary>
+              <p class="mt-2 text-sm text-[#6F6F6F]">O software permite coletar dados do paciente, realizar anamnese guiada e registrar fotos das lesões, facilitando a priorização de casos e agilizando o atendimento médico.</p>
+            </details>
+            <!-- Item 2 -->
+            <details class="group bg-white rounded-xl shadow-md px-6 py-4">
+              <summary class="flex justify-between items-center cursor-pointer text-black text-base md:text-lg font-semibold list-none">Preciso de conexão com a internet para usar o app?<svg class="w-9 h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></summary>
+              <p class="mt-2 text-sm text-[#6F6F6F]">O aplicativo precisa de conexão com a internet para sincronizar os dados com segurança.</p>
+            </details>
+            <!-- Item 3 -->
+            <details class="group bg-white rounded-xl shadow-md px-6 py-4">
+              <summary class="flex justify-between items-center cursor-pointer text-black text-base md:text-lg font-semibold list-none">Quem pode acessar os dados coletados?<svg class="w-9 h-[18px] text-[#094559] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></summary>
+              <p class="mt-2 text-sm text-[#6F6F6F]">Somente profissionais autorizados e vinculados à instituição de saúde têm acesso aos dados.</p>
+            </details>
+          </div>
+          <!-- Botão -->
+          <div class="text-center mt-10">
+            <a href="#" class="inline-block w-[240px] h-[56px] border-4 border-[#20596C] text-[#20596C] font-medium rounded-[50px] px-5 py-3 hover:bg-[#20596C] hover:text-white transition">Ver mais</a>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <!-- Botão -->
-        <div class="text-center mt-10">
-          <a href="#"
-            class="inline-block border-4 border-[#20596C] text-[#20596C] font-medium 
-                    text-[16px] leading-[24px] tracking-[0.5px]
-                    px-[20px] py-[12px] rounded-[50px] 
-                    hover:bg-[#20596C] hover:text-white transition"
-            style="width: 240px; height: 56px;">
-            Ver mais
-          </a>
-        </div>  
-
+    <footer class="bg-[#094559] text-white">
+      <!-- Linha topo -->
+      <div class="h-[2px] bg-white w-full"></div>
+      <div class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Logo -->
+        <img src="./logo.png" alt="Logo Dermalert" class="h-8 mb-6">
+        <!-- Linha divisória -->
+        <div class="h-[1px] bg-white w-full my-6"></div>
+        <!-- Links -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm mb-10">
+          <div><h4 class="font-semibold uppercase mb-2">Como Funciona</h4><ul class="space-y-1"><li><a href="#" class="hover:underline">Passo a Passo</a></li><li><a href="#" class="hover:underline">Material Educativo</a></li><li><a href="#" class="hover:underline">Funcionalidades</a></li></ul></div>
+          <div><h4 class="font-semibold uppercase mb-2">Ajuda e Suporte</h4><ul class="space-y-1"><li><a href="#" class="hover:underline">Obter Acesso</a></li><li><a href="#" class="hover:underline">Remover Dados</a></li><li><a href="#" class="hover:underline">Perguntas Frequentes</a></li></ul></div>
+          <div><h4 class="font-semibold uppercase mb-2">Documentação</h4><ul class="space-y-1"><li><a href="#" class="hover:underline">Sobre o Projeto</a></li><li><a href="#" class="hover:underline">Quem Somos</a></li><li><a href="#" class="hover:underline">Apoiadores</a></li></ul></div>
+          <div><h4 class="font-semibold uppercase mb-2">Curso de Extensão</h4><ul class="space-y-1"><li><a href="#" class="hover:underline">Sobre o Curso</a></li><li><a href="#" class="hover:underline">Como Funciona</a></li><li><a href="#" class="hover:underline">Inscrição</a></li></ul></div>
+          <div><h4 class="font-semibold uppercase mb-2">Sobre</h4><ul class="space-y-1"><li><a href="#" class="hover:underline">Sobre o Projeto</a></li><li><a href="#" class="hover:underline">Contato</a></li></ul></div>
+        </div>
+        <!-- Redes sociais -->
+        <div class="mb-6">
+          <h4 class="font-semibold uppercase text-sm mb-1">Redes Sociais</h4>
+          <div class="flex items-center space-x-4">
+            <a href="https://github.com/DermAlert" target="_blank" aria-label="GitHub" class="hover:text-gray-200"><svg class="w-5 h-5 fill-white" viewBox="0 0 24 24"><path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.113.82-.26.82-.577v-2.17c-3.34.727-4.04-1.61-4.04-1.61-.546-1.387-1.33-1.756-1.33-1.756-1.09-.745.082-.73.082-.73 1.2.084 1.83 1.234 1.83 1.234 1.07 1.83 2.8 1.3 3.49.993.11-.775.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.12 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.82.12 3.12.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.63-5.47 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .297"/></svg></a>
+            <a href="https://instagram.com/DermAlert" target="_blank" aria-label="Instagram" class="hover:text-gray-200"><svg class="w-5 h-5 fill-white" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 186c-39.4 0-71.1-31.7-71.1-71.1S184.7 184.8 224.1 184.8 295.2 216.5 295.2 255.9 263.5 327 224.1 327zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.2-36.2-93.5s-57.8-34.5-93.5-36.2c-37-2.1-147.9-2.1-184.9 0-35.7 1.7-67.2 9.9-93.5 36.2S9.9 126.9 8.2 162.6c-2.1 37-2.1 147.9 0 184.9 1.7 35.7 9.9 67.2 36.2 93.5s57.8 34.5 93.5 36.2c37 2.1 147.9 2.1 184.9 0 35.7-1.7 67.2-9.9 93.5-36.2s34.5-57.8 36.2-93.5c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.7 102.9-9 132.3z"/></svg></a>
+          </div>
+        </div>
+        <!-- Contato -->
+        <div class="mb-6"><h4 class="font-semibold uppercase text-sm mb-1">Contato</h4><p class="text-sm"><a href="mailto:caguiar@unb.br" class="hover:underline">caguiar@unb.br</a></p></div>
+        <!-- Direitos autorais -->
+        <div class="text-xs text-gray-300">DermAlert © 2025. All rights reserved.</div>
       </div>
-    </section>
-
-<!-- Rodapé -->
-<footer class="bg-[#094559] text-white pt-0">
-  <!-- Linha branca no topo -->
-  <div class="h-[2px] bg-white w-full"></div>
-
-  <div class="max-w-7xl mx-auto px-6 py-12">
-    <!-- Logo -->
-    <div class="mb-6">
-      <img src="./logo.png" alt="Logo Dermalert" class="h-8">
-    </div>
-
-    <!-- Linha branca após a logo -->
-    <div class="h-[1px] bg-white w-full my-6"></div>
-
-    <!-- Grade de links -->
-    <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm mb-10">
-      <!-- Coluna 1 -->
-      <div>
-        <h4 class="font-semibold uppercase mb-2">Como Funciona</h4>
-        <ul class="space-y-1">
-          <li><a href="#" class="hover:underline">Passo a Passo</a></li>
-          <li><a href="#" class="hover:underline">Material Educativo</a></li>
-          <li><a href="#" class="hover:underline">Funcionalidades</a></li>
-        </ul>
-      </div>
-      <!-- Coluna 2 -->
-      <div>
-        <h4 class="font-semibold uppercase mb-2">Ajuda e Suporte</h4>
-        <ul class="space-y-1">
-          <li><a href="#" class="hover:underline">Obter Acesso</a></li>
-          <li><a href="#" class="hover:underline">Remover Dados</a></li>
-          <li><a href="#" class="hover:underline">Perguntas Frequentes</a></li>
-        </ul>
-      </div>
-      <!-- Coluna 3 -->
-      <div>
-        <h4 class="font-semibold uppercase mb-2">Documentação</h4>
-        <ul class="space-y-1">
-          <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
-          <li><a href="#" class="hover:underline">Quem Somos</a></li>
-          <li><a href="#" class="hover:underline">Apoiadores</a></li>
-        </ul>
-      </div>
-      <!-- Coluna 4 -->
-      <div>
-        <h4 class="font-semibold uppercase mb-2">Curso de Extensão</h4>
-        <ul class="space-y-1">
-          <li><a href="#" class="hover:underline">Sobre o Curso</a></li>
-          <li><a href="#" class="hover:underline">Como Funciona</a></li>
-          <li><a href="#" class="hover:underline">Inscrição</a></li>
-        </ul>
-      </div>
-      <!-- Coluna 5 -->
-      <div>
-        <h4 class="font-semibold uppercase mb-2">Sobre</h4>
-        <ul class="space-y-1">
-          <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
-          <li><a href="#" class="hover:underline">Contato</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Redes Sociais -->
-    <div class="mb-6">
-      <h4 class="font-semibold uppercase text-sm mb-1">Redes Sociais</h4>
-      <div class="flex items-center space-x-4">
-        <!-- GitHub -->
-        <a href="https://github.com/DermAlert" target="_blank" aria-label="GitHub" class="hover:text-gray-200">
-          <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
-            <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.113.82-.26.82-.577v-2.17c-3.34.727-4.04-1.61-4.04-1.61-.546-1.387-1.33-1.756-1.33-1.756-1.09-.745.082-.73.082-.73 1.2.084 1.83 1.234 1.83 1.234 1.07 1.83 2.8 1.3 3.49.993.11-.775.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.12 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.82.12 3.12.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.63-5.47 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .297"/>
-          </svg>
-        </a>
-        <!-- Instagram -->
-        <a href="https://instagram.com/DermAlert" target="_blank" aria-label="Instagram" class="hover:text-gray-200">
-          <svg class="w-5 h-5 fill-white" viewBox="0 0 448 512">
-            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 186c-39.4 0-71.1-31.7-71.1-71.1S184.7 184.8 224.1 184.8 295.2 216.5 295.2 255.9 263.5 327 224.1 327zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.2-36.2-93.5s-57.8-34.5-93.5-36.2c-37-2.1-147.9-2.1-184.9 0-35.7 1.7-67.2 9.9-93.5 36.2S9.9 126.9 8.2 162.6c-2.1 37-2.1 147.9 0 184.9 1.7 35.7 9.9 67.2 36.2 93.5s57.8 34.5 93.5 36.2c37 2.1 147.9 2.1 184.9 0 35.7-1.7 67.2-9.9 93.5-36.2s34.5-57.8 36.2-93.5c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.7 102.9-9 132.3z"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Contato -->
-    <div class="mb-6">
-      <h4 class="font-semibold uppercase text-sm mb-1">Contato</h4>
-      <p class="text-sm">
-        <a href="mailto:caguiar@unb.br" class="hover:underline">caguiar@unb.br</a>
-      </p>      
-    </div>
-
-    <!-- Direitos autorais -->
-    <div class="text-xs text-gray-300">
-      DermAlert © 2025. All rights reserved.
-    </div>
-  </div>
-</footer>
-
-
+    </footer>
 
     <!-- Stylesheet - Vite + Tailwind -->
   </body>
