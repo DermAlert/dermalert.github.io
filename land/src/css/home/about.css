@@ -1,0 +1,38 @@
+@keyframes rise-blur{0%{opacity:0;transform:translateY(16px) scale(.98);filter:blur(4px)}100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+@keyframes slide-l{0%{opacity:0;transform:translateX(-22px)}100%{opacity:1;transform:translateX(0)}}
+@keyframes slide-r{0%{opacity:0;transform:translateX(22px)}100%{opacity:1;transform:translateX(0)}}
+@keyframes slide-up{0%{opacity:0;transform:translateY(18px)}100%{opacity:1;transform:translateY(0)}}
+.animate-rise-blur{animation:rise-blur .7s cubic-bezier(.22,.75,.25,1) both}
+.animate-slide-l{animation:slide-l .6s cubic-bezier(.22,.75,.25,1) both}
+.animate-slide-r{animation:slide-r .6s cubic-bezier(.22,.75,.25,1) both}
+.animate-slide-up{animation:slide-up .6s cubic-bezier(.22,.75,.25,1) both}
+
+/* título */
+.title-anim{position:relative;display:inline-block;transition:transform .25s}
+.title-anim::after{
+  content:"";display:inline-block;width:100%;
+  position:absolute;left:0;bottom:-6px;height:3px;
+  background:#B7561F;transform:scaleX(0);transform-origin:left;
+  transition:transform .3s
+}
+.title-anim:hover{transform:translateY(-1px)}
+.title-anim:hover::after{transform:scaleX(1)}
+
+/* CTA shine */
+.btn-shine{position:relative;overflow:hidden}
+.btn-shine::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0%,rgba(255,255,255,.28) 12%,transparent 24%);transform:translateX(-120%);transition:transform .7s cubic-bezier(.22,.75,.25,1)}
+.btn-shine:hover::after{transform:translateX(120%)}
+
+/* subtítulo */
+.subtitle-anim{position:relative;display:inline-block;transition:transform .25s}
+.subtitle-anim::after{
+  content:"";display:inline-block;width:100%;
+  position:absolute;left:0;bottom:-4px;height:2px;
+  background:#B7561F;transform:scaleX(0);transform-origin:left;
+  transition:transform .3s
+}
+.subtitle-anim:hover{transform:translateY(-1px)}
+.subtitle-anim:hover::after{transform:scaleX(1)}
+
+/* bloco de texto: levanta no hover */
+.text-block:hover{transform:translateY(-4px);box-shadow:0 6px 20px rgba(0,0,0,.18)}
