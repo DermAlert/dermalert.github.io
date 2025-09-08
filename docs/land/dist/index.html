@@ -6,8 +6,8 @@
     <link rel="icon" type="image/svg+xml" href="./logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dermalert</title>
-    <script type="module" crossorigin src="./assets/main-BVHjRc1C.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-BEQhqGar.css">
+    <script type="module" crossorigin src="./assets/main-DafMvMl1.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-Bk8zUWtt.css">
   </head>
 
   <body class="font-[Lexend] antialiased bg-white text-gray-800">
@@ -59,13 +59,14 @@
           <!-- logo -->
           <img src="home/logo-dermalert.svg" alt="DERMALERT"
             class="h-12 w-auto mb-6 animate-hero-fade-in [animation-delay:200ms] hover:scale-105 hover:drop-shadow-lg transition-transform duration-300">
-          <!-- título -->
-          <h1 class="font-bold text-[#094559] mb-6 animate-hero-fade-up [animation-delay:400ms] transition duration-300 hover:scale-105 hover:text-[#073642]" style="font-size:clamp(28px,4vw,56px);line-height:1.15">
+          <h1 class="font-bold text-[#094559] mb-6 animate-hero-fade-up [animation-delay:400ms] transition-transform duration-300 hover:scale-105 hover:drop-shadow-md hover:text-[#073642]" style="font-size:clamp(28px,4vw,56px);line-height:1.15">
             Triagem Segura e Inteligente para<br class="hidden md:block"> Diagnósticos Precoces
           </h1>
-          <!-- imagem central -->
-          <img src="home/hero-image.svg" alt="Imagem de celulares"
-            class="w-full h-auto max-w-[1100px] lg:max-w-[1440px] max-h-[52vh] md:max-h-[56vh] object-contain rounded-[24px] mb-6 animate-hero-fade-up [animation-delay:600ms]">
+          <!-- imagem central com wrapper -->
+          <div class="rounded-[24px] overflow-hidden transition-transform duration-500 hover:scale-105 mb-6">
+            <img src="home/hero-image.svg" alt="Imagem de celulares"
+                class="w-full h-auto max-w-[1100px] lg:max-w-[1440px] max-h-[52vh] md:max-h-[56vh] object-contain animate-hero-fade-up [animation-delay:600ms]">
+          </div>
           <!-- bloco de texto -->
           <div class="bg-white shadow-[0_2px_4px_rgba(0,0,0,0.15)] rounded-[27px] px-8 md:px-12 py-6 md:py-8 max-w-[605px] mx-auto mb-6 animate-hero-fade-up [animation-delay:800ms] hover:-translate-y-1 hover:shadow-[0_6px_18px_rgba(0,0,0,0.2)] transition duration-300">
             <p class="text-[#1A4568]" style="font-size:clamp(16px,2.2vw,27px);line-height:clamp(24px,3.2vw,36px)">
@@ -84,60 +85,62 @@
 
       <section id="nosso-software" class="bg-[#F7E5E5] py-8 md:py-16 px-4 md:px-12">
         <div class="max-w-7xl mx-auto">
-          <!-- Título -->
-          <h2 class="text-[#2D7E99] font-bold text-center mb-8 md:mb-12" style="font-size:clamp(24px,4.2vw,48px)">Por que escolher nosso software?</h2>
-          <!-- Grid principal -->
+          <h2 class="text-[#2D7E99] font-bold text-center mb-8 md:mb-12 transition-transform duration-300 hover:scale-105 hover:drop-shadow-md" style="font-size:clamp(24px,4.2vw,48px)">Por que escolher nosso software?</h2>
+
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <!-- Card 1 -->
-            <div class="bg-[#D06A32] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
-              <img src="./registro-fotografico.png" alt="Registro Fotográfico" class="rounded-[24px] mb-4 w-full h-auto max-h-[395px] object-cover">
+            <!-- card 1 -->
+            <div class="group bg-[#D06A32] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.2)] animate-sec-up [animation-delay:160ms] overflow-hidden">
+              <span class="shine pointer-events-none"></span>
+              <img src="./registro-fotografico.png" alt="Registro Fotográfico" class="rounded-[24px] mb-4 w-full h-auto max-h-[395px] object-cover transition-transform duration-500 group-hover:scale-105">
               <img src="./etapa-1.png" alt="Etapa 1" class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px] mb-4">
               <h3 class="text-white font-bold mb-4" style="font-size:clamp(22px,4vw,48px);line-height:1.1">Registro Fotográfico Inteligente</h3>
               <p class="text-white/80" style="font-size:clamp(14px,2.6vw,24px);line-height:clamp(22px,3.2vw,32px)">Captura e armazenamento seguro de imagens das lesões, permitindo acompanhamento visual detalhado ao longo do tempo.</p>
             </div>
-            <!-- Coluna direita (2 cards) -->
+            <!-- coluna direita -->
             <div class="flex flex-col gap-4 sm:gap-6 md:gap-8">
-              <!-- Card 2 -->
-              <div class="bg-[#5B08A3] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+              <!-- card 2 -->
+              <div class="group bg-[#5B08A3] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.2)] animate-sec-up [animation-delay:240ms] overflow-hidden">
+                <span class="shine pointer-events-none"></span>
                 <img src="./etapa-2.png" alt="Etapa 2" class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px] mb-4">
                 <h3 class="text-white font-bold mb-4" style="font-size:clamp(22px,4vw,48px);line-height:1.1">Atendimento Simplificado</h3>
                 <p class="text-white/80" style="font-size:clamp(14px,2.6vw,24px);line-height:clamp(22px,3.2vw,32px)">Cadastro de pacientes, anamnese guiada e assinatura digital do termo de consentimento, tudo em um só lugar.</p>
               </div>
-              <!-- Card 3 -->
-              <div class="bg-[#2D7E99] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)]">
+              <!-- card 3 -->
+              <div class="group bg-[#2D7E99] rounded-[24px] p-6 sm:p-8 md:p-10 shadow-[0_2px_4px_rgba(0,0,0,0.15)] transition-transform duration-300 hover:-translate-y-1.5 hover:shadow-[0_10px_24px_rgba(0,0,0,0.2)] animate-sec-up [animation-delay:320ms] overflow-hidden">
+                <span class="shine pointer-events-none"></span>
                 <img src="./etapa-3.png" alt="Etapa 3" class="w-12 h-14 sm:w-14 sm:h-16 md:w-[53px] md:h-[59px] rounded-[6px] mb-4">
                 <h3 class="text-white font-bold mb-4" style="font-size:clamp(22px,4vw,48px);line-height:1.1">Segurança e Conformidade</h3>
                 <p class="text-white/80" style="font-size:clamp(14px,2.6vw,24px);line-height:clamp(22px,3.2vw,32px)">Proteção total dos dados de saúde com criptografia avançada, controle de acessos e auditoria contínua, seguindo as diretrizes da LGPD.</p>
               </div>
             </div>
           </div>
-          <!-- Botão -->
           <div class="mt-8 md:mt-10 text-center">
-            <a href="#" class="inline-block rounded-[50px] border-2 sm:border-4 border-[#031E21] text-[#031E21] px-6 md:px-8 py-3 hover:bg-[#031E21] hover:text-white transition">Saiba Mais</a>
+            <a href="#"
+              class="inline-block rounded-[50px] border-2 sm:border-4 border-[#031E21] text-[#031E21] px-6 md:px-8 py-3 hover:bg-[#031E21] hover:text-white transition-colors duration-200 animate-sec-up [animation-delay:380ms] w-auto md:w-[240px]">
+              Saiba Mais
+            </a>
           </div>
         </div>
       </section>
 
+
       <!-- ---------------------------------------------------------------------------------------------------- -->
 
-      <section class="bg-[#FFEFE5] py-8 md:py-16 px-4 md:px-12">
-        <div class="max-w-4xl mx-auto flex flex-col gap-8">
-          <!-- Título -->
-          <div class="text-center">
-            <h2 class="font-bold text-[#B7561F] mb-4" style="font-size:clamp(24px,4.2vw,48px)">Sobre o Projeto</h2>
-            <p class="font-semibold text-[#B7561F] mb-6" style="font-size:clamp(18px,2.8vw,24px)">O Primeiro Passo na Prevenção do Câncer de Pele</p>
-          </div>
-          <!-- Imagem -->
-          <img src="./sobre-projeto.png" alt="Aplicação na pele" class="w-full max-w-[800px] h-auto object-cover rounded-[24px] mx-auto">
-          <!-- Bloco de textos -->
-          <div class="flex flex-col md:flex-row gap-6 bg-white rounded-[24px] shadow-[0_2px_4px_rgba(0,0,0,0.15)] p-6 md:p-8 text-[#B7561F]">
-            <p class="md:w-1/2" style="font-size:clamp(18px,3vw,24px);line-height:1.4">O <strong>DermAlert</strong> é um projeto voltado para a <strong>triagem de pacientes com suspeita de câncer de pele</strong>, facilitando a identificação precoce e o encaminhamento adequado.</p>
-            <p class="md:w-1/2" style="font-size:clamp(16px,2.6vw,24px);line-height:1.4">Desenvolvido pelo <strong>Lab Livre</strong> em <strong>parceria com a UnB e a FAP-DF</strong>, o projeto busca aprimorar o atendimento primário por meio da tecnologia, tornando o <strong>diagnóstico mais acessível e eficiente</strong>.</p>
-          </div>
-          <!-- Botão -->
-          <div class="text-center">
-            <a href="#" class="inline-flex items-center justify-center bg-[#D06A32] text-white rounded-[50px] w-[240px] h-[56px] border border-[#D06A32] hover:bg-[#b35627] transition">Saiba Mais</a>
-          </div>
+      <section class="bg-[#FFEFE5] py-8 md:py-16 px-4 md:px-12 overflow-hidden">
+        <div class="max-w-[1200px] mx-auto text-center">
+         <h2 class="block font-bold text-[#B7561F] mb-2 animate-slide-up [animation-delay:60ms]" style="font-size:clamp(24px,4.2vw,48px)"><span class="title-anim">Sobre o Projeto</span></h2>
+<p class="font-semibold text-[#B7561F] mb-6 md:mb-8 animate-slide-up [animation-delay:120ms]" style="font-size:clamp(18px,2.8vw,24px)"><span class="subtitle-anim">O Primeiro Passo na Prevenção do Câncer de Pele</span></p>
+
+        </div>
+        <div class="max-w-[1200px] mx-auto rounded-[24px] overflow-hidden border border-black/10 shadow-[0_2px_8px_rgba(0,0,0,.08)] animate-rise-blur [animation-delay:180ms]" style="perspective:1000px">
+          <img src="./sobre-projeto.png" alt="Aplicação na pele" class="w-full h-auto object-cover transition-transform duration-500 [transform:translateZ(0)] hover:[transform:rotateX(3deg)_rotateZ(-1deg)_scale(1.035)]">
+        </div>
+        <div class="max-w-[1200px] mx-auto mt-5 md:mt-6 bg-white rounded-[24px] border border-black/10 shadow-[0_2px_8px_rgba(0,0,0,.08)] p-6 md:p-8 grid md:grid-cols-2 gap-6 text-[#B7561F] text-block animate-slide-up [animation-delay:240ms]">
+          <p class="animate-slide-l [animation-delay:260ms]" style="font-size:clamp(18px,3vw,22px);line-height:1.45">O <strong>DermAlert</strong> é um projeto voltado para a <strong>triagem de pacientes com suspeita de câncer de pele</strong>, facilitando a identificação precoce e o encaminhamento adequado.</p>
+          <p class="animate-slide-r [animation-delay:300ms]" style="font-size:clamp(16px,2.6vw,20px);line-height:1.45">Desenvolvido pelo <strong>Lab Livre</strong> em <strong>parceria com a UnB e a FAP-DF</strong>, o projeto busca aprimorar o atendimento primário por meio da tecnologia, tornando o <strong>diagnóstico mais acessível e eficiente</strong>.</p>
+        </div>
+        <div class="max-w-[1200px] mx-auto text-center mt-5 animate-slide-up [animation-delay:340ms]">
+          <a href="#" class="btn-shine inline-flex items-center justify-center rounded-[999px] h-[44px] px-6 text-[13px] font-medium bg-[#D06A32] text-white border border-[#B7561F] shadow-[inset_0_-2px_0_rgba(0,0,0,.12),0_6px_14px_rgba(0,0,0,.12)] hover:scale-105 hover:shadow-[inset_0_-2px_0_rgba(0,0,0,.12),0_10px_22px_rgba(0,0,0,.18)] active:scale-95 transition-[transform,box-shadow,background] duration-200">Saiba Mais</a>
         </div>
       </section>
 
