@@ -1,6 +1,7 @@
 // ─── Imports ───────────────────────────────────────────────
 import './css/style.css';
 import { setupMobileMenu } from '/src/js/globals/header.js';
+import '/src/js/home/devby.js';
 
 // ─── Init Header ──────────────────────────────────────────────────
 const BOOT_FLAG = '__DERMALERT_HEADER_BOOT__';
