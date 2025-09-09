@@ -1,21 +1,14 @@
 // ─── Imports ───────────────────────────────────────────────
 import './css/style.css';
-import { setupMobileMenu } from '/src/js/globals/header.js';
-import '/src/js/home/devby.js';
 
-// ─── Init Header ──────────────────────────────────────────────────
-const BOOT_FLAG = '__DERMALERT_HEADER_BOOT__';
+// importa o HTML do header como string (Vite ?raw)
+import headerHtml from '/src/partials/globals/header.html?raw';
 
-function boot() {
-  if (window[BOOT_FLAG]) return;
-  window[BOOT_FLAG] = true;
-  setupMobileMenu();
+// injeta o header no placeholder
+const headerMount = document.getElementById('app-header');
+if (headerMount) {
+  headerMount.innerHTML = headerHtml;
 }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', boot, { once: true });
-} else {
-  boot();
-}
-
-// ─── Init Home Page ──────────────────────────────────────────────────
+// depois de injetar, importe o script do header (ele se auto-inicializa)
+import '/src/js/globals/header-nav.js';
