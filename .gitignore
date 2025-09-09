@@ -27,6 +27,7 @@ site
 
 # Python venv
 .venv
+venv
 
 # Vite build da landing
 # dist

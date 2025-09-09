@@ -74,9 +74,9 @@ plugins:
         - custom-skip-class-name
       auto_caption: false
       caption_position: bottom
-  - exclude:
-      glob:
-        - "land/node_modules/**"
+  # - exclude:
+  #    glob:
+  #      - "land/node_modules/**"
   - blog:
       # habilita/desabilita o cálculo automático
       post_readtime: true
