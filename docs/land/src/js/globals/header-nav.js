@@ -13,7 +13,6 @@
 // i18n dicionários (núcleo + HERO embutida)
 const I18N = {
   'pt-BR': {
-    // header
     como_funciona: 'Como funciona',
     ajuda_e_suporte: 'Ajuda e Suporte',
     curso_extensao: 'Curso de Extensão',
@@ -27,18 +26,17 @@ const I18N = {
     lancamentos: 'Lançamentos',
     tema_escuro: 'Tema escuro',
     novo: 'Novo',
-    // hero
     hero_title: 'Triagem dermatológica inteligente, simples e segura.',
     hero_sub: 'Registre paciente, conduza anamnese e organize dados para decisões clínicas e pesquisa.',
     hero_cta_acesso: 'Solicitar Acesso',
     hero_cta_sobre: 'Sobre o Projeto',
-    // features / pills
     features_speed: 'Velocidade',
     features_security: 'Segurança de dados',
     features_standardization: 'Padronização',
+    partners_initiative: 'Iniciativa:',
+    partners_support: 'Apoio:',
   },
   en: {
-    // header
     como_funciona: 'How it works',
     ajuda_e_suporte: 'Help & Support',
     curso_extensao: 'Extension Course',
@@ -52,18 +50,17 @@ const I18N = {
     lancamentos: 'Releases',
     tema_escuro: 'Dark theme',
     novo: 'New',
-    // hero
     hero_title: 'Smart, simple and secure dermatology triage.',
     hero_sub: 'Register patients, conduct anamnesis, and organize data for clinical decisions and research.',
     hero_cta_acesso: 'Request Access',
     hero_cta_sobre: 'About the Project',
-    // features / pills
     features_speed: 'Speed',
     features_security: 'Data security',
     features_standardization: 'Standardization',
+    partners_initiative: 'Initiative:',
+    partners_support: 'Support:',
   },
   es: {
-    // header
     como_funciona: 'Cómo funciona',
     ajuda_e_suporte: 'Ayuda y Soporte',
     curso_extensao: 'Curso de Extensión',
@@ -77,15 +74,15 @@ const I18N = {
     lancamentos: 'Lanzamientos',
     tema_escuro: 'Tema oscuro',
     novo: 'Nuevo',
-    // hero
     hero_title: 'Triaje dermatológico inteligente, simple y seguro.',
     hero_sub: 'Registre pacientes, realice la anamnesis y organice datos para decisiones clínicas e investigación.',
     hero_cta_acesso: 'Solicitar Acceso',
     hero_cta_sobre: 'Sobre el Proyecto',
-    // features / pills
     features_speed: 'Velocidad',
     features_security: 'Seguridad de datos',
     features_standardization: 'Estandarización',
+    partners_initiative: 'Iniciativa:',
+    partners_support: 'Apoyo:',
   }
 };
 
@@ -113,12 +110,12 @@ function setDarkMode(isDark) {
 // Troca só conteúdo textual, sem remover filhos/ícones se existirem
 function safeSetText(el, text) {
   if (!el || typeof text !== 'string') return;
-  if (!el.firstElementChild) {            // não tem filhos → define direto
+  if (!el.firstElementChild) {
     el.textContent = text;
     return;
   }
   const tn = Array.from(el.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
-  if (tn) tn.nodeValue = text;            // já existe um text node → reaproveita
+  if (tn) tn.nodeValue = text;
   else el.insertBefore(document.createTextNode(text), el.firstChild);
 }
 
@@ -143,7 +140,7 @@ function updateHeroButtons(dict) {
 function applyLang(lang) {
   const dict = I18N[lang] || I18N['pt-BR'];
 
-  // 1) Atualiza todo mundo com data-i18n (menus, mobile, pills etc.)
+  // 1) Atualiza todo mundo com data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (dict[key]) safeSetText(el, dict[key]);
@@ -163,6 +160,43 @@ function applyLang(lang) {
   if (btnLabel) btnLabel.textContent = lang === 'en' ? 'EN' : lang === 'es' ? 'ES' : 'PT-BR';
 
   localStorage.setItem('lang', lang);
+}
+
+// ───────────────────────────────────────────────────────────
+// Header FIXO: spacer dinâmico e posicionamento do sheet mobile
+function updateHeaderSpacer() {
+  const header = document.getElementById('site-header');
+  const shell  = document.querySelector('[data-header-shell]');
+  const spacer = document.getElementById('header-spacer');
+  if (!header || !shell || !spacer) return;
+
+  const rect = shell.getBoundingClientRect();
+  const topCSS = getComputedStyle(header).top || '0px';
+  const topGap = parseFloat(topCSS) || 0;
+
+  const total = Math.ceil(rect.height + topGap + 8); // +8px de respiro
+  document.documentElement.style.setProperty('--header-spacer', total + 'px');
+}
+
+function positionMobileSheet() {
+  const header = document.getElementById('site-header');
+  const sheet  = document.getElementById('mobile-sheet');
+  if (!header || !sheet) return;
+
+  const shellRect = document.querySelector('[data-header-shell]')?.getBoundingClientRect();
+  const topCSS = getComputedStyle(header).top || '0px';
+  const topGap = parseFloat(topCSS) || 0;
+
+  const topPx = Math.max((shellRect?.bottom || 88) + topGap + 8, 72);
+  sheet.style.top = `${topPx}px`;
+}
+
+// (opcional) reforça a sombra quando a página rola
+function enhanceHeaderShadowOnScroll() {
+  const shell = document.querySelector('[data-header-shell]');
+  if (!shell) return;
+  const y = window.scrollY || document.documentElement.scrollTop || 0;
+  shell.style.boxShadow = y > 4 ? '0 10px 24px rgba(0,0,0,0.12)' : '';
 }
 
 // ───────────────────────────────────────────────────────────
@@ -232,9 +266,25 @@ document.addEventListener('DOMContentLoaded', () => {
   // dropdown de idioma (desktop)
   initDesktopLangDropdown();
 
+  // manter spacer/posicionamento e sombra elegante
+  updateHeaderSpacer();
+  positionMobileSheet();
+  enhanceHeaderShadowOnScroll();
+
+  window.addEventListener('resize', () => {
+    updateHeaderSpacer();
+    positionMobileSheet();
+  }, { passive: true });
+
+  window.addEventListener('scroll', () => {
+    enhanceHeaderShadowOnScroll();
+    positionMobileSheet();
+  }, { passive: true });
+
   // menu mobile
   const openMenu = () => {
     if (!overlay || !sheet || !dim) return;
+    positionMobileSheet();
     overlay.classList.remove('hidden');
     requestAnimationFrame(() => {
       dim.classList.remove('opacity-0');
@@ -280,13 +330,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // idioma MOBILE (select nativo)
   langSelectMobile?.addEventListener('change', (e) => applyLang(e.target.value));
 
-  // MutationObserver: re-aplica idioma quando DOM muda (HMR, injeções, etc.)
+  // MutationObserver: re-aplica idioma e reposiciona quando DOM muda (HMR, injeções, etc.)
   let rafId = null;
   const reapply = () => {
     cancelAnimationFrame(rafId);
     rafId = requestAnimationFrame(() => {
       const lang = localStorage.getItem('lang') || 'pt-BR';
       applyLang(lang);
+      updateHeaderSpacer();
+      positionMobileSheet();
     });
   };
   const mo = new MutationObserver(reapply);

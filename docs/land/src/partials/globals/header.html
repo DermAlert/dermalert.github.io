@@ -1,8 +1,13 @@
-<header class="w-full flex justify-center mt-4">
-  <div class="w-full max-w-[1358px] flex items-center justify-between py-6 px-10 rounded-3xl
-              border-b border-[#DEE5ED] bg-[#1D366F]
-              shadow-[0_4px_6px_-1px_rgba(0,0,0,0.10),0_2px_4px_-1px_rgba(0,0,0,0.06)]
-              dark:border-white/15 dark:bg-[#152A55]">
+<!-- HEADER fixo + spacer dinâmico -->
+<header id="site-header" class="fixed left-0 right-0 top-2 sm:top-4 z-[60] w-full flex justify-center px-4">
+  <div
+    data-header-shell
+    class="w-full max-w-[1358px] flex items-center justify-between py-6 px-10 rounded-3xl
+           border-b border-[#DEE5ED] bg-[#1D366F]
+           shadow-[0_4px_6px_-1px_rgba(0,0,0,0.10),0_2px_4px_-1px_rgba(0,0,0,0.06)]
+           dark:border-white/15 dark:bg-[#152A55]
+           transition-all duration-300"
+  >
 
     <!-- Logo -->
     <a href="/" class="flex items-center gap-3">
@@ -20,13 +25,15 @@
 
       <!-- Idioma (desktop) — DROPDOWN CUSTOM -->
       <div class="relative ml-2">
-        <button id="lang-button"
-                type="button"
-                aria-haspopup="listbox"
-                aria-expanded="false"
-                class="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/10 px-3 py-1.5 text-xs font-medium text-white/90
-                      hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30
-                      dark:border-white/20 dark:bg-[#1e293b] dark:hover:bg-[#334155]">
+        <button
+          id="lang-button"
+          type="button"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          class="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/10 px-3 py-1.5 text-xs font-medium text-white/90
+                 hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30
+                 dark:border-white/20 dark:bg-[#1e293b] dark:hover:bg-[#334155]"
+        >
           <span id="lang-button-label">PT-BR</span>
           <svg class="h-4 w-4 opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
@@ -34,23 +41,25 @@
         </button>
 
         <!-- Menu -->
-        <div id="lang-menu"
-            class="invisible absolute right-0 z-50 mt-2 w-36 origin-top-right scale-95 transform rounded-md border border-white/10 bg-white/95 p-1 text-sm shadow-lg opacity-0 transition
-                    dark:border-white/10 dark:bg-[#0b1220]"
-            role="listbox" tabindex="-1" aria-activedescendant="">
+        <div
+          id="lang-menu"
+          class="invisible absolute right-0 z-50 mt-2 w-36 origin-top-right scale-95 transform rounded-md border border-white/10 bg-white/95 p-1 text-sm shadow-lg opacity-0 transition
+                 dark:border-white/10 dark:bg-[#0b1220]"
+          role="listbox" tabindex="-1" aria-activedescendant=""
+        >
           <button role="option" data-lang="pt-BR"
                   class="w-full rounded-md px-3 py-2 text-left text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none
-                        dark:text-white dark:hover:bg-[#1f2a44] dark:focus:bg-[#1f2a44]">
+                         dark:text-white dark:hover:bg-[#1f2a44] dark:focus:bg-[#1f2a44]">
             PT-BR
           </button>
           <button role="option" data-lang="en"
                   class="w-full rounded-md px-3 py-2 text-left text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none
-                        dark:text-white dark:hover:bg-[#1f2a44] dark:focus:bg-[#1f2a44]">
+                         dark:text-white dark:hover:bg-[#1f2a44] dark:focus:bg-[#1f2a44]">
             EN
           </button>
           <button role="option" data-lang="es"
                   class="w-full rounded-md px-3 py-2 text-left text-gray-800 hover:bg-gray-100 focus:bg-gray-100 focus:outline-none
-                        dark:text-white dark:hover:bg-[#1f2a44] dark:focus:bg-[#1f2a44]">
+                         dark:text-white dark:hover:bg-[#1f2a44] dark:focus:bg-[#1f2a44]">
             ES
           </button>
         </div>
@@ -72,11 +81,13 @@
     </nav>
 
     <!-- Botão hambúrguer (mobile) -->
-    <button id="nav-toggle"
-            class="lg:hidden inline-flex items-center justify-center p-2 rounded-lg text-white/90
-                   hover:bg-white/10 active:scale-[0.98] transition focus:outline-none
-                   focus:ring-2 focus:ring-white/40"
-            aria-controls="mobile-sheet" aria-expanded="false">
+    <button
+      id="nav-toggle"
+      class="lg:hidden inline-flex items-center justify-center p-2 rounded-lg text-white/90
+             hover:bg-white/10 active:scale-[0.98] transition focus:outline-none
+             focus:ring-2 focus:ring-white/40"
+      aria-controls="mobile-sheet" aria-expanded="false"
+    >
       <span class="sr-only">Abrir menu</span>
       <svg id="icon-open" class="h-6 w-6 transition-opacity duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -91,10 +102,12 @@
   <div id="mobile-overlay" class="lg:hidden fixed inset-0 z-40 hidden">
     <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 transition-opacity duration-200"></div>
 
-    <div id="mobile-sheet"
-         class="absolute left-4 right-4 top-[88px] rounded-2xl border border-white/10 bg-[#1D366F]
-                shadow-[0_20px_60px_rgba(0,0,0,0.35)] translate-y-3 opacity-0 transition-all duration-200
-                dark:bg-[#152A55] dark:border-white/15">
+    <div
+      id="mobile-sheet"
+      class="absolute left-4 right-4 top-[88px] rounded-2xl border border-white/10 bg-[#1D366F]
+             shadow-[0_20px_60px_rgba(0,0,0,0.35)] translate-y-3 opacity-0 transition-all duration-200
+             dark:bg-[#152A55] dark:border-white/15"
+    >
       <nav aria-label="Principal (mobile)" class="text-white/90">
         <ul class="py-2 text-base font-medium divide-y divide-white/10">
           <li>
@@ -106,9 +119,11 @@
           </li>
 
           <li>
-            <button type="button"
-                    class="w-full flex items-center gap-3 px-5 py-3 hover:bg-white/10 focus:outline-none"
-                    data-accordion-trigger aria-expanded="false" aria-controls="ajuda-sub">
+            <button
+              type="button"
+              class="w-full flex items-center gap-3 px-5 py-3 hover:bg-white/10 focus:outline-none"
+              data-accordion-trigger aria-expanded="false" aria-controls="ajuda-sub"
+            >
               <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               <span class="flex-1 text-left" data-i18n="ajuda_e_suporte">Ajuda e Suporte</span>
               <svg class="h-5 w-5 rotate-0 transition-transform duration-200" data-accordion-caret viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -177,8 +192,10 @@
           <!-- Idioma (mobile) -->
           <label class="text-sm">
             <span class="sr-only">Idioma</span>
-            <select id="lang-select"
-                    class="w-full rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 px-3 py-2 text-sm focus:outline-none">
+            <select
+              id="lang-select"
+              class="w-full rounded-lg bg-white/10 hover:bg-white/15 border border-white/10 px-3 py-2 text-sm focus:outline-none"
+            >
               <option value="pt-BR">Português (BR)</option>
               <option value="en">English</option>
               <option value="es">Español</option>
@@ -202,3 +219,6 @@
     </div>
   </div>
 </header>
+
+<!-- Spacer que reserva o espaço do header fixo (altura definida via JS) -->
+<div id="header-spacer" style="height: var(--header-spacer, 112px);"></div>

@@ -7,6 +7,7 @@ import './css/style.css';
 import headerHtml from '/src/partials/globals/header.html?raw';
 import heroHtml   from '/src/partials/home/hero.html?raw';
 import pillsHtml  from '/src/partials/home/features-pills.html?raw';
+import partnersHtml from '/src/partials/home/partners.html?raw';
 
 // ───────────────────────────────────────────────────────────
 // Efeitos (módulos com init explícito)
@@ -23,6 +24,9 @@ if (heroMount) heroMount.innerHTML = heroHtml;
 
 const pillsMount = document.getElementById('app-features-pills');
 if (pillsMount) pillsMount.innerHTML = pillsHtml;
+
+const partnersMount = document.getElementById('app-partners');
+if (partnersMount) partnersMount.innerHTML = partnersHtml;
 
 // ───────────────────────────────────────────────────────────
 // Scripts específicos do header (menus, tema, i18n, etc.)
