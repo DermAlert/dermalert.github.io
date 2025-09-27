@@ -8,6 +8,7 @@ import headerHtml from '/src/partials/globals/header.html?raw';
 import heroHtml   from '/src/partials/home/hero.html?raw';
 import pillsHtml  from '/src/partials/home/features-pills.html?raw';
 import partnersHtml from '/src/partials/home/partners.html?raw';
+import featuresBaseHtml from '/src/partials/home/section-features-base.html?raw'; // ← novo
 
 // ───────────────────────────────────────────────────────────
 // Efeitos (módulos com init explícito)
@@ -27,6 +28,9 @@ if (pillsMount) pillsMount.innerHTML = pillsHtml;
 
 const partnersMount = document.getElementById('app-partners');
 if (partnersMount) partnersMount.innerHTML = partnersHtml;
+
+const featuresBaseMount = document.getElementById('app-features-base'); // ← novo
+if (featuresBaseMount) featuresBaseMount.innerHTML = featuresBaseHtml;
 
 // ───────────────────────────────────────────────────────────
 // Scripts específicos do header (menus, tema, i18n, etc.)

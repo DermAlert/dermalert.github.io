@@ -1,0 +1,36 @@
+<section
+  id="functionalities"
+  class="relative z-[20] w-full isolate
+         min-h-[1491px]             <!-- altura mínima = altura da arte -->
+         overflow-x-hidden overflow-y-visible"> <!-- deixa o topo aparecer, sem scroll lateral -->
+
+  <!-- 🔹 FUNDO FIXO DA SECTION -->
+  <div class="absolute inset-0 z-0 pointer-events-none">
+    <div class="relative mx-auto max-w-[1358px] h-full">
+      <img
+        src="home/features/bg.svg"
+        alt=""
+        aria-hidden="true"
+        class="hidden md:block select-none absolute
+               left-0
+               top-[-150px]   /* ↕ NEGATIVO = sobe | POSITIVO = desce */
+               ml-[-350px]    /* ↔ NEGATIVO = esquerda | POSITIVO = direita */"
+        style="
+          width: 3013px !important;
+          height: 1491px !important;
+          max-width: none !important;
+          max-height: none !important;
+        " />
+    </div>
+  </div>
+
+  <!-- 🔹 CONTEÚDO -->
+  <div class="relative z-10 max-w-[1358px] mx-auto px-6 lg:px-10 pt-8 md:pt-12 text-center">
+    <h2 class="text-[32px] md:text-[48px] font-bold leading-normal text-[#2F488A] dark:text-white">
+      Conheça as funcionalidades
+    </h2>
+    <p class="mt-6 md:mt-12 text-[20px] md:text-[32px] font-normal leading-normal text-[#2F488A] dark:text-white/90">
+      Com o DermAlert, o processo de triagem é simples e rápido.
+    </p>
+  </div>
+</section>

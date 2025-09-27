@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- Google Fonts: Lexend -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dermalert</title>
     <meta name="description" content="Triagem dermatológica inteligente, simples e segura." />
     <meta name="theme-color" content="#094559" />
   </head>
 
-  <body class="font-[Lexend] antialiased bg-white text-gray-800 dark:bg-[#0E1A2B] dark:text-gray-100">
+  <!-- Usa a fonte padrão configurada no Tailwind (Lexend = font-sans) -->
+  <body class="font-sans antialiased bg-white text-gray-800 dark:bg-[#0E1A2B] dark:text-gray-100">
     <a href="#conteudo"
        class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100]
               focus:bg-white focus:text-gray-900 focus:px-4 focus:py-2 focus:rounded-lg focus:shadow">
@@ -31,9 +36,11 @@
         <!-- PARTNERS (carregado via JS com /src/partials/home/partners.html) -->
         <div id="app-partners" class="w-full my-12"></div>
 
+        <!-- FEATURES / BASE (carregado via JS com /src/partials/home/section-features-base.html) -->
+        <div id="app-features-base" class="w-full my-12"></div>
       </main>
 
-      <!-- FOOTER (futuramente também pode ser partial) -->
+      <!-- FOOTER -->
       <footer class="w-full max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-[120px] py-8">
         <!-- Conteúdo do footer -->
       </footer>
