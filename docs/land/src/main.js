@@ -14,6 +14,7 @@ import featuresBaseHtml from '/src/partials/home/section-features-base.html?raw'
 // Efeitos (módulos com init explícito)
 import { initHeroEffects } from '/src/js/home/hero.effects.js';
 import { initFeaturesPillsEffects } from '/src/js/home/features-pills.effects.js';
+import { initFeaturesBaseEffects } from '/src/js/home/section-features-base.effects.js'; // ← NOVO
 
 // ───────────────────────────────────────────────────────────
 // Montagem dos partials (header → hero → pills)
@@ -44,6 +45,7 @@ requestAnimationFrame(() => {
   requestAnimationFrame(() => {
     initHeroEffects();
     initFeaturesPillsEffects();
+    initFeaturesBaseEffects(); // ← NOVO (troca de imagem + estados dos cards)
   });
 });
 
