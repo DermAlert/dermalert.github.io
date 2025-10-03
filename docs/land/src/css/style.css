@@ -6,6 +6,8 @@
 /* ===== Páginas ===== */
 @import "./home/hero.css";
 @import "./home/about.css";
+@import "./home/feature-base.css";
+
 
 /* Tailwind sempre depois dos imports */
 @tailwind base;

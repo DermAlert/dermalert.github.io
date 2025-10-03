@@ -1,5 +1,3 @@
-// src/js/home/section-features-base.effects.js
-
 // Map de imagens por step — mantendo seus pathings
 const STEP_IMAGES = {
   1: { src: 'home/features/cadastrar.svg',         alt: 'Cadastro do paciente' },
@@ -15,21 +13,22 @@ export function initFeaturesBaseEffects(root = document) {
   if (section.dataset.featuresBaseWired === 'true') return;
   section.dataset.featuresBaseWired = 'true';
 
-  const imgEl  = section.querySelector('#func-illustration');
-  const cards  = Array.from(section.querySelectorAll('#func-cards .func-card'));
-  if (!imgEl || cards.length === 0) return;
+  // ------------------ DESKTOP (clique/teclado) ------------------
+  const imgDesktop   = section.querySelector('#func-illustration');
+  const desktopCards = Array.from(section.querySelectorAll('#func-cards .func-card'));
 
-  const setActive = (step) => {
+  const setActiveDesktop = (step) => {
+    if (!imgDesktop || !desktopCards.length) return;
     const data = STEP_IMAGES[step];
     if (data) {
-      imgEl.style.opacity = 0;
+      imgDesktop.style.opacity = 0;
       setTimeout(() => {
-        imgEl.src = data.src;
-        imgEl.alt = data.alt;
-        imgEl.style.opacity = 1;
+        imgDesktop.src = data.src;
+        imgDesktop.alt = data.alt;
+        imgDesktop.style.opacity = 1;
       }, 120);
     }
-    cards.forEach(card => {
+    desktopCards.forEach((card) => {
       const active = card.dataset.step === String(step);
       card.classList.toggle('opacity-50', !active);
       const cta = card.querySelector('.func-cta');
@@ -38,17 +37,55 @@ export function initFeaturesBaseEffects(root = document) {
     });
   };
 
-  // eventos (click + teclado)
-  cards.forEach(card => {
-    card.addEventListener('click', () => setActive(card.dataset.step));
-    card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        setActive(card.dataset.step);
-      }
+  if (imgDesktop && desktopCards.length) {
+    desktopCards.forEach((card) => {
+      const step = card.dataset.step;
+      // ✅ agora só muda com clique (ou teclado)
+      card.addEventListener('click', () => setActiveDesktop(step));
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          setActiveDesktop(step);
+        }
+      });
     });
-  });
+    // estado inicial desktop
+    setActiveDesktop(1);
+  }
 
-  // estado inicial
-  setActive(1);
+  // ------------------ MOBILE (accordion) ------------------
+  const imgMobile   = section.querySelector('#func-illustration-mob');
+  const mobDetails  = Array.from(section.querySelectorAll('details.func-card[data-step]'));
+
+  const setActiveMobile = (step) => {
+    if (!imgMobile) return;
+    const data = STEP_IMAGES[step];
+    if (data) {
+      imgMobile.style.opacity = 0;
+      setTimeout(() => {
+        imgMobile.src = data.src;
+        imgMobile.alt = data.alt;
+        imgMobile.style.opacity = 1;
+      }, 120);
+    }
+  };
+
+  if (imgMobile && mobDetails.length) {
+    mobDetails.forEach((el) => {
+      el.addEventListener('toggle', () => {
+        if (!el.open) return;
+        const step = el.dataset.step;
+        setActiveMobile(step);
+        // fecha os outros para comportamento de acordeão
+        mobDetails.forEach((other) => {
+          if (other !== el && other.open) other.open = false;
+        });
+      });
+    });
+
+    // estado inicial mobile
+    const openItem = mobDetails.find((d) => d.open) || mobDetails[0];
+    if (openItem && !openItem.open) openItem.open = true;
+    if (openItem) setActiveMobile(openItem.dataset.step || '1');
+  }
 }

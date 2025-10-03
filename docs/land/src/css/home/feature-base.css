@@ -1,0 +1,55 @@
+/* src/styles/components/buttons.css */
+@layer utilities {
+  @keyframes btn-shimmer {
+    0%   { transform: translateX(-120%) skewX(-20deg); }
+    100% { transform: translateX(120%)  skewX(-20deg); }
+  }
+
+  /* brilho contínuo (tipo carregando) */
+  .btn-shine {
+    position: relative;
+    overflow: hidden; /* corta o brilho dentro do botão */
+    isolation: isolate; /* evita blend fora */
+  }
+  .btn-shine::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* faixa de luz fina que atravessa o botão */
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255,255,255,0.05) 35%,
+      rgba(255,255,255,0.45) 50%,
+      rgba(255,255,255,0.05) 65%,
+      transparent 100%
+    );
+    width: 60%;              /* largura da faixa */
+    left: -60%;              /* começa fora à esquerda */
+    pointer-events: none;    /* não intercepta clique */
+    mix-blend-mode: screen;  /* brilho sobre a cor do botão */
+    animation: btn-shimmer 1.6s linear infinite;
+    border-radius: inherit;  /* segue o rounded-full */
+  }
+
+  /* respeita prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    .btn-shine::before {
+      animation: none;
+    }
+  }
+
+  /* variante opcional: brilho só no hover/focus (não contínuo) */
+  .btn-shine-hover { position: relative; overflow: hidden; }
+  .btn-shine-hover::before {
+    content: ""; position: absolute; inset: 0; left: -60%; width: 60%;
+    background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.05) 35%, rgba(255,255,255,0.45) 50%, rgba(255,255,255,0.05) 65%, transparent 100%);
+    pointer-events: none; mix-blend-mode: screen; border-radius: inherit;
+    transform: translateX(-120%) skewX(-20deg);
+    transition: transform 0.6s ease;
+  }
+  .btn-shine-hover:hover::before,
+  .btn-shine-hover:focus-visible::before {
+    transform: translateX(120%) skewX(-20deg);
+  }
+}
