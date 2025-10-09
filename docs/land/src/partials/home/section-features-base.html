@@ -1,19 +1,31 @@
 <section
   id="functionalities"
-  class="relative z-[20] w-full isolate min-h-[1491px] overflow-x-hidden overflow-y-visible"
+  class="relative z-[50] w-full isolate min-h-[1491px] overflow-x-hidden overflow-y-visible"
 >
+  <!--
+    CAMADA DE FUNDO (BG DECORATIVO)
+    - Posição ideal do BG: top:-150px (ver nota). Provisoriamente está 0px para evitar corte.
+    - Animação: revelação da esquerda p/ direita com fade-in ao entrar no viewport.
+  -->
   <div class="absolute inset-0 z-0 pointer-events-none">
     <div class="relative mx-auto max-w-[1358px] h-full">
       <img
         src="home/features/bg.svg"
         alt=""
         aria-hidden="true"
-        class="hidden md:block select-none absolute left-0 top-[-150px] ml-[-350px]"
+        class="hidden md:block select-none absolute left-0 top-[0px] ml-[-350px] bg-animate"
         style="width:3013px!important;height:1491px!important;max-width:none!important;max-height:none!important;"
       />
+      <!--
+        NOTA:
+        - Quando o corte superior for resolvido, volte top:[0px] -> top-[-150px].
+        - Se voltar a cortar, aumente a área útil vertical do wrapper absoluto (ex.: -top) ou
+          garanta que a section anterior não “cubra” com z-index.
+      -->
     </div>
   </div>
 
+  <!-- CONTEÚDO -->
   <div class="relative z-10 max-w-[1358px] mx-auto px-5 sm:px-6 lg:px-10 pt-8 md:pt-12">
     <!-- Header -->
     <div class="text-center">
@@ -33,15 +45,48 @@
 
     <!-- ==================== MOBILE / TABLET ==================== -->
     <div class="lg:hidden mt-8 sm:mt-12">
-      <!-- Ilustração (sem relevo) -->
+      <!-- EMBED (MOBILE) -->
       <div class="relative w-full max-w-[420px] sm:max-w-[520px] mx-auto">
-        <div class="aspect-[9/18] rounded-[24px] overflow-hidden bg-transparent shadow-none border-0">
-          <img
-            id="func-illustration-mob"
-            src="home/features/cadastrar.svg"
-            alt="Cadastro do paciente"
-            class="w-full h-full object-contain object-top transition-opacity duration-300 opacity-100"
-          />
+        <div class="w-full flex justify-center">
+          <div
+            class="rounded-[24px] overflow-hidden border-[4px] border-[#E8611D] shadow-md"
+            style="width:412px; height:915px;"
+          >
+            <!-- Step 1 -->
+            <iframe
+              id="figma-embed-m1"
+              src="https://embed.figma.com/proto/JAiZl1WlrimZbtDisgzRmR/-Design----Interface-do-Site?node-id=1015-5023&page-id=1%3A3&starting-point-node-id=636%3A4644&scaling=min-zoom&content-scaling=fixed&hide-ui=1&embed-host=share"
+              allowfullscreen
+              loading="lazy"
+              style="display:block; width:100%; height:100%; border:none; transition:opacity .2s ease;"
+            ></iframe>
+
+            <!-- Step 2 -->
+            <iframe
+              id="figma-embed-m2"
+              src="https://embed.figma.com/proto/JAiZl1WlrimZbtDisgzRmR/-Design----Interface-do-Site?node-id=1015-9916&page-id=1%3A3&starting-point-node-id=636%3A4644&scaling=min-zoom&content-scaling=fixed&hide-ui=1&show-proto-sidebar=0&embed-host=share"
+              allowfullscreen
+              loading="lazy"
+              style="display:none; width:100%; height:100%; border:none; transition:opacity .2s ease;"
+            ></iframe>
+
+            <!-- Step 3 -->
+            <iframe
+              id="figma-embed-m3"
+              src="https://embed.figma.com/proto/JAiZl1WlrimZbtDisgzRmR/-Design----Interface-do-Site?node-id=1015-11778&page-id=1%3A3&starting-point-node-id=636%3A4644&scaling=min-zoom&content-scaling=fixed&hide-ui=1&show-proto-sidebar=0&embed-host=share"
+              allowfullscreen
+              loading="lazy"
+              style="display:none; width:100%; height:100%; border:none; transition:opacity .2s ease;"
+            ></iframe>
+
+            <!-- Fallback imagem (oculto) -->
+            <img
+              id="func-illustration-mob"
+              src="home/features/cadastrar.svg"
+              alt="Cadastro do paciente"
+              class="w-full h-full object-contain object-top transition-opacity duration-300 opacity-0 hidden"
+            />
+          </div>
         </div>
       </div>
 
@@ -155,23 +200,56 @@
     </div>
     <!-- ================== /MOBILE / TABLET ================== -->
 
-    <!-- ========================= DESKTOP (inalterado) ========================= -->
+    <!-- ========================= DESKTOP (com embeds) ========================= -->
     <div class="hidden lg:grid grid-cols-1 lg:grid-cols-2 gap-10 items-start mt-12">
-      <!-- Ilustração desktop (sem relevo) -->
+      <!-- EMBED DESKTOP -->
       <div class="relative">
-        <div class="aspect-[9/18] md:aspect-[9/16] rounded-[24px] overflow-hidden bg-transparent shadow-none border-0">
-          <img id="func-illustration"
-               src="home/features/cadastrar.svg"
-               alt="Cadastro do paciente"
-               class="w-full h-full object-contain object-top transition-opacity duration-300 opacity-100" />
+        <div class="w-full flex justify-center">
+          <div
+            class="rounded-[24px] overflow-hidden border-[5px] border-[#E8611D] shadow-lg"
+            style="width:412px; height:915px;"
+          >
+            <!-- Step 1 -->
+            <iframe
+              id="figma-embed-1"
+              src="https://embed.figma.com/proto/JAiZl1WlrimZbtDisgzRmR/-Design----Interface-do-Site?node-id=1015-5023&page-id=1%3A3&starting-point-node-id=636%3A4644&scaling=min-zoom&content-scaling=fixed&hide-ui=1&embed-host=share"
+              allowfullscreen
+              loading="lazy"
+              style="display:block; width:100%; height:100%; border:none; transition:opacity .2s ease;"
+            ></iframe>
+
+            <!-- Step 2 -->
+            <iframe
+              id="figma-embed-2"
+              src="https://embed.figma.com/proto/JAiZl1WlrimZbtDisgzRmR/-Design----Interface-do-Site?node-id=1015-9916&page-id=1%3A3&starting-point-node-id=636%3A4644&scaling=min-zoom&content-scaling=fixed&hide-ui=1&show-proto-sidebar=0&embed-host=share"
+              allowfullscreen
+              loading="lazy"
+              style="display:none; width:100%; height:100%; border:none; transition:opacity .2s ease;"
+            ></iframe>
+
+            <!-- Step 3 -->
+            <iframe
+              id="figma-embed-3"
+              src="https://embed.figma.com/proto/JAiZl1WlrimZbtDisgzRmR/-Design----Interface-do-Site?node-id=1015-11778&page-id=1%3A3&starting-point-node-id=636%3A4644&scaling=min-zoom&content-scaling=fixed&hide-ui=1&show-proto-sidebar=0&embed-host=share"
+              allowfullscreen
+              loading="lazy"
+              style="display:none; width:100%; height:100%; border:none; transition:opacity .2s ease;"
+            ></iframe>
+
+            <!-- Fallback imagem (oculto) -->
+            <img id="func-illustration"
+                 src="home/features/cadastrar.svg"
+                 alt="Cadastro do paciente"
+                 class="w-full h-full object-contain object-top transition-opacity duration-300 opacity-0 hidden" />
+          </div>
         </div>
       </div>
 
-      <!-- Cards desktop -->
-      <div id="func-cards" class="grid grid-rows-3 gap-10 aspect-[9/16] min-h-0">
+      <!-- Cards desktop (altura total = 915px) -->
+      <div id="func-cards" class="grid grid-rows-3 gap-10 h-[915px] min-h-0">
         <!-- Card 1 -->
         <article data-step="1" tabindex="0"
-          class="func-card rounded-[24px] bg-white shadow-sm border border-[#E6ECF5]
+          class="func-card h-[calc((915px-80px)/3)] rounded-[24px] bg-white shadow-sm border border-[#E6ECF5]
                  p-8 flex flex-col justify-between transition-opacity duration-200 cursor-pointer">
           <header class="flex items-center gap-4 justify-center">
             <span class="inline-grid place-items-center text-[#E8611D]">
@@ -203,7 +281,7 @@
 
         <!-- Card 2 -->
         <article data-step="2" tabindex="0"
-          class="func-card rounded-[24px] bg-white shadow-sm border border-[#E6ECF5]
+          class="func-card h-[calc((915px-80px)/3)] rounded-[24px] bg-white shadow-sm border border-[#E6ECF5]
                  p-8 flex flex-col justify-between transition-opacity duration-200 cursor-pointer opacity-50">
           <header class="flex items-center gap-4 justify-center">
             <span class="inline-grid place-items-center text-[#E8611D]">
@@ -234,7 +312,7 @@
 
         <!-- Card 3 -->
         <article data-step="3" tabindex="0"
-          class="func-card rounded-[24px] bg-white shadow-sm border border-[#E6ECF5]
+          class="func-card h-[calc((915px-80px)/3)] rounded-[24px] bg-white shadow-sm border border-[#E6ECF5]
                  p-8 flex flex-col justify-between transition-opacity duration-200 cursor-pointer opacity-50">
           <header class="flex items-center gap-4 justify-center">
             <span class="inline-grid place-items-center text-[#E8611D]">
@@ -266,3 +344,54 @@
     <!-- ======================= /DESKTOP ======================= -->
   </div>
 </section>
+
+<!-- ============================================================
+     CSS da animação (pode mover para seu CSS global)
+============================================================ -->
+<style>
+  /* Estado inicial (antes de entrar no viewport) */
+  .bg-animate {
+    opacity: 0;
+    transform: translateX(-24px) scale(1.02);
+    clip-path: inset(0 100% 0 0); /* escondido da direita para a esquerda */
+    will-change: opacity, transform, clip-path;
+  }
+
+  /* Quando a section estiver visível, animamos o BG */
+  .inview .bg-animate {
+    animation: bg-reveal 1200ms ease-out 150ms both;
+  }
+
+  @keyframes bg-reveal {
+    0%   { opacity: 0; transform: translateX(-24px) scale(1.02); clip-path: inset(0 100% 0 0); }
+    60%  { opacity: 1; }
+    100% { opacity: 1; transform: translateX(0) scale(1);       clip-path: inset(0 0 0 0);   }
+  }
+
+  /* Acessibilidade: respeita usuários que preferem menos movimento */
+  @media (prefers-reduced-motion: reduce) {
+    .bg-animate { opacity: 1; transform: none; clip-path: inset(0 0 0 0); }
+    .inview .bg-animate { animation: none; }
+  }
+</style>
+
+<!-- ============================================================
+     JS para disparar a animação ao entrar no viewport
+     (pode mover para seu arquivo section-feature-base.effects.js)
+============================================================ -->
+<script>
+  (function () {
+    const section = document.getElementById('functionalities');
+    if (!section) return;
+
+    // Se já animou uma vez, não reanima (desconecta observer)
+    const io = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        section.classList.add('inview');
+        io.disconnect();
+      }
+    }, { root: null, threshold: 0.2, rootMargin: '-10% 0px -10% 0px' });
+
+    io.observe(section);
+  })();
+</script>
