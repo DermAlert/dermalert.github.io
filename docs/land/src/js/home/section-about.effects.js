@@ -1,12 +1,18 @@
-// Efeitos da seção "Sobre o Dermalert"
-// - Idempotente (evita bind duplicado)
-// - Respeita prefers-reduced-motion
-// - Reveal suave (igual estilo da hero)
-// - Hover zoom sutil na imagem em desktops
+/**
+ * ABOUT section – animações com IntersectionObserver
+ * --------------------------------------------------
+ * - Elementos marcados com .pre-anim + data-anim="..." entram em cena
+ *   quando ~20–25% do elemento fica visível no viewport.
+ * - Usa inline transitions para um controle fino, mas funciona em conjunto
+ *   com os estados do CSS (.pre-anim / .is-inview) para evitar FOUC.
+ * - Respeita prefers-reduced-motion.
+ */
 
 export function initAboutEffects(root = document) {
   const section = root.querySelector('#about-dermalert');
   if (!section) return;
+
+  // evita dupla ligação (HMR/re-montagens)
   if (section.dataset.aboutWired === 'true') return;
   section.dataset.aboutWired = 'true';
 
@@ -15,21 +21,7 @@ export function initAboutEffects(root = document) {
   const canHover =
     window.matchMedia?.('(hover: hover) and (pointer: fine)').matches ?? false;
 
-  // Helpers (mesmos parâmetros da hero)
-  const prime = (el, delayMs = 0) => {
-    if (!el) return;
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(16px) scale(.995)';
-    el.style.transition = `opacity 600ms ease ${delayMs}ms, transform 600ms ease ${delayMs}ms`;
-    el.style.willChange = 'opacity, transform';
-  };
-  const reveal = (el) => {
-    if (!el) return;
-    el.style.opacity = '1';
-    el.style.transform = 'translateY(0) scale(1)';
-    setTimeout(() => { el.style.willChange = 'auto'; }, 700);
-  };
-
+  // Targets
   const title     = section.querySelector('#about-title');
   const sub       = section.querySelector('#about-sub');
   const mediaWrap = section.querySelector('#about-media');
@@ -37,26 +29,52 @@ export function initAboutEffects(root = document) {
   const highlight = section.querySelector('#about-highlight');
   const note      = section.querySelector('#about-note');
 
-  // Estado inicial
-  [title, sub, mediaWrap, highlight, note].forEach((el, i) => prime(el, i * 70));
+  // Helpers
+  const prime = (el, delayMs = 0) => {
+    if (!el) return;
+    // estado inicial (coerente com CSS .pre-anim)
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px) scale(.995)';
+    el.style.transition = `opacity 700ms cubic-bezier(.22,.75,.25,1) ${delayMs}ms, transform 700ms cubic-bezier(.22,.75,.25,1) ${delayMs}ms`;
+    el.style.willChange = 'opacity, transform';
+  };
+  const reveal = (el) => {
+    if (!el) return;
+    // estado final
+    el.classList.remove('pre-anim');
+    el.classList.add('is-inview');
+    el.style.opacity = '1';
+    el.style.transform = 'translateY(0) scale(1)';
+    // limpa will-change depois
+    setTimeout(() => { el.style.willChange = 'auto'; }, 800);
+  };
 
-  // Reveal on view (IntersectionObserver)
+  // Prime com pequeno "stagger" (delays suaves)
+  const targets = [title, sub, mediaWrap, highlight, note];
+  targets.forEach((el, i) => prime(el, i * 90));
+
+  // Reveal on view
   if (!prefersReduce && 'IntersectionObserver' in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (!e.isIntersecting) return;
           reveal(e.target);
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.2 });
-
-    [title, sub, mediaWrap, highlight, note].forEach((el) => el && io.observe(el));
+          io.unobserve(e.target); // anima só uma vez
+        });
+      },
+      {
+        threshold: 0.22,
+        rootMargin: '0px 0px -10% 0px',
+      }
+    );
+    targets.forEach((el) => el && io.observe(el));
   } else {
-    [title, sub, mediaWrap, highlight, note].forEach(reveal);
+    // Sem animação (acessibilidade / browsers antigos)
+    targets.forEach((el) => el && reveal(el));
   }
 
-  // Hover zoom sutil na imagem (desktop only)
+  // Microinteração: hover zoom sutil na imagem (somente desktop)
   if (canHover && mediaWrap) {
     const enter = () => {
       if (prefersReduce) return;
@@ -73,7 +91,7 @@ export function initAboutEffects(root = document) {
     mediaWrap.addEventListener('focus', enter, true);
     mediaWrap.addEventListener('blur', leave, true);
 
-    // Segurança: evita drag da imagem “puxar” o layout
+    // Segurança: evita drag de imagem “puxar” layout
     if (image) {
       image.setAttribute('draggable', 'false');
       image.style.userSelect = 'none';
