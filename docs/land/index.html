@@ -2,15 +2,24 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="icon" type="image/png" href="logo.png" />
 
     <!-- Google Fonts: Lexend -->
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Google Fonts: Noto Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    >
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dermalert</title>
     <meta name="description" content="Triagem dermatológica inteligente, simples e segura." />
-    <meta name="theme-color" content="#094559" />
+    <meta name="theme-color" content="#1D366F" />
   </head>
 
   <body class="font-sans antialiased bg-white text-gray-800 dark:bg-[#0E1A2B] dark:text-gray-100">
@@ -21,16 +30,18 @@
     </a>
 
     <div class="min-h-screen flex flex-col items-center w-full bg-white dark:bg-[#0E1A2B]">
-      <!-- HEADER -->
-      <div id="app-header" class="w-full"></div>
-
       <!-- MAIN -->
       <main id="conteudo" class="flex-1 w-full flex flex-col items-center">
-        <!-- HERO -->
-        <div id="app-hero" class="w-full my-8"></div>
+        <div class="dermalert-hero-shell-home w-full">
+          <!-- HEADER -->
+          <div id="app-header" class="w-full"></div>
+
+          <!-- HERO -->
+          <div id="app-hero" class="w-full"></div>
+        </div>
 
         <!-- FEATURES / PILLS -->
-        <div id="app-features-pills" class="w-full my-12"></div>
+        <div id="app-features-pills" class="w-full -mt-8 md:-mt-10 relative z-10"></div>
 
         <!-- PARTNERS -->
         <div id="app-partners" class="w-full my-12"></div>

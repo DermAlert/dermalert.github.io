@@ -1,4 +1,8 @@
-# Código de Conduta
+<section class="da-doc-hero">
+  <p class="da-doc-hero__kicker">Como funciona</p>
+  <h1>Código de Conduta</h1>
+  <p>Compromissos de convivência, colaboração e responsabilidade para manter o projeto acolhedor e produtivo.</p>
+</section>
 
 ### 🤝 Nosso Compromisso
 

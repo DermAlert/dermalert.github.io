@@ -1,4 +1,8 @@
-# Backlog
+<section class="da-doc-hero">
+  <p class="da-doc-hero__kicker">Documentação GCES</p>
+  <h1>Backlog</h1>
+  <p>Visão de dependências, arquitetura e itens de produto acompanhados durante a evolução do DermAlert.</p>
+</section>
 
 ## Dependências Escolhidas
 

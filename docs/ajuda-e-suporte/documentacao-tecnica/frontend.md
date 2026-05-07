@@ -1,4 +1,12 @@
-# DermAlert | Frontend
+<section class="da-doc-hero">
+  <p class="da-doc-hero__kicker">Documentação técnica</p>
+  <h1>DermAlert | Frontend</h1>
+  <p>Arquitetura mobile, telas, tecnologias e orientações para executar a aplicação frontend.</p>
+  <div class="da-doc-actions">
+    <a class="da-doc-button" href="https://github.com/DermAlert/applicativo">Repositório do app</a>
+    <a class="da-doc-button da-doc-button--ghost" href="../backend/">Ver backend</a>
+  </div>
+</section>
 
 ## 📄 Visão Geral
 

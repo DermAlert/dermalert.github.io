@@ -12,6 +12,7 @@ export default defineConfig({
         curso: resolve(__dirname, 'curso.html'),
         comofunciona: resolve(__dirname, 'comofunciona.html'),
         sobre: resolve(__dirname, 'sobre.html'),
+        privacidade: resolve(__dirname, 'privacidade.html'),
       },
     },
   },

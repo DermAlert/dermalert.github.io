@@ -1,14 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dermalert</title>
+    <title data-i18n="how_title">Dermalert - Como funciona</title>
   </head>
-  <body class="font-[Lexend] antialiased bg-white text-gray-800">
+  <body class="font-sans antialiased bg-[#FFEFE5] text-gray-800 dark:bg-[#1B2434] dark:text-gray-100">
+    <div class="dermalert-hero-shell-how">
+    <div id="app-header" class="w-full"></div>
     <!-- Header fixo no topo com menu hambúrguer responsivo -->
-    <header id="navbar" class="fixed top-0 left-0 w-full bg-[#094559] shadow-sm shadow-gray-400 z-50">
+    <header id="navbar" class="hidden fixed top-0 left-0 w-full bg-[#1D366F] shadow-sm shadow-gray-400 z-50">
       
       <div class="max-w-7xl mx-auto flex items-center justify-between py-[24px] md:py-[32px] px-6">
         
@@ -16,7 +18,7 @@
         <div class="flex items-center gap-2">
           <!-- Logo -->
           <a href="index.html" class="flex items-center gap-2">
-            <img src="/logo.png" alt="DERMALERT" class="h-[24px] w-auto md:h-[30px] md:w-[114px]" />
+            <img src="logo.png" alt="DERMALERT" class="h-[24px] w-auto md:h-[30px] md:w-[114px]" />
           </a>
         </div>
 
@@ -30,17 +32,17 @@
         </button>
 
         <!-- Menu principal (visível em telas médias e maiores) -->
-        <nav class="hidden md:flex flex-row items-center space-x-10 text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
+        <nav class="hidden md:flex flex-row items-center space-x-10 text-base font-normal text-[#F6F6F6]">
           <a href="comofunciona.html" class="hover:underline hover:decoration-[#D06A32] transition">
             Como Funciona
           </a>
-          <a href="../../ajuda-e-suporte/problemas-comuns/" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/ajuda-e-suporte/problemas-comuns/" class="hover:underline hover:decoration-[#D06A32] transition">
             Ajuda e Suporte
           </a>
-          <a href="../../curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
             Curso de Extensão
           </a>
-          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
             Documentação
           </a>
           <a href="sobre.html" class="hover:underline hover:decoration-[#D06A32] transition">
@@ -50,8 +52,8 @@
 
         <!-- Botão de ação (visível apenas em telas grandes) -->
         <div class="hidden lg:inline-block">
-          <a href="#" 
-            class="px-[20px] py-[12px] rounded-full text-base font-normal tracking-[0.5px] text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]">
+          <a href="suporte.html"
+            class="px-[20px] py-[12px] rounded-full text-base font-normal text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]">
             Participar da Pesquisa
           </a>
         </div>
@@ -60,47 +62,118 @@
 
       <!-- Menu Mobile (aparece ao clicar no botão) -->
       <div id="mobile-menu"
-        class="hidden md:hidden scale-y-0 origin-top transition-transform duration-300 bg-[#094559] text-center text-base font-normal tracking-[0.5px] text-[#F6F6F6]">
+        class="hidden md:hidden scale-y-0 origin-top transition-transform duration-300 bg-[#1D366F] text-center text-base font-normal text-[#F6F6F6]">
         
         <a href="comofunciona.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Como Funciona
         </a>
-        <a href="../../ajuda-e-suporte/problemas-comuns/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/ajuda-e-suporte/problemas-comuns/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Ajuda e Suporte
         </a>
-        <a href="../../curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Curso de Extensão
         </a>
         <a href="sobre.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Sobre
         </a>
-        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Documentação
         </a>
       </div>
 
     </header>
 
-    <section class="bg-[#FFEFE5] py-12 md:py-20">
+    <section class="relative overflow-hidden py-14 text-[#1D366F] dark:text-white md:py-16">
+      <div class="relative mx-auto grid max-w-[1180px] gap-10 px-6 lg:min-h-[620px] lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+        <div data-page-reveal class="order-2 lg:order-1">
+          <div class="relative mx-auto max-w-[560px]">
+            <div class="absolute inset-x-5 top-8 h-[390px] rounded-lg bg-white shadow-[0_28px_90px_rgba(14,26,43,.22)]"></div>
+            <img
+              src="comofunciona/how-hero-animated.svg"
+              alt="Fluxo animado de triagem da plataforma DermAlert"
+              class="da-card-lift relative z-10 mx-auto h-auto w-full max-w-[520px] rounded-lg object-contain"
+            />
+            <div class="absolute bottom-4 left-0 z-20 hidden w-[230px] rounded-lg border border-[#DDE7F1] bg-white p-4 text-[#1D366F] shadow-[0_18px_48px_rgba(14,26,43,.20)] md:block">
+              <p data-i18n="step3_title" class="text-sm font-semibold">Anamnese Guiada</p>
+              <div class="mt-4 h-2 overflow-hidden rounded-full bg-[#E2EAF3]">
+                <div class="da-progress-shine h-full w-[78%] rounded-full bg-[#8ED7EA]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-page-reveal style="--reveal-delay:100ms" class="order-1 max-w-2xl lg:order-2">
+          <p data-i18n="how_section_title" class="text-sm font-semibold uppercase text-[#B7561F]">Como funciona</p>
+          <h1 data-i18n-html="how_hero_title" class="mt-4 text-[42px] font-bold leading-[1.04] text-[#1D366F] md:text-[60px] dark:text-white">
+            Etapas simples,<br class="hidden md:block" />
+            seguras e guiadas
+          </h1>
+          <p data-i18n="how_hero_desc" class="mt-6 max-w-xl text-lg leading-8 text-[#42566A] dark:text-white/75">
+            O DermAlert é uma plataforma digital de triagem dermatológica que orienta o agente de saúde por etapas simples, seguras e guiadas, do cadastro até o encaminhamento médico, facilitando o diagnóstico precoce de lesões suspeitas.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#como-funciona"
+              class="btn-shine inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#D06A32] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:bg-[#B7561F] focus:outline-none focus:ring-2 focus:ring-[#D06A32]/40"
+            >
+              <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 3v6M18 15v6M6 9h12a3 3 0 0 1 3 3v0a3 3 0 0 1-3 3H6"/>
+                <circle cx="6" cy="9" r="3"/>
+                <circle cx="18" cy="15" r="3"/>
+              </svg>
+              <span data-i18n="saiba_mais">Saber Mais</span>
+            </a>
+            <a
+              href="curso.html"
+              class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-[#1D366F] px-6 py-3 text-sm font-semibold text-[#1D366F] transition hover:-translate-y-1 hover:bg-[#1D366F] hover:text-white dark:border-white/40 dark:text-white dark:hover:bg-white/10"
+            >
+              <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-1.5z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h6M8 11h7"/>
+              </svg>
+              <span data-i18n="how_course_title">Curso de Extensão DermAlert</span>
+            </a>
+          </div>
+
+          <div class="mt-8 grid max-w-xl grid-cols-1 gap-3 text-sm sm:grid-cols-3">
+            <div class="rounded-lg border border-[#1D366F]/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-white/10">
+              <p class="text-2xl font-bold">05</p>
+              <p data-i18n="step1_title" class="mt-1 font-semibold">Login e Identificação</p>
+            </div>
+            <div class="rounded-lg border border-[#1D366F]/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-white/10">
+              <p class="text-2xl font-bold">08</p>
+              <p data-i18n="features_step2_title" class="mt-1 font-semibold">Anamnese e foto</p>
+            </div>
+            <div class="rounded-lg border border-[#1D366F]/10 bg-white p-4 shadow-sm dark:border-white/15 dark:bg-white/10">
+              <p class="text-2xl font-bold">LGPD</p>
+              <p data-i18n="features_security" class="mt-1 font-semibold">Segurança de dados</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hidden bg-[#FFEFE5] py-12 md:py-20 dark:bg-[#1B2434]">
   <div class="max-w-7xl mx-auto px-4 md:px-6 mt-12 flex flex-col md:flex-row items-center gap-12">
     
     <!-- Texto (sempre vem primeiro em mobile) -->
     <div class="w-full md:w-1/2">
       <div class="mt-9">
-        <h2 class="text-[40px] md:text-[56px] leading-tight md:leading-[56px] font-bold text-[#B7561F] mb-8">
+        <h2 data-i18n-html="how_hero_title" class="text-[38px] md:text-[52px] leading-tight font-bold text-[#B7561F] mb-8">
           Etapas simples,<br class="hidden md:block" />
           seguras e guiadas
         </h2>
-        <p class="font-dmsans text-[16px] md:text-[18px] leading-[24px] md:leading-[23px] font-bold text-[#4D4D4D] mb-8 max-w-xl">
+        <p data-i18n="how_hero_desc" class="text-base md:text-lg leading-7 font-medium text-[#4D4D4D] mb-8 max-w-xl dark:text-white/80">
           O DermAlert é uma plataforma digital de triagem dermatológica que orienta o agente de saúde por etapas simples, seguras e guiadas — do cadastro até o encaminhamento médico, facilitando o diagnóstico precoce de lesões suspeitas.
         </p>
         <a
-          href="#"
+          href="#como-funciona"
           class="inline-flex items-center justify-center bg-[#D06A32] text-white text-sm md:text-base font-medium rounded-[50px]
                  w-[240px] h-[56px] px-5 py-3 border border-[#D06A32] hover:bg-[#b35627] transition
                  mx-auto md:mx-0"
         >
-          Saber Mais
+          <span data-i18n="saiba_mais">Saber Mais</span>
         </a>
       </div>
     </div>
@@ -108,19 +181,18 @@
     <!-- Imagem (fica abaixo do texto em mobile, ao lado em md+) -->
     <div class="w-full md:w-1/2">
       <img
-        src="comofunciona/img-hero-etapas.png"
-        alt="Interface da plataforma DermAlert"
+        src="comofunciona/how-hero-animated.svg"
+        alt="Fluxo animado de triagem da plataforma DermAlert"
         class="w-full h-auto max-w-[500px] mx-auto md:mx-0 rounded-[8px]"
       />
     </div>
 
   </div>
 </section>
+    </div>
 
-
-
-    <section class="bg-white py-20">
-    <h2 style="font-size: 48px;" class="text-3xl font-bold text-[#2D7E99] mb-12 text-center lg:text-center">
+    <section id="como-funciona" class="bg-white py-20 dark:bg-[#0E1A2B]">
+    <h2 data-i18n="how_section_title" class="text-[36px] md:text-[44px] font-bold text-[#2D7E99] mb-12 text-center lg:text-center dark:text-[#8ED7EA]">
         Como funciona
     </h2>
 
@@ -136,23 +208,23 @@
     </div>
     </section>
 
-    <section id="curso-extensao" class="bg-[#F7F7F7] py-16 px-4 text-center">
+    <section id="curso-extensao" class="bg-[#F7F7F7] py-16 px-4 text-center dark:bg-[#111D2E]">
     <div class="w-full mx-auto flex flex-col items-center">
-        <h2 class="max-w-[1000px] text-[#20596C] text-[40px] md:text-[48px] font-bold">
+        <h2 data-i18n="how_course_title" class="max-w-[1000px] text-[#1D366F] text-[34px] md:text-[44px] font-bold dark:text-[#8ED7EA]">
         Curso de Extensão DermAlert
         </h2>
-        <p class="max-w-[700px] text-[#20596C] text-[18px] md:text-[24px] font-medium leading-normal mb-6 whitespace-pre-line">
+        <p data-i18n="how_course_desc" class="max-w-[700px] text-[#1D366F] text-lg md:text-xl font-medium leading-8 mb-6 dark:text-white/80">
         Inscreva-se no curso de extensão do
         DermAlert e entenda como a tecnologia pode
         transformar o atendimento dermatológico.
         </p>
         <div class="text-center">
         <div class="text-center">
-            <a href="#"
+            <a href="curso.html"
             class="inline-flex items-center justify-center bg-[#2D7E99] text-white text-sm font-medium rounded-[50px] 
-                    px-[20px] py-[12px] border border-[#2D7E99] hover:bg-[#20596C] hover:border-[#20596C] transition"
+                    px-[20px] py-[12px] border border-[#2D7E99] hover:bg-[#1D366F] hover:border-[#1D366F] transition"
             style="width: 240px; height: 56px;">
-            Acessar documentação
+            <span data-i18n="acessar_documentacao">Acessar documentação</span>
             </a>
         </div>
     </div>
@@ -161,7 +233,7 @@
     </section>
 
      <!-- Sessão de vantagens redesenhada para manter todas as “cards” totalmente visíveis em qualquer tela -->
-    <section class="bg-white py-8 md:py-16">
+    <section class="bg-white py-8 md:py-16 dark:bg-[#0E1A2B]">
       <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-wrap justify-center gap-4">
           
@@ -203,37 +275,37 @@
     </section>
 
 
-   <section class="bg-white">
+   <section class="bg-white dark:bg-[#0E1A2B]">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
     <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
 
       <!-- LADO ESQUERDO: TÍTULO E BOTÕES -->
       <div class="grid gap-y-8">
         <!-- TÍTULO -->
-        <h2 class="text-2xl sm:text-3xl md:text-[48px] leading-tight font-lexend font-bold text-[#20596C] text-center md:text-left">
+        <h2 data-i18n-html="how_cta_title" class="text-2xl sm:text-3xl md:text-[44px] leading-tight font-bold text-[#1D366F] text-center md:text-left dark:text-[#8ED7EA]">
           Quer conhecer o <span class="whitespace-nowrap">DermAlert na prática?</span>
         </h2>
 
         <!-- BLOCO DE BOTÕES (empilha no mobile, alinha em linha no sm+) -->
         <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 items-center md:items-start">
-          <!-- Botão 1: fundo #094559, texto branco -->
+          <!-- Botão 1: fundo #1D366F, texto branco -->
           <a
-            href="#"
+            href="suporte.html"
             class="inline-flex items-center justify-center text-sm sm:text-base font-medium rounded-[50px]
-                   w-[240px] sm:w-auto h-14 px-6 py-3 border border-[#094559] bg-[#094559] text-white
-                   hover:bg-[#20596C] hover:border-[#20596C] transition"
+                   w-[240px] sm:w-auto h-14 px-6 py-3 border border-[#1D366F] bg-[#1D366F] text-white
+                   hover:bg-[#1D366F] hover:border-[#1D366F] transition"
           >
-            Se torne parceiro
+            <span data-i18n="tornar_parceiro">Se torne parceiro</span>
           </a>
 
-          <!-- Botão 2: fundo branco, texto #094559 -->
+          <!-- Botão 2: fundo branco, texto #1D366F -->
           <a
-            href="#"
+            href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
             class="inline-flex items-center justify-center text-sm sm:text-base font-medium rounded-[50px]
-                   w-[240px] sm:w-auto h-14 px-6 py-3 border-4 border-[#094559] bg-white text-[#094559] 
-                   shadow-[0_0_0_3px_rgba(9,69,89,0.25)] hover:bg-[#20596C] hover:border-[#20596C] hover:text-white transition"
+                   w-[240px] sm:w-auto h-14 px-6 py-3 border-4 border-[#1D366F] bg-white text-[#1D366F] 
+                   shadow-[0_0_0_3px_rgba(9,69,89,0.25)] hover:bg-[#1D366F] hover:border-[#1D366F] hover:text-white transition"
           >
-            Entrar em Contato
+            <span data-i18n="entrar_contato">Entrar em contato</span>
           </a>
         </div>
       </div>
@@ -282,14 +354,14 @@
 
     
     <!-- Rodapé -->
-    <footer class="bg-[#094559] text-white pt-0">
+    <footer class="hidden bg-[#1D366F] text-white pt-0">
     <!-- Linha branca no topo -->
     <div class="h-[2px] bg-white w-full"></div>
 
     <div class="max-w-7xl mx-auto px-6 py-12">
         <!-- Logo -->
         <div class="mb-6">
-        <img src="/logo.png" alt="Logo Dermalert" class="h-8">
+        <img src="logo.png" alt="Logo Dermalert" class="h-8">
         </div>
 
         <!-- Linha branca após a logo -->
@@ -301,44 +373,45 @@
         <div>
             <h4 class="font-semibold uppercase mb-2">Como Funciona</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Passo a Passo</a></li>
-            <li><a href="#" class="hover:underline">Material Educativo</a></li>
-            <li><a href="#" class="hover:underline">Funcionalidades</a></li>
+            <li><a href="comofunciona.html#como-funciona" class="hover:underline">Passo a Passo</a></li>
+            <li><a href="curso.html" class="hover:underline">Material Educativo</a></li>
+            <li><a href="index.html#app-features-base" class="hover:underline">Funcionalidades</a></li>
             </ul>
         </div>
         <!-- Coluna 2 -->
         <div>
             <h4 class="font-semibold uppercase mb-2">Ajuda e Suporte</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Obter Acesso</a></li>
-            <li><a href="#" class="hover:underline">Remover Dados</a></li>
-            <li><a href="#" class="hover:underline">Perguntas Frequentes</a></li>
+            <li><a href="suporte.html" class="hover:underline">Obter Acesso</a></li>
+            <li><a href="privacidade.html#exclusao-dados" class="hover:underline">Remover Dados</a></li>
+            <li><a href="index.html#app-faq" class="hover:underline">Perguntas Frequentes</a></li>
             </ul>
         </div>
         <!-- Coluna 3 -->
         <div>
             <h4 class="font-semibold uppercase mb-2">Documentação</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
-            <li><a href="#" class="hover:underline">Quem Somos</a></li>
-            <li><a href="#" class="hover:underline">Apoiadores</a></li>
+            <li><a href="sobre.html" class="hover:underline">Sobre o Projeto</a></li>
+            <li><a href="sobre.html" class="hover:underline">Quem Somos</a></li>
+            <li><a href="index.html#app-partners" class="hover:underline">Apoiadores</a></li>
             </ul>
         </div>
         <!-- Coluna 4 -->
         <div>
             <h4 class="font-semibold uppercase mb-2">Curso de Extensão</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Sobre o Curso</a></li>
-            <li><a href="#" class="hover:underline">Como Funciona</a></li>
-            <li><a href="#" class="hover:underline">Inscrição</a></li>
+            <li><a href="curso.html" class="hover:underline">Sobre o Curso</a></li>
+            <li><a href="comofunciona.html" class="hover:underline">Como Funciona</a></li>
+            <li><a href="/curso-de-extensao/sobre-o-curso/" class="hover:underline">Inscrição</a></li>
             </ul>
         </div>
         <!-- Coluna 5 -->
         <div>
             <h4 class="font-semibold uppercase mb-2">Sobre</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
-            <li><a href="#" class="hover:underline">Contato</a></li>
+            <li><a href="sobre.html" class="hover:underline">Sobre o Projeto</a></li>
+            <li><a href="mailto:caguiar@unb.br" class="hover:underline">Contato</a></li>
+            <li><a href="privacidade.html" class="hover:underline">Política de Privacidade</a></li>
             </ul>
         </div>
         </div>
@@ -377,48 +450,51 @@
     </div>
     </footer>
 
+    <footer class="w-full">
+      <div class="w-full bg-[#1D366F]">
+        <div id="app-footer" class="max-w-[1200px] mx-auto px-6 py-10 lg:py-12"></div>
+      </div>
+    </footer>
+
     <!-- Stylesheet - Vite + Tailwind -->
     <script type="module" src="/src/main.js"></script>
 
     <!-- script como funciona -->
     <script>
-        const steps = [
-            {
-            title: "Login e Identificação",
-            description: "O usuário acessa a plataforma e realiza login, é identificado como um novo ou antigo paciente."
-            },
-            {
-            title: "Cadastros e Consentimento",
-            description: "O agente de saúde realiza os cadastros necessários e colhe os devidos consentimentos."
-            },
-            {
-            title: "Anamnese Guiada",
-            description: "Etapa de anamnese guiada para levantamento dos dados clínicos relevantes."
-            },
-            {
-            title: "Triagem e Classificação",
-            description: "A plataforma realiza a triagem automática e classifica os casos de risco."
-            },
-            {
-            title: "Encaminhamento",
-            description: "Os casos classificados como prioritários são encaminhados ao médico responsável."
-            }
+        const STEP_KEYS = [
+            { title: "step1_title", fallbackTitle: "Login e Identificação", description: "step1_desc", fallbackDescription: "O usuário acessa a plataforma e realiza login, sendo identificado como um novo ou antigo paciente." },
+            { title: "step2_title", fallbackTitle: "Cadastros e Consentimento", description: "step2_desc", fallbackDescription: "O agente de saúde realiza os cadastros necessários e colhe os devidos consentimentos." },
+            { title: "step3_title", fallbackTitle: "Anamnese Guiada", description: "step3_desc", fallbackDescription: "Etapa de anamnese guiada para levantamento dos dados clínicos relevantes." },
+            { title: "step4_title", fallbackTitle: "Triagem e Classificação", description: "step4_desc", fallbackDescription: "A plataforma realiza a triagem automática e classifica os casos de risco." },
+            { title: "step5_title", fallbackTitle: "Encaminhamento", description: "step5_desc", fallbackDescription: "Os casos classificados como prioritários são encaminhados ao médico responsável." }
         ];
 
         const stepsContainer = document.getElementById("steps");
+        let activeStep = 1;
+
+        function getStepText(step) {
+            const lang = localStorage.getItem("lang") || "pt-BR";
+            const dict = window.DermalertHeader?.getDict?.(lang) || {};
+            return {
+                title: dict[step.title] || step.fallbackTitle,
+                description: dict[step.description] || step.fallbackDescription,
+            };
+        }
 
         function renderSteps(activeIndex = 1) {
+            activeStep = activeIndex;
             stepsContainer.innerHTML = "";
 
-            steps.forEach((step, index) => {
+            STEP_KEYS.forEach((step, index) => {
+            const stepText = getStepText(step);
             const i = index + 1;
             const wrapper = document.createElement("div");
-            wrapper.className = "block w-full"; // <-- ADICIONE ESTA LINHA AQUI
+            wrapper.className = "block w-full";
             const img = document.createElement("img");
             img.src = activeIndex === i
                 ? `comofunciona/cards/step${i}_select.png`
                 : `comofunciona/cards/step${i}.png`;
-            img.alt = step.title;
+            img.alt = stepText.title;
             img.className = "cursor-pointer w-full max-w-full";
             img.onclick = () => renderSteps(i);
 
@@ -426,9 +502,8 @@
 
             if (activeIndex === i) {
                 const desc = document.createElement("p");
-                desc.className = "mt-2 ml-4 max-w-md";
-                desc.setAttribute("style", "font-family: 'DM Sans', sans-serif; font-size: 18px; line-height: 100%; color: #094559;  margin-left: 12px;");
-                desc.textContent = step.description;
+                desc.className = "mt-2 ml-4 max-w-md text-base md:text-lg leading-7 text-[#1D366F] dark:text-white/80";
+                desc.textContent = stepText.description;
                 wrapper.appendChild(desc);
             }
 
@@ -441,7 +516,7 @@
 
             setTimeout(() => {
             imgRight.src = `comofunciona/step${activeIndex}.png`;
-            imgRight.alt = `Etapa ${activeIndex}`;
+            imgRight.alt = getStepText(STEP_KEYS[activeIndex - 1]).title;
             }, 200);
 
             imgRight.onload = () => {
@@ -452,7 +527,8 @@
             };
         }
 
-        renderSteps(1); // Inicializa com a primeira etapa
+        renderSteps(1);
+        document.addEventListener("dermalert:langchange", () => renderSteps(activeStep));
     </script>
 
   </body>

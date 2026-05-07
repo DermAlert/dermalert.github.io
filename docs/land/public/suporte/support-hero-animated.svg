@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">DermAlert support center animated illustration</title>
+  <desc id="desc">Animated abstract support dashboard with privacy, documentation and contact elements.</desc>
+  <defs>
+    <linearGradient id="supportBg" x1="90" x2="870" y1="72" y2="660" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F7FAFC"/>
+      <stop offset="1" stop-color="#E7F5FA"/>
+    </linearGradient>
+    <linearGradient id="panelGradient" x1="132" x2="824" y1="122" y2="612" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F2F7FB"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="230" x2="690" y1="204" y2="514" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2D7E99"/>
+      <stop offset="1" stop-color="#1D366F"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#1D366F" flood-opacity="0.18"/>
+    </filter>
+    <filter id="smallShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#1D366F" flood-opacity="0.12"/>
+    </filter>
+    <style>
+      .float-slow { animation: floatSlow 7s ease-in-out infinite; transform-origin: center; }
+      .float-mid { animation: floatMid 6s ease-in-out infinite; transform-origin: center; }
+      .float-fast { animation: floatFast 4.8s ease-in-out infinite; transform-origin: center; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; }
+      .scan { animation: scan 5.5s linear infinite; }
+      .dash { stroke-dasharray: 8 16; animation: dash 15s linear infinite; }
+      .fade-one { animation: fadeOne 4.5s ease-in-out infinite; }
+      .fade-two { animation: fadeTwo 4.5s ease-in-out infinite; }
+      .draw { stroke-dasharray: 140; stroke-dashoffset: 140; animation: draw 4.5s ease-in-out infinite; }
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-14px); }
+      }
+      @keyframes floatMid {
+        0%, 100% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(12px) translateX(-8px); }
+      }
+      @keyframes floatFast {
+        0%, 100% { transform: translateY(0) translateX(0); }
+        50% { transform: translateY(-10px) translateX(8px); }
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: .82; }
+        50% { transform: scale(1.08); opacity: 1; }
+      }
+      @keyframes scan {
+        0% { transform: translateY(-140px); opacity: 0; }
+        18%, 82% { opacity: .75; }
+        100% { transform: translateY(360px); opacity: 0; }
+      }
+      @keyframes dash {
+        to { stroke-dashoffset: -240; }
+      }
+      @keyframes fadeOne {
+        0%, 100% { opacity: .35; }
+        45% { opacity: 1; }
+      }
+      @keyframes fadeTwo {
+        0%, 100% { opacity: 1; }
+        45% { opacity: .35; }
+      }
+      @keyframes draw {
+        0%, 18% { stroke-dashoffset: 140; opacity: .25; }
+        45%, 72% { stroke-dashoffset: 0; opacity: 1; }
+        100% { stroke-dashoffset: -140; opacity: .25; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .float-slow, .float-mid, .float-fast, .pulse, .scan, .dash, .fade-one, .fade-two, .draw {
+          animation: none !important;
+        }
+      }
+    </style>
+  </defs>
+
+  <rect width="960" height="720" rx="36" fill="url(#supportBg)"/>
+  <circle cx="150" cy="132" r="72" fill="#FFEFE5"/>
+  <circle cx="824" cy="604" r="96" fill="#D6F2FA"/>
+  <path class="dash" d="M138 526 C264 430 344 540 472 440 S650 268 818 334" fill="none" stroke="#B7561F" stroke-width="3" opacity=".32"/>
+  <path class="dash" d="M128 246 C266 190 324 312 456 286 S638 128 800 216" fill="none" stroke="#2D7E99" stroke-width="3" opacity=".28"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="156" y="118" width="648" height="472" rx="34" fill="url(#panelGradient)"/>
+    <rect x="156" y="118" width="648" height="76" rx="34" fill="#1D366F"/>
+    <rect x="156" y="160" width="648" height="34" fill="#1D366F"/>
+    <circle cx="205" cy="156" r="9" fill="#FDEFEA"/>
+    <circle cx="235" cy="156" r="9" fill="#D6F2FA"/>
+    <circle cx="265" cy="156" r="9" fill="#B7561F"/>
+    <rect x="332" y="143" width="254" height="26" rx="13" fill="#FFFFFF" opacity=".16"/>
+    <rect x="608" y="143" width="122" height="26" rx="13" fill="#FFFFFF" opacity=".12"/>
+  </g>
+
+  <g class="float-slow" filter="url(#smallShadow)">
+    <rect x="210" y="240" width="252" height="248" rx="28" fill="#FFFFFF"/>
+    <rect x="238" y="270" width="118" height="16" rx="8" fill="#1D366F" opacity=".28"/>
+    <rect x="238" y="302" width="174" height="12" rx="6" fill="#DDE7F1"/>
+    <rect x="238" y="326" width="142" height="12" rx="6" fill="#DDE7F1"/>
+    <g transform="translate(252 364)">
+      <rect width="156" height="70" rx="16" fill="#F7FAFC" stroke="#DDE7F1"/>
+      <circle cx="34" cy="35" r="18" fill="#E7F5FA"/>
+      <path d="M27 35h14M34 28v14" stroke="#2D7E99" stroke-width="4" stroke-linecap="round"/>
+      <rect x="66" y="22" width="64" height="10" rx="5" fill="#1D366F" opacity=".32"/>
+      <rect x="66" y="40" width="48" height="8" rx="4" fill="#B7561F" opacity=".52"/>
+    </g>
+  </g>
+
+  <g class="float-mid" filter="url(#smallShadow)">
+    <rect x="506" y="230" width="216" height="288" rx="30" fill="#FFFFFF"/>
+    <rect x="532" y="264" width="78" height="14" rx="7" fill="#1D366F" opacity=".25"/>
+    <rect x="532" y="294" width="148" height="12" rx="6" fill="#DDE7F1"/>
+    <rect x="532" y="318" width="126" height="12" rx="6" fill="#DDE7F1"/>
+    <g transform="translate(556 366)">
+      <circle class="pulse" cx="58" cy="58" r="58" fill="#E7F5FA"/>
+      <path d="M58 18 98 34v28c0 32-20 52-40 60-20-8-40-28-40-60V34l40-16Z" fill="#1D366F"/>
+      <path class="draw" d="M36 62 52 78 84 42" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <g class="float-fast" filter="url(#smallShadow)">
+    <rect x="648" y="396" width="150" height="120" rx="24" fill="#FFFFFF"/>
+    <path d="M682 430h80a16 16 0 0 1 16 16v36a16 16 0 0 1-16 16h-80a16 16 0 0 1-16-16v-36a16 16 0 0 1 16-16Z" fill="#FFEFE5"/>
+    <path d="M684 432 722 468l38-36" fill="none" stroke="#B7561F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g class="float-mid" filter="url(#smallShadow)">
+    <rect x="116" y="438" width="168" height="114" rx="24" fill="#FFFFFF"/>
+    <rect x="144" y="466" width="82" height="12" rx="6" fill="#1D366F" opacity=".26"/>
+    <rect x="144" y="492" width="108" height="10" rx="5" fill="#DDE7F1"/>
+    <rect x="144" y="514" width="72" height="10" rx="5" fill="#DDE7F1"/>
+    <circle class="pulse" cx="242" cy="472" r="18" fill="#B7561F"/>
+  </g>
+
+  <g>
+    <circle class="fade-one" cx="196" cy="224" r="8" fill="#B7561F"/>
+    <circle class="fade-two" cx="790" cy="278" r="8" fill="#2D7E99"/>
+    <circle class="fade-one" cx="472" cy="604" r="10" fill="#1D366F"/>
+    <circle class="fade-two" cx="116" cy="318" r="7" fill="#2D7E99"/>
+  </g>
+
+  <rect class="scan" x="210" y="190" width="594" height="4" rx="2" fill="#8ED7EA"/>
+  <path d="M328 558h304" stroke="url(#accentGradient)" stroke-width="12" stroke-linecap="round" opacity=".18"/>
+</svg>

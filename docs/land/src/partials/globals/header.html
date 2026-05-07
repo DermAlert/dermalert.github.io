@@ -1,8 +1,8 @@
 <!-- HEADER fixo + spacer dinâmico -->
-<header id="site-header" class="fixed left-0 right-0 top-2 sm:top-4 z-[60] w-full flex justify-center px-4">
+<header id="site-header" class="fixed left-0 right-0 top-3 z-[2147483647] w-full flex justify-center px-3 sm:px-5">
   <div
     data-header-shell
-    class="w-full max-w-[1358px] flex items-center justify-between py-6 px-10 rounded-3xl
+    class="da-header-shell w-full max-w-[1240px] flex items-center justify-between py-4 px-5 rounded-2xl
            border-b border-[#DEE5ED] bg-[#1D366F]
            shadow-[0_4px_6px_-1px_rgba(0,0,0,0.10),0_2px_4px_-1px_rgba(0,0,0,0.06)]
            dark:border-white/15 dark:bg-[#152A55]
@@ -10,18 +10,18 @@
   >
 
     <!-- Logo -->
-    <a href="/" class="flex items-center gap-3">
-      <img src="home/header/dermalert-logo-white.svg" alt="Dermalert" class="h-8 w-auto" />
+    <a href="index.html" class="da-brand-link flex items-center gap-3">
+      <img src="home/header/dermalert-logo-white.svg" alt="Dermalert" class="h-7 w-auto" />
       <span class="sr-only">Dermalert</span>
     </a>
 
     <!-- NAV DESKTOP -->
-    <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-white/90" aria-label="Principal">
-      <a href="comofunciona.html" class="hover:text-white"><span data-i18n="como_funciona">Como funciona</span></a>
-      <a href="suporte.html" class="hover:text-white"><span data-i18n="ajuda_e_suporte">Ajuda e Suporte</span></a>
-      <a href="../../curso-de-extensao/sobre-o-curso/" class="hover:text-white"><span data-i18n="curso_extensao">Curso de Extensão</span></a>
-      <a href="sobre.html" class="hover:text-white"><span data-i18n="sobre">Sobre</span></a>
-      <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:text-white"><span data-i18n="documentacao">Documentação</span></a>
+    <nav class="da-nav hidden lg:flex items-center gap-1 text-sm font-medium text-white/90" aria-label="Principal">
+      <a href="comofunciona.html" class="da-nav-link"><span data-i18n="como_funciona">Como funciona</span></a>
+      <a href="suporte.html" class="da-nav-link"><span data-i18n="ajuda_e_suporte">Ajuda e Suporte</span></a>
+      <a href="curso.html" class="da-nav-link"><span data-i18n="curso_extensao">Curso de Extensão</span></a>
+      <a href="sobre.html" class="da-nav-link"><span data-i18n="sobre">Sobre</span></a>
+      <a href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="da-nav-link"><span data-i18n="documentacao">Documentação</span></a>
 
       <!-- Idioma (desktop) — DROPDOWN CUSTOM -->
       <div class="relative ml-2">
@@ -30,7 +30,7 @@
           type="button"
           aria-haspopup="listbox"
           aria-expanded="false"
-          class="inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/10 px-3 py-1.5 text-xs font-medium text-white/90
+          class="da-control inline-flex items-center gap-2 rounded-md border border-white/10 bg-white/10 px-3 py-1.5 text-xs font-medium text-white/90
                  hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/30
                  dark:border-white/20 dark:bg-[#1e293b] dark:hover:bg-[#334155]"
         >
@@ -66,7 +66,7 @@
       </div>
 
       <!-- Toggle dark (desktop) — bounce + sombra -->
-      <label class="inline-flex items-center gap-2 text-xs text-white/90">
+      <label class="da-theme-toggle inline-flex items-center gap-2 text-xs text-white/90">
         <input id="theme-toggle-desktop" type="checkbox" class="sr-only peer">
         <span
           class="relative inline-block h-5 w-9 rounded-full bg-white/20 transition
@@ -83,7 +83,7 @@
     <!-- Botão hambúrguer (mobile) -->
     <button
       id="nav-toggle"
-      class="lg:hidden inline-flex items-center justify-center p-2 rounded-lg text-white/90
+      class="da-menu-button lg:hidden inline-flex items-center justify-center p-2 rounded-lg text-white/90
              hover:bg-white/10 active:scale-[0.98] transition focus:outline-none
              focus:ring-2 focus:ring-white/40"
       aria-controls="mobile-sheet" aria-expanded="false"
@@ -104,14 +104,14 @@
 
     <div
       id="mobile-sheet"
-      class="absolute left-4 right-4 top-[88px] rounded-2xl border border-white/10 bg-[#1D366F]
+      class="da-mobile-sheet absolute left-4 right-4 top-[88px] rounded-2xl border border-white/10 bg-[#1D366F]
              shadow-[0_20px_60px_rgba(0,0,0,0.35)] translate-y-3 opacity-0 transition-all duration-200
              dark:bg-[#152A55] dark:border-white/15"
     >
       <nav aria-label="Principal (mobile)" class="text-white/90">
         <ul class="py-2 text-base font-medium divide-y divide-white/10">
           <li>
-            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="#como-funciona">
+            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="comofunciona.html">
               <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M6 12h12M9 17h6"/></svg>
               <span class="flex-1" data-i18n="como_funciona">Como funciona</span>
               <span class="ml-2 inline-flex items-center rounded-full bg-white/15 px-2 py-0.5 text-xs" data-i18n="novo">Novo</span>
@@ -132,27 +132,28 @@
             </button>
             <div id="ajuda-sub" class="hidden" role="region">
               <ul class="pb-2">
-                <li><a href="#acesso" class="block pl-14 pr-5 py-2.5 text-[15px] hover:bg-white/10" data-i18n="solicitar_acesso">Solicitar acesso</a></li>
-                <li><a href="#remover-dados" class="block pl-14 pr-5 py-2.5 text-[15px] hover:bg-white/10" data-i18n="remover_dados">Remover dados</a></li>
-                <li><a href="#faq" class="block pl-14 pr-5 py-2.5 text-[15px] hover:bg-white/10" data-i18n="faq">Perguntas frequentes</a></li>
+                <li><a href="suporte.html" class="block pl-14 pr-5 py-2.5 text-[15px] hover:bg-white/10" data-i18n="solicitar_acesso">Solicitar acesso</a></li>
+                <li><a href="privacidade.html#exclusao-dados" class="block pl-14 pr-5 py-2.5 text-[15px] hover:bg-white/10" data-i18n="remover_dados">Remover dados</a></li>
+                <li><a href="privacidade.html" class="block pl-14 pr-5 py-2.5 text-[15px] hover:bg-white/10" data-i18n="politica_privacidade">Política de Privacidade</a></li>
+                <li><a href="index.html#app-faq" class="block pl-14 pr-5 py-2.5 text-[15px] hover:bg-white/10" data-i18n="faq">Perguntas frequentes</a></li>
               </ul>
             </div>
           </li>
 
           <li>
-            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="#curso">
+            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="curso.html">
               <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6"/></svg>
               <span class="flex-1" data-i18n="curso_extensao">Curso de Extensão</span>
             </a>
           </li>
           <li>
-            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="#sobre">
+            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="sobre.html">
               <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-3-3h-2M7 20H2v-2a3 3 0 013-3h2m0-4a4 4 0 118 0 4 4 0 01-8 0z"/></svg>
               <span class="flex-1" data-i18n="sobre">Sobre</span>
             </a>
           </li>
           <li>
-            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="#docs">
+            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="/ajuda-e-suporte/documentacao-tecnica/frontend/">
               <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16h8M8 12h8m-6 8h6a2 2 0 002-2V6a2 2 0 00-2-2H9l-5 5v13a2 2 0 002 2h2"/></svg>
               <span class="flex-1" data-i18n="documentacao">Documentação</span>
             </a>
@@ -161,16 +162,16 @@
 
         <!-- CTA -->
         <div class="px-5 pt-2 pb-3">
-          <a href="#acesso" class="block text-center rounded-full bg-white text-[#1D366F] font-semibold py-3 shadow hover:shadow-md transition" data-i18n="solicitar_acesso">
+          <a href="suporte.html" class="block text-center rounded-full bg-white text-[#1D366F] font-semibold py-3 shadow hover:shadow-md transition" data-i18n="solicitar_acesso">
             Solicitar acesso
           </a>
         </div>
 
         <!-- Rápido acesso -->
-        <div class="px-5 pb-2 text-xs uppercase tracking-wide text-white/70" data-i18n="rapido_acesso">Rápido acesso</div>
+        <div class="px-5 pb-2 text-xs uppercase text-white/70" data-i18n="rapido_acesso">Rápido acesso</div>
         <div class="px-5 pb-3 grid grid-cols-2 gap-3">
-          <a href="#status" class="rounded-xl bg-white/10 hover:bg-white/15 py-3 px-4 text-sm" data-i18n="status">Status</a>
-          <a href="#lancamentos" class="rounded-xl bg-white/10 hover:bg-white/15 py-3 px-4 text-sm" data-i18n="lancamentos">Lançamentos</a>
+          <a href="suporte.html" class="rounded-xl bg-white/10 hover:bg-white/15 py-3 px-4 text-sm" data-i18n="status">Status</a>
+          <a href="/ajuda-e-suporte/documentacao-gces/release-1/" class="rounded-xl bg-white/10 hover:bg-white/15 py-3 px-4 text-sm" data-i18n="lancamentos">Lançamentos</a>
         </div>
 
         <!-- Preferências -->

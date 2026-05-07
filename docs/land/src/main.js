@@ -55,6 +55,30 @@ if (footerMount) footerMount.innerHTML = footerHtml;
 // Scripts específicos do header (menus, tema, i18n, etc.)
 import '/src/js/globals/header-nav.js';
 
+function initPageRevealEffects() {
+  const items = Array.from(document.querySelectorAll('[data-page-reveal]'));
+  if (!items.length) return;
+
+  const prefersReduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduce || !('IntersectionObserver' in window)) {
+    items.forEach((item) => item.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      });
+    },
+    { threshold: 0.18, rootMargin: '0px 0px -8% 0px' }
+  );
+
+  items.forEach((item) => observer.observe(item));
+}
+
 // ───────────────────────────────────────────────────────────
 // Inicialização dos efeitos da página
 requestAnimationFrame(() => {
@@ -64,6 +88,7 @@ requestAnimationFrame(() => {
     initFeaturesPillsEffects();
     initFeaturesBaseEffects();
     initFaqEffects();                                                         // ← NOVO (FAQ animado)
+    initPageRevealEffects();
     // (sem efeitos específicos para "Para quem é")
   });
 });

@@ -1,4 +1,8 @@
-# Guia de Contribuição
+<section class="da-doc-hero">
+  <p class="da-doc-hero__kicker">Como funciona</p>
+  <h1>Guia de Contribuição</h1>
+  <p>Processo de colaboração, organização de commits, branches e boas práticas para contribuir com o DermAlert.</p>
+</section>
 
 Obrigado por considerar contribuir para o projeto DermAlert! Este documento fornece diretrizes para garantir que as contribuições sejam consistentes e de alta qualidade.
 ---

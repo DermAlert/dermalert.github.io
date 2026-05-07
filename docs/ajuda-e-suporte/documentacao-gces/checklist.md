@@ -1,4 +1,8 @@
-# Checklist
+<section class="da-doc-hero">
+  <p class="da-doc-hero__kicker">Documentação GCES</p>
+  <h1>Checklist</h1>
+  <p>Itens de verificação para acompanhar qualidade, abertura e organização do projeto de software livre.</p>
+</section>
 
 O checklist abaixo tem como objetivo auxiliar a equipe na organização e execução das atividades do projeto, garantindo que todas as etapas sejam cumpridas de forma eficiente e eficaz. O checklist é dividido conforme as releases da disciplina de ***Gerência de Configuração e Evolução de Software*** . Cada release contém uma tabela de itens a serem verificados e concluídos dentro de seus respectivos prazos.
 
