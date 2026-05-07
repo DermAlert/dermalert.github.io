@@ -6,8 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title data-i18n="course_title">Dermalert - Curso de Extensao</title>
     <meta name="description" content="Curso de Extensao DermAlert para formacao em triagem dermatologica." />
-    <script type="module" crossorigin src="./assets/main-CBAZ3uNn.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-Cqp08SrN.css">
+    <style>
+      html {
+        background: #f7fbfd;
+      }
+
+      body {
+        margin: 0;
+        background: #f7fbfd;
+        color: #172033;
+        font-family: Lexend, "Noto Sans", sans-serif;
+      }
+
+      html.da-booting body {
+        opacity: 0;
+      }
+
+      html.da-ready body {
+        opacity: 1;
+        transition: opacity 120ms ease-out;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html,
+        body {
+          background: #0e1a2b;
+          color: #f3f7ff;
+        }
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('da-booting');
+      window.addEventListener(
+        'DOMContentLoaded',
+        () => requestAnimationFrame(() => document.documentElement.classList.add('da-ready')),
+        { once: true }
+      );
+      window.setTimeout(() => document.documentElement.classList.add('da-ready'), 700);
+    </script>
+    <script type="module" crossorigin src="./assets/main-DWfHmOoD.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-DhMA6jNC.css">
   </head>
 
   <body class="bg-white font-sans text-[#172033] antialiased dark:bg-[#0E1A2B] dark:text-gray-100">
@@ -47,7 +85,7 @@
               </p>
 
               <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-                <a href="/curso-de-extensao/sobre-o-curso/" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#B7561F] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:bg-[#8A4316] focus:outline-none focus:ring-2 focus:ring-[#B7561F]/40">
+                <a href="/curso-de-extensao/sobre-o-curso.html" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#B7561F] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:bg-[#8A4316] focus:outline-none focus:ring-2 focus:ring-[#B7561F]/40">
                   <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-1.5z"/>
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h6M8 11h7"/>
@@ -278,12 +316,12 @@
                 <p data-i18n="course_material_privacy_desc" class="mt-2 text-sm leading-6 text-[#42566A] dark:text-white/75">Entenda uso de camera, dados sensiveis, pesquisa e exclusao.</p>
                 <span class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#B7561F]"><span data-i18n="politica_privacidade">Politica de Privacidade</span><span aria-hidden="true">-></span></span>
               </a>
-              <a data-page-reveal style="--reveal-delay:140ms" href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="group rounded-lg border border-[#DDE7F1] bg-white p-5 transition hover:-translate-y-1 hover:border-[#B7561F] hover:shadow-lg dark:border-white/15 dark:bg-[#111D2E]">
+              <a data-page-reveal style="--reveal-delay:140ms" href="/ajuda-e-suporte/documentacao-tecnica/frontend.html" class="group rounded-lg border border-[#DDE7F1] bg-white p-5 transition hover:-translate-y-1 hover:border-[#B7561F] hover:shadow-lg dark:border-white/15 dark:bg-[#111D2E]">
                 <h3 data-i18n="support_card_front_title" class="text-lg font-semibold text-[#1D366F] dark:text-white">Frontend mobile</h3>
                 <p data-i18n="course_material_front_desc" class="mt-2 text-sm leading-6 text-[#42566A] dark:text-white/75">Consulte telas, tecnologias e fluxo do aplicativo.</p>
                 <span class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#B7561F]"><span data-i18n="documentacao">Documentacao</span><span aria-hidden="true">-></span></span>
               </a>
-              <a data-page-reveal style="--reveal-delay:210ms" href="/ajuda-e-suporte/documentacao-tecnica/backend/" class="group rounded-lg border border-[#DDE7F1] bg-white p-5 transition hover:-translate-y-1 hover:border-[#B7561F] hover:shadow-lg dark:border-white/15 dark:bg-[#111D2E]">
+              <a data-page-reveal style="--reveal-delay:210ms" href="/ajuda-e-suporte/documentacao-tecnica/backend.html" class="group rounded-lg border border-[#DDE7F1] bg-white p-5 transition hover:-translate-y-1 hover:border-[#B7561F] hover:shadow-lg dark:border-white/15 dark:bg-[#111D2E]">
                 <h3 data-i18n="support_card_back_title" class="text-lg font-semibold text-[#1D366F] dark:text-white">Backend e API</h3>
                 <p data-i18n="course_material_back_desc" class="mt-2 text-sm leading-6 text-[#42566A] dark:text-white/75">Consulte autenticacao, rotas, banco e implantacao.</p>
                 <span class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#B7561F]"><span data-i18n="documentacao">Documentacao</span><span aria-hidden="true">-></span></span>
@@ -292,40 +330,43 @@
           </div>
         </section>
 
-        <section class="mx-auto max-w-[1180px] px-6 py-12 lg:py-16">
-          <div data-page-reveal class="relative overflow-hidden rounded-lg bg-[#1D366F] p-8 text-white shadow-[0_20px_70px_rgba(14,26,43,0.18)] md:p-10">
-            <div class="absolute right-0 top-0 h-full w-1/2 bg-[#D06A32] opacity-25 [clip-path:polygon(36%_0,100%_0,100%_100%,0_100%)]"></div>
-            <div class="relative max-w-3xl">
-              <p data-i18n="course_status_kicker" class="text-sm font-semibold uppercase text-white/70">Status do material</p>
-              <h2 data-i18n="course_status_title" class="mt-3 text-3xl font-bold leading-tight md:text-[40px]">Conteudo em evolucao</h2>
-              <p data-i18n="course_status_desc" class="mt-4 text-base leading-7 text-white/75">A documentacao do curso ainda esta sendo consolidada no repositorio. Esta pagina organiza a trilha publica disponivel e direciona para os documentos oficiais do projeto.</p>
-              <div class="mt-7 flex flex-col gap-3 sm:flex-row">
-                <a href="/curso-de-extensao/sobre-o-curso/" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1D366F] transition hover:-translate-y-1 hover:bg-gray-100">
-                  <svg aria-hidden="true" class="h-5 w-5 text-[#B7561F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-1.5z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h6M8 11h7"/>
-                  </svg>
-                  <span data-i18n="course_primary_cta">Acessar material do curso</span>
-                </a>
-                <a href="mailto:caguiar@unb.br?subject=Curso%20de%20Extensao%20DermAlert" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:bg-white/10">
-                  <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4 7 8 6 8-6"/>
-                  </svg>
-                  <span>caguiar@unb.br</span>
-                </a>
+        <section class="bg-[#F7FAFC] dark:bg-[#101C2D]">
+          <div class="mx-auto max-w-[1180px] px-6 py-12 lg:py-16">
+            <div data-page-reveal class="relative overflow-hidden rounded-lg bg-[#1D366F] p-8 text-white shadow-[0_20px_70px_rgba(14,26,43,0.18)] md:p-10">
+              <div class="absolute right-0 top-0 h-full w-1/2 bg-[#D06A32] opacity-25 [clip-path:polygon(36%_0,100%_0,100%_100%,0_100%)]"></div>
+              <div class="relative max-w-3xl">
+                <p data-i18n="course_status_kicker" class="text-sm font-semibold uppercase text-white/70">Status do material</p>
+                <h2 data-i18n="course_status_title" class="mt-3 text-3xl font-bold leading-tight md:text-[40px]">Conteudo em evolucao</h2>
+                <p data-i18n="course_status_desc" class="mt-4 text-base leading-7 text-white/75">A documentacao do curso ainda esta sendo consolidada no repositorio. Esta pagina organiza a trilha publica disponivel e direciona para os documentos oficiais do projeto.</p>
+                <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+                  <a href="/curso-de-extensao/sobre-o-curso.html" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1D366F] transition hover:-translate-y-1 hover:bg-gray-100">
+                    <svg aria-hidden="true" class="h-5 w-5 text-[#B7561F]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-1.5z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 7h6M8 11h7"/>
+                    </svg>
+                    <span data-i18n="course_primary_cta">Acessar material do curso</span>
+                  </a>
+                  <a href="mailto:caguiar@unb.br?subject=Curso%20de%20Extensao%20DermAlert" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:bg-white/10">
+                    <svg aria-hidden="true" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16v12H4z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m4 7 8 6 8-6"/>
+                    </svg>
+                    <span>caguiar@unb.br</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="w-full">
-        <div class="w-full bg-[#1D366F]">
-          <div id="app-footer" class="mx-auto max-w-[1200px] px-6 py-10 lg:py-12"></div>
+      <footer class="da-site-footer da-site-footer--course w-full">
+        <div class="da-footer-surface">
+          <div id="app-footer" class="da-footer-inner"></div>
         </div>
       </footer>
     </div>
 
   </body>
 </html>
+

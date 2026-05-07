@@ -20,8 +20,46 @@
     <title>Dermalert</title>
     <meta name="description" content="Triagem dermatológica inteligente, simples e segura." />
     <meta name="theme-color" content="#1D366F" />
-    <script type="module" crossorigin src="./assets/main-CBAZ3uNn.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-Cqp08SrN.css">
+    <style>
+      html {
+        background: #f7fbfd;
+      }
+
+      body {
+        margin: 0;
+        background: #f7fbfd;
+        color: #172033;
+        font-family: Lexend, "Noto Sans", sans-serif;
+      }
+
+      html.da-booting body {
+        opacity: 0;
+      }
+
+      html.da-ready body {
+        opacity: 1;
+        transition: opacity 120ms ease-out;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html,
+        body {
+          background: #0e1a2b;
+          color: #f3f7ff;
+        }
+      }
+    </style>
+    <script>
+      document.documentElement.classList.add('da-booting');
+      window.addEventListener(
+        'DOMContentLoaded',
+        () => requestAnimationFrame(() => document.documentElement.classList.add('da-ready')),
+        { once: true }
+      );
+      window.setTimeout(() => document.documentElement.classList.add('da-ready'), 700);
+    </script>
+    <script type="module" crossorigin src="./assets/main-DWfHmOoD.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-DhMA6jNC.css">
   </head>
 
   <body class="font-sans antialiased bg-white text-gray-800 dark:bg-[#0E1A2B] dark:text-gray-100">
@@ -46,28 +84,29 @@
         <div id="app-features-pills" class="w-full -mt-8 md:-mt-10 relative z-10"></div>
 
         <!-- PARTNERS -->
-        <div id="app-partners" class="w-full my-12"></div>
+        <div id="app-partners" class="w-full"></div>
 
         <!-- FEATURES / BASE (↓ tirando margem inferior pra colar no about) -->
-        <div id="app-features-base" class="w-full mt-12 mb-0"></div>
+        <div id="app-features-base" class="w-full"></div>
 
         <!-- SOBRE O DERMALERT (↓ sem margem superior extra) -->
-        <div id="app-about" class="w-full mt-0"></div>
+        <div id="app-about" class="w-full"></div>
 
         <!-- PARA QUEM É -->
-        <div id="app-who" class="w-full my-12"></div>
+        <div id="app-who" class="w-full"></div>
 
         <!-- FAQ (NOVO) -->
-        <div id="app-faq" class="w-full mt-12 mb-0"></div>
+        <div id="app-faq" class="w-full"></div>
       </main>
 
       <!-- FOOTER (full-bleed, sem max-width no wrapper) -->
-      <footer class="w-full">
-        <div class="w-full bg-[#1D366F]">
-          <div id="app-footer" class="max-w-[1200px] mx-auto px-6 py-10 lg:py-12"></div>
+      <footer class="da-site-footer da-site-footer--home w-full">
+        <div class="da-footer-surface">
+          <div id="app-footer" class="da-footer-inner"></div>
         </div>
       </footer>
     </div>
 
   </body>
 </html>
+
