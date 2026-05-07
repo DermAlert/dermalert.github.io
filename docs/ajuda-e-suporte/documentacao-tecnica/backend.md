@@ -1,4 +1,12 @@
-# DermAlert | Backend
+<section class="da-doc-hero">
+  <p class="da-doc-hero__kicker">Documentação técnica</p>
+  <h1>DermAlert | Backend</h1>
+  <p>Rotas, serviços, tecnologias e instruções para executar a API que sustenta os fluxos do DermAlert.</p>
+  <div class="da-doc-actions">
+    <a class="da-doc-button" href="https://github.com/DermAlert/backend">Repositório do backend</a>
+    <a class="da-doc-button da-doc-button--ghost" href="../frontend/">Ver frontend</a>
+  </div>
+</section>
 
 ## 📄 Visão Geral
 

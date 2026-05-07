@@ -1,0 +1,75 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Privacidade e protecao de dados DermAlert</title>
+  <desc id="desc">Ilustracao animada de protecao de dados sensiveis, camera e servidores seguros.</desc>
+  <style>
+    .float{animation:float 6s ease-in-out infinite}
+    .float2{animation:float 7s ease-in-out infinite reverse}
+    .pulse{animation:pulse 3.2s ease-in-out infinite}
+    .dash{stroke-dasharray:8 11;animation:dash 10s linear infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @keyframes pulse{0%,100%{opacity:.5;transform:scale(.96);transform-origin:center}50%{opacity:1;transform:scale(1.06);transform-origin:center}}
+    @keyframes dash{to{stroke-dashoffset:-190}}
+  </style>
+  <rect width="720" height="520" rx="32" fill="#F8FBFF"/>
+  <path d="M0 0H720V520H0V0Z" fill="url(#grid)"/>
+  <circle cx="118" cy="86" r="58" fill="#FFF0E6"/>
+  <circle cx="612" cy="416" r="72" fill="#D9F5FB"/>
+
+  <g filter="url(#shadow)" class="float">
+    <rect x="110" y="98" width="500" height="320" rx="30" fill="white"/>
+    <rect x="110" y="98" width="500" height="68" rx="30" fill="#1D366F"/>
+    <circle cx="150" cy="132" r="8" fill="#FFEFE5"/>
+    <circle cx="176" cy="132" r="8" fill="#8ED7EA"/>
+    <circle cx="202" cy="132" r="8" fill="#D06A32"/>
+    <rect x="250" y="122" width="186" height="18" rx="9" fill="white" opacity=".16"/>
+
+    <path class="dash" d="M212 320C260 250 316 348 374 280C430 214 478 258 526 202" stroke="#8ED7EA" stroke-width="7" stroke-linecap="round"/>
+
+    <g filter="url(#soft)">
+      <rect x="152" y="204" width="154" height="154" rx="22" fill="#F7FAFC"/>
+      <path d="M229 232L278 252V287C278 326 254 345 229 354C204 345 180 326 180 287V252L229 232Z" fill="#1D366F"/>
+      <path d="M205 287L224 306L254 269" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g filter="url(#soft)" class="float2">
+      <rect x="340" y="204" width="210" height="72" rx="18" fill="#FFFFFF"/>
+      <rect x="366" y="226" width="62" height="10" rx="5" fill="#CAD7E5"/>
+      <rect x="366" y="248" width="120" height="10" rx="5" fill="#DDE7F1"/>
+      <circle class="pulse" cx="512" cy="240" r="18" fill="#4DAA86"/>
+    </g>
+
+    <g filter="url(#soft)">
+      <rect x="340" y="300" width="210" height="72" rx="18" fill="#FFFFFF"/>
+      <rect x="366" y="322" width="72" height="10" rx="5" fill="#CAD7E5"/>
+      <rect x="366" y="344" width="148" height="10" rx="5" fill="#DDE7F1"/>
+      <path d="M509 319H535V351H509V319Z" fill="#FFF0E6"/>
+      <path d="M514 333H530" stroke="#D06A32" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g filter="url(#shadow)" class="float2">
+    <rect x="82" y="350" width="190" height="80" rx="18" fill="#1D366F"/>
+    <text x="108" y="384" fill="#FFFFFF" font-family="Lexend, Arial" font-size="16" font-weight="700">Exclusao de dados</text>
+    <rect x="108" y="404" width="118" height="8" rx="4" fill="#8ED7EA"/>
+    <rect x="108" y="418" width="88" height="8" rx="4" fill="white" opacity=".26"/>
+  </g>
+
+  <g filter="url(#shadow)" class="float">
+    <rect x="494" y="72" width="126" height="88" rx="18" fill="#FFFFFF"/>
+    <rect x="522" y="108" width="70" height="38" rx="10" fill="#0E1A2B"/>
+    <circle cx="557" cy="127" r="11" fill="#8ED7EA"/>
+    <path d="M535 108L543 96H572L580 108" stroke="#0E1A2B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <defs>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" stroke="#1D366F" stroke-opacity=".06"/>
+    </pattern>
+    <filter id="shadow" x="45" y="50" width="610" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="24" flood-color="#0E1A2B" flood-opacity=".18"/>
+    </filter>
+    <filter id="soft" x="130" y="180" width="450" height="220" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0E1A2B" flood-opacity=".10"/>
+    </filter>
+  </defs>
+</svg>

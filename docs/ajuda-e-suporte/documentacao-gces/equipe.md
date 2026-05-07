@@ -1,4 +1,8 @@
-# Equipe
+<section class="da-doc-hero">
+  <p class="da-doc-hero__kicker">Documentação GCES</p>
+  <h1>Equipe</h1>
+  <p>Registro dos integrantes, papéis e histórico de participação no projeto DermAlert.</p>
+</section>
 
 A equipe responsável pela funcionalidade de análise de imagens é composta por alunos do curso de Engenharia de Software da *Universidade de Brasília (UnB)*, matriculados na disciplina de ***Gerência de Configuração e Evolução de Software***. A equipe é formada pelos seguintes membros:
 

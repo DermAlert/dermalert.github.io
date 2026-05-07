@@ -1,0 +1,87 @@
+<section
+  id="about-dermalert"
+  class="relative w-full isolate overflow-x-hidden overflow-y-visible bg-white py-16 dark:bg-[#0E1A2B]"
+>
+  <div class="max-w-[1200px] mx-auto px-6">
+
+    <!-- ================= TÍTULO / SUB ================= -->
+    <!-- Começam como .pre-anim; o JS troca para visível ao entrar no viewport -->
+    <header class="text-center pre-anim" data-anim="rise-blur" style="--anim-delay:.05s">
+      <h2
+        id="about-title"
+        class="title-anim text-[#1D366F] dark:text-white font-extrabold leading-tight text-[32px] sm:text-[38px] md:text-[48px]"
+        data-i18n="about_title"
+      >
+        Sobre o Dermalert
+      </h2>
+      <p
+        id="about-sub"
+        class="subtitle-anim mt-3 text-[#42566A] dark:text-white/80 text-[20px] sm:text-[24px] md:text-[32px] leading-snug"
+        data-i18n="about_sub"
+      >
+        O Primeiro Passo na Prevenção do Câncer de Pele
+      </p>
+    </header>
+
+    <!-- ================= IMAGEM + CARD ROXO ================= -->
+    <div class="mt-8 relative">
+
+      <!-- Imagem principal (entra de baixo pra cima) -->
+      <div
+        id="about-media"
+        class="rounded-lg overflow-hidden w-full pre-anim shadow-[0_22px_70px_rgba(14,26,43,.16)]"
+        data-anim="slide-up"
+        style="--anim-delay:.12s"
+      >
+        <div class="aspect-[1200/559.5]">
+          <img
+            id="about-img"
+            src="home/about/endema.svg"
+            alt="Profissional examinando lesão de pele com dermatoscópio"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <!-- CARD ROXO (sobreposto; desliza da esquerda) -->
+      <div
+        id="about-highlight"
+        class="mt-4 lg:mt-0 lg:absolute lg:left-[120px] lg:right-[-56px] lg:bottom-[-56px]
+               bg-[#1D366F] text-white rounded-lg px-6 py-6 md:px-[42px] md:py-[35.6px]
+               text-block pre-anim"
+        data-anim="slide-l"
+        style="--anim-delay:.22s"
+      >
+        <p
+          class="font-semibold text-white text-[21px] leading-8 md:text-[32px] md:leading-[40px]"
+          data-i18n="about_highlight"
+        >
+          O DermAlert é um projeto voltado para a triagem de pacientes com suspeita
+          de câncer de pele, facilitando a identificação precoce e o encaminhamento adequado.
+        </p>
+      </div>
+    </div>
+
+    <!-- espaçamento entre os cards -->
+    <div class="mt-[88px]"></div>
+
+    <!-- ================= CARD CLARO (desliza da direita) ================= -->
+    <div
+      id="about-note"
+      class="bg-[#EAF7FB] rounded-lg border border-[#DDE7F1] px-6 py-6 md:px-[42px] md:py-[35.6px]
+             lg:ml-[120px] lg:-mr-[56px]
+             text-block pre-anim"
+      data-anim="slide-r"
+      style="--anim-delay:.26s"
+    >
+      <p
+        class="text-[#1D366F] font-normal text-[17px] leading-8 md:text-[21px] md:leading-[32px]"
+        data-i18n="about_note"
+      >
+        Desenvolvido pelo Lab Livre em parceria com a UnB e a FAP-DF, o projeto busca aprimorar
+        o atendimento primário por meio da tecnologia, tornando o diagnóstico mais acessível
+        e eficiente.
+      </p>
+    </div>
+  </div>
+</section>

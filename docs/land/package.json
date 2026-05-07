@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
+    "build:site": "vite build && cd ../.. && .\\venv\\Scripts\\python.exe -m mkdocs build && node docs/land/scripts/include-mkdocs-docs.mjs",
     "preview": "vite preview",
     "build:preview": "vite build && vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build:site && gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

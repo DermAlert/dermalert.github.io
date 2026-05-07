@@ -1,0 +1,127 @@
+<!-- =========================================================
+     SECTION: Para quem é  (com dark mode + i18n)
+     Coloque os ícones em /public/home/who/:
+       - medic.svg
+       - hospital.svg
+       - medic_house.svg
+     ========================================================= -->
+<section id="who-for" class="w-full py-12 sm:py-14">
+  <div class="max-w-[1200px] mx-auto px-5 sm:px-6">
+
+    <!-- Cabeçalho -->
+    <header class="mb-8 sm:mb-10 md:mb-12">
+      <h2 class="text-[32px] sm:text-[36px] md:text-[48px] font-extrabold text-[#C74800]"
+          data-i18n="who_title">
+        Para quem é
+      </h2>
+      <p class="mt-2.5 sm:mt-3 text-[18px] sm:text-[19px] md:text-[30px] leading-relaxed
+                 text-[#393939]/90 dark:text-white/85"
+         data-i18n="who_sub">
+        Feito para equipes clínicas que buscam velocidade, padronização e segurança
+        de dados.
+      </p>
+    </header>
+
+    <!-- Grid de cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
+
+      <!-- Card 1 -->
+      <article data-page-reveal class="h-full bg-white dark:bg-white/5 rounded-lg
+                      border border-[#E6ECF5] dark:border-white/10 shadow-sm
+                      px-6 sm:px-7 md:px-8 py-7 sm:py-8 md:py-9 text-center flex flex-col transition hover:-translate-y-1 hover:border-[#E8611D] hover:shadow-xl">
+        <h3 class="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]
+                   font-semibold text-[#C74800]"
+            data-i18n="who_card1_title">
+          Residências Médicas
+        </h3>
+
+        <div class="mt-6 sm:mt-7 flex justify-center">
+          <img
+            src="home/who/medic.svg"
+            alt="Ícone de residência médica"
+            class="select-none w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] md:w-[327px] md:h-[327px]"
+            loading="lazy" decoding="async" />
+        </div>
+
+        <p class="mt-5 sm:mt-6 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]
+                  leading-[28px] sm:leading-[30px] md:leading-[32px] lg:leading-[34px]
+                  text-[#C74800] dark:text-white/85"
+          data-i18n="who_card1_desc">
+          Padronize casos, ensine boas práticas de documentação e amplie a rastreabilidade no ensino.
+        </p>
+
+      </article>
+
+      <!-- Card 2 -->
+      <article data-page-reveal style="--reveal-delay:80ms" class="h-full bg-white dark:bg-white/5 rounded-lg
+                      border border-[#E6ECF5] dark:border-white/10 shadow-sm
+                      px-6 sm:px-7 md:px-8 py-7 sm:py-8 md:py-9 text-center flex flex-col transition hover:-translate-y-1 hover:border-[#E8611D] hover:shadow-xl">
+        <h3 class="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]
+                   font-semibold text-[#C74800]"
+            data-i18n="who_card2_title">
+          Hospitais
+        </h3>
+
+        <div class="mt-6 sm:mt-7 flex justify-center">
+          <img
+            src="home/who/hospital.svg"
+            alt="Ícone de hospital"
+            width="188" height="188"
+            class="select-none w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] md:w-[327px] md:h-[327px]"
+            loading="lazy" decoding="async" />
+        </div>
+
+        <p class="mt-5 sm:mt-6 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]
+                  leading-[28px] sm:leading-[30px] md:leading-[32px] lg:leading-[34px]
+                  text-[#C74800] dark:text-white/85"
+          data-i18n="who_card2_desc">
+          Triagem guiada em poucos minutos, com histórico acessível e encaminhamento facilitado.
+        </p>
+
+      </article>
+
+      <!-- Card 3 -->
+      <article data-page-reveal style="--reveal-delay:160ms" class="h-full bg-white dark:bg-white/5 rounded-lg
+                      border border-[#E6ECF5] dark:border-white/10 shadow-sm
+                      px-6 sm:px-7 md:px-8 py-7 sm:py-8 md:py-9 text-center flex flex-col transition hover:-translate-y-1 hover:border-[#E8611D] hover:shadow-xl">
+        <h3 class="text-[20px] sm:text-[22px] md:text-[24px] lg:text-[26px]
+                   font-semibold text-[#C74800]">
+          <span data-i18n="who_card3_title">Unidades Básicas de </span>
+          <span class="whitespace-nowrap" data-i18n="who_card3_title_suffix">Saúde - UBS</span>
+        </h3>
+
+        <div class="mt-6 sm:mt-7 flex justify-center">
+          <img
+            src="home/who/medic_house.svg"
+            alt="Ícone de unidade básica de saúde"
+            width="188" height="188"
+            class="select-none w-[140px] h-[140px] sm:w-[160px] sm:h-[160px] md:w-[327px] md:h-[327px]"
+            loading="lazy" decoding="async" />
+        </div>
+
+        <p class="mt-5 sm:mt-6 text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px]
+                  leading-[28px] sm:leading-[30px] md:leading-[32px] lg:leading-[34px]
+                  text-[#C74800] dark:text-white/85"
+          data-i18n="who_card3_desc">
+          Integre ambulatórios e enfermarias com um fluxo único de triagem — do cadastro à imagem clínica.
+        </p>
+
+      </article>
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-9 md:mt-10 flex justify-center">
+      <a href="../../como-funciona/como-contribuir/"
+        class="faq-cta inline-flex items-center justify-center  <!-- ← adicionada -->
+                w-full sm:w-[180px] md:w-[200px] lg:w-[240px]
+                px-7 sm:px-9 md:px-10 py-3 sm:py-3.5 md:py-4
+                rounded-full bg-[#2F488A] text-white text-[14px] sm:text-[15px] font-semibold
+                shadow hover:brightness-[1.05] active:translate-y-px transition
+                relative overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2
+                focus-visible:ring-[#2F488A] dark:focus-visible:ring-white/40 dark:focus-visible:ring-offset-transparent">
+        <span data-i18n="who_cta">Saiba Mais</span>
+      </a>
+    </div>
+
+  </div>
+</section>

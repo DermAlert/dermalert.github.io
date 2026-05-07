@@ -1,0 +1,108 @@
+<!-- ===== FOOTER (full-bleed + i18n + dark mode) ===== -->
+<!-- OBS: este arquivo é injetado dentro de #app-footer pelo main.js -->
+<div class="text-white/90">
+  <!-- Logo -->
+  <div class="flex items-center">
+    <!-- ajuste o src conforme seu projeto -->
+    <img src="logo.png" alt="DermAlert" class="h-6 md:h-7 w-auto" />
+  </div>
+
+  <!-- Divider fino -->
+  <div class="mt-4 h-px bg-white/10"></div>
+
+  <!-- Links (5 colunas) -->
+  <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+    <!-- Coluna 1 -->
+    <div>
+      <h4 class="text-[11px] font-semibold text-white/60 uppercase"
+          data-i18n="footer_col_funciona">COMO FUNCIONA</h4>
+      <ul class="mt-4 space-y-3 text-[14px]">
+        <li><a href="comofunciona.html" class="hover:underline" data-i18n="footer_link_passo">Passo a Passo</a></li>
+        <li><a href="curso.html" class="hover:underline" data-i18n="footer_link_material">Material Educativo</a></li>
+        <li><a href="index.html#app-features-base" class="hover:underline" data-i18n="footer_link_funcionalidades">Funcionalidades</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 2 -->
+    <div>
+      <h4 class="text-[11px] font-semibold text-white/60 uppercase"
+          data-i18n="footer_col_ajuda">AJUDA E SUPORTE</h4>
+      <ul class="mt-4 space-y-3 text-[14px]">
+        <li><a href="suporte.html" class="hover:underline" data-i18n="footer_link_obter_acesso">Obter Acesso</a></li>
+        <li><a href="privacidade.html#exclusao-dados" class="hover:underline" data-i18n="footer_link_remover_dados">Remover Dados</a></li>
+        <li><a href="index.html#app-faq" class="hover:underline" data-i18n="footer_link_faq">Perguntas Frequentes</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 3 -->
+    <div>
+      <h4 class="text-[11px] font-semibold text-white/60 uppercase"
+          data-i18n="footer_col_docs">DOCUMENTAÇÃO</h4>
+      <ul class="mt-4 space-y-3 text-[14px]">
+        <li><a href="sobre.html" class="hover:underline" data-i18n="footer_link_sobre_projeto">Sobre o Projeto</a></li>
+        <li><a href="sobre.html" class="hover:underline" data-i18n="footer_link_quem_somos">Quem Somos</a></li>
+        <li><a href="index.html#app-partners" class="hover:underline" data-i18n="footer_link_apoiadores">Apoiadores</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 4 -->
+    <div>
+      <h4 class="text-[11px] font-semibold text-white/60 uppercase"
+          data-i18n="footer_col_curso">CURSO DE EXTENSÃO</h4>
+      <ul class="mt-4 space-y-3 text-[14px]">
+        <li><a href="curso.html" class="hover:underline" data-i18n="footer_link_sobre_curso">Sobre o Curso</a></li>
+        <li><a href="comofunciona.html" class="hover:underline" data-i18n="footer_link_como_funciona_curso">Como Funciona</a></li>
+        <li><a href="/curso-de-extensao/sobre-o-curso/" class="hover:underline" data-i18n="footer_link_inscricao">Inscrição</a></li>
+      </ul>
+    </div>
+
+    <!-- Coluna 5 -->
+    <div>
+      <h4 class="text-[11px] font-semibold text-white/60 uppercase"
+          data-i18n="footer_col_sobre">SOBRE</h4>
+      <ul class="mt-4 space-y-3 text-[14px]">
+        <li><a href="privacidade.html" class="hover:underline" data-i18n="politica_privacidade">Política de Privacidade</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Linha inferior: Contato / Redes sociais -->
+  <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
+    <!-- Contato -->
+    <div>
+      <h4 class="text-[11px] font-semibold text-white/60 uppercase"
+          data-i18n="footer_contact">CONTATO</h4>
+      <p class="mt-4 text-[14px]">
+        <a href="mailto:caguiar@unb.br" class="hover:underline">caguiar@unb.br</a>
+      </p>
+    </div>
+
+    <!-- Redes sociais -->
+    <div>
+      <h4 class="text-[11px] font-semibold text-white/60 uppercase"
+          data-i18n="footer_social">REDES SOCIAIS</h4>
+      <div class="mt-4 flex items-center gap-6 text-[14px]">
+        <!-- GitHub -->
+        <a href="https://github.com/DermAlert" class="inline-flex items-center gap-2 hover:underline" aria-label="GitHub">
+          <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8 11.2.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.6-1.5-1.5-1.9-1.5-1.9-1.2-.8 0-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 2.9 1.3 3.6.9.1-.8.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.7.2 3 .1 3.3.8.8 1.2 1.8 1.2 3.1 0 4.7-2.9 5.8-5.7 6.1.4.3.7.9.7 1.9v2.8c0 .3.2.7.8.6 4.6-1.6 8-6 8-11.2A11.5 11.5 0 0 0 12 .5Z"/>
+          </svg>
+          <span data-i18n="footer_github">GitHub</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/DermAlert" class="inline-flex items-center gap-2 hover:underline" aria-label="Instagram">
+          <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.75-3.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
+          </svg>
+          <span data-i18n="footer_instagram">Instagram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <p class="mt-10 text-[12px] text-white/70" data-i18n="footer_copyright">
+    DermAlert © 2025. All rights reserved.
+  </p>
+</div>

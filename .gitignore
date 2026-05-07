@@ -30,4 +30,4 @@ site
 venv
 
 # Vite build da landing
-dist
+# dist

@@ -1,0 +1,33 @@
+/* Header: hamburger → X */
+#menu-toggle .line{transform-origin:center}
+#menu-toggle[aria-expanded="true"] .line:nth-child(1){transform:translateY(8px) rotate(45deg)}
+#menu-toggle[aria-expanded="true"] .line:nth-child(2){transform:scaleX(0);opacity:0}
+#menu-toggle[aria-expanded="true"] .line:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* Header: shrink on scroll */
+#navbar.is-scrolled>div{padding-top:.75rem;padding-bottom:.75rem}
+#navbar.is-scrolled{
+  background-color:rgba(var(--da-header-bg),var(--da-header-bg-alpha));
+  box-shadow:0 8px 24px rgba(var(--da-shadow),var(--da-shadow-alpha));
+  backdrop-filter:blur(6px)
+}
+
+/* mobile menu: links bonitos */
+.menu-link{position:relative;display:flex;align-items:center;justify-content:space-between;gap:.75rem;padding:.9rem 1rem;color:#F6F6F6;background:transparent;transition:background .2s,transform .2s;-webkit-tap-highlight-color:transparent}
+.menu-link:hover{background:rgba(255,255,255,.06)}
+.menu-link:active{transform:translateY(1px)}
+.menu-link:focus-visible{outline:2px solid rgba(255,255,255,.6);outline-offset:2px;border-radius:12px}
+.menu-link::before{content:"";position:absolute;inset-inline-start:0;top:8px;bottom:8px;width:3px;background:transparent;border-radius:9999px;transition:background .2s}
+.menu-link:hover::before{background:#D06A32}
+.chev{width:18px;height:18px;opacity:.9}
+
+/* entrada em cascata */
+@keyframes menu-in{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+.animate-menu-in{animation:menu-in .28s cubic-bezier(.2,.7,.3,1) both}
+
+/* navbar desktop hover */
+.nav-link{position:relative;display:inline-flex;align-items:center;transition:color .2s,transform .2s;-webkit-tap-highlight-color:transparent}
+.nav-link::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:2px;background:#D06A32;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav-link:hover{transform:translateY(-1px);color:#fff}
+.nav-link:hover::after{transform:scaleX(1)}
+

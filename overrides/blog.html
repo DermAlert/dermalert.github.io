@@ -2,29 +2,31 @@
 
 {% block content %}
 <main class="md-content">
-  <h1>{{ config.site_name }} — Blog</h1>
-  <div class="cards-grid">
+  <section class="da-doc-hero">
+    <p class="da-doc-hero__kicker">Blog</p>
+    <h1>{{ config.site_name }} - Publicações</h1>
+    <p>Atualizações sobre pesquisa, tecnologia, documentação e evolução do projeto.</p>
+  </section>
+
+  <div class="da-doc-grid">
     {%- for post in posts %}
-      <article class="card">
+      <article class="da-doc-card">
         {%- if post.meta.image %}
         <div class="card-image-wrapper">
           <a href="{{ post.url | url }}" class="card-image">
             <img src="{{ post.meta.image | url }}" alt="{{ post.meta.title }}">
           </a>
-          {# Ícone posicionado entre a imagem e o corpo #}
           {% if post.meta.icon %}
-          <div class="card-icon">
-            <img src="{{ post.meta.icon | url }}" alt="Ícone do post" />
+          <div class="card-icon" aria-hidden="true">
+            <img src="{{ post.meta.icon | url }}" alt="">
           </div>
           {% endif %}
         </div>
         {%- endif %}
-        <div class="card-body">
-          <h3 class="card-title">
-            <a href="{{ post.url | url }}">{{ post.meta.title }}</a>
-          </h3>
+        <div>
+          <h3><a href="{{ post.url | url }}">{{ post.meta.title }}</a></h3>
           {%- if post.meta.description %}
-          <p class="card-description">{{ post.meta.description }}</p>
+          <p>{{ post.meta.description }}</p>
           {%- endif %}
           <time class="card-date" datetime="{{ post.meta.date }}">{{ post.meta.date.strftime('%d/%m/%y') }}</time>
         </div>

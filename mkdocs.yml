@@ -4,7 +4,7 @@ repo_name: DermAlert
 docs_dir: docs
 
 nav:
-  - Home: index.md
+  - Home: /
   - Como Funciona:
     - como-funciona/como-contribuir.md
     - como-funciona/codigo-de-conduta.md
@@ -27,6 +27,11 @@ nav:
     - blog/index.md
     
 markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.tasklist:
       custom_checkbox: true
 
@@ -74,9 +79,11 @@ plugins:
         - custom-skip-class-name
       auto_caption: false
       caption_position: bottom
-  # - exclude:
-  #    glob:
-  #      - "land/node_modules/**"
+  - exclude:
+      glob:
+        - 'land/node_modules/**'
+        - 'land/**/CHANGELOG.md'
+        - 'land/**/README*.md'
   - blog:
       # habilita/desabilita o cálculo automático
       post_readtime: true
@@ -85,7 +92,3 @@ plugins:
 
 extra_css:
   - assets/stylesheets/extra.css
-  - land/dist/assets/index-D5Lwlgl_.css
-
-extra_javascript:
-  - land/dist/assets/index-BMjkV8U-.js

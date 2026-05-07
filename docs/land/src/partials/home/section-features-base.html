@@ -1,0 +1,814 @@
+<section id="functionalities" class="dermalert-feature-flow" aria-labelledby="feature-flow-title">
+  <div class="feature-flow-bg" aria-hidden="true">
+    <span class="feature-bg-layer feature-bg-grid"></span>
+    <span class="feature-bg-layer feature-bg-routes"></span>
+    <span class="feature-bg-layer feature-bg-signal"></span>
+  </div>
+
+  <div class="feature-flow-inner">
+    <header class="feature-flow-header">
+      <h2 id="feature-flow-title" data-i18n="features_title">
+        Conheça as funcionalidades
+      </h2>
+      <p data-i18n="features_sub">
+        Com o DermAlert, o processo de triagem é simples e rápido.
+      </p>
+    </header>
+
+    <div class="feature-flow-stage" data-feature-flow>
+      <div class="feature-flow-visual" aria-label="Demonstração do fluxo no aplicativo DermAlert">
+        <div class="feature-flow-rail" aria-hidden="true">
+          <span class="flow-rail-step is-active" data-flow-step-button data-step="1">
+            <span>01</span>
+          </span>
+          <span class="flow-rail-step" data-flow-step-button data-step="2">
+            <span>02</span>
+          </span>
+          <span class="flow-rail-step" data-flow-step-button data-step="3">
+            <span>03</span>
+          </span>
+        </div>
+
+        <div class="feature-phone-shell">
+          <div class="feature-phone" data-flow-swipe>
+            <div class="feature-phone-speaker" aria-hidden="true"></div>
+            <div class="feature-phone-screen">
+              <article
+                id="feature-screen-1"
+                class="app-screen register-screen is-active"
+                data-flow-screen="1"
+                role="tabpanel"
+                aria-labelledby="feature-card-1"
+              >
+                <div class="register-statusbar" aria-hidden="true">
+                  <strong>9:30</strong>
+                  <span class="register-camera"></span>
+                  <span class="register-status-icons">
+                    <i class="status-wifi"></i>
+                    <i class="status-signal"></i>
+                    <i class="status-battery"></i>
+                  </span>
+                </div>
+
+                <header class="register-header">
+                  <button class="register-close" type="button" aria-label="Fechar cadastro" data-register-clear>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4-5.3 5.3 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.3-5.3-5.3-5.3z"/>
+                    </svg>
+                  </button>
+                  <h3>Cadastrar paciente</h3>
+                </header>
+
+                <div class="register-progress" aria-hidden="true">
+                  <span style="width: 10.5%"></span>
+                </div>
+
+                <p class="register-step">Passo 1 de 9</p>
+
+                <div class="register-pages" data-register-pages>
+                  <section class="register-page is-active" data-register-page="1" data-register-keyboard="true">
+                    <div class="register-field">
+                      <label for="feature-register-name">Nome completo</label>
+                      <p>Informe o nome completo do paciente.</p>
+                      <div class="register-input" data-register-input-frame>
+                        <input
+                          id="feature-register-name"
+                          class="register-input-control"
+                          data-register-input
+                          type="text"
+                          name="feature-register-name"
+                          autocomplete="name"
+                          maxlength="80"
+                          aria-label="Nome completo"
+                        />
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page" data-register-page="2" data-register-keyboard="true">
+                    <div class="register-field">
+                      <label for="feature-register-cpf">CPF</label>
+                      <p>Informe o CPF do paciente.</p>
+                      <div class="register-input" data-register-input-frame>
+                        <input
+                          id="feature-register-cpf"
+                          class="register-input-control"
+                          data-register-input
+                          type="text"
+                          inputmode="numeric"
+                          maxlength="14"
+                          aria-label="CPF"
+                        />
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page" data-register-page="3" data-register-keyboard="true">
+                    <div class="register-field">
+                      <label for="feature-register-birth">Data de nascimento</label>
+                      <p>Informe a data de nascimento do paciente.</p>
+                      <div class="register-input" data-register-input-frame>
+                        <input
+                          id="feature-register-birth"
+                          class="register-input-control"
+                          data-register-input
+                          type="text"
+                          inputmode="numeric"
+                          maxlength="10"
+                          placeholder="dd/mm/aaaa"
+                          aria-label="Data de nascimento"
+                        />
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page" data-register-page="4">
+                    <div class="register-choice-field">
+                      <p>Com qual g&ecirc;nero o paciente se identifica?</p>
+                      <div class="register-options" role="radiogroup" aria-label="G&ecirc;nero do paciente">
+                        <button type="button" class="register-option" data-register-choice="gender" aria-pressed="false">
+                          <span>Feminino</span><i></i>
+                        </button>
+                        <button type="button" class="register-option" data-register-choice="gender" aria-pressed="false">
+                          <span>Masculino</span><i></i>
+                        </button>
+                        <button type="button" class="register-option" data-register-choice="gender" aria-pressed="false">
+                          <span>N&atilde;o bin&aacute;rio</span><i></i>
+                        </button>
+                        <button type="button" class="register-option" data-register-choice="gender" aria-pressed="false">
+                          <span>Prefiro n&atilde;o responder</span><i></i>
+                        </button>
+                        <button type="button" class="register-option" data-register-choice="gender" aria-pressed="false">
+                          <span>Outro</span><i></i>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page" data-register-page="5">
+                    <div class="register-contact">
+                      <p>Ao informar os dados de contato, o paciente concorda que poder&aacute; ser contatado a partir deles para receber informa&ccedil;&otilde;es sobre a pesquisa.</p>
+                      <div class="register-field register-field-stacked">
+                        <label for="feature-register-email">E-mail para retorno</label>
+                        <small>Endere&ccedil;o de e-mail para contatar o paciente</small>
+                        <div class="register-input" data-register-input-frame>
+                          <input
+                            id="feature-register-email"
+                            class="register-input-control"
+                            data-register-input
+                            type="email"
+                            autocomplete="email"
+                            placeholder="Endere&ccedil;o de e-mail"
+                            aria-label="E-mail para retorno"
+                          />
+                        </div>
+                      </div>
+                      <div class="register-field register-field-stacked">
+                        <label for="feature-register-phone">Telefone de contato <span>(Opcional)</span></label>
+                        <div class="register-input" data-register-input-frame>
+                          <input
+                            id="feature-register-phone"
+                            class="register-input-control"
+                            data-register-input
+                            type="tel"
+                            autocomplete="tel"
+                            placeholder="Telefone"
+                            aria-label="Telefone de contato"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page" data-register-page="6" data-register-keyboard="true">
+                    <div class="register-field">
+                      <label for="feature-register-sus">Cart&atilde;o SUS</label>
+                      <p>Informe o n&uacute;mero do cart&atilde;o SUS do paciente.</p>
+                      <div class="register-input" data-register-input-frame>
+                        <input
+                          id="feature-register-sus"
+                          class="register-input-control"
+                          data-register-input
+                          type="text"
+                          inputmode="numeric"
+                          maxlength="18"
+                          aria-label="Cart&atilde;o SUS"
+                        />
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page" data-register-page="7">
+                    <div class="register-consent">
+                      <p>O paciente autoriza o uso dos seus dados anonimizados para fins de pesquisa:</p>
+                      <button type="button" class="register-consent-box" data-register-consent aria-pressed="false">
+                        <span>Autoriza</span><i></i>
+                      </button>
+                    </div>
+                  </section>
+
+                  <section class="register-page" data-register-page="8">
+                    <div class="register-upload">
+                      <h4>Termo de consentimento</h4>
+                      <p>Inclua uma ou mais imagens do termo de consentimento.</p>
+                      <div class="register-upload-grid">
+                        <button type="button" class="register-upload-card">
+                          <i></i>
+                          <span>Adicionar<br>imagem</span>
+                        </button>
+                        <button type="button" class="register-upload-card">
+                          <i></i>
+                          <span>Adicionar<br>imagem</span>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page" data-register-page="9">
+                    <div class="register-history">
+                      <h4>Antecedentes cl&iacute;nicos</h4>
+                      <p>Preencha a ficha de antecedentes cl&iacute;nicos do paciente para concluir o cadastro.</p>
+                      <button type="button" class="register-history-card">
+                        <span class="history-icon"></span>
+                        <span><strong>0/6 etapas</strong> Antecedentes cl&iacute;nicos</span>
+                        <i></i>
+                      </button>
+                    </div>
+                  </section>
+                </div>
+
+                <div class="register-actions is-first" data-register-actions>
+                  <button class="register-secondary-button" type="button" data-register-back>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M10.6 5.3 3.9 12l6.7 6.7 1.4-1.4L7.7 13H20v-2H7.7L12 6.7z"/>
+                    </svg>
+                    <span>Voltar</span>
+                  </button>
+                  <button class="register-primary-button" type="button" data-register-next>
+                    <span>Pr&oacute;ximo</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M13.4 5.3 20.1 12l-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.3L12 6.7z"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="register-keyboard" aria-hidden="true" data-register-keyboard>
+                  <div class="keyboard-toolbar">
+                    <span class="keyboard-round">&lsaquo;</span>
+                    <strong>GIF</strong>
+                    <i class="keyboard-gear"></i>
+                    <span class="keyboard-translate">G</span>
+                    <i class="keyboard-sticker"></i>
+                    <span class="keyboard-divider"></span>
+                    <strong class="keyboard-dots">...</strong>
+                    <i class="keyboard-mic"></i>
+                  </div>
+
+                  <div class="keyboard-letters">
+                    <div class="keyboard-row">
+                      <span>q</span><span>w</span><span>e</span><span>r</span><span>t</span><span>y</span><span>u</span><span>i</span><span>o</span><span>p</span>
+                    </div>
+                    <div class="keyboard-row keyboard-row-center">
+                      <span>a</span><span>s</span><span>d</span><span>f</span><span>g</span><span>h</span><span>j</span><span>k</span><span>l</span>
+                    </div>
+                    <div class="keyboard-row keyboard-row-shift">
+                      <i class="keyboard-shift"></i><span>z</span><span>x</span><span>c</span><span>v</span><span>b</span><span>n</span><span>m</span><i class="keyboard-delete"></i>
+                    </div>
+                    <div class="keyboard-row keyboard-row-actions">
+                      <strong>?123</strong><i class="keyboard-emoji"></i><i class="keyboard-globe"></i><span class="keyboard-space"></span><i class="keyboard-dot"></i><strong class="keyboard-enter">&crarr;</strong>
+                    </div>
+                  </div>
+
+                  <div class="keyboard-footer">
+                    <i></i>
+                    <span></span>
+                    <b></b>
+                  </div>
+                </div>
+              </article>
+
+              <article
+                id="feature-screen-2"
+                class="app-screen lesion-screen"
+                data-flow-screen="2"
+                role="tabpanel"
+                aria-labelledby="feature-card-2"
+              >
+                <div class="register-statusbar" aria-hidden="true">
+                  <strong>9:30</strong>
+                  <span class="register-camera"></span>
+                  <span class="register-status-icons">
+                    <i class="status-wifi"></i>
+                    <i class="status-signal"></i>
+                    <i class="status-battery"></i>
+                  </span>
+                </div>
+
+                <header class="register-header">
+                  <button class="register-close" type="button" aria-label="Reiniciar registro da lesao" data-lesion-clear>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4-5.3 5.3 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.3-5.3-5.3-5.3z"/>
+                    </svg>
+                  </button>
+                  <h3>Registrar les&atilde;o</h3>
+                </header>
+
+                <div class="register-progress" aria-hidden="true">
+                  <span data-lesion-progress style="width: 12.5%"></span>
+                </div>
+
+                <p class="register-step" data-lesion-step-label>Passo 1 de 8</p>
+
+                <div class="register-pages lesion-pages" data-lesion-pages>
+                  <section class="register-page lesion-page is-active" data-lesion-page="1">
+                    <div class="lesion-location-flow">
+                      <p class="lesion-prompt">Informe o local da les&atilde;o</p>
+                      <div class="lesion-location-options" role="list" aria-label="Local da lesao">
+                        <button class="lesion-location-option" type="button" data-lesion-location aria-expanded="false">
+                          <span class="lesion-location-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M9.7 20.5v-2.1c-2.5-.8-4.2-3-4.2-5.8 0-4 2.8-7.1 6.6-7.1 3.2 0 5.9 2.3 6.4 5.5l1.5 2.8h-2.1v2.6c0 .9-.7 1.6-1.6 1.6h-1.8v2.5"/>
+                              <path d="M10.2 9.2a2.7 2.7 0 0 1 3.9 3.6c-.4.5-.9.8-1.5 1.1"/>
+                              <path d="M12.5 16.3h.1"/>
+                            </svg>
+                          </span>
+                          <span>Cabe&ccedil;a e pesco&ccedil;o</span>
+                          <i aria-hidden="true"></i>
+                        </button>
+                        <button class="lesion-location-option" type="button" data-lesion-location aria-expanded="false">
+                          <span class="lesion-location-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M12 4.2c1.3 0 2.3 1 2.3 2.3S13.3 8.8 12 8.8 9.7 7.8 9.7 6.5s1-2.3 2.3-2.3z"/>
+                              <path d="M8.3 20.2 9 11.4l-2.8 2.9-1.4-1.5 4.5-4.4h5.4l4.5 4.4-1.4 1.5-2.8-2.9.7 8.8"/>
+                            </svg>
+                          </span>
+                          <span>Tronco</span>
+                          <i aria-hidden="true"></i>
+                        </button>
+                        <button class="lesion-location-option" type="button" data-lesion-location aria-expanded="false">
+                          <span class="lesion-location-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M9 5.2c-2.1.7-3.4 2.7-3.4 5.2 0 2.9 1.9 5.4 4.6 6.2"/>
+                              <path d="M15 5.2c2.1.7 3.4 2.7 3.4 5.2 0 2.9-1.9 5.4-4.6 6.2"/>
+                              <path d="M9 5.2c1 2.4 1.1 4.8 0 7.2M15 5.2c-1 2.4-1.1 4.8 0 7.2"/>
+                              <path d="M9.1 16.6 7.4 20M14.9 16.6l1.7 3.4"/>
+                            </svg>
+                          </span>
+                          <span>Regi&atilde;o p&eacute;lvica</span>
+                          <i aria-hidden="true"></i>
+                        </button>
+                        <button class="lesion-location-option" type="button" data-lesion-location aria-expanded="false">
+                          <span class="lesion-location-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24">
+                              <path d="M8.3 13.3V7.8a1.2 1.2 0 0 1 2.4 0v4.3"/>
+                              <path d="M10.7 12.2V6.4a1.2 1.2 0 0 1 2.4 0v5.8"/>
+                              <path d="M13.1 12.2V7.1a1.2 1.2 0 0 1 2.4 0v6.1"/>
+                              <path d="M15.5 13.8v-3.2a1.2 1.2 0 0 1 2.4 0v4.9c0 3.1-2.1 5.1-5.1 5.1h-.8c-2 0-3.7-.9-4.9-2.5l-1.8-2.4a1.3 1.3 0 0 1 2-1.6l1.1 1.2"/>
+                            </svg>
+                          </span>
+                          <span>Extremidades</span>
+                          <i aria-hidden="true"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page lesion-page" data-lesion-page="2">
+                    <div class="lesion-capture-flow">
+                      <h4>Coleta de imagem da les&atilde;o</h4>
+                      <p>Colete uma ou mais imagens da les&atilde;o. Verifique se as imagens est&atilde;o n&iacute;tidas, bem iluminadas e mostram a ferida com clareza.</p>
+                      <button class="lesion-help-card" type="button">
+                        <span class="lesion-help-icon" aria-hidden="true">i</span>
+                        <span>
+                          <strong>Como coletar imagens?</strong>
+                          <small>Saiba como utilizar o dermoscopio</small>
+                        </span>
+                      </button>
+                      <div class="lesion-upload-grid" data-lesion-upload-grid>
+                        <button class="lesion-thumb lesion-thumb-a" type="button" data-lesion-preview-image>
+                          <span>Visualizar</span>
+                        </button>
+                        <button class="lesion-thumb lesion-thumb-b" type="button" data-lesion-preview-image>
+                          <span>Visualizar</span>
+                        </button>
+                        <button class="lesion-thumb lesion-thumb-c" type="button" data-lesion-preview-image>
+                          <span>Visualizar</span>
+                        </button>
+                        <button class="lesion-add-card" type="button" data-lesion-add-image>
+                          <i aria-hidden="true"></i>
+                          <span>Adicionar<br>imagem</span>
+                        </button>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="register-page lesion-page lesion-success-page" data-lesion-page="3">
+                    <div class="lesion-success">
+                      <span class="lesion-success-icon" aria-hidden="true"></span>
+                      <strong>Les&atilde;o registrada</strong>
+                      <p>A les&atilde;o foi registrada com sucesso.</p>
+                    </div>
+                  </section>
+                </div>
+
+                <div class="register-actions is-first" data-lesion-actions>
+                  <button class="register-secondary-button" type="button" data-lesion-back>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M10.6 5.3 3.9 12l6.7 6.7 1.4-1.4L7.7 13H20v-2H7.7L12 6.7z"/>
+                    </svg>
+                    <span>Voltar</span>
+                  </button>
+                  <button class="register-primary-button" type="button" data-lesion-next>
+                    <span>Pr&oacute;ximo</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M13.4 5.3 20.1 12l-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.3L12 6.7z"/>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="lesion-image-flow" data-lesion-image-flow aria-hidden="true">
+                  <section class="lesion-image-panel lesion-image-choice is-active" data-lesion-image-panel="choice" aria-label="Adicionar imagem">
+                    <div class="lesion-image-dialog">
+                      <h4>Adicionar imagem</h4>
+                      <p>Capture uma imagem da c&acirc;mera do dispositivo ou selecione da galeria.</p>
+                      <button class="lesion-image-option" type="button" data-lesion-open-camera>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.2l1.1-1.6h6.4L16.3 6h1.2A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5z"/>
+                          <circle cx="12" cy="12.5" r="3.4"/>
+                        </svg>
+                        <span>Abrir camera</span>
+                      </button>
+                      <button class="lesion-image-option" type="button" data-lesion-open-gallery>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <rect x="4" y="5" width="16" height="14" rx="2.5"/>
+                          <circle cx="9" cy="10" r="1.5"/>
+                          <path d="M5.8 17 10 12.8l3 3 2.4-2.4 3 3"/>
+                        </svg>
+                        <span>Buscar na galeria</span>
+                      </button>
+                      <button class="lesion-image-cancel" type="button" data-lesion-image-close>Cancelar</button>
+                    </div>
+                  </section>
+
+                  <section class="lesion-image-panel lesion-camera-panel" data-lesion-image-panel="camera" aria-label="Camera para capturar imagem da lesao">
+                    <div class="lesion-camera-status" aria-hidden="true">
+                      <strong>9:30</strong>
+                      <span></span>
+                      <i></i>
+                    </div>
+                    <button class="lesion-round-close" type="button" aria-label="Fechar camera" data-lesion-image-close>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4-5.3 5.3 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.3-5.3-5.3-5.3z"/>
+                      </svg>
+                    </button>
+                    <div class="lesion-camera-feed" aria-hidden="true"></div>
+                    <button class="lesion-shutter" type="button" data-lesion-capture-image>
+                      <span aria-hidden="true"></span>
+                      <strong>Capturar imagem</strong>
+                    </button>
+                    <div class="lesion-camera-review" aria-live="polite">
+                      <p><span aria-hidden="true">i</span> Verifique se a imagem est&aacute; n&iacute;tida, bem iluminada e mostra a ferida com clareza.</p>
+                      <button type="button" data-lesion-use-image>Usar imagem</button>
+                    </div>
+                    <span class="lesion-camera-home" aria-hidden="true"></span>
+                  </section>
+
+                  <section class="lesion-image-panel lesion-gallery-panel" data-lesion-image-panel="gallery" aria-label="Galeria de imagens">
+                    <div class="register-statusbar" aria-hidden="true">
+                      <strong>9:30</strong>
+                      <span class="register-camera"></span>
+                      <span class="register-status-icons">
+                        <i class="status-wifi"></i>
+                        <i class="status-signal"></i>
+                        <i class="status-battery"></i>
+                      </span>
+                    </div>
+                    <header class="register-header">
+                      <button class="register-close" type="button" aria-label="Fechar galeria" data-lesion-image-close>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4-5.3 5.3 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.3-5.3-5.3-5.3z"/>
+                        </svg>
+                      </button>
+                      <h3>Galeria</h3>
+                    </header>
+                    <div class="lesion-gallery-grid" aria-label="Selecionar imagens">
+                      <button class="lesion-gallery-item gallery-doc is-selected" type="button" data-lesion-gallery-item aria-pressed="true"><i></i></button>
+                      <button class="lesion-gallery-item gallery-paper" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-stethoscope" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-care" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-gloves" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-mask" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-surgery" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-monitor" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-room is-selected" type="button" data-lesion-gallery-item aria-pressed="true"><i></i></button>
+                      <button class="lesion-gallery-item gallery-doctor" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-vial" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-device" type="button" data-lesion-gallery-item aria-pressed="false"><i></i></button>
+                    </div>
+                    <button class="register-primary-button lesion-gallery-use" type="button" data-lesion-use-image>
+                      <span>Usar imagem</span>
+                    </button>
+                    <span class="lesion-camera-home" aria-hidden="true"></span>
+                  </section>
+
+                  <section class="lesion-image-panel lesion-preview-panel" data-lesion-image-panel="preview" aria-label="Imagem capturada">
+                    <div class="register-statusbar" aria-hidden="true">
+                      <strong>9:30</strong>
+                      <span class="register-camera"></span>
+                      <span class="register-status-icons">
+                        <i class="status-wifi"></i>
+                        <i class="status-signal"></i>
+                        <i class="status-battery"></i>
+                      </span>
+                    </div>
+                    <button class="register-close" type="button" aria-label="Fechar visualizacao" data-lesion-image-close>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4-5.3 5.3 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.3-5.3-5.3-5.3z"/>
+                      </svg>
+                    </button>
+                    <button class="lesion-delete-image" type="button" aria-label="Remover imagem" data-lesion-delete-image>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 7h10m-8 0V5h6v2m-7 3v8m4-8v8m4-8v8M6 7l1 13h10l1-13"/>
+                      </svg>
+                    </button>
+                    <div class="lesion-preview-photo" aria-hidden="true"></div>
+                    <span class="lesion-camera-home" aria-hidden="true"></span>
+                  </section>
+
+                  <section class="lesion-image-panel lesion-remove-panel" data-lesion-image-panel="remove" aria-label="Confirmar remocao de imagem">
+                    <div class="lesion-remove-dialog">
+                      <span class="lesion-remove-icon" aria-hidden="true"></span>
+                      <p>Deseja remover esta imagem?</p>
+                      <div>
+                        <button type="button" data-lesion-remove-confirm>Sim, remover</button>
+                        <button type="button" data-lesion-remove-cancel>N&atilde;o, cancelar</button>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <span class="lesion-home-indicator" aria-hidden="true"></span>
+              </article>
+
+              <article
+                id="feature-screen-3"
+                class="app-screen image-collection-screen"
+                data-flow-screen="3"
+                role="tabpanel"
+                aria-labelledby="feature-card-3"
+              >
+                <div class="feature-image-demo lesion-image-flow is-open" data-feature-image-demo data-image-state="choice" aria-label="Demonstração de coleta de imagem da lesão">
+                  <section class="lesion-image-panel lesion-image-choice is-active" data-feature-image-panel="choice" aria-label="Adicionar imagem">
+                    <div class="lesion-image-dialog">
+                      <h4>Adicionar imagem</h4>
+                      <p>Capture uma imagem da c&acirc;mera do dispositivo ou selecione da galeria.</p>
+                      <button class="lesion-image-option" type="button" data-feature-image-target="camera">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M4 8.5A2.5 2.5 0 0 1 6.5 6h1.2l1.1-1.6h6.4L16.3 6h1.2A2.5 2.5 0 0 1 20 8.5v8A2.5 2.5 0 0 1 17.5 19h-11A2.5 2.5 0 0 1 4 16.5z"/>
+                          <circle cx="12" cy="12.5" r="3.4"/>
+                        </svg>
+                        <span>Abrir camera</span>
+                      </button>
+                      <button class="lesion-image-option" type="button" data-feature-image-target="gallery">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <rect x="4" y="5" width="16" height="14" rx="2.5"/>
+                          <circle cx="9" cy="10" r="1.5"/>
+                          <path d="M5.8 17 10 12.8l3 3 2.4-2.4 3 3"/>
+                        </svg>
+                        <span>Buscar na galeria</span>
+                      </button>
+                      <button class="lesion-image-cancel" type="button" data-feature-image-target="choice">Cancelar</button>
+                    </div>
+                  </section>
+
+                  <section class="lesion-image-panel lesion-camera-panel" data-feature-image-panel="camera" aria-label="Camera para capturar imagem da lesao">
+                    <div class="lesion-camera-status" aria-hidden="true">
+                      <strong>9:30</strong>
+                      <span></span>
+                      <i></i>
+                    </div>
+                    <button class="lesion-round-close" type="button" aria-label="Fechar camera" data-feature-image-target="choice">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4-5.3 5.3 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.3-5.3-5.3-5.3z"/>
+                      </svg>
+                    </button>
+                    <div class="lesion-camera-feed" aria-hidden="true"></div>
+                    <button class="lesion-shutter" type="button" data-feature-image-target="camera-captured">
+                      <span aria-hidden="true"></span>
+                      <strong>Capturar imagem</strong>
+                    </button>
+                    <div class="lesion-camera-review" aria-live="polite">
+                      <p><span aria-hidden="true">i</span> Verifique se a imagem est&aacute; n&iacute;tida, bem iluminada e mostra a ferida com clareza.</p>
+                      <button type="button" data-feature-image-target="preview">Usar imagem</button>
+                    </div>
+                    <span class="lesion-camera-home" aria-hidden="true"></span>
+                  </section>
+
+                  <section class="lesion-image-panel lesion-gallery-panel" data-feature-image-panel="gallery" aria-label="Galeria de imagens">
+                    <div class="register-statusbar" aria-hidden="true">
+                      <strong>9:30</strong>
+                      <span class="register-camera"></span>
+                      <span class="register-status-icons">
+                        <i class="status-wifi"></i>
+                        <i class="status-signal"></i>
+                        <i class="status-battery"></i>
+                      </span>
+                    </div>
+                    <header class="register-header">
+                      <button class="register-close" type="button" aria-label="Fechar galeria" data-feature-image-target="choice">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4-5.3 5.3 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.3-5.3-5.3-5.3z"/>
+                        </svg>
+                      </button>
+                      <h3>Galeria</h3>
+                    </header>
+                    <div class="lesion-gallery-grid" aria-label="Selecionar imagens">
+                      <button class="lesion-gallery-item gallery-doc is-selected" type="button" data-feature-gallery-item aria-pressed="true"><i></i></button>
+                      <button class="lesion-gallery-item gallery-paper" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-stethoscope" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-care" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-gloves" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-mask" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-surgery" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-monitor" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-room is-selected" type="button" data-feature-gallery-item aria-pressed="true"><i></i></button>
+                      <button class="lesion-gallery-item gallery-doctor" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-vial" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                      <button class="lesion-gallery-item gallery-device" type="button" data-feature-gallery-item aria-pressed="false"><i></i></button>
+                    </div>
+                    <button class="register-primary-button lesion-gallery-use" type="button" data-feature-image-target="preview">
+                      <span>Usar imagem</span>
+                    </button>
+                    <span class="lesion-camera-home" aria-hidden="true"></span>
+                  </section>
+
+                  <section class="lesion-image-panel lesion-preview-panel" data-feature-image-panel="preview" aria-label="Imagem capturada">
+                    <div class="register-statusbar" aria-hidden="true">
+                      <strong>9:30</strong>
+                      <span class="register-camera"></span>
+                      <span class="register-status-icons">
+                        <i class="status-wifi"></i>
+                        <i class="status-signal"></i>
+                        <i class="status-battery"></i>
+                      </span>
+                    </div>
+                    <button class="register-close" type="button" aria-label="Fechar visualizacao" data-feature-image-target="choice">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M6.7 5.3 12 10.6l5.3-5.3 1.4 1.4-5.3 5.3 5.3 5.3-1.4 1.4-5.3-5.3-5.3 5.3-1.4-1.4 5.3-5.3-5.3-5.3z"/>
+                      </svg>
+                    </button>
+                    <button class="lesion-delete-image" type="button" aria-label="Remover imagem" data-feature-image-target="remove">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M7 7h10m-8 0V5h6v2m-7 3v8m4-8v8m4-8v8M6 7l1 13h10l1-13"/>
+                      </svg>
+                    </button>
+                    <div class="lesion-preview-photo" aria-hidden="true"></div>
+                    <span class="lesion-camera-home" aria-hidden="true"></span>
+                  </section>
+
+                  <section class="lesion-image-panel lesion-remove-panel" data-feature-image-panel="remove" aria-label="Confirmar remocao de imagem">
+                    <div class="lesion-remove-dialog">
+                      <span class="lesion-remove-icon" aria-hidden="true"></span>
+                      <p>Deseja remover esta imagem?</p>
+                      <div>
+                        <button type="button" data-feature-image-target="choice">Sim, remover</button>
+                        <button type="button" data-feature-image-target="preview">N&atilde;o, cancelar</button>
+                      </div>
+                    </div>
+                  </section>
+
+                  <div class="feature-image-dots" aria-hidden="true">
+                    <span class="is-active" data-feature-image-dot="choice"></span>
+                    <span data-feature-image-dot="camera"></span>
+                    <span data-feature-image-dot="camera-captured"></span>
+                    <span data-feature-image-dot="gallery"></span>
+                    <span data-feature-image-dot="preview"></span>
+                    <span data-feature-image-dot="remove"></span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-flow-panel">
+        <div class="flow-controls" role="group" aria-label="Controle da demonstração">
+          <button class="flow-icon-btn" type="button" data-flow-prev aria-label="Etapa anterior" title="Etapa anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m15 18-6-6 6-6"/>
+            </svg>
+          </button>
+          <button
+            class="flow-icon-btn flow-icon-btn-primary"
+            type="button"
+            data-flow-play
+            aria-label="Pausar animação"
+            aria-pressed="true"
+            title="Pausar animação"
+          >
+            <svg data-pause-icon viewBox="0 0 24 24" fill="currentColor">
+              <path d="M8 5h3v14H8zM13 5h3v14h-3z"/>
+            </svg>
+            <svg data-play-icon viewBox="0 0 24 24" fill="currentColor" hidden>
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </button>
+          <button class="flow-icon-btn" type="button" data-flow-next aria-label="Próxima etapa" title="Próxima etapa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m9 18 6-6-6-6"/>
+            </svg>
+          </button>
+          <div class="flow-progress-track" aria-hidden="true">
+            <span data-flow-progress-bar></span>
+          </div>
+        </div>
+
+        <div id="func-cards" class="flow-step-list" role="tablist" aria-label="Etapas do fluxo DermAlert">
+          <button
+            id="feature-card-1"
+            class="func-card flow-step-card is-active"
+            type="button"
+            data-flow-card
+            data-step="1"
+            role="tab"
+            aria-selected="true"
+            aria-controls="feature-screen-1"
+          >
+            <span class="flow-card-index">01</span>
+            <span class="flow-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="14" height="14" rx="3"/>
+                <circle cx="10" cy="11" r="2.6"/>
+                <path d="M6.4 18c1.7-2.2 4-3.2 5.6-3.2s3.9 1 5.6 3.2"/>
+                <path d="M18 6v4M16 8h4"/>
+              </svg>
+            </span>
+            <span class="flow-card-copy">
+              <strong data-i18n="features_step1_title">Cadastre o Paciente</strong>
+              <small data-i18n="features_step1_desc">Economize tempo registrando dados básicos de forma simples e segura.</small>
+            </span>
+            <span class="flow-card-meter" aria-hidden="true"><span></span></span>
+          </button>
+
+          <button
+            id="feature-card-2"
+            class="func-card flow-step-card"
+            type="button"
+            data-flow-card
+            data-step="2"
+            role="tab"
+            aria-selected="false"
+            aria-controls="feature-screen-2"
+          >
+            <span class="flow-card-index">02</span>
+            <span class="flow-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="4" y="4.5" width="16" height="15" rx="2.5"/>
+                <circle cx="9" cy="11" r="1.7"/>
+                <path d="M6 17l4-4 3 3 3-3 2 2"/>
+              </svg>
+            </span>
+            <span class="flow-card-copy">
+              <strong data-i18n="features_step2_title">Registrar les&atilde;o</strong>
+              <small data-i18n="features_step2_desc">Informe o local da les&atilde;o e colete imagens cl&iacute;nicas com clareza.</small>
+            </span>
+            <span class="flow-card-meter" aria-hidden="true"><span></span></span>
+          </button>
+
+          <button
+            id="feature-card-3"
+            class="func-card flow-step-card"
+            type="button"
+            data-flow-card
+            data-step="3"
+            role="tab"
+            aria-selected="false"
+            aria-controls="feature-screen-3"
+          >
+            <span class="flow-card-index">03</span>
+            <span class="flow-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="6" cy="8" r="2.2"/>
+                <circle cx="18" cy="6" r="2.2"/>
+                <circle cx="12" cy="18" r="2.2"/>
+                <path d="M7.4 9.4l3.2 6.2M16.6 7.4l-3.2 6.2M8 8l8-2"/>
+              </svg>
+            </span>
+            <span class="flow-card-copy">
+              <strong data-i18n="features_step3_title">Triagem e pesquisa</strong>
+              <small data-i18n="features_step3_desc">Dados organizados que apoiam decisão e ciência.</small>
+            </span>
+            <span class="flow-card-meter" aria-hidden="true"><span></span></span>
+          </button>
+        </div>
+
+        <div class="feature-flow-metrics" aria-label="Resumo do fluxo">
+          <span><strong>3</strong><small data-flow-i18n="metric_steps">etapas guiadas</small></span>
+          <span><strong>LGPD</strong><small data-flow-i18n="metric_privacy">dados sensíveis protegidos</small></span>
+          <span><strong>UBS</strong><small data-flow-i18n="metric_referral">encaminhamento rastreável</small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
