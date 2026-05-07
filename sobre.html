@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="logo.png" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="about_page_title_full">Dermalert - Sobre o Projeto</title>
+    <script type="module" crossorigin src="./assets/main-CWlm5HgB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-C0Rpulzu.css">
+  </head>
+
+  <body class="font-sans antialiased bg-white text-gray-800 dark:bg-[#0E1A2B] dark:text-gray-100">
+    <div id="app-header" class="w-full"></div>
+
+    <!-- Header fixo no topo com menu hambúrguer responsivo -->
+    <header id="navbar" class="hidden fixed top-0 left-0 w-full bg-[#094559] shadow-sm shadow-gray-400 z-50">
+      
+      <div class="max-w-7xl mx-auto flex items-center justify-between py-[24px] md:py-[32px] px-6">
+        
+        <!-- Logo -->
+        <div class="flex items-center gap-2">
+          <a href="index.html" class="flex items-center gap-2">
+            <img src="logo.png" alt="DERMALERT" class="h-[24px] w-auto md:h-[30px] md:w-[114px]" />
+          </a>
+        </div>
+
+        <!-- Botão do menu hambúrguer (visível no mobile) -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none z-50">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+
+        <!-- Menu principal (visível em telas médias e maiores) -->
+        <nav class="hidden md:flex flex-row items-center space-x-10 text-base font-normal text-[#F6F6F6]">
+          <a href="comofunciona.html" class="hover:underline hover:decoration-[#D06A32] transition">
+            Como Funciona
+          </a>
+          <a href="../../ajuda-e-suporte/problemas-comuns/" class="hover:underline hover:decoration-[#D06A32] transition">
+            Ajuda e Suporte
+          </a>
+          <a href="../../curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
+            Curso de Extensão
+          </a>
+          <a href="sobre.html" class="hover:underline hover:decoration-[#D06A32] transition">
+            Sobre
+          </a>
+          <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
+            Documentação
+          </a>
+        </nav>
+
+        <!-- Botão de ação (visível apenas em telas grandes) -->
+        <div class="hidden lg:inline-block">  
+          <a href="suporte.html" class="px-[20px] py-[12px] rounded-full text-base font-normal text-white bg-[#B7561F] hover:bg-[#8A4316] transition border border-[#B7561F]">
+            Participar da Pesquisa
+          </a>
+        </div>
+      
+      </div>
+      
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- Menu Mobile (aparece ao clicar no menu hamburguer) -->
+      <div id="mobile-menu" class="hidden md:hidden scale-y-0 origin-top transition-transform duration-300 bg-[#094559] text-center text-base font-normal text-[#F6F6F6]">
+        <a href="comofunciona.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Como Funciona
+        </a>
+        <a href="../../ajuda-e-suporte/problemas-comuns/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Ajuda e Suporte
+        </a>
+        <a href="../../curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Curso de Extensão
+        </a>
+        <a href="sobre.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Sobre
+        </a>
+        <a href="../../ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+          Documentação
+        </a>
+
+      </div>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+    </header>
+
+    <!-- Título e botão para acesso do menu lateral no mobile -->
+    <section class="relative max-w-7xl mx-auto px-6 mt-4 md:mt-8 mb-2 text-center">
+      <h1 data-i18n="about_page_heading" class="text-[34px] leading-[42px] md:text-[56px] md:leading-[68px] font-bold text-[#2D7E99] dark:text-[#8ED7EA]">
+        Sobre o Projeto
+      </h1>
+
+      <p data-i18n="about_page_sub" class="mt-2 text-base leading-7 md:text-xl md:leading-8 font-medium text-[#666666] dark:text-white/75">
+        Desenvolvido por uma equipe comprometida com inovação em saúde
+      </p>
+
+      <!-- Divisor moderno usando a paleta (#2D7E99 e #B7561F) -->
+      <hr class="mx-auto mt-4 md:mt-6 h-[3px] w-full max-w-[720px] rounded-full border-0 bg-gradient-to-r from-[#2D7E99] via-[#B7561F] to-[#2D7E99] opacity-95" />
+
+      <!-- Botão abaixo da linha (mobile) -->
+      <div class="md:hidden mt-4 md:mt-6 flex justify-center">
+        <button id="mobile-menu-btn" class="inline-flex items-center gap-2 px-2.5 py-1.5 text-sm font-medium rounded-full bg-[#094559] text-white shadow-lg shadow-black/20 ring-1 ring-white/10 hover:brightness-110 active:scale-[.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#094559]/60">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 5v14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span data-i18n="menu">Menu</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Layout dinâmico com menu lateral -->
+    <div class="flex max-w-7xl mx-auto mt-8 px-6 gap-8 h-[calc(100vh-8rem)]">
+
+      <!-- Opções do Menu Lateral -->
+      <aside id="sidebar" class="fixed md:static top-0 left-0 h-full md:h-auto -translate-x-full md:translate-x-0 transition-transform duration-300 z-40 overflow-y-auto w-[88vw] max-w-[360px] md:w-64 bg-white md:bg-transparent shadow-2xl md:shadow-none rounded-r-2xl md:rounded-none pt-[72px] md:pt-0 px-2 md:px-0 dark:bg-[#0E1A2B] md:dark:bg-transparent">
+
+        <h3 data-i18n="about_project_group" class="px-3 md:px-0 mt-8 md:mt-0 text-[#094559] font-semibold dark:text-[#8ED7EA]">Sobre o Projeto</h3>
+        <button data-i18n="tab_goal" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="objetivo">Objetivo Geral</button>
+        <button data-i18n="tab_problem" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="problema">O Problema</button>
+        <button data-i18n="tab_audience" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="publico">Público-alvo</button>
+        <button data-i18n="tab_method" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="metodologia">Metodologia</button>
+        <button data-i18n="tab_funding" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="financiamento">Financiamento</button>
+
+        <h3 data-i18n="about_team_group" class="px-3 md:px-0 mt-6 md:mt-0 text-[#094559] font-semibold dark:text-[#8ED7EA]">Sobre a Equipe</h3>
+        <button data-i18n="tab_coordination" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="coordenacao">Coordenação</button>
+        <button data-i18n="tab_datafabric" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="datafabric">Data Fabric</button>
+        <button data-i18n="tab_design" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="design">Design</button>
+        <button data-i18n="tab_product" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="produto">Produto</button>
+        <button data-i18n="tab_app" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="aplicativo">Aplicativo</button>
+        <button data-i18n="tab_contributors" class="tab-btn block w-full text-left px-3 py-3 md:py-2 rounded-lg md:rounded-none text-[15px] md:text-base border-l-0 md:border-l-4 border-transparent hover:bg-slate-50 md:hover:bg-transparent hover:border-transparent md:hover:border-[#B7561F] transition-colors duration-200 dark:text-white/85 dark:hover:bg-white/10" data-tab="colaboradores">Colaboradores</button>
+      </aside>
+
+      <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+      <!-- Conteúdo Central -->
+      <main class="flex-1 space-y-8 overflow-y-auto pr-4 pt-4 md:pt-0">
+
+        <!-- Objetivos Gerais-->
+        <div id="objetivo" class="tab-content hidden">
+
+          <h2 data-i18n-html="about_goal_title" class="text-center font-semibold text-[28px] leading-tight text-[#20596C] dark:text-[#8ED7EA]">Tecnologia e Cuidado: A Nova Aliança<br>Contra o Câncer de Pele</h2>
+
+          <div class="mt-8 mb-8 max-w-[804px] mx-auto">
+            <img src="sobre/Checker2.png" alt="Mock do conteúdo principal" class="w-full h-[360px] md:h-[420px] rounded-2xl object-cover" />
+          </div>
+
+          <div class="mt-4 max-w-[804px] mx-auto space-y-3 font-[500]">
+            <p data-i18n="about_goal_p1" class="text-[17px] leading-7 text-[#094559] font-medium dark:text-white/80">
+              Este projeto dedica-se ao combate ao câncer de pele, o tipo com maior incidência no Brasil,
+              atuando em duas frentes cruciais: a prevenção e a detecção precoce. A iniciativa se destaca por
+              sua abordagem inovadora, que combina o uso de tecnologia e ciência de dados com ações educativas
+              direcionadas à população.
+            </p>
+            <p data-i18n="about_goal_p2" class="text-[17px] leading-7 text-[#094559] font-medium dark:text-white/80">
+              Através dessa integração, o projeto visa identificar lesões suspeitas de maneira ágil e eficiente,
+              facilitando o diagnóstico rápido. Simultaneamente, busca capacitar o público com informações claras
+              e acessíveis sobre as melhores formas de prevenção, os passos para o diagnóstico e as opções de
+              tratamento disponíveis, promovendo a saúde e reduzindo o impacto da doença na sociedade.
+            </p>
+          </div>
+
+          <h3 data-i18n-html="about_goal_subtitle" class="mt-8 mb-8 text-center font-medium text-[24px] leading-tight text-[#20596C] dark:text-[#8ED7EA]">Educação em Saúde e Triagem Precoce de Câncer:<br>Data Fabric e Machine Learning em Saúde</h3>
+
+          <div class="mb-8 max-w-[804px] mx-auto flex flex-col gap-8">
+
+            <!-- Objetivo 1 -->
+            <div class="group w-full rounded-[24px] p-9 shadow-[0_2px_4px_rgba(0,0,0,0.15)] bg-[#FFEFE5] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#094559]/20">
+              <p data-i18n-html="about_goal_card1" class="text-[16px] leading-[1.4] text-[#B7561F]">
+                <span class="font-semibold">
+                  Educação em saúde
+                </span> 
+                para a população e profissionais
+              </p>
+            </div>
+
+            <!-- Objetivo 2 -->
+            <div class="group w-full rounded-[24px] p-9 shadow-[0_2px_4px_rgba(0,0,0,0.15)] bg-[#F4E8FF] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#094559]/20">
+              <p data-i18n-html="about_goal_card2" class="text-[16px] leading-[1.4] text-[#7A1FA0]">
+                <span class="font-semibold">
+                  Machine Learning e Data Fabric
+                </span> 
+                para apoiar o diagnóstico precoce
+              </p>
+            </div>
+
+            <!-- Objetivo 3 -->
+            <div class="group w-full rounded-[24px] p-9 shadow-[0_2px_4px_rgba(0,0,0,0.15)] bg-[#D6F2FA] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#094559]/20">
+              <p data-i18n-html="about_goal_card3" class="text-[16px] leading-[1.4] text-[#20596C]">
+                <span class="font-semibold">
+                  Fluxos integrados com a Atenção Primária (UBS)
+                </span> 
+                e a rede de referência oncológica.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Contextualização do Poblema -->
+        <div id="problema" class="tab-content hidden max-w-[804px] mx-auto space-y-5 pb-8">
+
+          <h2 data-i18n="about_problem_title" class="text-[28px] leading-[34px] md:text-[32px] md:leading-[38px] font-semibold text-[#20596C] text-center dark:text-[#8ED7EA]">
+            Desafios na Triagem Precoce do Câncer de Pele no Brasil
+          </h2>
+
+          <p data-i18n-html="about_problem_p1" class="text-[18px] leading-8 font-normal text-[#094559] dark:text-white/80">
+            <strong>O câncer de pele é o tumor maligno mais frequente no Brasil, correspondendo a cerca de 30% de todos os casos registrados.</strong> 
+            Embora apresente altos percentuais de cura quando diagnosticado e tratado precocemente, 
+            <strong>a detecção tardia ainda é uma realidade para grande parte da população</strong>, comprometendo os resultados clínicos e aumentando o ônus sobre o sistema de saúde.
+          </p>
+
+          <p data-i18n-html="about_problem_p2" class="text-[18px] leading-8 font-normal text-[#094559] dark:text-white/80">
+            Nos programas de saúde pública, há uma lacuna significativa na educação voltada à detecção precoce e na eficiência dos fluxos de triagem. 
+            <strong>O Projeto de Dermalert propõe uma solução integrada, que combina:</strong>
+          </p>
+
+          <div class="bg-[#E6F3F6] border border-[#C7E0E5] rounded-2xl p-6">
+            <ul class="list-disc pl-6 space-y-2 text-[18px] leading-[28px] font-medium text-[#094559]">
+              <li data-i18n="about_problem_li1">Aplicação de questionário de rastreio clínico</li>
+              <li data-i18n="about_problem_li2">Captura e registro de imagens suspeitas de lesões cutâneas</li>
+              <li data-i18n="about_problem_li3">Integração da série histórica de atendimentos (CIDs correlacionados) em uma plataforma analítica</li>
+              <li data-i18n="about_problem_li4">Encaminhamento de casos de risco para unidades de Atenção Primária à Saúde</li>
+            </ul>
+          </div>
+
+          <p data-i18n="about_problem_p3" class="text-[18px] leading-8 font-normal text-[#094559] dark:text-white/80">
+            O diagnóstico precoce, via exames clínicos, laboratoriais, endoscópicos ou radiológicos, é a estratégia mais eficaz para detectar câncer de pele em estágios iniciais (INCA, 2022; WHO, 2017). 
+            Para isso, é fundamental capacitar população e profissionais de saúde no reconhecimento de sinais suspeitos e garantir acesso rápido aos serviços de Atenção Primária.
+          </p>
+
+          <p data-i18n="about_problem_p4" class="text-[18px] leading-8 font-normal text-[#094559] dark:text-white/80">
+            Embora não haja comprovação de que um método específico de autoexame reduza mortalidade, muitos casos são descobertos pelos próprios pacientes ou familiares, o que reforça a necessidade de ações educativas voltadas ao autoconhecimento da pele 
+            (Australian Cancer Network, 2008). Diante da alta incidência e dos custos associados ao câncer de pele no Brasil, ampliar programas de prevenção, triagem inteligente e integração de dados no SUS é essencial para reduzir diagnósticos tardios e melhorar as taxas de cura.
+          </p>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Público Alvo do Dermalert-->
+        <div id="publico" class="tab-content hidden pb-12">
+
+          <h2 data-i18n="about_audience_title" class="text-[28px] leading-[34px] md:text-[32px] md:leading-[38px] font-semibold text-[#094559] text-center mb-8 dark:text-[#8ED7EA]">
+            Beneficiários da Triagem e Diagnóstico
+          </h2>
+
+          <div class="flex flex-col md:flex-row justify-center items-stretch gap-6">
+
+            <!-- Público 1 -->
+<article class="group w-full md:w-[340px] bg-[#E6F6FA] rounded-2xl shadow-sm overflow-hidden flex flex-col h-auto md:h-[501px] min-h-[400px] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#094559]/20">
+  <div class="overflow-hidden">
+    <img src="sobre/publico1.png" alt="Profissionais de Atenção Primária" class="w-full h-[160px] object-cover transition-transform duration-300 group-hover:scale-105">
+  </div>
+  <div class="p-6 text-center flex flex-col flex-grow">
+    <h3 data-i18n="about_audience_card1_title" class="font-medium text-[#094559] text-[20px] md:text-[22px] leading-[120%]">
+      Profissionais de Atenção Primária
+    </h3>
+    <p data-i18n="about_audience_card1_desc" class="mt-2 font-normal text-base leading-7 text-[#094559]">
+      Médicos, enfermeiros e agentes comunitários de saúde das UBS/ESF envolvidos na triagem e no encaminhamento de pacientes com lesões suspeitas. Capacitados para utilizar o sistema de triagem, aplicar questionários clínicos e registrar imagens para diagnóstico precoce.
+    </p>
+  </div>
+</article>
+
+<!-- Público 2 -->
+<article class="group w-full md:w-[340px] bg-[#FDEFEA] rounded-2xl shadow-sm overflow-hidden flex flex-col h-auto md:h-[501px] min-h-[400px] transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#094559]/20">
+  <div class="overflow-hidden">
+    <img src="sobre/publico2.png" alt="Pacientes com Lesões de Pele" class="w-full h-[160px] object-cover transition-transform duration-300 group-hover:scale-105">
+  </div>
+  <div class="p-6 text-center flex flex-col flex-grow">
+    <h3 data-i18n="about_audience_card2_title" class="font-medium text-[#C2481C] text-[20px] md:text-[22px] leading-[120%]">
+      Pacientes com Lesões de Pele
+    </h3>
+    <p data-i18n="about_audience_card2_desc" class="mt-2 font-normal text-base leading-7 text-[#A34308]">
+      Indivíduos a partir de 18 anos que procuram atendimento em UBS ou mutirões de saúde para avaliação de lesões cutâneas. Beneficiam-se de rastreio clínico, registro de imagens e encaminhamento rápido, aumentando as chances de detecção e cura precoce.
+    </p>
+  </div>
+</article>
+
+
+          </div>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Metodologia do Dermalert -->
+        <div id="metodologia" class="tab-content hidden max-w-[804px] mx-auto space-y-5 pb-16">
+
+          <h2 data-i18n="about_method_title" class="text-[28px] leading-[34px] md:text-[32px] md:leading-[38px] font-semibold text-[#20596C] text-center dark:text-[#8ED7EA]">
+            Metodologia
+          </h2>
+
+          <p data-i18n-html="about_problem_p1" class="text-[18px] leading-8 font-normal text-[#094559] dark:text-white/80">
+            <strong>O câncer de pele é o tumor maligno mais frequente no Brasil, correspondendo a cerca de 30% de todos os casos registrados.</strong> 
+            Embora apresente altos percentuais de cura quando diagnosticado e tratado precocemente, 
+            <strong>a detecção tardia ainda é uma realidade para grande parte da população</strong>, comprometendo os resultados clínicos e aumentando o ônus sobre o sistema de saúde.
+          </p>
+
+          <p data-i18n-html="about_problem_p2" class="text-[18px] leading-8 font-normal text-[#094559] dark:text-white/80">
+            Nos programas de saúde pública, há uma lacuna significativa na educação voltada à detecção precoce e na eficiência dos fluxos de triagem. 
+            <strong>O Projeto de Dermalert propõe uma solução integrada, que combina:</strong>
+          </p>
+
+          <p data-i18n-html="about_problem_p1" class="text-[18px] leading-8 font-normal text-[#094559] dark:text-white/80">
+            <strong>O câncer de pele é o tumor maligno mais frequente no Brasil, correspondendo a cerca de 30% de todos os casos registrados.</strong> 
+            Embora apresente altos percentuais de cura quando diagnosticado e tratado precocemente, 
+            <strong>a detecção tardia ainda é uma realidade para grande parte da população</strong>, comprometendo os resultados clínicos e aumentando o ônus sobre o sistema de saúde.
+          </p>
+
+          <p data-i18n-html="about_problem_p2" class="text-[18px] leading-8 font-normal text-[#094559] dark:text-white/80">
+            Nos programas de saúde pública, há uma lacuna significativa na educação voltada à detecção precoce e na eficiência dos fluxos de triagem. 
+            <strong>O Projeto de Dermalert propõe uma solução integrada, que combina:</strong>
+          </p>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Entidades Financiadoras do Dermalert -->
+        <div id="financiamento" class="tab-content hidden max-w-[462px] mx-auto space-y-6 pb-16">
+
+          <h2 data-i18n="about_funding_title" class="text-[28px] leading-[34px] md:text-[32px] md:leading-[38px] font-semibold text-[#20596C] text-center dark:text-[#8ED7EA]">
+            Quem apoia essa iniciativa
+          </h2>
+
+          <!-- Entidade 1 -->
+<a href="#" target="_blank" rel="noopener" aria-label="Abrir site da executora do projeto"
+   class="group block bg-white rounded-2xl border border-[#E5E7EB] p-6 space-y-4 shadow-sm transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+  <div class="flex flex-col items-center space-y-3">
+    <div class="flex items-center space-x-3">
+      <div class="overflow-hidden rounded-lg">
+        <img src="sobre/card1_icon.png" alt="" class="w-[50px] h-[49px] transition-transform duration-300 group-hover:scale-110">
+      </div>
+      <h3 data-i18n="about_executor_title" class="font-medium text-[#4D4D4D] text-[24px] leading-tight text-center">
+        Executora do Projeto
+      </h3>
+    </div>
+    <div class="flex items-center justify-center space-x-6">
+      <div class="overflow-hidden rounded-lg">
+        <img src="sobre/card1_logo1.png" alt="UnB" class="h-[70px] transition-transform duration-300 group-hover:scale-105">
+      </div>
+      <div class="overflow-hidden rounded-lg">
+        <img src="sobre/card1_logo2.png" alt="Lab Livre" class="h-[70px] transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </div>
+  </div>
+  <p data-i18n="about_executor_desc" class="font-normal text-base leading-7 text-[#4D4D4D] text-center">
+    A Universidade de Brasília, por meio de seu laboratório Lab Livre, gerencia e operacionaliza
+    todas as atividades de campo, análise de dados e integração tecnológica.
+  </p>
+</a>
+
+<!-- Entidade 2 -->
+<a href="#" target="_blank" rel="noopener" aria-label="Abrir site da fonte de recurso"
+   class="group block bg-white rounded-2xl border border-[#E5E7EB] p-6 space-y-4 shadow-sm transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+  <div class="flex flex-col items-center space-y-3">
+    <div class="flex items-center space-x-3">
+      <div class="overflow-hidden rounded-lg">
+        <img src="sobre/card2_icon.png" alt="" class="w-[50px] h-[49px] transition-transform duration-300 group-hover:scale-110">
+      </div>
+      <h3 data-i18n="about_funder_title" class="font-medium text-[#4D4D4D] text-[24px] leading-tight text-center">
+        Fonte de recurso
+      </h3>
+    </div>
+    <div class="flex justify-center">
+      <div class="overflow-hidden rounded-lg">
+        <img src="sobre/card2_logo1.jpg" alt="FAP-DF" class="h-[70px] transition-transform duration-300 group-hover:scale-105">
+      </div>
+    </div>
+  </div>
+  <p data-i18n="about_funder_desc" class="font-normal text-base leading-7 text-[#4D4D4D] text-center">
+    O projeto é financiado pelo Edital FAP-DF, que apoia iniciativas de inovação em saúde pública
+    no Distrito Federal.
+  </p>
+</a>
+
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Equipe de Coordenação -->
+        <div id="coordenacao" class="tab-content hidden">
+
+          <h2 data-i18n="tab_coordination" class="text-2xl font-semibold text-[#094559] mb-2 text-center dark:text-[#8ED7EA]">Coordenação</h2>
+
+          <p data-i18n="about_team_placeholder" class="max-w-3xl mx-auto text-center text-[#031E21]/80 dark:text-white/75">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+            consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+          </p>
+
+          <div class="m-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+
+            <!-- Coordenação - Pessoa 1 -->
+            <a href="mailto:carla.rocha@exemplo.com?subject=Contato%20DermAlert"
+              class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/carla rocha.png" alt="Carla Rocha" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#FFEFE5] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">Carla Rocha</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#B7561F]">@carlarocha</p>
+              </div>
+            </a>
+
+            <!-- Coordenação - Pessoa 2 -->
+            <a href="mailto:carlos.avila@exemplo.com?subject=Contato%20DermAlert"
+              class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/carlos davila.png" alt="Carlos de Ávila" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#FFEFE5] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">Carlos de Ávila</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#B7561F]">@lorem</p>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Equipe de Datafabric-->
+        <div id="datafabric" class="tab-content hidden">
+
+          <h2 data-i18n="tab_datafabric" class="text-2xl font-semibold text-[#094559] mb-2 text-center dark:text-[#8ED7EA]">Data Fabric</h2>
+
+          <p data-i18n="about_team_placeholder" class="max-w-3xl mx-auto text-center text-[#031E21]/80 dark:text-white/75">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+            consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+          </p>
+
+          <div class="m-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+
+            <!-- Datafabric - Pessoa 1 -->
+            <a href="mailto:abdul.hannan@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#E6F7FC] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#094559]">Abdul Hannan</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#094559]">@abdulhannan</p>
+              </div>
+            </a>
+
+            <!-- Datafabric - Pessoa 2 -->
+            <a href="mailto:heitor@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/heitor.png" alt="Heitor" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#E6F7FC] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#094559]">Heitor</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#094559]">@heitormb</p>
+              </div>
+            </a>
+
+            <!-- Datafabric - Pessoa 3 -->
+            <a href="mailto:giovanni@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/giovanni.png" alt="Giovanni" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#E6F7FC] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#094559]">Giovanni</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#094559]">@giampauli</p>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+        
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Equipe de Design -->
+
+        <div id="design" class="tab-content hidden">
+
+          <h2 data-i18n="tab_design" class="text-2xl font-semibold text-[#094559] mb-2 text-center dark:text-[#8ED7EA]">Design</h2>
+          
+          <p data-i18n="about_team_placeholder" class="max-w-3xl mx-auto text-center text-[#031E21]/80 dark:text-white/75">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+            consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+          </p>
+
+          <div class="m-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+
+            <!-- Design - Pessoa 1 -->
+            <a href="mailto:joao.egewarth@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/joao egewarth.png" alt="João Egewarth" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#FFEFE5] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">João Egewarth</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#B7561F]">@lorem</p>
+              </div>
+            </a>
+
+            <!-- Design - Pessoa 2 -->
+            <a href="mailto:heitor@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/heitor.png" alt="Heitor" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#FFEFE5] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">Heitor</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#B7561F]">@heitormsb</p>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Equipe de Produto -->
+        <div id="produto" class="tab-content hidden">
+
+          <h2 data-i18n="tab_product" class="text-2xl font-semibold text-[#094559] mb-2 text-center dark:text-[#8ED7EA]">Produto</h2>
+
+          <p data-i18n="about_team_placeholder" class="max-w-3xl mx-auto text-center text-[#031E21]/80 dark:text-white/75">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+            consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+          </p>
+
+          <div class="m-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+
+            <!-- Produto - Pessoa 1 -->
+            <a href="mailto:abdul.hannan@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#F3E8FF] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#5B08A3]">Abdul Hannan</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#5B08A3]">@abdulhannan</p>
+              </div>
+            </a>
+
+            <!-- Produto - Pessoa 2 -->
+            <a href="mailto:giovanni@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/giovanni.png" alt="Giovanni" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#F3E8FF] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#5B08A3]">Giovanni</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#5B08A3]">@giampauli</p>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Equipe do Aplicativo (Sem protótipo até então) -->
+        <div id="aplicativo" class="tab-content hidden">
+
+          <h2 data-i18n="tab_app" class="text-2xl font-semibold text-[#094559] mb-4 dark:text-[#8ED7EA]">Aplicativo</h2>
+
+          <p data-i18n="app_pending">A definir...</p>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+        <!-- Colaboradores -->
+        <div id="colaboradores" class="tab-content hidden">
+
+          <h2 data-i18n="tab_contributors" class="text-2xl font-semibold text-[#094559] mb-2 text-center dark:text-[#8ED7EA]">Colaboradores</h2>
+
+          <p data-i18n="about_team_placeholder" class="max-w-3xl mx-auto text-center text-[#031E21]/80 dark:text-white/75">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non lorem viverra,
+            consectetur tellus at, vestibulum nisi. Proin ut varius justo, ac scelerisque turpis.
+          </p>
+
+          <div class="m-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
+
+            <!-- Colaborador 1 -->
+            <a href="mailto:abdul.hannan@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#E6F7FC] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#20596C]">Abdul Hannan</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#20596C]">@abdulhannan</p>
+              </div>
+            </a>
+
+            <!-- Colaborador 2 -->
+            <a href="mailto:heitor@exemplo.com?subject=Contato%20DermAlert"
+               class="group block rounded-2xl overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#094559]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#094559]/40">
+              <div class="overflow-hidden">
+                <img src="sobre/heitor.png" alt="Heitor" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+              </div>
+              <div class="bg-[#E6F7FC] px-5 py-4 text-center transition group-hover:brightness-105">
+                <h3 class="text-[18px] leading-none font-bold text-[#20596C]">Heitor</h3>
+                <p class="mt-1 text-[12px] leading-none font-normal text-[#20596C]">@heitormsb</p>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- --------------------------------------------------------------------------------------------------------------------- -->
+
+      </main>
+
+    </div>
+
+
+    <script>
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const sidebar = document.getElementById("sidebar");
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      // Toggle menu mobile
+      mobileMenuBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        sidebar.classList.toggle("-translate-x-full");
+
+        // Esconde o botão quando menu estiver aberto
+        if (!sidebar.classList.contains("-translate-x-full")) {
+          mobileMenuBtn.classList.add("hidden");
+        } else {
+          mobileMenuBtn.classList.remove("hidden");
+        }
+      });
+
+      // Tabs
+      tabButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const tab = button.getAttribute("data-tab");
+
+          // Remove estado ativo de todos
+          tabButtons.forEach(btn => {
+            btn.classList.remove("border-[#B7561F]", "bg-[#F6F6F6]");
+            btn.classList.add("border-transparent");
+          });
+
+          // Adiciona estado ativo ao clicado
+          button.classList.remove("border-transparent");
+          button.classList.add("border-[#B7561F]", "bg-[#F6F6F6]");
+
+          // Mostra conteúdo
+          tabContents.forEach(content => content.classList.add("hidden"));
+          document.getElementById(tab).classList.remove("hidden");
+
+          // Fecha menu no mobile
+          if (window.innerWidth < 768) {
+            sidebar.classList.add("-translate-x-full");
+            mobileMenuBtn.classList.remove("hidden");
+          }
+        });
+      });
+
+      // Fecha menu ao clicar fora
+      document.addEventListener("click", (e) => {
+        if (
+          window.innerWidth < 768 &&
+          !sidebar.contains(e.target) &&
+          !mobileMenuBtn.contains(e.target)
+        ) {
+          sidebar.classList.add("-translate-x-full");
+          mobileMenuBtn.classList.remove("hidden");
+        }
+      });
+
+      // Primeira aba ativa
+      window.addEventListener("DOMContentLoaded", () => {
+        const firstTab = document.querySelector(".tab-btn");
+        if (firstTab) firstTab.click();
+      });
+    </script>
+
+    <!-- FIM - CORPO DA PÁGINA -->
+
+
+    <!-- Rodapé -->
+    <footer class="hidden bg-[#094559] text-white pt-0">
+    <!-- Linha branca no topo -->
+    <div class="h-[2px] bg-white w-full"></div>
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Logo -->
+        <div class="mb-6">
+        <img src="logo.png" alt="Logo Dermalert" class="h-8">
+        </div>
+
+        <!-- Linha branca após a logo -->
+        <div class="h-[1px] bg-white w-full my-6"></div>
+
+        <!-- Grade de links -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-sm mb-10">
+        <!-- Coluna 1 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Como Funciona</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Passo a Passo</a></li>
+            <li><a href="#" class="hover:underline">Material Educativo</a></li>
+            <li><a href="#" class="hover:underline">Funcionalidades</a></li>
+            </ul>
+        </div>
+        <!-- Coluna 2 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Ajuda e Suporte</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Obter Acesso</a></li>
+            <li><a href="privacidade.html#exclusao-dados" class="hover:underline">Remover Dados</a></li>
+            <li><a href="#" class="hover:underline">Perguntas Frequentes</a></li>
+            </ul>
+        </div>
+        <!-- Coluna 3 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Documentação</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
+            <li><a href="#" class="hover:underline">Quem Somos</a></li>
+            <li><a href="#" class="hover:underline">Apoiadores</a></li>
+            </ul>
+        </div>
+        <!-- Coluna 4 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Curso de Extensão</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Sobre o Curso</a></li>
+            <li><a href="#" class="hover:underline">Como Funciona</a></li>
+            <li><a href="#" class="hover:underline">Inscrição</a></li>
+            </ul>
+        </div>
+        <!-- Coluna 5 -->
+        <div>
+            <h4 class="font-semibold uppercase mb-2">Sobre</h4>
+            <ul class="space-y-1">
+            <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
+            <li><a href="#" class="hover:underline">Contato</a></li>
+            <li><a href="privacidade.html" class="hover:underline">Política de Privacidade</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="mb-6">
+        <h4 class="font-semibold uppercase text-sm mb-1">Redes Sociais</h4>
+        <div class="flex items-center space-x-4">
+            <!-- GitHub -->
+            <a href="https://github.com/DermAlert" target="_blank" aria-label="GitHub" class="hover:text-gray-200">
+            <svg class="w-5 h-5 fill-white" viewBox="0 0 24 24">
+                <path d="M12 .297a12 12 0 0 0-3.79 23.4c.6.113.82-.26.82-.577v-2.17c-3.34.727-4.04-1.61-4.04-1.61-.546-1.387-1.33-1.756-1.33-1.756-1.09-.745.082-.73.082-.73 1.2.084 1.83 1.234 1.83 1.234 1.07 1.83 2.8 1.3 3.49.993.11-.775.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.5.12-3.12 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.56 3.3-1.23 3.3-1.23.66 1.62.24 2.82.12 3.12.77.84 1.23 1.91 1.23 3.22 0 4.62-2.8 5.63-5.47 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57A12 12 0 0 0 12 .297"/>
+            </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="https://instagram.com/DermAlert" target="_blank" aria-label="Instagram" class="hover:text-gray-200">
+            <svg class="w-5 h-5 fill-white" viewBox="0 0 448 512">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 186c-39.4 0-71.1-31.7-71.1-71.1S184.7 184.8 224.1 184.8 295.2 216.5 295.2 255.9 263.5 327 224.1 327zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.7-9.9-67.2-36.2-93.5s-57.8-34.5-93.5-36.2c-37-2.1-147.9-2.1-184.9 0-35.7 1.7-67.2 9.9-93.5 36.2S9.9 126.9 8.2 162.6c-2.1 37-2.1 147.9 0 184.9 1.7 35.7 9.9 67.2 36.2 93.5s57.8 34.5 93.5 36.2c37 2.1 147.9 2.1 184.9 0 35.7-1.7 67.2-9.9 93.5-36.2s34.5-57.8 36.2-93.5c2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5 29.4-11.7 99.2-9 132.3-9s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.7 102.9-9 132.3z"/>
+            </svg>
+            </a>
+        </div>
+        </div>
+
+        <!-- Contato -->
+        <div class="mb-6">
+        <h4 class="font-semibold uppercase text-sm mb-1">Contato</h4>
+        <p class="text-sm">
+            <a href="mailto:caguiar@unb.br" class="hover:underline">caguiar@unb.br</a>
+        </p>      
+        </div>
+
+        <!-- Direitos autorais -->
+        <div class="text-xs text-gray-300">
+        DermAlert © 2025. All rights reserved.
+        </div>
+    </div>
+    </footer>
+
+    <footer class="w-full">
+      <div class="w-full bg-[#1D366F]">
+        <div id="app-footer" class="max-w-[1200px] mx-auto px-6 py-10 lg:py-12"></div>
+      </div>
+    </footer>
+
+    <!-- Stylesheet - Vite + Tailwind -->
+
+    <script>
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      tabButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          const tab = button.getAttribute("data-tab");
+
+          tabButtons.forEach(btn => {
+            btn.classList.remove("border-[#B7561F]");
+            btn.classList.add("border-transparent");
+          });
+          button.classList.add("border-[#B7561F]");
+          button.classList.remove("border-transparent");
+
+          tabContents.forEach(content => content.classList.add("hidden"));
+          document.getElementById(tab).classList.remove("hidden");
+        });
+      });
+
+      // Ativa a primeira aba automaticamente ao carregar
+      window.addEventListener("DOMContentLoaded", () => {
+        const firstTab = document.querySelector(".tab-btn");
+        if (firstTab) firstTab.click();
+      });
+    </script>
+
+  </body>
+</html>

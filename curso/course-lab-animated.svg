@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">DermAlert course learning lab visual</title>
+  <desc id="desc">Animated learning dashboard with modules, progress and clinical training cards.</desc>
+  <defs>
+    <linearGradient id="courseBg" x1="96" x2="864" y1="40" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF4ED"/>
+      <stop offset="1" stop-color="#EAF7FB"/>
+    </linearGradient>
+    <linearGradient id="courseAccent" x1="250" x2="760" y1="284" y2="284" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B7561F"/>
+      <stop offset=".5" stop-color="#1D366F"/>
+      <stop offset="1" stop-color="#79CFA5"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#10213B" flood-opacity=".18"/>
+    </filter>
+    <style>
+      .panel{filter:url(#softShadow)}
+      .step{animation:stepPulse 4.8s ease-in-out infinite;transform-origin:center}
+      .step:nth-of-type(2){animation-delay:.35s}
+      .step:nth-of-type(3){animation-delay:.7s}
+      .step:nth-of-type(4){animation-delay:1.05s}
+      .scan{animation:scan 5.2s ease-in-out infinite}
+      .floatA{animation:floatA 6s ease-in-out infinite}
+      .floatB{animation:floatB 5.3s ease-in-out infinite}
+      @keyframes stepPulse{0%,100%{transform:translateY(0);opacity:.78}50%{transform:translateY(-8px);opacity:1}}
+      @keyframes scan{0%{transform:translateX(-160%);opacity:0}18%,70%{opacity:.75}100%{transform:translateX(160%);opacity:0}}
+      @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+      @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(12px)}}
+      @media (prefers-reduced-motion:reduce){.step,.scan,.floatA,.floatB{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="url(#courseBg)"/>
+  <path d="M72 104h816M72 456h816M124 64v432M836 64v432" stroke="#1D366F" stroke-opacity=".08"/>
+
+  <g class="panel">
+    <rect x="188" y="84" width="584" height="392" rx="8" fill="#fff"/>
+    <rect x="188" y="84" width="584" height="66" rx="8" fill="#1D366F"/>
+    <circle cx="228" cy="117" r="8" fill="#8ED7EA"/>
+    <circle cx="254" cy="117" r="8" fill="#D06A32"/>
+    <circle cx="280" cy="117" r="8" fill="#79CFA5"/>
+    <rect x="614" y="106" width="102" height="22" rx="8" fill="#fff" opacity=".16"/>
+    <rect x="224" y="186" width="218" height="210" rx="8" fill="#F7FAFC"/>
+    <rect x="476" y="186" width="240" height="48" rx="8" fill="#FFF0E6"/>
+    <rect x="476" y="256" width="240" height="48" rx="8" fill="#EAF7FB"/>
+    <rect x="476" y="326" width="240" height="48" rx="8" fill="#EDF2FB"/>
+  </g>
+
+  <g class="floatA">
+    <circle cx="332" cy="284" r="80" fill="#FFF4ED"/>
+    <path d="M292 284a40 40 0 1 1 80 0a40 40 0 0 1-80 0z" fill="#fff" stroke="#DDE7F1" stroke-width="4"/>
+    <path d="M315 284l13 13l26-30" fill="none" stroke="#B7561F" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M332 204a80 80 0 0 1 79 69" fill="none" stroke="url(#courseAccent)" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <g class="step">
+    <rect x="498" y="201" width="42" height="18" rx="8" fill="#B7561F"/>
+    <rect x="558" y="199" width="112" height="10" rx="5" fill="#1D366F" opacity=".75"/>
+    <rect x="558" y="217" width="78" height="8" rx="4" fill="#6E7F91" opacity=".28"/>
+  </g>
+  <g class="step">
+    <rect x="498" y="271" width="42" height="18" rx="8" fill="#1D366F"/>
+    <rect x="558" y="269" width="128" height="10" rx="5" fill="#1D366F" opacity=".75"/>
+    <rect x="558" y="287" width="92" height="8" rx="4" fill="#6E7F91" opacity=".28"/>
+  </g>
+  <g class="step">
+    <rect x="498" y="341" width="42" height="18" rx="8" fill="#79CFA5"/>
+    <rect x="558" y="339" width="96" height="10" rx="5" fill="#1D366F" opacity=".75"/>
+    <rect x="558" y="357" width="116" height="8" rx="4" fill="#6E7F91" opacity=".28"/>
+  </g>
+
+  <g class="panel floatB">
+    <rect x="84" y="344" width="210" height="112" rx="8" fill="#1D366F"/>
+    <rect x="112" y="376" width="64" height="10" rx="5" fill="#8ED7EA"/>
+    <rect x="112" y="402" width="124" height="8" rx="4" fill="#fff" opacity=".42"/>
+    <rect x="112" y="424" width="92" height="8" rx="4" fill="#fff" opacity=".24"/>
+  </g>
+
+  <g class="panel floatA">
+    <rect x="680" y="332" width="196" height="116" rx="8" fill="#0E1A2B"/>
+    <path d="M724 388h112" stroke="#fff" stroke-opacity=".24" stroke-width="10" stroke-linecap="round"/>
+    <path d="M724 388h74" stroke="#8ED7EA" stroke-width="10" stroke-linecap="round"/>
+    <rect x="724" y="358" width="64" height="10" rx="5" fill="#D06A32"/>
+    <rect x="724" y="414" width="94" height="8" rx="4" fill="#fff" opacity=".34"/>
+  </g>
+
+  <rect x="224" y="150" width="492" height="2" fill="url(#courseAccent)" class="scan"/>
+</svg>
