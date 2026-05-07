@@ -854,32 +854,5 @@
 
     <!-- Stylesheet - Vite + Tailwind -->
 
-    <script>
-      const tabButtons = document.querySelectorAll(".tab-btn");
-      const tabContents = document.querySelectorAll(".tab-content");
-
-      tabButtons.forEach(button => {
-        button.addEventListener("click", () => {
-          const tab = button.getAttribute("data-tab");
-
-          tabButtons.forEach(btn => {
-            btn.classList.remove("border-[#B7561F]");
-            btn.classList.add("border-transparent");
-          });
-          button.classList.add("border-[#B7561F]");
-          button.classList.remove("border-transparent");
-
-          tabContents.forEach(content => content.classList.add("hidden"));
-          document.getElementById(tab).classList.remove("hidden");
-        });
-      });
-
-      // Ativa a primeira aba automaticamente ao carregar
-      window.addEventListener("DOMContentLoaded", () => {
-        const firstTab = document.querySelector(".tab-btn");
-        if (firstTab) firstTab.click();
-      });
-    </script>
-
   </body>
 </html>
