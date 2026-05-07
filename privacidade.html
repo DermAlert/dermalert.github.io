@@ -23,8 +23,8 @@
       content="Política de Privacidade do Dermalert, incluindo coleta, uso, armazenamento, pesquisa, direitos do usuário e solicitação de exclusão de conta e dados."
     />
     <meta name="theme-color" content="#094559" />
-    <script type="module" crossorigin src="./assets/main-CWlm5HgB.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-C0Rpulzu.css">
+    <script type="module" crossorigin src="./assets/main-CRKWd_9p.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-DcH2iBq5.css">
   </head>
 
   <body class="font-sans antialiased bg-white text-gray-800 dark:bg-[#0E1A2B] dark:text-gray-100">
@@ -35,24 +35,62 @@
     </a>
 
     <div class="min-h-screen flex flex-col items-center w-full bg-white dark:bg-[#0E1A2B]">
-      <!-- HEADER -->
-      <div id="app-header" class="w-full"></div>
-
       <!-- MAIN -->
       <main id="conteudo" class="flex-1 w-full">
-        <section class="w-full bg-[#F7FAFC] dark:bg-[#0E1A2B]">
-          <div class="mx-auto max-w-[1040px] px-6 py-12 lg:py-16">
+        <div class="dermalert-hero-shell-privacy w-full">
+          <div id="app-header" class="w-full"></div>
+
+        <section class="w-full bg-transparent dark:bg-[#0E1A2B]">
+          <div class="mx-auto grid max-w-[1180px] gap-10 px-6 py-14 md:py-16 lg:min-h-[520px] lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+            <div data-page-reveal class="hidden lg:block">
+              <div class="da-card-lift mx-auto max-w-[420px] rounded-lg border border-[#DDE7F1] bg-white p-5 text-[#1D366F] shadow-[0_24px_80px_rgba(14,26,43,.22)]">
+                <div class="flex items-center gap-3">
+                  <span class="grid h-12 w-12 place-items-center rounded-lg bg-[#EAF7FB] text-[#1D366F]">
+                    <svg aria-hidden="true" class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 3 20 7v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="m9 12 2 2 4-5"/>
+                    </svg>
+                  </span>
+                  <div>
+                    <p data-i18n="privacy_kicker" class="text-xs font-semibold uppercase text-[#B7561F]">Privacidade e dados</p>
+                    <p data-i18n="course_material_privacy_title" class="text-sm font-semibold">Privacidade e dados</p>
+                  </div>
+                </div>
+                <div class="mt-6 space-y-3">
+                  <div class="rounded-lg bg-[#F7FAFC] p-4">
+                    <p data-i18n="privacy_collection_title" class="text-sm font-semibold">1. Coleta e Uso de Dados</p>
+                  </div>
+                  <div class="rounded-lg bg-[#F7FAFC] p-4">
+                    <p data-i18n="privacy_storage_title" class="text-sm font-semibold">2. Armazenamento e Segurança dos Dados</p>
+                  </div>
+                  <div class="rounded-lg bg-[#FFF0E6] p-4">
+                    <p data-i18n="privacy_delete_title" class="text-sm font-semibold text-[#B7561F]">Solicitação de exclusão da conta e dos dados</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-page-reveal style="--reveal-delay:100ms" class="max-w-3xl">
             <p data-i18n="privacy_kicker" class="text-sm font-semibold uppercase text-[#B7561F]">
               Privacidade e dados
             </p>
-            <h1 data-i18n="privacy_title" class="mt-3 text-4xl font-bold leading-tight text-[#1D366F] md:text-5xl dark:text-white">
+            <h1 data-i18n="privacy_title" class="mt-4 text-[42px] font-bold leading-[1.04] text-[#1D366F] md:text-[60px] dark:text-white">
               Política de Privacidade - Dermalert
             </h1>
-            <p data-i18n="privacy_updated" class="mt-4 text-base font-medium text-[#506174] dark:text-white/75">
+            <p data-i18n="privacy_updated" class="mt-6 max-w-xl text-lg leading-8 font-medium text-[#506174] dark:text-white/75">
               Última atualização: 06 de maio de 2026
             </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#exclusao-dados" class="btn-shine inline-flex min-h-12 items-center justify-center rounded-full bg-[#D06A32] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-1 hover:bg-[#B7561F]">
+                <span data-i18n="privacy_delete_cta">Solicitar exclusão da conta e dos dados</span>
+              </a>
+              <a href="#coleta-uso" class="inline-flex min-h-12 items-center justify-center rounded-full border border-[#1D366F] px-6 py-3 text-sm font-semibold text-[#1D366F] transition hover:-translate-y-1 hover:bg-[#1D366F] hover:text-white dark:border-white/40 dark:text-white dark:hover:bg-white/10">
+                <span data-i18n="quick_access">Acesso rápido</span>
+              </a>
+            </div>
+            </div>
           </div>
         </section>
+        </div>
 
         <section class="w-full bg-white dark:bg-[#0E1A2B]">
           <div class="mx-auto grid max-w-[1040px] gap-8 px-6 py-10 lg:grid-cols-[1fr_320px] lg:py-14">
