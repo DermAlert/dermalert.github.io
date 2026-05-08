@@ -5,46 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="how_title">Dermalert - Como funciona</title>
-    <style>
-      html {
-        background: #f7fbfd;
-      }
-
-      body {
-        margin: 0;
-        background: #f7fbfd;
-        color: #172033;
-        font-family: Lexend, "Noto Sans", sans-serif;
-      }
-
-      html.da-booting body {
-        opacity: 0;
-      }
-
-      html.da-ready body {
-        opacity: 1;
-        transition: opacity 120ms ease-out;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        html,
-        body {
-          background: #0e1a2b;
-          color: #f3f7ff;
-        }
-      }
-    </style>
-    <script>
-      document.documentElement.classList.add('da-booting');
-      window.addEventListener(
-        'DOMContentLoaded',
-        () => requestAnimationFrame(() => document.documentElement.classList.add('da-ready')),
-        { once: true }
-      );
-      window.setTimeout(() => document.documentElement.classList.add('da-ready'), 700);
-    </script>
-    <script type="module" crossorigin src="./assets/main-DWfHmOoD.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-DhMA6jNC.css">
+    <script type="module" crossorigin src="./assets/main-CbDCquBJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-AMWgZ9ly.css">
   </head>
   <body class="font-sans antialiased bg-[#FFEFE5] text-gray-800 dark:bg-[#1B2434] dark:text-gray-100">
     <div class="dermalert-hero-shell-how">
@@ -76,13 +38,13 @@
           <a href="comofunciona.html" class="hover:underline hover:decoration-[#D06A32] transition">
             Como Funciona
           </a>
-          <a href="/ajuda-e-suporte/problemas-comuns.html" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/ajuda-e-suporte/problemas-comuns/" class="hover:underline hover:decoration-[#D06A32] transition">
             Ajuda e Suporte
           </a>
-          <a href="/curso-de-extensao/sobre-o-curso.html" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
             Curso de Extensão
           </a>
-          <a href="/ajuda-e-suporte/documentacao-tecnica/frontend.html" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
             Documentação
           </a>
           <a href="sobre.html" class="hover:underline hover:decoration-[#D06A32] transition">
@@ -107,16 +69,16 @@
         <a href="comofunciona.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Como Funciona
         </a>
-        <a href="/ajuda-e-suporte/problemas-comuns.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/ajuda-e-suporte/problemas-comuns/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Ajuda e Suporte
         </a>
-        <a href="/curso-de-extensao/sobre-o-curso.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Curso de Extensão
         </a>
         <a href="sobre.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Sobre
         </a>
-        <a href="/ajuda-e-suporte/documentacao-tecnica/frontend.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Documentação
         </a>
       </div>
@@ -231,21 +193,95 @@
 </section>
     </div>
 
-    <section id="como-funciona" class="bg-white py-20 dark:bg-[#0E1A2B]">
-    <h2 data-i18n="how_section_title" class="text-[36px] md:text-[44px] font-bold text-[#2D7E99] mb-12 text-center lg:text-center dark:text-[#8ED7EA]">
-        Como funciona
-    </h2>
+    <section id="como-funciona" class="how-flow-section">
+      <div class="how-flow-backdrop" aria-hidden="true">
+        <span class="how-flow-grid"></span>
+        <span class="how-flow-route how-flow-route--one"></span>
+        <span class="how-flow-route how-flow-route--two"></span>
+      </div>
 
-    <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse lg:flex-row items-center :items-start justify-between gap-12">
-        <!-- Cards + descrição -->
-        <div class="w-[300px] md:w-[450px] lg:w-1/2 space-y-8" id="steps"></div>
+      <div class="how-flow-inner">
+        <header class="how-flow-heading" data-page-reveal>
+          <span class="how-flow-kicker" data-i18n="how_flow_kicker">Fluxo DermAlert</span>
+          <h2 data-i18n="how_section_title">Como funciona</h2>
+          <p data-i18n="how_flow_intro">
+            Um fluxo guiado para registrar dados, coletar evid&ecirc;ncias cl&iacute;nicas e encaminhar os casos com rastreabilidade.
+          </p>
+        </header>
 
-        <!-- Imagem da direita -->
-        <div class="w-full lg:w-1/2 flex justify-center space-y-8">
-        <img id="stepImage" src="comofunciona/step1.png" alt="Etapa 1"
-            class="max-w-full h-[300px] md:h-[600px] transition-opacity duration-500 opacity-100">
+        <div class="how-flow-experience" data-how-flow data-active-step="1">
+          <aside class="how-flow-timeline" id="steps" aria-label="Etapas do fluxo DermAlert"></aside>
+
+          <div class="how-flow-visual" aria-live="polite">
+            <div class="how-stage-panel">
+              <div class="how-stage-header">
+                <div>
+                  <span id="howStepNumber" class="how-stage-eyebrow">Etapa 01</span>
+                  <strong id="howStepTitle">Login e Identifica&ccedil;&atilde;o</strong>
+                </div>
+                <span class="how-stage-status">
+                  <i></i>
+                  <span data-i18n="how_flow_status">Fluxo guiado</span>
+                </span>
+              </div>
+
+              <div class="how-device-scene">
+                <div class="how-insight-card how-insight-card--route" aria-hidden="true">
+                  <span>UBS</span>
+                  <strong>APS</strong>
+                  <small>encaminhamento</small>
+                </div>
+
+                <div class="how-insight-card how-insight-card--media" aria-hidden="true">
+                  <span class="how-media-title">imagem cl&iacute;nica</span>
+                  <div class="how-media-strip">
+                    <span class="how-fake-lesion how-fake-lesion--one"></span>
+                    <span class="how-fake-lesion how-fake-lesion--two"></span>
+                    <span class="how-fake-lesion how-fake-lesion--three"></span>
+                  </div>
+                </div>
+
+                <div class="how-phone-frame">
+                  <div class="how-phone-topbar" aria-hidden="true">
+                    <span>9:30</span>
+                    <i></i>
+                    <span></span>
+                  </div>
+                  <div class="how-phone-screen">
+                    <img id="stepImage" src="comofunciona/flow/step1.svg" alt="Etapa 1" class="how-step-image" />
+                    <span class="how-scan-line" aria-hidden="true"></span>
+                  </div>
+                </div>
+
+                <div class="how-insight-card how-insight-card--score" aria-hidden="true">
+                  <span>risco</span>
+                  <strong id="howRiskLabel">triagem</strong>
+                  <div class="how-risk-meter"><i id="howRiskMeter"></i></div>
+                </div>
+              </div>
+
+              <div class="how-stage-footer">
+                <p id="howStepDescription">
+                  O usu&aacute;rio acessa a plataforma e realiza login, sendo identificado como um novo ou antigo paciente.
+                </p>
+                <div class="how-flow-controls" aria-label="Controles do fluxo">
+                  <button id="howPrev" type="button" class="how-flow-control" data-how-direction="prev" aria-label="Etapa anterior">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="m15 18-6-6 6-6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <div class="how-flow-progress" aria-hidden="true"><i id="howProgress"></i></div>
+                  <button id="howNext" type="button" class="how-flow-control" data-how-direction="next" aria-label="Proxima etapa">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="m9 18 6-6-6-6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
     </section>
 
     <section id="curso-extensao" class="bg-[#F7F7F7] py-16 px-4 text-center dark:bg-[#111D2E]">
@@ -272,12 +308,12 @@
     </div>
     </section>
 
-     <!-- Sessão de vantagens redesenhada para manter todos os cards totalmente visíveis em qualquer tela -->
+     <!-- Sessão de vantagens redesenhada para manter todas as “cards” totalmente visíveis em qualquer tela -->
     <section class="bg-white py-8 md:py-16 dark:bg-[#0E1A2B]">
       <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-wrap justify-center gap-4">
           
-          <!-- Cada card foi colocado dentro de um DIV com largura responsiva para nunca ser cortado -->
+          <!-- Cada “card” foi colocado dentro de um DIV com largura responsiva para nunca ser cortado -->
           <div class="w-1/2 sm:w-1/4 lg:w-1/5 px-2">
             <img
               src="comofunciona/vantagens/vantagem1.png"
@@ -442,7 +478,7 @@
             <ul class="space-y-1">
             <li><a href="curso.html" class="hover:underline">Sobre o Curso</a></li>
             <li><a href="comofunciona.html" class="hover:underline">Como Funciona</a></li>
-            <li><a href="/curso-de-extensao/sobre-o-curso.html" class="hover:underline">Inscrição</a></li>
+            <li><a href="/curso-de-extensao/sobre-o-curso/" class="hover:underline">Inscrição</a></li>
             </ul>
         </div>
         <!-- Coluna 5 -->
@@ -491,9 +527,7 @@
     </footer>
 
     <footer class="da-site-footer da-site-footer--how w-full">
-      <div class="da-footer-surface">
-        <div id="app-footer" class="da-footer-inner"></div>
-      </div>
+      <div id="app-footer"></div>
     </footer>
 
     <!-- Stylesheet - Vite + Tailwind -->
@@ -509,7 +543,38 @@
         ];
 
         const stepsContainer = document.getElementById("steps");
+        const howFlowRoot = document.querySelector("[data-how-flow]");
+        const stepImage = document.getElementById("stepImage");
+        const stepNumber = document.getElementById("howStepNumber");
+        const stepTitle = document.getElementById("howStepTitle");
+        const stepDescription = document.getElementById("howStepDescription");
+        const stepProgress = document.getElementById("howProgress");
+        const riskMeter = document.getElementById("howRiskMeter");
+        const riskLabel = document.getElementById("howRiskLabel");
+        const prevButton = document.getElementById("howPrev");
+        const nextButton = document.getElementById("howNext");
+        const STEP_IMAGES = [
+            "comofunciona/flow/step1.svg",
+            "comofunciona/flow/step2.svg",
+            "comofunciona/flow/step3.svg",
+            "comofunciona/flow/step4.svg",
+            "comofunciona/flow/step5.svg",
+        ];
+        const riskLabelKeys = [
+            "how_risk_access",
+            "how_risk_consent",
+            "how_risk_anamnesis",
+            "how_risk_triage",
+            "how_risk_referral",
+        ];
+        const riskLabelFallbacks = ["acesso", "consentimento", "anamnese", "classificacao", "referencia"];
+        const stepImageCache = STEP_IMAGES.map((src) => {
+            const image = new Image();
+            image.src = src;
+            return image;
+        });
         let activeStep = 1;
+        const stepButtons = [];
 
         function getStepText(step) {
             const lang = localStorage.getItem("lang") || "pt-BR";
@@ -520,51 +585,141 @@
             };
         }
 
-        function renderSteps(activeIndex = 1) {
-            activeStep = activeIndex;
-            stepsContainer.innerHTML = "";
+        function getPageLabel(key, fallback) {
+            const lang = localStorage.getItem("lang") || "pt-BR";
+            const dict = window.DermalertHeader?.getDict?.(lang) || {};
+            return dict[key] || fallback;
+        }
 
-            STEP_KEYS.forEach((step, index) => {
-            const stepText = getStepText(step);
-            const i = index + 1;
-            const wrapper = document.createElement("div");
-            wrapper.className = "block w-full";
-            const img = document.createElement("img");
-            img.src = activeIndex === i
-                ? `comofunciona/cards/step${i}_select.png`
-                : `comofunciona/cards/step${i}.png`;
-            img.alt = stepText.title;
-            img.className = "cursor-pointer w-full max-w-full";
-            img.onclick = () => renderSteps(i);
+        function normalizeStep(step) {
+            const numericStep = Number(step);
+            if (!Number.isFinite(numericStep)) return activeStep;
+            return Math.min(Math.max(Math.round(numericStep), 1), STEP_KEYS.length);
+        }
 
-            wrapper.appendChild(img);
+        function setActiveStep(step) {
+            activeStep = normalizeStep(step);
+            renderSteps();
+        }
 
-            if (activeIndex === i) {
-                const desc = document.createElement("p");
-                desc.className = "mt-2 ml-4 max-w-md text-base md:text-lg leading-7 text-[#1D366F] dark:text-white/80";
-                desc.textContent = stepText.description;
-                wrapper.appendChild(desc);
+        function getStepFromDirection(direction) {
+            if (direction === "prev") return activeStep === 1 ? STEP_KEYS.length : activeStep - 1;
+            if (direction === "next") return activeStep === STEP_KEYS.length ? 1 : activeStep + 1;
+            return activeStep;
+        }
+
+        function handleFlowAction(event) {
+            const stepButton = event.target.closest("[data-how-step]");
+            if (stepButton && howFlowRoot.contains(stepButton)) {
+                event.preventDefault();
+                event.stopPropagation();
+                setActiveStep(stepButton.dataset.howStep);
+                return;
             }
 
-            stepsContainer.appendChild(wrapper);
+            const directionButton = event.target.closest("[data-how-direction]");
+            if (directionButton && howFlowRoot.contains(directionButton)) {
+                event.preventDefault();
+                event.stopPropagation();
+                setActiveStep(getStepFromDirection(directionButton.dataset.howDirection));
+            }
+        }
+
+        function buildStepButtons() {
+            if (stepButtons.length || !stepsContainer) return;
+
+            const fragment = document.createDocumentFragment();
+            STEP_KEYS.forEach((step, index) => {
+                const i = index + 1;
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "how-step-card";
+                button.dataset.howStep = String(i);
+
+                const badge = document.createElement("span");
+                badge.className = "how-step-badge";
+
+                const copy = document.createElement("span");
+                copy.className = "how-step-copy";
+
+                const title = document.createElement("strong");
+                title.dataset.howStepTitle = "";
+
+                const desc = document.createElement("small");
+                desc.dataset.howStepDescription = "";
+
+                const arrow = document.createElement("span");
+                arrow.className = "how-step-arrow";
+                arrow.innerHTML = '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+                copy.appendChild(title);
+                copy.appendChild(desc);
+                button.appendChild(badge);
+                button.appendChild(copy);
+                button.appendChild(arrow);
+                fragment.appendChild(button);
+                stepButtons.push(button);
             });
 
-            const imgRight = document.getElementById("stepImage");
-            imgRight.classList.remove("opacity-100");
-            imgRight.classList.add("opacity-0");
-
-            setTimeout(() => {
-            imgRight.src = `comofunciona/step${activeIndex}.png`;
-            imgRight.alt = getStepText(STEP_KEYS[activeIndex - 1]).title;
-            }, 200);
-
-            imgRight.onload = () => {
-            setTimeout(() => {
-                imgRight.classList.remove("opacity-0");
-                imgRight.classList.add("opacity-100");
-            }, 100);
-            };
+            stepsContainer.replaceChildren(fragment);
         }
+
+        function renderSteps(activeIndex = activeStep) {
+            activeStep = normalizeStep(activeIndex);
+            const currentText = getStepText(STEP_KEYS[activeStep - 1]);
+            buildStepButtons();
+            howFlowRoot?.setAttribute("data-active-step", String(activeStep));
+
+            STEP_KEYS.forEach((step, index) => {
+                const stepText = getStepText(step);
+                const i = index + 1;
+                const button = stepButtons[index];
+                const isActive = activeStep === i;
+                if (!button) return;
+                button.classList.toggle("is-active", isActive);
+                button.setAttribute("aria-pressed", String(isActive));
+                button.setAttribute("aria-label", `${i}. ${stepText.title}`);
+
+                const badge = button.querySelector(".how-step-badge");
+                badge.textContent = String(i).padStart(2, "0");
+
+                const title = button.querySelector("[data-how-step-title]");
+                title.textContent = stepText.title;
+
+                const desc = button.querySelector("[data-how-step-description]");
+                desc.textContent = stepText.description;
+            });
+
+            stepNumber.textContent = `${getPageLabel("how_step_prefix", "Etapa")} ${String(activeStep).padStart(2, "0")}`;
+            stepTitle.textContent = currentText.title;
+            stepDescription.textContent = currentText.description;
+            stepProgress.style.width = `${(activeStep / STEP_KEYS.length) * 100}%`;
+            riskMeter.style.width = `${Math.max(28, activeStep * 18)}%`;
+            riskLabel.textContent = getPageLabel(riskLabelKeys[activeStep - 1], riskLabelFallbacks[activeStep - 1] || "triagem");
+
+            const nextImageSrc = STEP_IMAGES[activeStep - 1];
+            if (stepImage.getAttribute("src") !== nextImageSrc) {
+                stepImage.src = nextImageSrc;
+            }
+            stepImage.alt = currentText.title;
+        }
+
+        howFlowRoot?.addEventListener("click", handleFlowAction, true);
+        howFlowRoot?.addEventListener("keydown", (event) => {
+            const focusedStep = event.target.closest("[data-how-step]");
+            if (!focusedStep || !howFlowRoot.contains(focusedStep)) return;
+            if (!["ArrowDown", "ArrowRight", "ArrowUp", "ArrowLeft", "Home", "End"].includes(event.key)) return;
+
+            event.preventDefault();
+            const currentStep = Number(focusedStep.dataset.howStep);
+            let nextStep = currentStep;
+            if (event.key === "ArrowDown" || event.key === "ArrowRight") nextStep = currentStep === STEP_KEYS.length ? 1 : currentStep + 1;
+            if (event.key === "ArrowUp" || event.key === "ArrowLeft") nextStep = currentStep === 1 ? STEP_KEYS.length : currentStep - 1;
+            if (event.key === "Home") nextStep = 1;
+            if (event.key === "End") nextStep = STEP_KEYS.length;
+            setActiveStep(nextStep);
+            stepButtons[nextStep - 1]?.focus({ preventScroll: true });
+        });
 
         renderSteps(1);
         document.addEventListener("dermalert:langchange", () => renderSteps(activeStep));
@@ -572,4 +727,3 @@
 
   </body>
 </html>
-

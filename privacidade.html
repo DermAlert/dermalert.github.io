@@ -23,46 +23,8 @@
       content="Política de Privacidade do Dermalert, incluindo coleta, uso, armazenamento, pesquisa, direitos do usuário e solicitação de exclusão de conta e dados."
     />
     <meta name="theme-color" content="#1D366F" />
-    <style>
-      html {
-        background: #f7fbfd;
-      }
-
-      body {
-        margin: 0;
-        background: #f7fbfd;
-        color: #172033;
-        font-family: Lexend, "Noto Sans", sans-serif;
-      }
-
-      html.da-booting body {
-        opacity: 0;
-      }
-
-      html.da-ready body {
-        opacity: 1;
-        transition: opacity 120ms ease-out;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        html,
-        body {
-          background: #0e1a2b;
-          color: #f3f7ff;
-        }
-      }
-    </style>
-    <script>
-      document.documentElement.classList.add('da-booting');
-      window.addEventListener(
-        'DOMContentLoaded',
-        () => requestAnimationFrame(() => document.documentElement.classList.add('da-ready')),
-        { once: true }
-      );
-      window.setTimeout(() => document.documentElement.classList.add('da-ready'), 700);
-    </script>
-    <script type="module" crossorigin src="./assets/main-DWfHmOoD.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-DhMA6jNC.css">
+    <script type="module" crossorigin src="./assets/main-CbDCquBJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-AMWgZ9ly.css">
   </head>
 
   <body class="font-sans antialiased bg-white text-gray-800 dark:bg-[#0E1A2B] dark:text-gray-100">
@@ -267,12 +229,9 @@
 
       <!-- FOOTER -->
       <footer class="da-site-footer da-site-footer--privacy w-full">
-        <div class="da-footer-surface">
-          <div id="app-footer" class="da-footer-inner"></div>
-        </div>
+        <div id="app-footer"></div>
       </footer>
     </div>
 
   </body>
 </html>
-

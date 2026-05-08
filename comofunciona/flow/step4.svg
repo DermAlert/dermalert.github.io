@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 760" role="img" aria-labelledby="title desc">
+  <title id="title">Tela ficticia de triagem e classificacao</title>
+  <desc id="desc">Mockup ficticio da quarta etapa do fluxo DermAlert.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".58" stop-color="#EEF9FC"/>
+      <stop offset="1" stop-color="#FFF4ED"/>
+    </linearGradient>
+    <linearGradient id="risk" x1="0" x2="1">
+      <stop offset="0" stop-color="#4DAA86"/>
+      <stop offset=".55" stop-color="#8ED7EA"/>
+      <stop offset="1" stop-color="#D06A32"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1D366F" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="390" height="760" rx="34" fill="url(#bg)"/>
+  <g opacity=".55">
+    <path d="M0 96h390M0 160h390M0 224h390M0 288h390M0 352h390M0 416h390M0 480h390M0 544h390M0 608h390M0 672h390" stroke="#DDE7F1"/>
+    <path d="M66 0v760M132 0v760M198 0v760M264 0v760M330 0v760" stroke="#DDE7F1"/>
+  </g>
+  <g transform="translate(28 34)">
+    <text x="0" y="12" font-family="Lexend, Arial, sans-serif" font-size="15" font-weight="800" fill="#101828">9:30</text>
+    <circle cx="166" cy="8" r="8" fill="#111827"/>
+    <rect x="308" y="1" width="28" height="16" rx="8" fill="#1D366F"/>
+  </g>
+  <g transform="translate(28 88)">
+    <text x="0" y="0" font-family="Lexend, Arial, sans-serif" font-size="25" font-weight="900" fill="#1D366F">Triagem</text>
+    <text x="0" y="28" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="600" fill="#52667D">Dados e imagens apoiam a classificacao.</text>
+  </g>
+  <g transform="translate(28 154)" filter="url(#shadow)">
+    <rect width="334" height="176" rx="20" fill="#1D366F"/>
+    <text x="24" y="38" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="800" fill="#8ED7EA">INDICADOR DE RISCO</text>
+    <text x="24" y="76" font-family="Lexend, Arial, sans-serif" font-size="38" font-weight="900" fill="#FFFFFF">Prioritario</text>
+    <rect x="24" y="104" width="286" height="16" rx="8" fill="#132746"/>
+    <rect x="24" y="104" width="232" height="16" rx="8" fill="url(#risk)"/>
+    <circle cx="256" cy="112" r="14" fill="#FFFFFF"/>
+    <text x="24" y="148" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="650" fill="#D9F4FB">Encaminhar para avaliacao clinica.</text>
+  </g>
+  <g transform="translate(28 362)">
+    <rect width="158" height="124" rx="18" fill="#FFFFFF" stroke="#DDE7F1"/>
+    <circle cx="79" cy="52" r="32" fill="#FCE7DA"/>
+    <circle cx="79" cy="52" r="13" fill="#B7561F" opacity=".82"/>
+    <circle cx="68" cy="44" r="4" fill="#D06A32"/>
+    <text x="22" y="100" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="900" fill="#1D366F">Imagem A</text>
+    <rect x="176" width="158" height="124" rx="18" fill="#FFFFFF" stroke="#DDE7F1"/>
+    <circle cx="255" cy="52" r="32" fill="#EAF7FB"/>
+    <path d="M231 52h48M255 28v48" stroke="#2D7E99" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+    <text x="198" y="100" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="900" fill="#1D366F">Comparacao</text>
+  </g>
+  <g transform="translate(28 512)" filter="url(#shadow)">
+    <rect width="334" height="104" rx="18" fill="#FFFFFF"/>
+    <text x="22" y="34" font-family="Lexend, Arial, sans-serif" font-size="14" font-weight="900" fill="#1D366F">Resumo automatico</text>
+    <g transform="translate(22 54)">
+      <rect width="82" height="28" rx="14" fill="#FCE7DA"/>
+      <text x="18" y="19" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="900" fill="#B7561F">Assimetria</text>
+      <rect x="92" width="76" height="28" rx="14" fill="#EAF7FB"/>
+      <text x="111" y="19" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="900" fill="#2D7E99">Bordas</text>
+      <rect x="178" width="84" height="28" rx="14" fill="#EAF7EF"/>
+      <text x="198" y="19" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="900" fill="#24755A">Historico</text>
+    </g>
+  </g>
+  <g transform="translate(62 652)">
+    <rect width="266" height="14" rx="7" fill="#DDE7F1"/>
+    <rect width="214" height="14" rx="7" fill="#D06A32"/>
+    <text x="92" y="42" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="800" fill="#52667D">Etapa 4 de 5</text>
+  </g>
+</svg>

@@ -7,46 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="about_page_title_full">Dermalert - Sobre o Projeto</title>
-    <style>
-      html {
-        background: #f7fbfd;
-      }
-
-      body {
-        margin: 0;
-        background: #f7fbfd;
-        color: #172033;
-        font-family: Lexend, "Noto Sans", sans-serif;
-      }
-
-      html.da-booting body {
-        opacity: 0;
-      }
-
-      html.da-ready body {
-        opacity: 1;
-        transition: opacity 120ms ease-out;
-      }
-
-      @media (prefers-color-scheme: dark) {
-        html,
-        body {
-          background: #0e1a2b;
-          color: #f3f7ff;
-        }
-      }
-    </style>
-    <script>
-      document.documentElement.classList.add('da-booting');
-      window.addEventListener(
-        'DOMContentLoaded',
-        () => requestAnimationFrame(() => document.documentElement.classList.add('da-ready')),
-        { once: true }
-      );
-      window.setTimeout(() => document.documentElement.classList.add('da-ready'), 700);
-    </script>
-    <script type="module" crossorigin src="./assets/main-DWfHmOoD.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/main-DhMA6jNC.css">
+    <script type="module" crossorigin src="./assets/main-CbDCquBJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/main-AMWgZ9ly.css">
   </head>
 
   <body class="font-sans antialiased bg-white text-gray-800 dark:bg-[#0E1A2B] dark:text-gray-100">
@@ -79,16 +41,16 @@
           <a href="comofunciona.html" class="hover:underline hover:decoration-[#D06A32] transition">
             Como Funciona
           </a>
-          <a href="/ajuda-e-suporte/problemas-comuns.html" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/ajuda-e-suporte/problemas-comuns/" class="hover:underline hover:decoration-[#D06A32] transition">
             Ajuda e Suporte
           </a>
-          <a href="/curso-de-extensao/sobre-o-curso.html" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/curso-de-extensao/sobre-o-curso/" class="hover:underline hover:decoration-[#D06A32] transition">
             Curso de Extensão
           </a>
           <a href="sobre.html" class="hover:underline hover:decoration-[#D06A32] transition">
             Sobre
           </a>
-          <a href="/ajuda-e-suporte/documentacao-tecnica/frontend.html" class="hover:underline hover:decoration-[#D06A32] transition">
+          <a href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="hover:underline hover:decoration-[#D06A32] transition">
             Documentação
           </a>
         </nav>
@@ -109,16 +71,16 @@
         <a href="comofunciona.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Como Funciona
         </a>
-        <a href="/ajuda-e-suporte/problemas-comuns.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/ajuda-e-suporte/problemas-comuns/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Ajuda e Suporte
         </a>
-        <a href="/curso-de-extensao/sobre-o-curso.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/curso-de-extensao/sobre-o-curso/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Curso de Extensão
         </a>
         <a href="sobre.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Sobre
         </a>
-        <a href="/ajuda-e-suporte/documentacao-tecnica/frontend.html" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
+        <a href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="block py-2 hover:underline hover:decoration-[#D06A32] transition">
           Documentação
         </a>
 
@@ -425,7 +387,7 @@
           </h2>
 
           <!-- Entidade 1 -->
-<a href="#" target="_blank" rel="noopener" aria-label="Abrir site da executora do projeto"
+<a href="https://lablivre.unb.br/" target="_blank" rel="noopener" aria-label="Abrir site da executora do projeto"
    class="group block bg-white rounded-lg border border-[#E5E7EB] p-6 space-y-4 shadow-sm transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
   <div class="flex flex-col items-center space-y-3">
     <div class="flex items-center space-x-3">
@@ -452,7 +414,7 @@
 </a>
 
 <!-- Entidade 2 -->
-<a href="#" target="_blank" rel="noopener" aria-label="Abrir site da fonte de recurso"
+<a href="https://www.fap.df.gov.br/" target="_blank" rel="noopener" aria-label="Abrir site da fonte de recurso"
    class="group block bg-white rounded-lg border border-[#E5E7EB] p-6 space-y-4 shadow-sm transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
   <div class="flex flex-col items-center space-y-3">
     <div class="flex items-center space-x-3">
@@ -493,7 +455,7 @@
           <div class="m-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
 
             <!-- Coordenação - Pessoa 1 -->
-            <a href="mailto:carla.rocha@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
               class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/carla rocha.png" alt="Carla Rocha" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -505,10 +467,10 @@
             </a>
 
             <!-- Coordenação - Pessoa 2 -->
-            <a href="mailto:carlos.avila@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
               class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
-              <img src="sobre-assets/carlos davila.png" alt="Carlos de Ávila" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
+                <img src="sobre-assets/carlos davila.png" alt="Carlos de Ávila" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
               </div>
               <div class="bg-[#FFEFE5] px-5 py-4 text-center transition group-hover:brightness-105">
                 <h3 class="text-[18px] leading-none font-bold text-[#B7561F]">Carlos de Ávila</h3>
@@ -535,7 +497,7 @@
           <div class="m-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
 
             <!-- Datafabric - Pessoa 1 -->
-            <a href="mailto:abdul.hannan@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -547,7 +509,7 @@
             </a>
 
             <!-- Datafabric - Pessoa 2 -->
-            <a href="mailto:heitor@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/heitor.png" alt="Heitor" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -559,7 +521,7 @@
             </a>
 
             <!-- Datafabric - Pessoa 3 -->
-            <a href="mailto:giovanni@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/giovanni.png" alt="Giovanni" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -590,7 +552,7 @@
           <div class="m-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
 
             <!-- Design - Pessoa 1 -->
-            <a href="mailto:joao.egewarth@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/joao egewarth.png" alt="João Egewarth" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -602,7 +564,7 @@
             </a>
 
             <!-- Design - Pessoa 2 -->
-            <a href="mailto:heitor@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/heitor.png" alt="Heitor" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -632,7 +594,7 @@
           <div class="m-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
 
             <!-- Produto - Pessoa 1 -->
-            <a href="mailto:abdul.hannan@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -644,7 +606,7 @@
             </a>
 
             <!-- Produto - Pessoa 2 -->
-            <a href="mailto:giovanni@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/giovanni.png" alt="Giovanni" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -685,7 +647,7 @@
           <div class="m-6 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
 
             <!-- Colaborador 1 -->
-            <a href="mailto:abdul.hannan@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/abdul.png" alt="Abdul Hannan" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -697,7 +659,7 @@
             </a>
 
             <!-- Colaborador 2 -->
-            <a href="mailto:heitor@exemplo.com?subject=Contato%20DermAlert"
+            <a href="mailto:caguiar@unb.br?subject=Contato%20DermAlert"
                class="group block rounded-lg overflow-hidden bg-white shadow-sm ring-1 ring-black/5 max-w-xs mx-auto transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-[#1D366F]/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1D366F]/40">
               <div class="overflow-hidden">
                 <img src="sobre-assets/heitor.png" alt="Heitor" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105">
@@ -807,44 +769,44 @@
         <div>
             <h4 class="font-semibold uppercase mb-2">Como Funciona</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Passo a Passo</a></li>
-            <li><a href="#" class="hover:underline">Material Educativo</a></li>
-            <li><a href="#" class="hover:underline">Funcionalidades</a></li>
+            <li><a href="comofunciona.html#como-funciona" class="hover:underline">Passo a Passo</a></li>
+            <li><a href="curso.html#materiais-apoio" class="hover:underline">Material Educativo</a></li>
+            <li><a href="index.html#app-features-base" class="hover:underline">Funcionalidades</a></li>
             </ul>
         </div>
         <!-- Coluna 2 -->
         <div>
             <h4 class="font-semibold uppercase mb-2">Ajuda e Suporte</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Obter Acesso</a></li>
+            <li><a href="suporte.html#canais-suporte" class="hover:underline">Obter Acesso</a></li>
             <li><a href="privacidade.html#exclusao-dados" class="hover:underline">Remover Dados</a></li>
-            <li><a href="#" class="hover:underline">Perguntas Frequentes</a></li>
+            <li><a href="index.html#app-faq" class="hover:underline">Perguntas Frequentes</a></li>
             </ul>
         </div>
         <!-- Coluna 3 -->
         <div>
             <h4 class="font-semibold uppercase mb-2">Documentação</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
-            <li><a href="#" class="hover:underline">Quem Somos</a></li>
-            <li><a href="#" class="hover:underline">Apoiadores</a></li>
+            <li><a href="sobre.html" class="hover:underline">Sobre o Projeto</a></li>
+            <li><a href="sobre.html#colaboradores" class="hover:underline">Quem Somos</a></li>
+            <li><a href="index.html#app-partners" class="hover:underline">Apoiadores</a></li>
             </ul>
         </div>
         <!-- Coluna 4 -->
         <div>
             <h4 class="font-semibold uppercase mb-2">Curso de Extensão</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Sobre o Curso</a></li>
-            <li><a href="#" class="hover:underline">Como Funciona</a></li>
-            <li><a href="#" class="hover:underline">Inscrição</a></li>
+            <li><a href="curso.html" class="hover:underline">Sobre o Curso</a></li>
+            <li><a href="comofunciona.html#como-funciona" class="hover:underline">Como Funciona</a></li>
+            <li><a href="/curso-de-extensao/sobre-o-curso/" class="hover:underline">Material do curso</a></li>
             </ul>
         </div>
         <!-- Coluna 5 -->
         <div>
             <h4 class="font-semibold uppercase mb-2">Sobre</h4>
             <ul class="space-y-1">
-            <li><a href="#" class="hover:underline">Sobre o Projeto</a></li>
-            <li><a href="#" class="hover:underline">Contato</a></li>
+            <li><a href="sobre.html" class="hover:underline">Sobre o Projeto</a></li>
+            <li><a href="mailto:caguiar@unb.br" class="hover:underline">Contato</a></li>
             <li><a href="privacidade.html" class="hover:underline">Política de Privacidade</a></li>
             </ul>
         </div>
@@ -885,13 +847,10 @@
     </footer>
 
     <footer class="da-site-footer da-site-footer--about w-full">
-      <div class="da-footer-surface">
-        <div id="app-footer" class="da-footer-inner"></div>
-      </div>
+      <div id="app-footer"></div>
     </footer>
 
     <!-- Stylesheet - Vite + Tailwind -->
 
   </body>
 </html>
-

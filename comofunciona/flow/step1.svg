@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 760" role="img" aria-labelledby="title desc">
+  <title id="title">Tela ficticia de login e identificacao</title>
+  <desc id="desc">Mockup ficticio da primeira etapa do fluxo DermAlert.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#F9FDFF"/>
+      <stop offset=".58" stop-color="#EEF9FC"/>
+      <stop offset="1" stop-color="#FFF4ED"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#D06A32"/>
+      <stop offset="1" stop-color="#2D7E99"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1D366F" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect width="390" height="760" rx="34" fill="url(#bg)"/>
+  <g opacity=".6">
+    <path d="M0 96h390M0 160h390M0 224h390M0 288h390M0 352h390M0 416h390M0 480h390M0 544h390M0 608h390M0 672h390" stroke="#DDE7F1"/>
+    <path d="M66 0v760M132 0v760M198 0v760M264 0v760M330 0v760" stroke="#DDE7F1"/>
+  </g>
+  <g transform="translate(28 34)">
+    <text x="0" y="12" font-family="Lexend, Arial, sans-serif" font-size="15" font-weight="800" fill="#101828">9:30</text>
+    <circle cx="166" cy="8" r="8" fill="#111827"/>
+    <path d="M298 4h17l5 8h-27z" fill="#D8DEE9"/>
+    <rect x="324" y="1" width="12" height="16" rx="3" fill="#111827"/>
+  </g>
+  <g transform="translate(28 86)">
+    <rect width="334" height="56" rx="16" fill="#FFFFFF" filter="url(#shadow)"/>
+    <circle cx="30" cy="28" r="14" fill="#EAF7FB"/>
+    <path d="M24 28h12M30 22v12" stroke="#2D7E99" stroke-width="3" stroke-linecap="round"/>
+    <text x="58" y="24" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="800" fill="#1D366F">Unidade Basica de Saude</text>
+    <text x="58" y="42" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="600" fill="#52667D">Equipe de triagem conectada</text>
+  </g>
+  <g transform="translate(28 174)">
+    <text x="0" y="0" font-family="Lexend, Arial, sans-serif" font-size="26" font-weight="900" fill="#1D366F">Identificacao</text>
+    <text x="0" y="28" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="600" fill="#52667D">Selecione ou cadastre um paciente.</text>
+  </g>
+  <g transform="translate(28 236)">
+    <rect width="334" height="52" rx="12" fill="#FFFFFF" stroke="#DDE7F1"/>
+    <text x="18" y="32" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="600" fill="#8A97A8">Buscar paciente ou CPF</text>
+    <circle cx="304" cy="25" r="8" fill="none" stroke="#1D366F" stroke-width="2"/>
+    <path d="m310 31 7 7" stroke="#1D366F" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(28 316)" filter="url(#shadow)">
+    <rect width="334" height="78" rx="16" fill="#FFFFFF"/>
+    <circle cx="38" cy="39" r="22" fill="#EAF7FB"/>
+    <path d="M28 42c6-8 15-8 21 0M32 32a8 8 0 1 0 16 0" fill="none" stroke="#2D7E99" stroke-width="3" stroke-linecap="round"/>
+    <text x="78" y="34" font-family="Lexend, Arial, sans-serif" font-size="14" font-weight="900" fill="#1D366F">Paciente 024</text>
+    <text x="78" y="55" font-family="Lexend, Arial, sans-serif" font-size="11" font-weight="650" fill="#52667D">Cadastro seguro - UBS Norte</text>
+    <rect x="256" y="25" width="54" height="28" rx="14" fill="#EAF7FB"/>
+    <text x="273" y="44" font-family="Lexend, Arial, sans-serif" font-size="11" font-weight="900" fill="#2D7E99">Abrir</text>
+  </g>
+  <g transform="translate(28 416)">
+    <rect width="334" height="170" rx="18" fill="#1D366F"/>
+    <path d="M0 0h334v170H0z" rx="18" fill="url(#accent)" opacity=".18"/>
+    <text x="22" y="38" font-family="Lexend, Arial, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">Novo atendimento</text>
+    <text x="22" y="62" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="600" fill="#D9F4FB">Fluxo iniciado com dados protegidos.</text>
+    <g transform="translate(22 92)">
+      <rect width="136" height="46" rx="23" fill="#D06A32"/>
+      <text x="28" y="29" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="900" fill="#FFFFFF">Cadastrar</text>
+      <path d="M106 23h15m-6-6 6 6-6 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <g transform="translate(62 632)">
+    <rect width="266" height="14" rx="7" fill="#DDE7F1"/>
+    <rect width="54" height="14" rx="7" fill="#D06A32"/>
+    <text x="92" y="42" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="800" fill="#52667D">Etapa 1 de 5</text>
+  </g>
+</svg>
