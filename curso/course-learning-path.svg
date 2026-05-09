@@ -1,0 +1,84 @@
+<svg width="900" height="650" viewBox="-20 -20 900 650" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Material de formacao DermAlert</title>
+  <desc id="desc">Manual de curso com fichas clinicas, checklist, amostra e certificado soltos sobre fundo transparente.</desc>
+  <defs>
+    <filter id="book-shadow" x="96" y="116" width="744" height="478" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="26" stdDeviation="20" flood-color="#0E1A2B" flood-opacity=".18"/>
+    </filter>
+    <filter id="lift-shadow" x="-30%" y="-35%" width="170%" height="190%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#0E1A2B" flood-opacity=".16"/>
+    </filter>
+    <style>
+      .float{animation:float 6s ease-in-out infinite;transform-origin:center}
+      .float2{animation:float 7s ease-in-out infinite reverse;transform-origin:center}
+      .meter{animation:meter 4.4s ease-in-out infinite;transform-box:fill-box;transform-origin:left center}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+      @keyframes meter{0%,100%{transform:scaleX(.52)}50%{transform:scaleX(1)}}
+      @media (prefers-reduced-motion:reduce){.float,.float2,.meter{animation:none}}
+    </style>
+  </defs>
+
+  <g transform="translate(154 152)" filter="url(#book-shadow)">
+    <path d="M84 0h190c34 0 62 28 62 62v294H84c-46 0-84-38-84-84V84C0 38 38 0 84 0Z" fill="#F7FAFC" stroke="#DDE7F1" stroke-width="3"/>
+    <path d="M336 62c0-34 28-62 62-62h190c46 0 84 38 84 84v188c0 46-38 84-84 84H336V62Z" fill="#F8FBFF" stroke="#DDE7F1" stroke-width="3"/>
+    <path d="M336 62v294" stroke="#DDE7F1" stroke-width="5"/>
+
+    <rect x="60" y="70" width="152" height="16" rx="8" fill="#1D366F"/>
+    <rect x="60" y="112" width="210" height="12" rx="6" fill="#DDE7F1"/>
+    <rect x="60" y="142" width="176" height="12" rx="6" fill="#DDE7F1"/>
+    <rect x="60" y="172" width="118" height="12" rx="6" fill="#8ED7EA"/>
+
+    <rect x="392" y="70" width="176" height="16" rx="8" fill="#D06A32"/>
+    <rect x="392" y="112" width="198" height="12" rx="6" fill="#DDE7F1"/>
+    <rect x="392" y="142" width="158" height="12" rx="6" fill="#DDE7F1"/>
+    <rect x="392" y="172" width="130" height="12" rx="6" fill="#8ED7EA"/>
+
+    <g transform="translate(56 226)">
+      <rect width="98" height="74" rx="16" fill="#FFF0E6"/>
+      <text x="49" y="30" text-anchor="middle" fill="#B7561F" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="900">CASO</text>
+      <text x="49" y="52" text-anchor="middle" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="16" font-weight="900">01</text>
+    </g>
+    <g transform="translate(178 226)">
+      <rect width="98" height="74" rx="16" fill="#EAF7FB"/>
+      <text x="49" y="27" text-anchor="middle" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="11" font-weight="900">CHECK</text>
+      <path d="M28 44h42M28 58h28" stroke="#2D7E99" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <g transform="translate(392 224)">
+      <rect width="180" height="76" rx="18" fill="#1D366F"/>
+      <path d="M28 34h74M28 52h48" stroke="#8ED7EA" stroke-width="8" stroke-linecap="round"/>
+      <path d="M138 20 166 34v24c0 29-18 47-28 53-10-6-28-24-28-53V34l28-14Z" fill="#EAF7FB"/>
+      <path d="m126 56 9 9 19-26" stroke="#2D7E99" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <g class="float" transform="translate(104 352)" filter="url(#lift-shadow)">
+    <rect width="166" height="92" rx="18" fill="#1D366F"/>
+    <text x="24" y="34" fill="#8ED7EA" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="900">MODULO 04</text>
+    <text x="24" y="60" fill="#FFFFFF" font-family="Lexend, Arial, sans-serif" font-size="18" font-weight="900">Triagem</text>
+    <path class="meter" d="M24 76h92" stroke="#8ED7EA" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <g class="float2" transform="translate(590 132)" filter="url(#lift-shadow)">
+    <rect width="160" height="94" rx="18" fill="#FFF0E6" stroke="#D06A32" stroke-width="3"/>
+    <circle cx="42" cy="47" r="22" fill="#D06A32"/>
+    <path d="M32 47h20M42 37v20" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round"/>
+    <text x="82" y="40" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="900">PRATICA</text>
+    <text x="82" y="61" fill="#B7561F" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="800">guiada</text>
+  </g>
+
+  <g class="float" transform="translate(566 390)" filter="url(#lift-shadow)">
+    <circle cx="70" cy="70" r="60" fill="#EAF7FB" stroke="#2D7E99" stroke-width="7"/>
+    <circle cx="70" cy="70" r="34" fill="#FFF0E6"/>
+    <circle cx="70" cy="70" r="17" fill="#D06A32"/>
+    <circle cx="70" cy="70" r="8" fill="#F4B184"/>
+    <path d="M114 114l44 44" stroke="#1D366F" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <g class="float2" transform="translate(346 76)" filter="url(#lift-shadow)">
+    <rect width="168" height="72" rx="18" fill="#FFFFFF" stroke="#DDE7F1"/>
+    <path d="M38 16 54 26v20c0 24-14 38-26 44-12-6-26-20-26-44V26l36-10Z" transform="translate(20 0)" fill="#EAF7FB" stroke="#2D7E99" stroke-width="3"/>
+    <text x="92" y="31" fill="#B7561F" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="900">06</text>
+    <text x="92" y="53" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="15" font-weight="900">Certificado</text>
+  </g>
+</svg>

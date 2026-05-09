@@ -1,0 +1,69 @@
+<svg width="760" height="420" viewBox="0 0 760 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">DermAlert course audience map dark</title>
+  <desc id="desc">Dark mode illustration mapping health professionals, researchers, technical teams and units around the course.</desc>
+  <style>
+    .float{animation:float 6.8s ease-in-out infinite}
+    .float2{animation:float 7.4s ease-in-out infinite reverse}
+    .dash{stroke-dasharray:8 12;animation:dash 11s linear infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes dash{to{stroke-dashoffset:-180}}
+  </style>
+  <rect width="760" height="420" rx="30" fill="#0F1A2C"/>
+  <path d="M0 0H760V420H0V0Z" fill="url(#grid)"/>
+  <circle cx="114" cy="92" r="54" fill="#D06A32" opacity=".16"/>
+  <circle cx="646" cy="326" r="64" fill="#8ED7EA" opacity=".14"/>
+
+  <path class="dash" d="M238 206H340M420 206H522M380 144V90M380 268V326" stroke="#8ED7EA" stroke-width="6" stroke-linecap="round"/>
+
+  <g filter="url(#shadow)" class="float">
+    <rect x="300" y="146" width="160" height="120" rx="28" fill="#1D366F" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <circle cx="380" cy="184" r="22" fill="#8ED7EA"/>
+    <path d="M366 184h28M380 170v28" stroke="#1D366F" stroke-width="6" stroke-linecap="round"/>
+    <text x="340" y="226" font-family="Lexend, Arial, sans-serif" font-size="15" font-weight="900" fill="#FFFFFF">Curso</text>
+    <text x="340" y="248" font-family="Lexend, Arial, sans-serif" font-size="11" font-weight="700" fill="#8ED7EA">DermAlert</text>
+  </g>
+
+  <g filter="url(#cardShadow)" class="float2">
+    <rect x="70" y="146" width="168" height="92" rx="20" fill="#13223A" stroke="#8ED7EA" stroke-opacity=".22"/>
+    <circle cx="106" cy="190" r="18" fill="#D06A32" opacity=".18"/>
+    <path d="M106 181v18M97 190h18" stroke="#F19B62" stroke-width="5" stroke-linecap="round"/>
+    <text x="136" y="184" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="900" fill="#FFFFFF">Saude</text>
+    <text x="136" y="205" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="700" fill="#B9C8D8">triagem clinica</text>
+  </g>
+
+  <g filter="url(#cardShadow)" class="float">
+    <rect x="522" y="146" width="168" height="92" rx="20" fill="#13223A" stroke="#8ED7EA" stroke-opacity=".22"/>
+    <circle cx="558" cy="190" r="18" fill="#8ED7EA" opacity=".18"/>
+    <path d="M548 190h20M558 180v20" stroke="#8ED7EA" stroke-width="5" stroke-linecap="round"/>
+    <text x="588" y="184" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="900" fill="#FFFFFF">UBS</text>
+    <text x="588" y="205" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="700" fill="#B9C8D8">implantacao</text>
+  </g>
+
+  <g filter="url(#cardShadow)" class="float">
+    <rect x="286" y="40" width="188" height="88" rx="20" fill="#13223A" stroke="#8ED7EA" stroke-opacity=".22"/>
+    <circle cx="324" cy="82" r="17" fill="#8ED7EA" opacity=".18"/>
+    <path d="M316 82h16M324 74v16" stroke="#8ED7EA" stroke-width="4" stroke-linecap="round"/>
+    <text x="352" y="78" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="900" fill="#FFFFFF">Pesquisa</text>
+    <text x="352" y="100" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="700" fill="#B9C8D8">IA e dados</text>
+  </g>
+
+  <g filter="url(#cardShadow)" class="float2">
+    <rect x="286" y="292" width="188" height="88" rx="20" fill="#13223A" stroke="#8ED7EA" stroke-opacity=".22"/>
+    <circle cx="324" cy="334" r="17" fill="#D06A32" opacity=".18"/>
+    <path d="M314 334h20M324 324v20" stroke="#F19B62" stroke-width="4" stroke-linecap="round"/>
+    <text x="352" y="330" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="900" fill="#FFFFFF">Tecnico</text>
+    <text x="352" y="352" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="700" fill="#B9C8D8">frontend e API</text>
+  </g>
+
+  <defs>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#8ED7EA" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="shadow" x="250" y="112" width="260" height="210" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#000000" flood-opacity=".32"/>
+    </filter>
+    <filter id="cardShadow" x="34" y="8" width="692" height="400" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000000" flood-opacity=".28"/>
+    </filter>
+  </defs>
+</svg>

@@ -1,0 +1,84 @@
+<svg width="860" height="560" viewBox="0 0 860 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Fluxo guiado DermAlert</title>
+  <desc id="desc">Linha de progresso com cinco etapas: login, cadastro, anamnese, triagem e encaminhamento.</desc>
+  <defs>
+    <linearGradient id="bg" x1="72" y1="58" x2="792" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset=".58" stop-color="#F2FAFD"/>
+      <stop offset="1" stop-color="#FFF2EA"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="126" y1="278" x2="734" y2="278" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1D366F"/>
+      <stop offset=".5" stop-color="#2D7E99"/>
+      <stop offset="1" stop-color="#D06A32"/>
+    </linearGradient>
+    <filter id="shadow" x="24" y="22" width="812" height="514" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#0E1A2B" flood-opacity=".15"/>
+    </filter>
+    <style>
+      .node{animation:float 6.2s ease-in-out infinite;transform-origin:center}
+      .n2{animation-delay:.45s}.n3{animation-delay:.9s}.n4{animation-delay:1.35s}.n5{animation-delay:1.8s}
+      .rail{stroke-dasharray:12 16;animation:rail 18s linear infinite}
+      .pulse{animation:pulse 3.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+      @keyframes rail{to{stroke-dashoffset:-240}}
+      @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.08);opacity:.8}}
+      @media (prefers-reduced-motion:reduce){.node,.rail,.pulse{animation:none}}
+    </style>
+  </defs>
+
+  <rect x="50" y="46" width="760" height="468" rx="38" fill="url(#bg)" filter="url(#shadow)"/>
+  <path d="M108 126h644M108 206h644M108 286h644M108 366h644M108 446h644M184 88v388M264 88v388M344 88v388M424 88v388M504 88v388M584 88v388M664 88v388" stroke="#1D366F" stroke-opacity=".045"/>
+  <circle cx="158" cy="140" r="56" fill="#FFF0E6"/>
+  <circle cx="724" cy="416" r="70" fill="#EAF7FB"/>
+  <circle cx="720" cy="136" r="18" fill="#D06A32" opacity=".16"/>
+
+  <rect x="148" y="104" width="276" height="58" rx="20" fill="#FFFFFF" stroke="#DDE7F1"/>
+  <circle cx="184" cy="133" r="15" fill="#EAF7FB"/>
+  <path d="M178 133h12m-6-6v12" stroke="#2D7E99" stroke-width="4" stroke-linecap="round"/>
+  <text x="216" y="127" fill="#B7561F" font-family="Lexend, Arial, sans-serif" font-size="12" font-weight="900">FLUXO GUIADO</text>
+  <text x="216" y="148" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="13" font-weight="800">etapas claras para triagem</text>
+
+  <path d="M126 278H734" stroke="#DDE7F1" stroke-width="22" stroke-linecap="round"/>
+  <path class="rail" d="M126 278H734" stroke="url(#rail)" stroke-width="11" stroke-linecap="round"/>
+
+  <g class="node">
+    <circle cx="126" cy="278" r="48" fill="#1D366F"/>
+    <circle cx="126" cy="278" r="26" fill="#2B4C91"/>
+    <text x="126" y="287" text-anchor="middle" fill="#FFFFFF" font-family="Lexend, Arial, sans-serif" font-size="25" font-weight="900">01</text>
+    <text x="126" y="358" text-anchor="middle" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="17" font-weight="900">Login</text>
+  </g>
+
+  <g class="node n2">
+    <circle cx="278" cy="278" r="48" fill="#D06A32"/>
+    <path d="M260 278h36m-18-18v36" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"/>
+    <text x="278" y="358" text-anchor="middle" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="17" font-weight="900">Cadastro</text>
+  </g>
+
+  <g class="node n3">
+    <circle cx="430" cy="278" r="52" fill="#2D7E99"/>
+    <path d="M402 266h58M402 286h40" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <text x="430" y="358" text-anchor="middle" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="17" font-weight="900">Anamnese</text>
+  </g>
+
+  <g class="node n4">
+    <circle cx="582" cy="278" r="48" fill="#4DAA86"/>
+    <circle cx="582" cy="278" r="22" fill="#FFF0E6"/>
+    <circle class="pulse" cx="582" cy="278" r="9" fill="#D06A32"/>
+    <text x="582" y="358" text-anchor="middle" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="17" font-weight="900">Triagem</text>
+  </g>
+
+  <g class="node n5">
+    <circle cx="734" cy="278" r="48" fill="#1D366F"/>
+    <path d="M712 278h36m0 0-13-13m13 13-13 13" stroke="#8ED7EA" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="734" y="358" text-anchor="middle" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="17" font-weight="900">Encaminhar</text>
+  </g>
+
+  <g transform="translate(548 112)">
+    <rect width="150" height="66" rx="20" fill="#FFFFFF" stroke="#DDE7F1"/>
+    <path d="M42 17 62 27v16c0 22-13 34-20 39-7-5-20-17-20-39V27l20-10Z" fill="#EAF7FB" stroke="#2D7E99" stroke-width="3"/>
+    <path d="m33 43 7 7 15-20" stroke="#2D7E99" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="82" y="36" fill="#1D366F" font-family="Lexend, Arial, sans-serif" font-size="16" font-weight="900">LGPD</text>
+    <text x="82" y="53" fill="#536783" font-family="Lexend, Arial, sans-serif" font-size="10" font-weight="800">dados protegidos</text>
+  </g>
+</svg>
