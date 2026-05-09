@@ -21,7 +21,7 @@
       <a href="suporte.html" class="da-nav-link"><span data-i18n="ajuda_e_suporte">Ajuda e Suporte</span></a>
       <a href="curso.html" class="da-nav-link"><span data-i18n="curso_extensao">Curso de Extensão</span></a>
       <a href="sobre.html" class="da-nav-link"><span data-i18n="sobre">Sobre</span></a>
-      <a href="suporte.html#documentacao-tecnica" class="da-nav-link"><span data-i18n="documentacao">Documentação</span></a>
+      <a href="/ajuda-e-suporte/documentacao-tecnica/frontend/" class="da-nav-link"><span data-i18n="documentacao">Documentação</span></a>
 \r
       <!-- Idioma (desktop) — DROPDOWN CUSTOM -->\r
       <div class="relative ml-2">\r
@@ -153,7 +153,7 @@
             </a>\r
           </li>\r
           <li>\r
-            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="suporte.html#documentacao-tecnica">
+            <a class="flex items-center gap-3 px-5 py-3 hover:bg-white/10 active:bg-white/15" href="/ajuda-e-suporte/documentacao-tecnica/frontend/">
               <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16h8M8 12h8m-6 8h6a2 2 0 002-2V6a2 2 0 00-2-2H9l-5 5v13a2 2 0 002 2h2"/></svg>\r
               <span class="flex-1" data-i18n="documentacao">Documentação</span>\r
             </a>\r
@@ -1854,7 +1854,7 @@
             <nav class="da-footer-column" aria-labelledby="footer-heading-docs">
               <h4 id="footer-heading-docs" class="da-footer-heading" data-i18n="footer_col_docs">Documenta&ccedil;&atilde;o</h4>
               <ul class="da-footer-list">
-                <li><a class="da-footer-link" href="suporte.html#documentacao-tecnica" data-i18n="footer_link_docs_tech">Documenta&ccedil;&atilde;o t&eacute;cnica</a></li>
+                <li><a class="da-footer-link" href="/ajuda-e-suporte/documentacao-tecnica/frontend/" data-i18n="footer_link_docs_tech">Documenta&ccedil;&atilde;o t&eacute;cnica</a></li>
                 <li><a class="da-footer-link" href="sobre.html" data-i18n="footer_link_sobre_projeto">Sobre o Projeto</a></li>
                 <li><a class="da-footer-link" href="index.html#app-partners" data-i18n="footer_link_apoiadores">Apoiadores</a></li>
               </ul>
