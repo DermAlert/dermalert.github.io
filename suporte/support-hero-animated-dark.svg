@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" role="img" aria-labelledby="title desc">
+  <title id="title">DermAlert mobile support center dark</title>
+  <desc id="desc">Dark mobile app support center with help, privacy, documentation and contact cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="96" x2="852" y1="62" y2="668" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1A2B"/>
+      <stop offset="1" stop-color="#102E3E"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="366" x2="594" y1="82" y2="638" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132746"/>
+      <stop offset="1" stop-color="#101C2D"/>
+    </linearGradient>
+    <filter id="shadow" x="-25%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#020712" flood-opacity=".42"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#020712" flood-opacity=".36"/>
+    </filter>
+    <style>
+      .float-a{animation:floatA 6s ease-in-out infinite;transform-origin:center}
+      .float-b{animation:floatB 7s ease-in-out infinite;transform-origin:center}
+      .pulse{animation:pulse 2.8s ease-in-out infinite;transform-origin:center}
+      .route{stroke-dasharray:10 14;animation:route 12s linear infinite}
+      .bar{animation:bar 4.8s ease-in-out infinite;transform-origin:left}
+      @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+      @keyframes floatB{0%,100%{transform:translateY(0) translateX(0)}50%{transform:translateY(10px) translateX(-8px)}}
+      @keyframes pulse{0%,100%{opacity:.52;transform:scale(.94)}50%{opacity:1;transform:scale(1.08)}}
+      @keyframes route{to{stroke-dashoffset:-220}}
+      @keyframes bar{0%,100%{transform:scaleX(.42)}50%{transform:scaleX(1)}}
+      @media (prefers-reduced-motion:reduce){.float-a,.float-b,.pulse,.route,.bar{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="960" height="720" rx="36" fill="url(#bg)"/>
+  <path d="M0 0h960v720H0z" fill="url(#grid)"/>
+  <circle cx="156" cy="126" r="68" fill="#D06A32" opacity=".12"/>
+  <circle cx="812" cy="584" r="104" fill="#8ED7EA" opacity=".10"/>
+  <path class="route" d="M164 514C278 424 334 530 468 430S656 260 806 336" fill="none" stroke="#8ED7EA" stroke-width="4" opacity=".38"/>
+  <path class="route" d="M146 242C280 166 358 312 488 252S650 148 810 218" fill="none" stroke="#F19B62" stroke-width="4" opacity=".26"/>
+
+  <g filter="url(#shadow)">
+    <rect x="352" y="58" width="256" height="604" rx="46" fill="#070D18"/>
+    <rect x="366" y="82" width="228" height="556" rx="34" fill="url(#screen)" stroke="#8ED7EA" stroke-opacity=".12"/>
+    <circle cx="480" cy="94" r="8" fill="#050914"/>
+    <rect x="392" y="124" width="176" height="44" rx="14" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <text x="416" y="152" font-family="Lexend, Arial" font-size="17" font-weight="800" fill="#FFFFFF">Central de ajuda</text>
+    <rect x="392" y="184" width="176" height="44" rx="14" fill="#153656"/>
+    <circle cx="414" cy="206" r="8" fill="#8ED7EA"/>
+    <rect x="432" y="197" width="96" height="9" rx="4.5" fill="#FFFFFF" opacity=".78"/>
+    <rect x="432" y="214" width="68" height="7" rx="3.5" fill="#FFFFFF" opacity=".24"/>
+    <rect x="392" y="248" width="176" height="76" rx="18" fill="#1D366F"/>
+    <text x="416" y="282" font-family="Lexend, Arial" font-size="18" font-weight="800" fill="#FFFFFF">Falar com suporte</text>
+    <rect x="416" y="300" width="100" height="10" rx="5" fill="#8ED7EA" class="bar"/>
+    <rect x="392" y="344" width="82" height="82" rx="18" fill="#271B18"/>
+    <path d="M432 364l24 10v22c0 22-24 32-24 32s-24-10-24-32v-22l24-10z" fill="none" stroke="#F19B62" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="486" y="344" width="82" height="82" rx="18" fill="#153656"/>
+    <path d="M512 374h32M512 390h26M512 406h18" stroke="#8ED7EA" stroke-width="7" stroke-linecap="round"/>
+    <rect x="392" y="446" width="176" height="70" rx="18" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <text x="416" y="476" font-family="Lexend, Arial" font-size="15" font-weight="800" fill="#FFFFFF">Documentacao</text>
+    <rect x="416" y="492" width="108" height="10" rx="5" fill="#FFFFFF" opacity=".18"/>
+    <rect x="392" y="536" width="176" height="70" rx="18" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <text x="416" y="566" font-family="Lexend, Arial" font-size="15" font-weight="800" fill="#FFFFFF">Privacidade</text>
+    <rect x="416" y="582" width="92" height="10" rx="5" fill="#FFFFFF" opacity=".18"/>
+  </g>
+
+  <g class="float-a" filter="url(#soft)">
+    <rect x="120" y="240" width="230" height="126" rx="24" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <rect x="148" y="270" width="54" height="54" rx="16" fill="#153656"/>
+    <path d="M164 292h22M164 306h16" stroke="#8ED7EA" stroke-width="6" stroke-linecap="round"/>
+    <text x="220" y="292" font-family="Lexend, Arial" font-size="15" font-weight="800" fill="#FFFFFF">Ticket aberto</text>
+    <rect x="220" y="310" width="88" height="9" rx="4.5" fill="#FFFFFF" opacity=".18"/>
+    <circle class="pulse" cx="320" cy="284" r="14" fill="#F19B62"/>
+  </g>
+
+  <g class="float-b" filter="url(#soft)">
+    <rect x="602" y="222" width="238" height="134" rx="24" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <text x="632" y="258" font-family="Lexend, Arial" font-size="15" font-weight="800" fill="#F19B62">Resposta rapida</text>
+    <rect x="632" y="280" width="156" height="10" rx="5" fill="#FFFFFF" opacity=".18"/>
+    <rect x="632" y="304" width="112" height="10" rx="5" fill="#FFFFFF" opacity=".16"/>
+    <path d="M800 274l18 18 36-42" fill="none" stroke="#8ED7EA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g class="float-a" filter="url(#soft)">
+    <rect x="606" y="440" width="230" height="122" rx="24" fill="#1D366F" stroke="#8ED7EA" stroke-opacity=".18"/>
+    <text x="634" y="480" font-family="Lexend, Arial" font-size="16" font-weight="800" fill="#FFFFFF">caguiar@unb.br</text>
+    <rect x="634" y="502" width="118" height="10" rx="5" fill="#8ED7EA"/>
+    <rect x="634" y="526" width="84" height="8" rx="4" fill="#FFFFFF" opacity=".24"/>
+  </g>
+
+  <defs>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#8ED7EA" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+</svg>

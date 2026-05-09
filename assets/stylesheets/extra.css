@@ -959,3 +959,41 @@ body {
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Dark-mode contrast polish for MkDocs/Material. */
+[data-md-color-scheme="slate"] {
+  --da-orange-700: #F19B62;
+  --da-orange-600: #B7561F;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-sidebar--secondary .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: #F19B62;
+}
+
+[data-md-color-scheme="slate"] .da-doc-button:not(.da-doc-button--ghost) {
+  background: #B7561F;
+  box-shadow: 0 14px 30px rgba(183, 86, 31, .25);
+}
+
+[data-md-color-scheme="slate"] .da-doc-button:not(.da-doc-button--ghost):hover,
+[data-md-color-scheme="slate"] .da-doc-button:not(.da-doc-button--ghost):focus-visible {
+  background: #9B441A;
+}
+
+body[data-md-color-scheme="slate"] .md-sidebar .md-nav__link,
+body[data-md-color-scheme="slate"] .md-sidebar .md-nav__link .md-ellipsis,
+body[data-md-color-scheme="slate"] .md-sidebar .md-nav__title,
+body[data-md-color-scheme="slate"] .md-sidebar .md-nav__item {
+  color: rgba(255, 255, 255, .88);
+}
+
+body[data-md-color-scheme="slate"] .md-sidebar .md-nav__link--active,
+body[data-md-color-scheme="slate"] .md-sidebar .md-nav__link--active .md-ellipsis {
+  color: #F19B62 !important;
+}
+
+body[data-md-color-scheme="slate"] .md-sidebar .md-nav__title {
+  background: #0E1A2B !important;
+}

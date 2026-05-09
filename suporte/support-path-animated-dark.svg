@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">DermAlert mobile support route dark</title>
+  <desc id="desc">Dark mobile-first support route connecting app cards for access, privacy and documentation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="70" x2="890" y1="40" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E1A2B"/>
+      <stop offset="1" stop-color="#132746"/>
+    </linearGradient>
+    <linearGradient id="route" x1="166" x2="780" y1="286" y2="286" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8ED7EA"/>
+      <stop offset=".5" stop-color="#F19B62"/>
+      <stop offset="1" stop-color="#79CFA5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020712" flood-opacity=".34"/>
+    </filter>
+    <style>
+      .route{fill:none;stroke:url(#route);stroke-width:6;stroke-linecap:round;stroke-dasharray:18 22;animation:routeMove 6s linear infinite}
+      .pulse{animation:pulse 2.8s ease-in-out infinite;transform-origin:center}
+      .floatA{animation:floatA 5.5s ease-in-out infinite}
+      .floatB{animation:floatB 6.5s ease-in-out infinite}
+      .bar{animation:bar 4.8s ease-in-out infinite;transform-origin:left}
+      @keyframes routeMove{to{stroke-dashoffset:-240}}
+      @keyframes pulse{0%,100%{opacity:.48;transform:scale(.92)}50%{opacity:1;transform:scale(1.08)}}
+      @keyframes floatA{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+      @keyframes floatB{0%,100%{transform:translateY(0)}50%{transform:translateY(10px)}}
+      @keyframes bar{0%,100%{transform:scaleX(.42)}50%{transform:scaleX(1)}}
+      @media (prefers-reduced-motion:reduce){.route,.pulse,.floatA,.floatB,.bar{animation:none}}
+    </style>
+  </defs>
+
+  <rect width="960" height="560" rx="18" fill="url(#bg)"/>
+  <path d="M0 0h960v560H0z" fill="url(#grid)"/>
+  <path d="M132 108h696M132 452h696M96 86v388M864 86v388" stroke="#FFFFFF" stroke-opacity=".07"/>
+  <path d="M172 286C280 196 360 196 480 286S680 376 788 286" class="route"/>
+
+  <g filter="url(#shadow)">
+    <rect x="388" y="78" width="184" height="404" rx="34" fill="#070D18"/>
+    <rect x="398" y="100" width="164" height="360" rx="24" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <circle cx="480" cy="108" r="6" fill="#050914"/>
+    <rect x="420" y="136" width="120" height="36" rx="12" fill="#153656"/>
+    <text x="438" y="159" font-family="Lexend, Arial" font-size="13" font-weight="800" fill="#FFFFFF">Suporte</text>
+    <rect x="420" y="194" width="120" height="56" rx="14" fill="#1D366F"/>
+    <text x="438" y="225" font-family="Lexend, Arial" font-size="13" font-weight="800" fill="#FFFFFF">Abrir ticket</text>
+    <rect x="420" y="270" width="54" height="62" rx="14" fill="#271B18"/>
+    <path d="M448 288l16 7v15c0 16-16 22-16 22s-16-6-16-22v-15l16-7z" fill="none" stroke="#F19B62" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="486" y="270" width="54" height="62" rx="14" fill="#153656"/>
+    <path d="M500 292h26M500 306h18" stroke="#8ED7EA" stroke-width="5" stroke-linecap="round"/>
+    <rect x="420" y="354" width="120" height="54" rx="14" fill="#132746" stroke="#8ED7EA" stroke-opacity=".12"/>
+    <rect x="438" y="376" width="76" height="8" rx="4" fill="#FFFFFF" opacity=".18"/>
+  </g>
+
+  <g class="floatA" filter="url(#shadow)">
+    <rect x="82" y="182" width="222" height="128" rx="22" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <text x="112" y="222" font-family="Lexend, Arial" font-size="16" font-weight="800" fill="#FFFFFF">Acesso</text>
+    <rect x="112" y="242" width="134" height="10" rx="5" fill="#FFFFFF" opacity=".18"/>
+    <rect x="112" y="266" width="112" height="10" rx="5" fill="#8ED7EA" class="bar"/>
+  </g>
+
+  <g class="floatB" filter="url(#shadow)">
+    <rect x="656" y="176" width="222" height="134" rx="22" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <text x="686" y="216" font-family="Lexend, Arial" font-size="16" font-weight="800" fill="#FFFFFF">Documentacao</text>
+    <rect x="686" y="238" width="134" height="10" rx="5" fill="#FFFFFF" opacity=".18"/>
+    <rect x="686" y="262" width="112" height="10" rx="5" fill="#79CFA5" class="bar"/>
+  </g>
+
+  <g class="floatA" filter="url(#shadow)">
+    <rect x="102" y="360" width="218" height="112" rx="22" fill="#101C2D" stroke="#8ED7EA" stroke-opacity=".16"/>
+    <text x="132" y="402" font-family="Lexend, Arial" font-size="16" font-weight="800" fill="#F19B62">Privacidade</text>
+    <rect x="132" y="424" width="120" height="10" rx="5" fill="#FFFFFF" opacity=".18"/>
+    <path d="M270 390l18 18 34-42" fill="none" stroke="#F19B62" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g class="pulse">
+    <circle cx="304" cy="286" r="15" fill="#8ED7EA"/>
+    <circle cx="304" cy="286" r="28" fill="none" stroke="#8ED7EA" stroke-opacity=".35" stroke-width="6"/>
+  </g>
+  <g class="pulse" style="animation-delay:.7s">
+    <circle cx="480" cy="286" r="15" fill="#F19B62"/>
+    <circle cx="480" cy="286" r="28" fill="none" stroke="#F19B62" stroke-opacity=".35" stroke-width="6"/>
+  </g>
+  <g class="pulse" style="animation-delay:1.4s">
+    <circle cx="656" cy="286" r="15" fill="#79CFA5"/>
+    <circle cx="656" cy="286" r="28" fill="none" stroke="#79CFA5" stroke-opacity=".35" stroke-width="6"/>
+  </g>
+
+  <defs>
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#8ED7EA" stroke-opacity=".06"/>
+    </pattern>
+  </defs>
+</svg>
